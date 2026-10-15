@@ -1,0 +1,420 @@
+{
+  "materia": "proc-leg",
+  "descricao": "Processo Legislativo e Técnica Legislativa — 19 tópicos do Anexo II. É o coração do cargo de Assessor Técnico: domínio obrigatório.",
+  "questoes": [
+    {
+      "id": "pleg-q001",
+      "topico": "pleg-10",
+      "dificuldade": "medio",
+      "enunciado": "A Assembleia Legislativa do Estado do Pará precisa editar ato normativo para (i) sustar os atos normativos do Poder Executivo que exorbitem do poder regulamentar e (ii) aprovar, previamente, a escolha de Conselheiro do Tribunal de Contas do Estado. Os instrumentos normativos adequados são, respectivamente:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "lei ordinária e lei complementar."
+        },
+        {
+          "letra": "B",
+          "texto": "decreto legislativo e resolução."
+        },
+        {
+          "letra": "C",
+          "texto": "resolução e decreto legislativo."
+        },
+        {
+          "letra": "D",
+          "texto": "decreto legislativo e lei ordinária."
+        },
+        {
+          "letra": "E",
+          "texto": "resolução e lei complementar."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta.\n\nDECRETO LEGISLATIVO: veicula as matérias de competência EXCLUSIVA do Congresso Nacional (art. 49 da CF) que produzem EFEITOS EXTERNOS, isto é, que se projetam para fora do Poder Legislativo e atingem terceiros. Exemplos: sustar atos normativos do Poder Executivo que exorbitem do poder regulamentar (art. 49, V); julgar as contas do Presidente da República (art. 49, IX); autorizar o Presidente da República a declarar guerra ou a celebrar a paz (art. 49, II); aprovar estados de defesa e de sítio; fixar os subsídios de determinadas autoridades. Características: NÃO se sujeita a sanção nem a veto; é promulgado pelo Presidente da Casa Legislativa.\n\nRESOLUÇÃO: veicula as matérias de competência PRIVATIVA da Câmara dos Deputados (art. 51), do Senado Federal (art. 52) ou do Congresso Nacional (art. 48) que produzem EFEITOS INTERNOS, de organização e funcionamento da Casa. Exemplos: elaborar o regimento interno; dispor sobre sua organização, polícia, criação, transformação ou extinção de cargos; autorizar, por 2/3 de seus membros, a instauração de processo contra o Presidente da República; suspender a execução, no todo ou em parte, de lei declarada inconstitucional por decisão definitiva do STF (Resolução do Senado — art. 52, X). Também não se sujeita a sanção.\n\nNo âmbito estadual, por simetria, a ALEPA utiliza decretos legislativos e resoluções com a mesma lógica — o próprio Anexo II do edital lista dezenas de Decretos Legislativos e Resoluções da ALEPA.\n\n(A), (D) e (E) Erradas: sustação de ato normativo exorbitante e aprovação prévia de escolha de Conselheiro não são matérias de lei ordinária nem de lei complementar.\n(C) Inverteu os instrumentos.",
+      "mnemonico": "DECRETO LEGISLATIVO = efeito EXTERNO (projeta-se para fora da Casa). RESOLUÇÃO = efeito INTERNO (organiza a própria Casa). Nenhum dos dois sofre SANÇÃO.",
+      "leiSeca": [
+        "CF, art. 49, V e IX",
+        "CF, art. 51",
+        "CF, art. 52, X",
+        "CF, art. 59, VI e VII"
+      ],
+      "tags": [
+        "espécies normativas",
+        "decreto legislativo",
+        "resolução",
+        "competência exclusiva"
+      ],
+      "pegadinhas": [
+        "Decreto legislativo não é decreto do Executivo; é ato do Legislativo"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q002",
+      "topico": "pleg-07",
+      "dificuldade": "dificil",
+      "enunciado": "Projeto de lei de iniciativa parlamentar estadual cria função gratificada na estrutura administrativa da ALEPA e fixa a respectiva remuneração. Sobre a constitucionalidade dessa iniciativa, é correto afirmar que:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "é constitucional, pois a organização dos serviços administrativos das Assembleias Legislativas é de sua competência privativa, nos termos do art. 27, §3º, da Constituição Federal."
+        },
+        {
+          "letra": "B",
+          "texto": "é inconstitucional formalmente, pois a matéria é de iniciativa reservada ao Chefe do Poder Executivo."
+        },
+        {
+          "letra": "C",
+          "texto": "é constitucional, desde que a sanção do Governador convalide o vício de iniciativa."
+        },
+        {
+          "letra": "D",
+          "texto": "é inconstitucional materialmente, por violação ao princípio da eficiência."
+        },
+        {
+          "letra": "E",
+          "texto": "é constitucional, pois qualquer deputado pode iniciar projeto sobre qualquer matéria administrativa."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta — e esta é uma das questões mais sutis e relevantes do edital. O art. 27, §3º, da CF dispõe: 'Compete às Assembleias Legislativas dispor sobre seu regimento interno, POLÍCIA E SERVIÇOS ADMINISTRATIVOS DE SUAS SECRETARIAS, e prover os respectivos cargos.' Trata-se da AUTONOMIA ADMINISTRATIVA E ORGANIZATIVA da Casa Legislativa, que se projeta em três vertentes (art. 51, IV, e art. 52, XIII, aplicáveis por simetria): (i) auto-organização (regimento interno); (ii) autogoverno (eleição da Mesa e de seus órgãos); (iii) autoadministração (gestão de seus serviços, criação e provimento de cargos de suas secretarias).\n\nPortanto, projeto de iniciativa PARLAMENTAR (ou da própria Mesa Diretora) que trate dos serviços administrativos da Assembleia e de seus cargos é CONSTITUCIONAL. A iniciativa reservada ao Chefe do Executivo (art. 61, §1º, II, 'a' e 'c', aplicável por simetria) alcança o regime jurídico e a criação de cargos dos servidores do Poder EXECUTIVO, não os do próprio Legislativo.\n\n(B) Errada: é exatamente a exceção decorrente da autonomia do Poder Legislativo. O STF reconhece a iniciativa das Casas Legislativas para dispor sobre sua própria organização administrativa (ex.: ADI 2.867, ADI 3.488).\n(C) Errada: a sanção NÃO convalida vício de iniciativa. A Súmula 5 do STF ('a sanção do projeto supre a falta de iniciativa do Poder Executivo') é considerada SUPERADA pela jurisprudência contemporânea, que afirma que a sanção é ato político e não sana vício formal subjetivo de iniciativa. A alternativa, aqui, é irrelevante por não haver vício.\n(D) Errada: o eventual problema seria de natureza FORMAL (competência para iniciar) ou ORÇAMENTÁRIA (art. 169, §1º: a criação de cargos e o aumento de remuneração dependem de prévia dotação orçamentária e de autorização específica na LDO), e não de violação ao princípio da eficiência.\n(E) Errada: generalização indevida — há matérias de iniciativa reservada no próprio âmbito legislativo (ex.: a iniciativa da Mesa para o orçamento e para o plano de carreiras em determinadas hipóteses, e a reserva do Chefe do Executivo quanto a matéria tributária e orçamentária do Estado).",
+      "mnemonico": "AUTONOMIA DA CASA = auto-organização (regimento) + autogoverno (Mesa) + autoadministração (serviços e cargos das secretarias). O Chefe do Executivo NÃO interfere nisso.",
+      "leiSeca": [
+        "CF, art. 27, §3º",
+        "CF, art. 51, IV",
+        "CF, art. 52, XIII",
+        "CF, art. 61, §1º, II",
+        "CF, art. 169, §1º"
+      ],
+      "tags": [
+        "iniciativa",
+        "iniciativa reservada",
+        "autonomia do Legislativo",
+        "vício de iniciativa"
+      ],
+      "pegadinhas": [
+        "Criação de cargos DAS SECRETARIAS DA ASSEMBLEIA = iniciativa da própria Casa. Criação de cargos do EXECUTIVO = iniciativa privativa do Governador."
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q003",
+      "topico": "pleg-11",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre a apresentação de emendas parlamentares a projeto de lei de iniciativa reservada do Chefe do Poder Executivo, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "são integralmente vedadas, pois a reserva de iniciativa impede qualquer modificação parlamentar."
+        },
+        {
+          "letra": "B",
+          "texto": "são admitidas sem qualquer restrição, por força da liberdade de emendar inerente ao mandato parlamentar."
+        },
+        {
+          "letra": "C",
+          "texto": "são admitidas, desde que guardem pertinência temática com o objeto do projeto e não importem aumento de despesa, ressalvadas as emendas às leis orçamentárias e a matéria de organização dos serviços administrativos do próprio Poder."
+        },
+        {
+          "letra": "D",
+          "texto": "somente são admitidas se aprovadas previamente pela Consultoria Jurídica do Poder Executivo."
+        },
+        {
+          "letra": "E",
+          "texto": "são admitidas apenas em projetos de lei complementar, jamais em projetos de lei ordinária."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) sistematiza a jurisprudência consolidada do STF sobre o DIREITO DE EMENDA. Três limites devem ser observados:\n\n1. PERTINÊNCIA TEMÁTICA: a emenda deve guardar relação de pertinência com o objeto do projeto em tramitação. A inserção de matéria estranha — os chamados 'contrabandos', 'jabutis' ou 'cavalos legislativos' — é INCONSTITUCIONAL, tanto por violação ao devido processo legislativo quanto por ofensa ao art. 7º, II, da LC 95/1998 (vedação de dispositivo estranho ao objeto da lei). O STF afirmou essa vedação na ADI 5.127 e no MS 33.676/34.025.\n\n2. VEDAÇÃO DE AUMENTO DE DESPESA: não se admite emenda parlamentar que aumente a despesa pública nos projetos de iniciativa PRIVATIVA do Chefe do Executivo em matéria de (a) servidores públicos (regime jurídico, provimento, estabilidade, aposentadoria) e (b) organização administrativa e judiciária, matéria tributária e orçamentária e serviços públicos (art. 63, I e II, da CF, aplicado por simetria). RESSALVA EXPRESSA do art. 63, parágrafo único: 'Não se admite emenda que aumente a despesa prevista... nos projetos sobre organização dos serviços administrativos da Câmara dos Deputados, do Senado Federal, dos Tribunais Federais e do Ministério Público.' E, quanto às leis orçamentárias, o art. 166, §§3º e 4º, admite emendas parlamentares ao PPA, à LDO e à LOA, observados requisitos.\n\n3. NÃO DESCARACTERIZAÇÃO DA INICIATIVA: a emenda não pode ser tão ampla que transforme o projeto em outro, usurpando a iniciativa.\n\n(A) Errada: a reserva de iniciativa NÃO impede emendas; impede a deflagração do processo legislativo por quem não é legitimado.\n(B) Errada: o direito de emenda não é absoluto.\n(D) Errada: não existe controle prévio do Executivo sobre emendas parlamentares.\n(E) Errada: o direito de emenda se aplica a todas as espécies legislativas.",
+      "mnemonico": "EMENDA EM PROJETO DE INICIATIVA RESERVADA: PODE, se (1) tiver PERTINÊNCIA TEMÁTICA e (2) NÃO AUMENTAR DESPESA. Exceções à vedação de aumento: leis orçamentárias (PPA, LDO, LOA) e organização dos serviços administrativos do próprio Poder.",
+      "leiSeca": [
+        "CF, art. 63, I e II, e parágrafo único",
+        "CF, art. 166, §§3º e 4º",
+        "LC 95/1998, art. 7º, II"
+      ],
+      "tags": [
+        "emendas parlamentares",
+        "pertinência temática",
+        "jabuti",
+        "aumento de despesa",
+        "iniciativa reservada"
+      ],
+      "pegadinhas": [
+        "'Jabuti' é inconstitucional mesmo com sanção posterior",
+        "A vedação de aumento de despesa tem ressalvas expressas"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q004",
+      "topico": "pleg-14",
+      "dificuldade": "medio",
+      "enunciado": "Sobre o veto no processo legislativo, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O veto poderá ser total ou parcial, e o veto parcial poderá abranger palavra, frase ou parte de artigo, desde que não altere o sentido da norma."
+        },
+        {
+          "letra": "B",
+          "texto": "Se o Chefe do Executivo considerar o projeto, no todo ou em parte, inconstitucional, deverá vetá-lo por motivo de conveniência e oportunidade, no prazo de quinze dias corridos."
+        },
+        {
+          "letra": "C",
+          "texto": "O silêncio do Chefe do Executivo no prazo de quinze dias úteis importa veto tácito, cabendo ao Legislativo reexaminar o projeto."
+        },
+        {
+          "letra": "D",
+          "texto": "O veto deverá ser justificado no prazo de quinze dias úteis e as razões serão comunicadas, dentro de quarenta e oito horas, ao Presidente da Casa Legislativa; só pode ser rejeitado pela maioria absoluta dos Deputados."
+        },
+        {
+          "letra": "E",
+          "texto": "Rejeitado o veto, o projeto será devolvido ao Chefe do Executivo, que poderá vetá-lo novamente por uma única vez."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": "(D) sintetiza o art. 66 da CF:\n• §1º: 'Se o Chefe do Executivo considerar o projeto, no todo ou em parte, INCONSTITUCIONAL, ou, ainda, CONTRÁRIO AO INTERESSE PÚBLICO, vetá-lo-á total ou parcialmente, no prazo de QUINZE DIAS ÚTEIS, contados da data do recebimento, e comunicará, dentro de QUARENTA E OITO HORAS, ao Presidente [da Casa Legislativa] os motivos do veto.'\n• §2º: 'O veto parcial somente abrangerá TEXTO INTEGRAL DE ARTIGO, DE PARÁGRAFO, DE INCISO OU DE ALÍNEA.'\n• §4º: 'O veto será apreciado em sessão conjunta [no âmbito estadual, pelo Plenário], dentro de TRINTA DIAS a contar de seu recebimento, só podendo ser rejeitado pelo voto da MAIORIA ABSOLUTA dos Deputados e Senadores.'\n\nVETO JURÍDICO (motivo de inconstitucionalidade) x VETO POLÍTICO (motivo de contrariedade ao interesse público). O veto é sempre EXPRESSO e MOTIVADO.\n\n(A) Errada: o veto parcial NÃO pode abranger palavra, frase ou trecho fracionado — apenas texto INTEGRAL de artigo, parágrafo, inciso ou alínea.\n(B) Errada: inconstitucionalidade gera VETO JURÍDICO; conveniência/oportunidade gera VETO POLÍTICO. Além disso, o prazo é de quinze dias ÚTEIS.\n(C) Errada: o silêncio no prazo de quinze dias úteis importa SANÇÃO TÁCITA (art. 66, §3º), e não veto. O veto é sempre expresso.\n(E) Errada: rejeitado o veto, o projeto será enviado ao Chefe do Executivo para PROMULGAÇÃO (art. 66, §5º). Se ele não promulgar em 48 horas, promulgará o Presidente do Legislativo e, se este não o fizer em igual prazo, o Vice-Presidente (§7º).",
+      "mnemonico": "VETO: 15 dias ÚTEIS para vetar + 48 horas para comunicar + 30 dias para o Legislativo apreciar + MAIORIA ABSOLUTA para rejeitar. SILÊNCIO = SANÇÃO TÁCITA.",
+      "leiSeca": [
+        "CF, art. 66, §§1º a 7º"
+      ],
+      "tags": [
+        "veto",
+        "sanção tácita",
+        "processo legislativo",
+        "quórum de rejeição"
+      ],
+      "pegadinhas": [
+        "Veto parcial = texto integral de artigo/parágrafo/inciso/alínea, nunca trechos",
+        "Silêncio = sanção, não veto"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q005",
+      "topico": "pleg-15",
+      "dificuldade": "medio",
+      "enunciado": "Quanto à promulgação e à publicação das leis, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A promulgação é o ato que confere eficácia à lei, tornando-a oponível a terceiros; a publicação, por sua vez, atesta a existência e a executoriedade da norma."
+        },
+        {
+          "letra": "B",
+          "texto": "A promulgação é ato que atesta a existência da lei e ordena sua execução; a publicação no Diário Oficial é requisito de eficácia e, sem ela, a lei não obriga ninguém."
+        },
+        {
+          "letra": "C",
+          "texto": "Se o Chefe do Executivo não promulgar a lei no prazo de quinze dias úteis, o veto será considerado rejeitado automaticamente."
+        },
+        {
+          "letra": "D",
+          "texto": "A publicação é dispensável nos Municípios com menos de vinte mil habitantes."
+        },
+        {
+          "letra": "E",
+          "texto": "A lei entra em vigor em todo o território nacional imediatamente após a publicação, salvo cláusula de vigência."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta. As quatro fases complementares finais do processo legislativo são SANÇÃO (adesão do Chefe do Executivo) → VETO (rejeição total ou parcial) → PROMULGAÇÃO (atesta a EXISTÊNCIA da lei e ordena sua EXECUÇÃO) → PUBLICAÇÃO (dá CONHECIMENTO geral e confere EFICÁCIA/executoriedade).\n\n• PROMULGAÇÃO: declara que a lei existe e que deve ser cumprida. Regra: promulga o Chefe do Executivo. Se ele não o fizer em 48 horas, promulga o Presidente do Legislativo; e se este não o fizer em igual prazo, o Vice-Presidente (art. 66, §7º). A mesma regra se aplica à lei decorrente de sanção tácita (art. 66, §5º).\n• PUBLICAÇÃO: feita no Diário Oficial (no caso do Pará, no Diário Oficial do Estado e/ou no Diário Oficial da ALEPA). Sem publicação, a lei NÃO PRODUZ EFEITOS, não sendo oponível a terceiros. O art. 1º da LINDB fixa o prazo de VACATIO LEGIS: 'salvo disposição contrária, a lei começa a vigorar em todo o País QUARENTA E CINCO DIAS depois de oficialmente publicada' e, nos Estados estrangeiros, quando admitida, TRÊS MESES depois de publicada.\n\n(A) Inverteu os conceitos.\n(C) Errada: a inércia do Chefe do Executivo em promulgar transfere a competência ao Presidente do Legislativo em 48 horas; não há relação com rejeição de veto.\n(D) Errada: a publicação é requisito universal de eficácia, sem exceção por tamanho do ente.\n(E) Errada: a publicação confere EXISTÊNCIA e EFICÁCIA SOCIAL, mas a VIGÊNCIA (obrigatoriedade) só começa com o término da vacatio legis, salvo cláusula expressa de vigência imediata.",
+      "mnemonico": "SANÇÃO = concorda | VETO = discorda | PROMULGAÇÃO = 'a lei existe, cumpra-se' | PUBLICAÇÃO = 'todos saibam'. VACATIO LEGIS padrão: 45 dias (Brasil) e 3 meses (estrangeiro).",
+      "leiSeca": [
+        "CF, art. 66, §§5º e 7º",
+        "LINDB, art. 1º",
+        "LC 95/1998, art. 8º"
+      ],
+      "tags": [
+        "promulgação",
+        "publicação",
+        "vacatio legis",
+        "eficácia da lei"
+      ],
+      "pegadinhas": [
+        "Promulgação (existência) x publicação (eficácia/conhecimento)",
+        "48 horas para o Legislativo promulgar em caso de inércia"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q006",
+      "topico": "pleg-04",
+      "dificuldade": "medio",
+      "enunciado": "As comissões permanentes das Casas Legislativas podem discutir e votar projeto de lei que dispensar, na forma do regimento, a competência do Plenário. Nesse caso, a deliberação terminativa da comissão poderá ser revertida mediante recurso de:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "um décimo dos membros da Casa, apresentado ao Plenário."
+        },
+        {
+          "letra": "B",
+          "texto": "um terço dos membros da Casa."
+        },
+        {
+          "letra": "C",
+          "texto": "maioria absoluta dos membros da Casa."
+        },
+        {
+          "letra": "D",
+          "texto": "dois terços dos membros da Casa."
+        },
+        {
+          "letra": "E",
+          "texto": "cinco por cento dos membros da Casa."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz a literalidade do art. 58, §2º, I, da CF: às comissões, em razão da matéria de sua competência, cabe 'discutir e votar projeto de lei que dispensar, na forma do regimento, a competência do Plenário, SALVO SE HOUVER RECURSO DE UM DÉCIMO DOS MEMBROS DA CASA'.\n\nÉ o chamado PODER TERMINATIVO (ou poder conclusivo) das comissões: o projeto pode ser aprovado definitivamente na comissão, sem passar pelo Plenário, desde que o regimento interno assim permita e desde que não seja interposto recurso por 1/10 dos membros da Casa. Na ALEPA, o Regimento Interno (Resolução nº 02/2022) disciplina em quais matérias se admite a tramitação conclusiva — normalmente excluídas as de maior relevância institucional, como propostas de emenda à Constituição Estadual, códigos e leis orçamentárias.\n\n(B) UM TERÇO é o quórum para CRIAÇÃO DE CPI (art. 58, §3º).\n(C) MAIORIA ABSOLUTA é o quórum de aprovação de LEI COMPLEMENTAR (art. 69) e de REJEIÇÃO DE VETO (art. 66, §4º).\n(D) DOIS TERÇOS é o quórum para SUPERAR O PARECER PRÉVIO DO TRIBUNAL DE CONTAS (art. 71, I) e para autorizar a instauração de processo contra o Presidente da República (art. 51, I).\n(E) Cinco por cento não corresponde a quórum de deliberação do Poder Legislativo; é o percentual mínimo de assinaturas exigido para apresentação de PROJETO DE INICIATIVA POPULAR AOS MUNICÍPIOS (art. 29, XIII, CF).",
+      "estrategia": "Memorize os quóruns em conjunto: eles se repetem em todas as disciplinas institucionais e rendem questão quase garantida na prova.",
+      "mnemonico": "QUÓRUNS DO LEGISLATIVO: 1/10 → recurso contra decisão terminativa de comissão | 1/3 → criação de CPI | maioria simples → deliberações ordinárias | maioria absoluta → lei complementar e rejeição de veto | 2/3 → sustação de processo contra o Presidente e superação de parecer prévio do TC | 3/5 em 2 turnos → emenda constitucional.",
+      "leiSeca": [
+        "CF, art. 58, §2º, I",
+        "CF, art. 58, §3º"
+      ],
+      "tags": [
+        "comissões",
+        "poder terminativo",
+        "recurso",
+        "quórum"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q007",
+      "topico": "pleg-06",
+      "dificuldade": "medio",
+      "enunciado": "Sobre as imunidades dos Deputados Estaduais, aplicáveis por força do art. 27, §1º, da Constituição Federal, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os Deputados Estaduais são invioláveis, civil e penalmente, por quaisquer de suas opiniões, palavras e votos, sem limitação territorial."
+        },
+        {
+          "letra": "B",
+          "texto": "Desde a expedição do diploma, os Deputados Estaduais não poderão ser presos, salvo em flagrante de crime inafiançável, caso em que os autos serão remetidos, dentro de vinte e quatro horas, à Assembleia Legislativa, para que, pelo voto da maioria de seus membros, resolva sobre a prisão."
+        },
+        {
+          "letra": "C",
+          "texto": "Recebida a denúncia contra Deputado Estadual por crime ocorrido após a diplomação, o Tribunal competente enviará os autos à Assembleia, que deverá autorizar previamente o prosseguimento da ação."
+        },
+        {
+          "letra": "D",
+          "texto": "A sustação do processo pela Assembleia Legislativa suspende também o prazo prescricional pelo período do mandato."
+        },
+        {
+          "letra": "E",
+          "texto": "Os Deputados Estaduais são obrigados a testemunhar perante a Assembleia sobre informações recebidas em razão do mandato."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 53, §2º, da CF, aplicável aos Deputados Estaduais por força do art. 27, §1º ('Será de quatro anos o mandato dos Deputados Estaduais, aplicando-se-lhes as regras desta Constituição sobre sistema eleitoral, inviolabilidade, imunidades, remuneração, perda de mandato, licença, impedimentos e incorporação às Forças Armadas'). Os autos são remetidos à Assembleia, que resolve pela MAIORIA de seus membros (maioria absoluta, na leitura consolidada).\n\n(A) Parcialmente correta, porém INCOMPLETA/IMPRECISA: a inviolabilidade por opiniões, palavras e votos (imunidade MATERIAL) é absoluta no que concerne ao NEXO com a função. Para os Vereadores, o STF limita a inviolabilidade aos atos praticados NO MUNICÍPIO (art. 29, VIII). Para Deputados Estaduais e Federais não há limitação territorial expressa, mas a jurisprudência exige o nexo funcional. A imprecisão está em afirmar 'quaisquer de suas opiniões' sem o vínculo com o exercício do mandato.\n(C) Errada: desde a EC nº 35/2001, NÃO há mais necessidade de LICENÇA PRÉVIA da Casa. O Tribunal recebe a denúncia e, se a Casa QUISER, poderá SUSTAR o andamento da ação, por iniciativa de PARTIDO POLÍTICO com representação na Casa e pelo voto da MAIORIA de seus membros, até a decisão final (art. 53, §3º). A sustação só se aplica a crime ocorrido APÓS a diplomação.\n(D) Incompleta/imprecisa: o art. 53, §4º, diz que 'a sustação do processo suspende a prescrição, ENQUANTO DURAR O MANDATO'. Ou seja, a suspensão cessa com o fim do mandato. A alternativa omite essa limitação temporal, o que a torna incorreta como enunciado geral.\n(E) Errada: o art. 53, §6º, dispõe que 'os Deputados e Senadores NÃO serão obrigados a testemunhar sobre informações recebidas ou prestadas em razão do exercício do mandato, nem sobre as pessoas que lhes confiaram ou deles receberam informações'.",
+      "mnemonico": "IMUNIDADES PARLAMENTARES: MATERIAL (inviolabilidade por opiniões, palavras e votos — perpétua, mesmo após o mandato, se houver nexo) + FORMAL (prisão só em flagrante de crime inafiançável; foro especial; sustação por iniciativa de PARTIDO + voto da maioria; sem licença prévia desde a EC 35/2001).",
+      "leiSeca": [
+        "CF, art. 27, §1º",
+        "CF, art. 53 e §§",
+        "CF, art. 29, VIII",
+        "EC nº 35/2001"
+      ],
+      "tags": [
+        "imunidades parlamentares",
+        "mandato",
+        "Deputado Estadual",
+        "foro por prerrogativa"
+      ],
+      "pegadinhas": [
+        "Não há mais licença prévia da Casa (EC 35/2001)",
+        "A suspensão da prescrição dura apenas enquanto durar o mandato"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q008",
+      "topico": "pleg-12",
+      "dificuldade": "medio",
+      "enunciado": "A lei delegada é espécie normativa prevista no art. 68 da Constituição Federal. Sobre ela, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A delegação é outorgada pelo Congresso Nacional ao Presidente da República por meio de resolução, que deverá especificar seu conteúdo e os termos de seu exercício."
+        },
+        {
+          "letra": "B",
+          "texto": "Podem ser objeto de delegação as matérias de competência exclusiva do Congresso Nacional, desde que haja autorização expressa."
+        },
+        {
+          "letra": "C",
+          "texto": "A delegação é vedada para matéria de lei complementar, mas admitida para organização do Poder Judiciário e do Ministério Público."
+        },
+        {
+          "letra": "D",
+          "texto": "Se a resolução determinar a apreciação do projeto pelo Congresso Nacional, este a fará em votação secreta, vedada emenda."
+        },
+        {
+          "letra": "E",
+          "texto": "A lei delegada submete-se a sanção e veto, como qualquer lei ordinária."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 68, caput e §1º, da CF: 'As leis delegadas serão elaboradas pelo Presidente da República, que deverá solicitar a delegação ao Congresso Nacional.' §1º: 'Serão objeto de delegação os atos de competência privativa do Congresso Nacional, ... ' — na verdade, o §1º enumera o que NÃO pode ser objeto de delegação: 'I - atos de competência exclusiva do Congresso Nacional ou de suas Casas; II - matéria de lei complementar; III - organização do Poder Judiciário e do Ministério Público, a carreira e a garantia de seus membros.' O §2º: 'A delegação ao Presidente da República terá a forma de resolução do Congresso Nacional, que especificará seu conteúdo e os termos de seu exercício.' O §3º: 'Se a resolução determinar a apreciação do projeto pelo Congresso Nacional, este a fará em votação ÚNICA, VEDADA QUALQUER EMENDA.'\n\n(B) Errada: os atos de competência EXCLUSIVA do CN ou de suas Casas são EXPRESSAMENTE vedados à delegação (§1º, I).\n(C) Errada: a organização do Poder Judiciário e do MP, a carreira e a garantia de seus membros também são VEDADAS (§1º, III).\n(D) Errada: a apreciação se dá em VOTAÇÃO ÚNICA (não secreta) e é VEDADA QUALQUER EMENDA (§3º).\n(E) Errada: a lei delegada NÃO se sujeita a sanção nem a veto, pois quem a elabora é o próprio Chefe do Executivo, com base em delegação parlamentar. O que se sujeita à deliberação do CN é o PROJETO, se a resolução assim determinar.\n\nObservação prática: a lei delegada caiu em desuso no Brasil (as últimas foram editadas em 1992), mas permanece prevista constitucionalmente e é cobrada em prova.",
+      "mnemonico": "LEI DELEGADA = delegação por RESOLUÇÃO do CN + especificação de conteúdo e termos + NÃO se delega: Exclusiva do CN/Casas, Lei Complementar, Organização do Judiciário/MP (mnemônico 'ELO'). Apreciação: votação única, sem emenda.",
+      "leiSeca": [
+        "CF, art. 59, IV",
+        "CF, art. 68 e §§1º a 3º"
+      ],
+      "tags": [
+        "lei delegada",
+        "espécies normativas",
+        "delegação legislativa"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "pleg-q009",
+      "topico": "pleg-19",
+      "dificuldade": "medio",
+      "enunciado": "Segundo a Lei Complementar nº 95/1998, na redação dada pela Lei Complementar nº 107/2001 e pela Lei Complementar nº 116/2003, assinale a alternativa correta quanto às regras de redação, alteração e consolidação das leis.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "É admitida a cláusula de revogação genérica, como 'revogam-se as disposições em contrário', desde que o projeto seja de iniciativa parlamentar."
+        },
+        {
+          "letra": "B",
+          "texto": "O mesmo assunto não poderá ser regulado por mais de uma lei, exceto quando a preexistente se constitua em complemento da área regulada."
+        },
+        {
+          "letra": "C",
+          "texto": "É permitida a utilização de designação ou sigla de entidade ou órgão sem que se faça menção por extenso na primeira referência."
+        },
+        {
+          "letra": "D",
+          "texto": "A vigência da lei será indicada de forma expressa e de modo a contemplar prazo razoável para que dela se tenha amplo conhecimento, sendo admitida a cláusula 'entra em vigor na data de sua publicação' para leis de grande repercussão."
+        },
+        {
+          "letra": "E",
+          "texto": "As datas devem ser escritas por extenso apenas nos preâmbulos, admitindo-se algarismos no corpo normativo."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 7º, I, da LC 95/1998: 'excetuadas as codificações, CADA LEI TRATARÁ DE UM ÚNICO OBJETO'. E o art. 7º, III: 'a mesma matéria não poderá ser regulada por mais de uma lei, EXCETO QUANDO A PREEXISTENTE SE CONSTITUA EM COMPLEMENTO DA ÁREA REGULADA'. São os princípios da UNICIDADE/EXCLUSIVIDADE do objeto e da VEDAÇÃO À DISPERSÃO NORMATIVA.\n\n(A) Errada: o art. 9º da LC 95/1998 dispõe que 'a cláusula de revogação deverá ENUMERAR, EXPRESSAMENTE, AS LEIS OU DISPOSIÇÕES LEGAIS REVOGADAS'. A revogação genérica ('revogam-se as disposições em contrário') é VEDADA — o mesmo se extrai do art. 2º, §1º, da LINDB ('a lei posterior revoga a anterior quando expressamente o declare, quando seja com ela incompatível ou quando regule inteiramente a matéria de que tratava a lei anterior').\n(C) Errada: o art. 10, II, da LC 95/1998 exige que 'na primeira referência a sigla ou designação de entidade ou órgão, mencione-se por extenso a denominação, seguida da sigla ou designação entre parênteses'.\n(D) Errada: o art. 8º da LC 95/1998 estabelece que 'a vigência da lei será indicada de forma expressa e de modo a contemplar prazo razoável para que dela se tenha amplo conhecimento, RESERVADA A CLÁUSULA \"ENTRA EM VIGOR NA DATA DE SUA PUBLICAÇÃO\" PARA AS LEIS DE PEQUENA REPERCUSSÃO'. A alternativa inverteu.\n(E) Errada: o art. 10, III, determina que 'as datas devem ser escritas por extenso' (ex.: '28 de setembro de 2026').",
+      "mnemonico": "LC 95/1998 — REGRA DE OURO: cada lei trata de UM ÚNICO OBJETO; revogação sempre EXPRESSA e ENUMERADA; 'entra em vigor na data de sua publicação' apenas para leis de PEQUENA repercussão; datas por extenso; siglas por extenso na primeira referência.",
+      "leiSeca": [
+        "LC 95/1998, arts. 7º, 8º, 9º, 10, 11 e 12",
+        "LINDB, art. 2º, §1º"
+      ],
+      "tags": [
+        "técnica legislativa",
+        "LC 95/1998",
+        "revogação",
+        "vigência",
+        "redação"
+      ],
+      "pegadinhas": [
+        "'Entram em vigor na data de sua publicação' é para leis de PEQUENA repercussão",
+        "Revogação genérica é vedada"
+      ],
+      "origem": "autoral"
+    }
+  ]
+}

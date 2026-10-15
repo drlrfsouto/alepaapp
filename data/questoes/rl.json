@@ -1,0 +1,161 @@
+{
+  "materia": "rl",
+  "descricao": "Raciocínio Lógico — 5 questões na prova objetiva (1,0 ponto). Matéria treinável: a repetição eleva o acerto rapidamente.",
+  "questoes": [
+    {
+      "id": "rl-q001",
+      "topico": "rl-12",
+      "dificuldade": "medio",
+      "enunciado": "Considere verdadeira a proposição: \"Todo parecer aprovado pela CCJ é submetido à votação em Plenário.\" A negação correta dessa proposição é:",
+      "alternativas": [
+        { "letra": "A", "texto": "Nenhum parecer aprovado pela CCJ é submetido à votação em Plenário." },
+        { "letra": "B", "texto": "Todo parecer aprovado pela CCJ não é submetido à votação em Plenário." },
+        { "letra": "C", "texto": "Existe pelo menos um parecer aprovado pela CCJ que não é submetido à votação em Plenário." },
+        { "letra": "D", "texto": "Alguns pareceres submetidos à votação em Plenário foram aprovados pela CCJ." },
+        { "letra": "E", "texto": "Todo parecer submetido à votação em Plenário foi aprovado pela CCJ." }
+      ],
+      "gabarito": "C",
+      "comentario": "A negação de uma proposição UNIVERSAL AFIRMATIVA ('Todo A é B') é uma PARTICULAR NEGATIVA ('Existe pelo menos um A que não é B', ou 'Algum A não é B'). Basta UM contraexemplo para derrubar um 'todo'.\n\n(A) e (B) são a UNIVERSAL NEGATIVA ('Nenhum A é B'), que é a CONTRÁRIA, não a contraditória: ambas podem ser falsas simultaneamente com a original, mas a negação lógica exige valores de verdade sempre opostos.\n(D) Conversão particular — não é negação.\n(E) Recíproca (conversão simples) — não é negação, nem sequer é implicação válida.",
+      "mnemonico": "QUADRO DE OPOSIÇÕES: ¬(Todo A é B) = Algum A não é B | ¬(Algum A é B) = Nenhum A é B | ¬(Nenhum A é B) = Algum A é B | ¬(Algum A não é B) = Todo A é B.",
+      "leiSeca": [],
+      "tags": ["lógica proposicional", "quantificadores", "negação"],
+      "pegadinhas": ["'Nenhum' NÃO é negação de 'Todo' — é a contrária"],
+      "origem": "autoral"
+    },
+    {
+      "id": "rl-q002",
+      "topico": "rl-12",
+      "dificuldade": "medio",
+      "enunciado": "Considere a proposição condicional: \"Se o projeto possui vício de iniciativa, então ele é inconstitucional.\" Uma proposição logicamente EQUIVALENTE a essa é:",
+      "alternativas": [
+        { "letra": "A", "texto": "Se o projeto é inconstitucional, então ele possui vício de iniciativa." },
+        { "letra": "B", "texto": "Se o projeto não é inconstitucional, então ele não possui vício de iniciativa." },
+        { "letra": "C", "texto": "Se o projeto não possui vício de iniciativa, então ele não é inconstitucional." },
+        { "letra": "D", "texto": "O projeto possui vício de iniciativa e não é inconstitucional." },
+        { "letra": "E", "texto": "O projeto não possui vício de iniciativa ou não é inconstitucional." }
+      ],
+      "gabarito": "B",
+      "comentario": "A equivalência fundamental da condicional é a CONTRAPOSITIVA (contrarrecíproca): p → q ≡ ¬q → ¬p. Invertem-se os termos E negam-se ambos.\n\nOriginal: 'vício de iniciativa' (p) → 'inconstitucional' (q).\nContrapositiva: 'não inconstitucional' (¬q) → 'não possui vício de iniciativa' (¬p). Alternativa (B).\n\n(A) RECÍPROCA (q → p) — não é equivalente.\n(C) INVERSA (¬p → ¬q) — não é equivalente.\n(D) É a NEGAÇÃO da condicional: ¬(p → q) ≡ p ∧ ¬q.\n(E) Equivale a ¬p ∨ ¬q, que é a negação de p ∧ q — também não é equivalente. A equivalência correta com disjunção seria ¬p ∨ q ('o projeto não possui vício de iniciativa OU é inconstitucional').",
+      "mnemonico": "p → q equivale a: (1) ¬q → ¬p [contrapositiva] | (2) ¬p ∨ q [negação do antecedente OU consequente] | (3) ¬(p ∧ ¬q). NEGAÇÃO: p ∧ ¬q.",
+      "leiSeca": [],
+      "tags": ["condicional", "contrapositiva", "equivalência", "negação"],
+      "pegadinhas": ["Recíproca e inversa NÃO são equivalentes — pegadinha mais comum em prova"],
+      "origem": "autoral"
+    },
+    {
+      "id": "rl-q003",
+      "topico": "rl-07",
+      "dificuldade": "medio",
+      "enunciado": "Seis assessores redigem 24 pareceres em 8 dias, mantendo produtividade constante. Quantos pareceres dez assessores redigirão em 12 dias, nas mesmas condições?",
+      "alternativas": [
+        { "letra": "A", "texto": "40" },
+        { "letra": "B", "texto": "48" },
+        { "letra": "C", "texto": "60" },
+        { "letra": "D", "texto": "72" },
+        { "letra": "E", "texto": "96" }
+      ],
+      "gabarito": "C",
+      "comentario": "Método 1 — produtividade unitária:\n24 pareceres ÷ (6 assessores × 8 dias) = 24 ÷ 48 = 0,5 parecer por assessor-dia.\n10 assessores × 12 dias × 0,5 = 120 × 0,5 = 60 pareceres.\n\nMétodo 2 — regra de três composta:\nP = k × A × D (grandezas diretamente proporcionais).\n24/(6×8) = x/(10×12) → x = 24 × 120/48 = 24 × 2,5 = 60.\n\nAmbas as grandezas (número de assessores e número de dias) são DIRETAMENTE proporcionais à quantidade de pareceres: mais assessores, mais pareceres; mais dias, mais pareceres. Por isso os dois fatores se multiplicam.\n\nEstratégia para regra de três composta: compare cada grandeza com a GRANDEZA DE REFERÊNCIA (a que contém a incógnita). Se forem diretamente proporcionais, mantenha a fração; se inversamente, inverta a fração.",
+      "mnemonico": "COMPOSTA: sempre compare as outras grandezas com a grandeza do X. Direta → mantém. Inversa → inverte.",
+      "leiSeca": [],
+      "tags": ["regra de três composta", "proporcionalidade", "produtividade"],
+      "origem": "autoral"
+    },
+    {
+      "id": "rl-q004",
+      "topico": "rl-08",
+      "dificuldade": "medio",
+      "enunciado": "O valor de uma gratificação foi reajustado em 20% e, no exercício seguinte, sofreu redução de 20% sobre o novo valor. Em relação ao valor original, a gratificação:",
+      "alternativas": [
+        { "letra": "A", "texto": "retornou ao valor original." },
+        { "letra": "B", "texto": "ficou 4% maior." },
+        { "letra": "C", "texto": "ficou 4% menor." },
+        { "letra": "D", "texto": "ficou 2% menor." },
+        { "letra": "E", "texto": "ficou 40% menor." }
+      ],
+      "gabarito": "C",
+      "comentario": "Percentuais sucessivos NÃO se somam — se MULTIPLICAM (por fatores de variação).\n\nFator de aumento de 20% = 1 + 0,20 = 1,20.\nFator de redução de 20% = 1 − 0,20 = 0,80.\nFator acumulado = 1,20 × 0,80 = 0,96.\n\n0,96 corresponde a 96% do valor original, ou seja, uma REDUÇÃO de 4%.\n\nConfirmação numérica: partindo de R$ 1.000,00 → +20% = R$ 1.200,00 → −20% de 1.200 = −R$ 240,00 → R$ 960,00. Perda de R$ 40,00 = 4%.\n\nA resposta intuitiva e ERRADA seria (A): o erro decorre de aplicar o segundo percentual sobre o valor ORIGINAL (20% de 1.000 = 200), e não sobre o valor JÁ reajustado (20% de 1.200 = 240).",
+      "mnemonico": "AUMENTOS/DESCONTOS SUCESSIVOS: multiplique os fatores (1+i) e (1−d). O resultado é SEMPRE menor que o valor inicial quando as taxas são iguais em módulo.",
+      "leiSeca": [],
+      "tags": ["porcentagem", "variações sucessivas", "fator de variação"],
+      "pegadinhas": ["A banca sempre inclui 'retornou ao valor original' como distrator"],
+      "origem": "autoral"
+    },
+    {
+      "id": "rl-q005",
+      "topico": "rl-01",
+      "dificuldade": "medio",
+      "enunciado": "Em uma comissão de 45 deputados, 28 são favoráveis ao Projeto A, 22 são favoráveis ao Projeto B e 7 são contrários a ambos os projetos. Quantos deputados são favoráveis aos dois projetos simultaneamente?",
+      "alternativas": [
+        { "letra": "A", "texto": "5" },
+        { "letra": "B", "texto": "7" },
+        { "letra": "C", "texto": "10" },
+        { "letra": "D", "texto": "12" },
+        { "letra": "E", "texto": "15" }
+      ],
+      "gabarito": "D",
+      "comentario": "Pelo princípio da inclusão-exclusão:\nn(A ∪ B) = n(A) + n(B) − n(A ∩ B)\n\nPasso 1 — total que é favorável a pelo menos um projeto:\nn(A ∪ B) = 45 − 7 (contrários a ambos, ou seja, fora da união) = 38.\n\nPasso 2 — resolver para a interseção:\n38 = 28 + 22 − n(A ∩ B)\n38 = 50 − n(A ∩ B)\nn(A ∩ B) = 50 − 38 = 12.\n\nVerificação por regiões (diagrama de Venn):\n• Somente A: 28 − 12 = 16\n• Somente B: 22 − 12 = 10\n• Ambos: 12\n• Nenhum: 7\n• Total: 16 + 10 + 12 + 7 = 45 ✓",
+      "mnemonico": "INCLUSÃO-EXCLUSÃO: |A ∪ B| = |A| + |B| − |A ∩ B|. Sempre desenhe o Venn e some as quatro regiões para conferir.",
+      "leiSeca": [],
+      "tags": ["teoria dos conjuntos", "inclusão-exclusão", "diagrama de Venn"],
+      "origem": "autoral"
+    },
+    {
+      "id": "rl-q006",
+      "topico": "rl-09",
+      "dificuldade": "medio",
+      "enunciado": "Observe a sequência numérica: 2, 6, 12, 20, 30, ... O próximo termo é:",
+      "alternativas": [
+        { "letra": "A", "texto": "36" },
+        { "letra": "B", "texto": "40" },
+        { "letra": "C", "texto": "42" },
+        { "letra": "D", "texto": "44" },
+        { "letra": "E", "texto": "48" }
+      ],
+      "gabarito": "C",
+      "comentario": "Duas leituras possíveis, ambas conduzindo a 42:\n\nLeitura 1 — produto de consecutivos: cada termo é n × (n+1).\n1×2 = 2 | 2×3 = 6 | 3×4 = 12 | 4×5 = 20 | 5×6 = 30 | 6×7 = 42 ✓\n\nLeitura 2 — diferenças crescentes (sequência de segunda ordem):\n6−2 = 4 | 12−6 = 6 | 20−12 = 8 | 30−20 = 10 | próximo = 30 + 12 = 42 ✓\n\nQuando as diferenças entre termos formam uma progressão aritmética, a sequência original é quadrática. De fato, n(n+1) = n² + n.\n\nEstratégia: em sequências, teste sempre (1) diferença constante, (2) razão constante, (3) diferença das diferenças, (4) produto/soma de consecutivos, (5) alternância de posições pares e ímpares, (6) letras/alfabeto.",
+      "mnemonico": "Diferenças que crescem de 2 em 2 → sequência QUADRÁTICA (n² ± algo). n(n+1) é o padrão mais cobrado.",
+      "leiSeca": [],
+      "tags": ["sequências", "progressões", "raciocínio sequencial"],
+      "origem": "autoral"
+    },
+    {
+      "id": "rl-q007",
+      "topico": "rl-02",
+      "dificuldade": "facil",
+      "enunciado": "Três assessores — Ana, Bruno e Carla — atuam na Comissão de Constituição e Justiça (CCJ), na Comissão de Fiscalização Financeira e Orçamentária (CCFO) e na Comissão de Redação Final, não necessariamente nessa ordem. Sabe-se que:\n\nI. Ana não atua na CCFO.\nII. Bruno atua na Comissão de Redação Final.\n\nCom base apenas nessas informações, é correto concluir que:",
+      "alternativas": [
+        { "letra": "A", "texto": "Ana atua na CCFO e Carla atua na CCJ." },
+        { "letra": "B", "texto": "Ana atua na CCJ e Carla atua na CCFO." },
+        { "letra": "C", "texto": "Carla atua na Comissão de Redação Final." },
+        { "letra": "D", "texto": "Bruno atua na CCFO." },
+        { "letra": "E", "texto": "não é possível determinar a lotação de Carla." }
+      ],
+      "gabarito": "B",
+      "comentario": "Método da tabela de possibilidades (associação lógica):\n\nPasso 1 — Da informação II (afirmação direta): Bruno → Redação Final. Logo, Bruno NÃO está na CCJ nem na CCFO.\nPasso 2 — Da informação I: Ana não está na CCFO. Como Redação Final já é de Bruno, Ana só pode estar na CCJ. Ana → CCJ.\nPasso 3 — Por exclusão: Carla → CCFO.\n\nTabela final:\n• Ana → CCJ\n• Bruno → Comissão de Redação Final\n• Carla → CCFO\n\n(A) Inverte Ana e Carla.\n(C) Contradiz a informação II.\n(D) Contradiz a informação II.\n(E) Falsa: o encadeamento determinou a lotação de todos.",
+      "mnemonico": "Em problemas de associação, monte a tabela 3×3 e marque X nas células impossíveis. Comece SEMPRE pela informação AFIRMATIVA (não condicional).",
+      "leiSeca": [],
+      "tags": ["associação lógica", "dedução", "tabela de possibilidades"],
+      "origem": "autoral"
+    },
+    {
+      "id": "rl-q008",
+      "topico": "rl-06",
+      "dificuldade": "medio",
+      "enunciado": "Uma verba de R$ 4.200,00 será rateada entre três assessores, em partes diretamente proporcionais ao número de pareceres que cada um emitiu no mês: 6, 9 e 6. Quanto receberá o assessor que emitiu 9 pareceres?",
+      "alternativas": [
+        { "letra": "A", "texto": "R$ 1.200,00" },
+        { "letra": "B", "texto": "R$ 1.400,00" },
+        { "letra": "C", "texto": "R$ 1.680,00" },
+        { "letra": "D", "texto": "R$ 1.800,00" },
+        { "letra": "E", "texto": "R$ 2.100,00" }
+      ],
+      "gabarito": "D",
+      "comentario": "Divisão em partes diretamente proporcionais:\n\nPasso 1 — soma das partes (unidades de proporção): 6 + 9 + 6 = 21.\nPasso 2 — valor de cada unidade: R$ 4.200,00 ÷ 21 = R$ 200,00.\nPasso 3 — parte do assessor com 9 pareceres: 9 × R$ 200,00 = R$ 1.800,00.\n\nVerificação: 6 × 200 = 1.200 | 9 × 200 = 1.800 | 6 × 200 = 1.200. Soma = 4.200 ✓\n\nGeneralizando: na divisão diretamente proporcional a a₁, a₂, ..., aₙ de um total T, a parte i é:\nPᵢ = T × aᵢ / (a₁ + a₂ + ... + aₙ)\n\nNa divisão INVERSAMENTE proporcional, usam-se os recíprocos: Pᵢ = T × (1/aᵢ) / Σ(1/aⱼ).",
+      "mnemonico": "DIRETA: soma as partes, divide o total pela soma, multiplica pela parte. INVERSA: some os RECÍPROCOS.",
+      "leiSeca": [],
+      "tags": ["divisão proporcional", "razão e proporção"],
+      "origem": "autoral"
+    }
+  ]
+}

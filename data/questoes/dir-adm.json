@@ -1,0 +1,244 @@
+{
+  "materia": "dir-adm",
+  "descricao": "Direito Administrativo — 69 tópicos do Anexo II. Maior bloco dos Conhecimentos Específicos (estimativa: 3 das 20 questões).",
+  "questoes": [
+    {
+      "id": "dadm-q001",
+      "topico": "dadm-05",
+      "dificuldade": "medio",
+      "enunciado": "A Assembleia Legislativa do Estado do Pará decide criar, em sua estrutura interna, um novo Departamento de Apoio às Comissões, subordinado à Diretoria-Geral, sem personalidade jurídica própria. Essa providência caracteriza exemplo de:",
+      "alternativas": [
+        { "letra": "A", "texto": "descentralização administrativa, pois há transferência de competências a outra entidade." },
+        { "letra": "B", "texto": "desconcentração administrativa, pois há distribuição interna de competências dentro da mesma pessoa jurídica." },
+        { "letra": "C", "texto": "concentração administrativa, pois há extinção de órgãos e reunião de competências." },
+        { "letra": "D", "texto": "centralização administrativa, pois o Estado passa a executar diretamente o serviço." },
+        { "letra": "E", "texto": "delegação de serviço público, pois há transferência da execução a terceiro." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta. A DESCONCENTRAÇÃO é a distribuição INTERNA de competências dentro de uma MESMA pessoa jurídica, criando órgãos públicos (centros de competência sem personalidade jurídica própria), sempre marcada pela HIERARQUIA. Exemplos: ministérios e secretarias, diretorias, departamentos, coordenadorias.\n\nA DESCENTRALIZAÇÃO, por sua vez, transfere a titularidade ou a execução do serviço a OUTRA pessoa jurídica, e NÃO há hierarquia entre os entes envolvidos (há apenas controle/tutela, também chamado de supervisão ministerial). Divide-se em:\n• por OUTORGA (legal, funcional ou por serviços): a lei CRIA a entidade da administração indireta e transfere a TITULARIDADE do serviço. Só pode ser feita por lei específica (art. 37, XIX, CF).\n• por DELEGAÇÃO (negocial ou por colaboração): o Estado transfere apenas a EXECUÇÃO, por contrato (concessão, permissão) ou ato (autorização).\n\n(A) Errada: não há outra pessoa jurídica.\n(C) A concentração é o movimento inverso à desconcentração (reunião de atividades dispersas em um único órgão, com extinção de órgãos).\n(D) A centralização é a execução direta pelo próprio ente federativo, em oposição à descentralização.\n(E) Não há terceiro nem serviço público delegado.",
+      "mnemonico": "DESCONCENTRAÇÃO = mesma pessoa jurídica + ÓRGÃOS + HIERARQUIA (Desconcentração → Dentro). DESCENTRALIZAÇÃO = outra pessoa jurídica + ENTIDADES + SEM hierarquia (Descentralização → Distância).",
+      "leiSeca": ["CF, art. 37, XIX", "Decreto-Lei nº 200/1967, arts. 6º, III, e 10"],
+      "tags": ["organização administrativa", "desconcentração", "descentralização", "órgão público"],
+      "pegadinhas": ["Confundir 'órgão' (sem personalidade) com 'entidade' (com personalidade)"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q002",
+      "topico": "dadm-08",
+      "dificuldade": "medio",
+      "enunciado": "Sobre a Administração Pública indireta, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "Autarquias são pessoas jurídicas de direito privado criadas por decreto do Chefe do Poder Executivo." },
+        { "letra": "B", "texto": "Empresas públicas e sociedades de economia mista submetem-se ao regime jurídico próprio das entidades privadas, inclusive quanto aos direitos e obrigações civis, comerciais, trabalhistas e tributários, mas dependem de concurso público e de licitação." },
+        { "letra": "C", "texto": "As fundações públicas são sempre pessoas jurídicas de direito público, criadas por registro de seus atos constitutivos." },
+        { "letra": "D", "texto": "O capital das sociedades de economia mista é integralmente público, vedada a participação de acionistas privados." },
+        { "letra": "E", "texto": "As entidades da administração indireta estão subordinadas hierarquicamente ao ente que as criou, podendo receber ordens diretas do Ministro ou Secretário de Estado." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 173, §1º, II, da Constituição Federal: as empresas públicas e sociedades de economia mista 'não poderão gozar de privilégios fiscais não extensivos às do setor privado' e, segundo o inciso II, sujeitam-se ao 'regime jurídico próprio das empresas privadas, inclusive quanto aos direitos e obrigações civis, comerciais, trabalhistas e tributários'. Contudo, por serem integrantes da Administração Pública, submetem-se às exigências do art. 37: concurso público (inciso II), licitação (inciso XXI, regulamentado pela Lei 14.133/2021 e, para as estatais, pela Lei 13.303/2016) e observância do teto remuneratório quando dependentes do tesouro (art. 37, XI).\n\n(A) Errada: autarquias são pessoas jurídicas de DIREITO PÚBLICO, criadas por LEI ESPECÍFICA (art. 37, XIX, CF) — não por decreto. Exercem atividade típica de Estado, gozam de prerrogativas como prescrição quinquenal, impenhorabilidade de bens, privilégios processuais (prazos, reexame necessário) e são dotadas de autoadministração.\n(C) Errada: as fundações públicas podem ser de direito PÚBLICO ou de direito PRIVADO (art. 37, XIX: 'a lei específica... definirá as áreas de sua atuação'). Se de direito público (fundação autárquica), são criadas por lei; se de direito privado, a lei AUTORIZA a criação e o registro dos atos constitutivos no órgão competente lhes confere personalidade.\n(D) Errada: na sociedade de economia mista, a MAIORIA do capital votante deve pertencer ao Poder Público (é sociedade ANÔNIMA, sempre sob forma de S.A., e seu objeto é atividade econômica ou, excepcionalmente, serviço público). A empresa PÚBLICA é que tem capital 100% público e pode adotar qualquer forma societária.\n(E) Errada: não há HIERARQUIA entre o ente político e as entidades da administração indireta; há VINCULAÇÃO/SUPERVISÃO (tutela administrativa), exercida nos limites da lei. Hierarquia existe entre órgãos, dentro da mesma pessoa jurídica (desconcentração).",
+      "mnemonico": "EMPRESA PÚBLICA = capital 100% público + qualquer forma societária (ex.: Caixa). SOCIEDADE DE ECONOMIA MISTA = capital misto com maioria votante pública + SEMPRE S.A. (ex.: Banco do Brasil, Petrobras).",
+      "leiSeca": ["CF, art. 37, XIX e XX", "CF, art. 173, §1º", "Lei nº 13.303/2016"],
+      "tags": ["administração indireta", "autarquia", "empresa pública", "sociedade de economia mista", "fundação pública"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q003",
+      "topico": "dadm-27",
+      "dificuldade": "medio",
+      "enunciado": "Os elementos (requisitos) do ato administrativo são, na doutrina clássica:",
+      "alternativas": [
+        { "letra": "A", "texto": "presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade." },
+        { "letra": "B", "texto": "competência, finalidade, forma, motivo e objeto." },
+        { "letra": "C", "texto": "legalidade, impessoalidade, moralidade, publicidade e eficiência." },
+        { "letra": "D", "texto": "mérito, conveniência, oportunidade, discricionariedade e vinculação." },
+        { "letra": "E", "texto": "normativo, ordinatório, negocial, enunciativo e punitivo." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) apresenta os ELEMENTOS (ou REQUISITOS) do ato administrativo, também chamados de plano de existência/validade: COMPETÊNCIA (sujeito), FINALIDADE, FORMA, MOTIVO e OBJETO (conteúdo). É a base do art. 2º da Lei nº 4.717/1965 (Lei da Ação Popular), que enumera a competência, a finalidade, a forma, o motivo e o objeto como requisitos de validade. Na Lei nº 9.784/1999 (e na Lei estadual nº 8.972/2020), o art. 50 exige a indicação dos fatos e dos fundamentos jurídicos.\n\nVícios e consequências:\n• COMPETÊNCIA → ato é ANULÁVEL quando o vício é de competência (relativa) e quanto ao sujeito, admite-se CONVALIDAÇÃO (art. 55 da Lei 9.784/1999: 'em decisão na qual se evidencie não acarretarem lesão ao interesse público nem prejuízo a terceiros, os atos que apresentarem defeitos sanáveis poderão ser convalidados pela própria Administração').\n• FINALIDADE → desvio de finalidade/poder: vício INSANÁVEL, gera nulidade.\n• FORMA → em regra sanável, salvo quando a forma for essencial à validade do ato.\n• MOTIVO → teoria dos motivos determinantes: a validade do ato vincula-se à veracidade dos motivos alegados. Motivo falso ou inexistente → nulidade.\n• OBJETO → deve ser lícito, possível, certo e moral.\n\n(A) São os ATRIBUTOS (qualidades/prerrogativas) do ato administrativo: Presunção de legitimidade e veracidade, Autoexecutoriedade, Tipicidade e Imperatividade (PATI).\n(C) São os PRINCÍPIOS do art. 37, caput, da CF (LIMPE).\n(D) São aspectos do MÉRITO administrativo (conveniência e oportunidade) e do regime de vinculação/discricionariedade.\n(E) São as ESPÉCIES (classificação) dos atos administrativos segundo a doutrina de Hely Lopes Meirelles.",
+      "mnemonico": "ELEMENTOS = COM FI FOR MO OB (Competência, Finalidade, Forma, Motivo, Objeto). ATRIBUTOS = PATI (Presunção de legitimidade, Autoexecutoriedade, Tipicidade, Imperatividade).",
+      "leiSeca": ["Lei nº 4.717/1965, art. 2º", "Lei nº 9.784/1999, art. 55", "Lei estadual nº 8.972/2020"],
+      "tags": ["atos administrativos", "elementos", "atributos", "convalidação"],
+      "pegadinhas": ["A banca troca ELEMENTOS por ATRIBUTOS ou por ESPÉCIES"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q004",
+      "topico": "dadm-37",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre a extinção dos atos administrativos, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A revogação incide sobre atos ilegais e produz efeitos retroativos (ex tunc)." },
+        { "letra": "B", "texto": "A anulação incide sobre atos válidos, mas inoportunos ou inconvenientes, e produz efeitos prospectivos (ex nunc)." },
+        { "letra": "C", "texto": "A Administração pode anular seus próprios atos quando eivados de vícios que os tornem ilegais, e revogá-los por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos." },
+        { "letra": "D", "texto": "A cassação decorre do desaparecimento de pressuposto de fato ou de direito que justificava a existência do ato." },
+        { "letra": "E", "texto": "A caducidade é a retirada do ato porque o particular descumpriu as condições a ele impostas." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) reproduz a Súmula 473 do STF: 'A administração pode anular seus próprios atos, quando eivados de vícios que os tornam ilegais, porque deles não se originam direitos; ou revogá-los, por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos, e ressalvada, em todos os casos, a apreciação judicial.' A redação é complementada pelo art. 53 da Lei nº 9.784/1999.\n\nAs demais invertem os conceitos:\n(A) ERRADA: a REVOGAÇÃO incide sobre atos VÁLIDOS e legítimos, mas que se tornaram inoportunos ou inconvenientes (mérito administrativo). Seus efeitos são EX NUNC (não retroagem), porque o ato era válido até então.\n(B) ERRADA: a ANULAÇÃO (ou invalidação) incide sobre atos ILEGAIS e produz efeitos EX TUNC (retroativos), atingindo inclusive os benefícios já produzidos, ressalvada a proteção de terceiros de boa-fé.\n(D) ERRADA: a definição dada é a da CADUCIDADE — retirada do ato porque sobreveio norma jurídica ou deixou de existir o pressuposto de fato/direito. A CASSAÇÃO é a retirada do ato porque o PARTICULAR deixou de cumprir as condições impostas (ex.: cassação de licença de funcionamento por descumprimento das exigências sanitárias).\n(E) ERRADA: inverteu cassação e caducidade.\n\nPrazo decadencial: o direito da Administração de ANULAR atos administrativos de que decorram efeitos favoráveis aos destinatários decai em 5 (cinco) anos, salvo comprovada má-fé (art. 54 da Lei 9.784/1999).",
+      "mnemonico": "ANULAÇÃO = ilegalidade → EX TUNC | REVOGAÇÃO = conveniência/oportunidade → EX NUNC | CASSAÇÃO = culpa do PARTICULAR | CADUCIDADE = norma nova ou fim do pressuposto | CONTRAPOSIÇÃO = ato novo incompatível com o anterior.",
+      "leiSeca": ["Súmula 473 do STF", "Lei nº 9.784/1999, arts. 53 e 54", "Lei estadual nº 8.972/2020"],
+      "tags": ["extinção dos atos administrativos", "anulação", "revogação", "cassação", "caducidade", "Súmula 473"],
+      "pegadinhas": ["Cassação (particular descumpre) x Caducidade (norma/pressuposto novo)"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q005",
+      "topico": "dadm-52",
+      "dificuldade": "dificil",
+      "enunciado": "Nos termos da Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos), assinale a alternativa que apresenta apenas MODALIDADES de licitação.",
+      "alternativas": [
+        { "letra": "A", "texto": "pregão, concorrência, concurso, leilão e diálogo competitivo." },
+        { "letra": "B", "texto": "convite, tomada de preços, concorrência, pregão e leilão." },
+        { "letra": "C", "texto": "menor preço, melhor técnica, técnica e preço, maior lance e maior retorno econômico." },
+        { "letra": "D", "texto": "inexigibilidade, dispensa, licitação deserta e licitação fracassada." },
+        { "letra": "E", "texto": "concorrência, pregão, consulta, credenciamento e pré-qualificação." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 28 da Lei nº 14.133/2021: 'São modalidades de licitação: I - pregão; II - concorrência; III - concurso; IV - leilão; V - diálogo competitivo.'\n\nUso de cada modalidade:\n• PREGÃO: obrigatório para aquisição de bens e serviços COMUNS (art. 6º, XLI). Critério de julgamento: menor preço ou maior desconto. Forma eletrônica preferencial.\n• CONCORRÊNCIA: bens e serviços ESPECIAIS e obras e serviços comuns ou especiais de engenharia. Critérios: menor preço, melhor técnica ou conteúdo artístico, técnica e preço, maior desconto, maior retorno econômico.\n• CONCURSO: escolha de trabalho técnico, científico ou artístico, com prêmio ou remuneração.\n• LEILÃO: alienação de bens imóveis ou de bens móveis inservíveis ou legalmente apreendidos. Critério: MAIOR LANCE.\n• DIÁLOGO COMPETITIVO (inovação da 14.133): para contratações que envolvam inovação tecnológica ou técnica, ou soluções que dependam de adaptação de opções disponíveis no mercado, ou especificações que não podem ser definidas de modo suficiente pela Administração. Desenvolve-se em duas fases: fase de diálogos e fase competitiva.\n\n(B) ERRADA: CONVITE e TOMADA DE PREÇOS foram EXTINTOS pela Lei 14.133/2021 (existiam na Lei 8.666/1993).\n(C) São CRITÉRIOS DE JULGAMENTO (art. 33), não modalidades.\n(D) São hipóteses de CONTRATAÇÃO DIRETA (inexigibilidade — art. 74; dispensa — art. 75) e situações de resultado da licitação.\n(E) Credenciamento (art. 79) e pré-qualificação (art. 80) são PROCEDIMENTOS AUXILIARES das licitações e contratações, ao lado do registro de preços e do registro cadastral.",
+      "mnemonico": "MODALIDADES (14.133) = PCCLD: Pregão, Concorrência, Concurso, Leilão, Diálogo competitivo. AUXILIARES = credenciamento, pré-qualificação, procedimento de manifestação de interesse, sistema de registro de preços, registro cadastral.",
+      "leiSeca": ["Lei nº 14.133/2021, arts. 28, 32, 33, 74, 75, 79 e 80"],
+      "tags": ["licitações", "Lei 14.133/2021", "modalidades", "diálogo competitivo"],
+      "pegadinhas": ["Convite e tomada de preços NÃO existem mais na Lei 14.133/2021", "Confundir modalidade com critério de julgamento"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q006",
+      "topico": "dadm-61",
+      "dificuldade": "dificil",
+      "enunciado": "Um veículo oficial da Assembleia Legislativa do Estado do Pará, conduzido por servidor em serviço, colide com o automóvel de um particular, causando-lhe danos materiais. Sobre a responsabilidade civil do Estado no caso, é correto afirmar que:",
+      "alternativas": [
+        { "letra": "A", "texto": "o Estado responde subjetivamente, sendo indispensável a comprovação de dolo ou culpa do servidor condutor." },
+        { "letra": "B", "texto": "o Estado responde objetivamente, pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o servidor em caso de dolo ou culpa." },
+        { "letra": "C", "texto": "o particular deve acionar diretamente o servidor, pois apenas agentes políticos geram responsabilidade estatal." },
+        { "letra": "D", "texto": "a responsabilidade é objetiva e independe de qualquer excludente, ainda que comprovada culpa exclusiva da vítima ou força maior." },
+        { "letra": "E", "texto": "o Estado somente responde se houver prévia condenação criminal do servidor pelo mesmo fato." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 37, §6º, da Constituição Federal: 'As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa.'\n\nElementos da responsabilidade civil objetiva do Estado (TEORIA DO RISCO ADMINISTRATIVO):\n1. CONDUTA do agente público (comissiva ou, na omissão, quando havia dever específico de agir);\n2. DANO (material, moral ou estético);\n3. NEXO CAUSAL entre conduta e dano.\nNÃO se exige dolo ou culpa. A culpa é relevante apenas para o DIREITO DE REGRESSO do Estado contra o agente.\n\n(A) Errada: a responsabilidade é OBJETIVA (teoria do risco administrativo), adotada pela CF desde 1946 para condutas comissivas.\n(C) Errada: o STF (Tema 940 da repercussão geral, RE 1.027.633) firmou que as ações por danos causados por agente público devem ser ajuizadas CONTRA O ESTADO ou a pessoa jurídica prestadora do serviço público, sendo PARTE ILEGÍTIMA para a ação o autor do ato. O Estado, então, exerce o direito de regresso.\n(D) Errada: a responsabilidade objetiva pode ser EXCLUÍDA por culpa exclusiva da vítima, caso fortuito ou força maior, e ATENUADA por culpa concorrente da vítima.\n(E) Errada: as esferas civil, penal e administrativa são independentes (art. 37, §6º, c/c art. 935 do Código Civil).",
+      "mnemonico": "RISCO ADMINISTRATIVO = conduta + dano + nexo (SEM culpa). REGRESSO = exige dolo ou culpa do agente. OMISSÃO GENÉRICA = responsabilidade SUBJETIVA (culpa anônima/falta do serviço).",
+      "leiSeca": ["CF, art. 37, §6º", "Código Civil, art. 935", "STF, RE 1.027.633 (Tema 940)"],
+      "tags": ["responsabilidade civil do Estado", "risco administrativo", "direito de regresso", "teoria da subjetividade"],
+      "pegadinhas": ["Omissão do Estado: em regra responsabilidade SUBJETIVA (falta do serviço), salvo quando houver dever específico de guarda/proteção (custodiados, presos, alunos em escola pública) → objetiva"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q007",
+      "topico": "dadm-41",
+      "dificuldade": "medio",
+      "enunciado": "O poder que permite à Administração limitar ou condicionar o exercício de direitos e liberdades individuais em benefício do interesse coletivo, com atributos de discricionariedade, autoexecutoriedade e coercibilidade, é o poder:",
+      "alternativas": [
+        { "letra": "A", "texto": "regulamentar" },
+        { "letra": "B", "texto": "hierárquico" },
+        { "letra": "C", "texto": "disciplinar" },
+        { "letra": "D", "texto": "de polícia" },
+        { "letra": "E", "texto": "normativo" }
+      ],
+      "gabarito": "D",
+      "comentario": "(D) está correta. O art. 78 do Código Tributário Nacional define o poder de polícia: 'Considera-se poder de polícia a atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade, regula a prática de ato ou abstenção de fato, em razão de interesse público concernente à segurança, à higiene, à ordem, aos costumes, à disciplina da produção e do mercado, ao exercício de atividades econômicas dependentes de concessão ou autorização do Poder Público, à tranquilidade pública ou ao respeito à propriedade e aos direitos individuais ou coletivos.'\n\nATRIBUTOS do poder de polícia:\n• DISCRICIONARIEDADE (em regra — na escolha do motivo, do meio e da intensidade; há hipóteses vinculadas, como a licença, quando preenchidos os requisitos legais);\n• AUTOEXECUTORIEDADE (a Administração executa diretamente suas decisões, sem necessidade de prévia autorização judicial);\n• COERCIBILIDADE (imposição obrigatória, independentemente da concordância do particular).\n\nCICLO DO PODER DE POLÍCIA (4 fases): ordem de polícia (norma) → consentimento de polícia (autorizações e licenças) → fiscalização de polícia → sanção de polícia (multa, interdição, apreensão).\n\nLimites: legalidade, proporcionalidade/razoabilidade e respeito aos direitos fundamentais. O STF admite a delegação do poder de polícia FISCALIZATÓRIO e SANIONATÓRIO (fase de execução) a entidades de direito privado da administração indireta, mas NÃO a delegação da fase normativa/legislativa (ADI 1.717). A Lei 13.303/2016 e a jurisprudência recente admitem o exercício do poder de polícia por estatais em situações específicas.\n\n(A) Poder regulamentar: editar decretos e regulamentos para fiel execução das leis (art. 84, IV, CF) — não incide diretamente sobre a esfera de liberdade do particular.\n(B) Poder hierárquico: ordenar, coordenar, controlar e corrigir as atividades dos órgãos e agentes PÚBLICOS internos.\n(C) Poder disciplinar: aplicar sanções a quem tem VÍNCULO ESPECIAL com a Administração (servidores e particulares contratados/permissionários). Diferencia-se do poder de polícia justamente pelo vínculo específico.\n(E) Poder normativo é gênero que abrange o regulamentar e a edição de atos normativos infralegais.",
+      "mnemonico": "PODER DE POLÍCIA = limita direitos individuais em prol do coletivo (vínculo GERAL). PODER DISCIPLINAR = sanciona quem tem vínculo ESPECIAL. Atributos do poder de polícia: DAC (Discricionariedade, Autoexecutoriedade, Coercibilidade).",
+      "leiSeca": ["CTN, art. 78", "CF, art. 84, IV", "Lei nº 14.133/2021"],
+      "tags": ["poderes administrativos", "poder de polícia", "atributos", "ciclo de polícia"],
+      "pegadinhas": ["Poder disciplinar exige vínculo especial; poder de polícia incide sobre qualquer particular"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q008",
+      "topico": "dadm-69",
+      "dificuldade": "medio",
+      "enunciado": "Sobre o processo administrativo no âmbito da Administração Pública do Estado do Pará (Lei nº 8.972, de 13 de janeiro de 2020), assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A competência administrativa é renunciável em sua totalidade, desde que haja conveniência devidamente justificada." },
+        { "letra": "B", "texto": "Podem ser objeto de delegação a edição de atos de caráter normativo e a decisão de recursos administrativos." },
+        { "letra": "C", "texto": "É vedada a renúncia total ou parcial de poderes ou competências, salvo autorização em lei; e não podem ser objeto de delegação a edição de atos de caráter normativo, a decisão de recursos administrativos e as matérias de competência exclusiva do órgão ou entidade." },
+        { "letra": "D", "texto": "Os atos do processo administrativo dependem sempre de forma determinada, sob pena de nulidade absoluta." },
+        { "letra": "E", "texto": "A prática de atos administrativos eletrônicos somente pode ocorrer em horário comercial, vedado o protocolo após as 18 horas." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) reproduz os princípios e regras estruturantes da Lei estadual nº 8.972/2020, que segue de perto a Lei Federal nº 9.784/1999:\n• Competência é IRRENUNCIÁVEL e se exerce pelos órgãos e entidades a que foi atribuída como própria, SALVO os casos de DELEGAÇÃO e AVOCAÇÃO legalmente admitidos.\n• Veda-se a renúncia total ou parcial de poderes ou competências, salvo autorização em lei.\n• NÃO podem ser objeto de delegação: (i) a edição de atos de caráter NORMATIVO; (ii) a DECISÃO DE RECURSOS ADMINISTRATIVOS; (iii) as matérias de COMPETÊNCIA EXCLUSIVA do órgão ou entidade.\n\n(A) Errada: a competência é irrenunciável.\n(B) Errada: são exatamente as hipóteses vedadas à delegação.\n(D) Errada: os atos do processo NÃO dependem de forma determinada senão quando a lei expressamente a exigir, observada a racionalização prevista na Lei Federal nº 13.726/2018 (Lei da Desburocratização). Devem, porém, ser produzidos por escrito, em vernáculo, com data, local de realização e assinatura da autoridade responsável.\n(E) Errada: a prática de atos administrativos ELETRÔNICOS pode ocorrer em qualquer horário, até as 23h59 do último dia do prazo.",
+      "mnemonico": "NÃO SE DELEGA: NORMATIVO, RECURSO e COMPETÊNCIA EXCLUSIVA (mnemônico 'NoReEx'). AVOCAR só excepcionalmente, temporariamente e quando não houver competência exclusiva.",
+      "leiSeca": ["Lei estadual nº 8.972/2020", "Lei nº 9.784/1999, arts. 11 a 15", "Lei nº 13.726/2018"],
+      "tags": ["processo administrativo", "Lei 8.972/2020", "competência", "delegação", "avocação"],
+      "revisar": "Confira o texto vigente da Lei estadual nº 8.972/2020 no sítio da ALEPA/SEPLAD-PA para os artigos exatos (prazos, recursos e revisão).",
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q009",
+      "topico": "dadm-69",
+      "dificuldade": "medio",
+      "enunciado": "Ainda sobre a Lei estadual nº 8.972/2020 e, supletivamente, a Lei Federal nº 9.784/1999, assinale a alternativa correta quanto a prazos e recursos no processo administrativo.",
+      "alternativas": [
+        { "letra": "A", "texto": "Inexistindo disposição legal específica, os atos do órgão ou autoridade responsável pelo processo e dos administrados devem ser praticados no prazo de 5 dias, prorrogável até o dobro mediante justificativa." },
+        { "letra": "B", "texto": "O recurso administrativo exige, em regra, garantia de instância (depósito prévio) para ser conhecido." },
+        { "letra": "C", "texto": "O recurso administrativo tem sempre efeito suspensivo automático." },
+        { "letra": "D", "texto": "É admitida a reformatio in pejus no processo administrativo, ainda que sem prévia ciência do recorrente." },
+        { "letra": "E", "texto": "O direito da Administração de anular atos de que decorram efeitos favoráveis aos destinatários prescreve em 20 anos." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz a regra do prazo geral subsidiário (art. 24 da Lei 9.784/1999 e dispositivo equivalente na Lei estadual 8.972/2020): 'Inexistindo disposição legal específica, os atos do órgão ou autoridade responsável pelo processo e dos administrados que dele participem devem ser praticados no prazo de 5 (cinco) dias, salvo motivo de força maior', podendo ser dilatado até o dobro, mediante justificativa comprovada.\n\n(B) Errada: é VEDADA a exigência de garantia de instância (depósito prévio) como condição de admissibilidade de recurso administrativo — art. 56, §1º, da Lei 9.784/1999, e Súmula Vinculante nº 21 do STF: 'É inconstitucional a exigência de depósito ou arrolamento prévios de dinheiro ou bens para admissibilidade de recurso administrativo.'\n(C) Errada: o recurso administrativo tem, em regra, apenas efeito DEVOLUTIVO. O efeito SUSPENSIVO só ocorre se houver justo receio de prejuízo de difícil ou incerta reparação, e mediante decisão fundamentada da autoridade recorrida ou hierarquicamente superior (art. 61 da Lei 9.784/1999).\n(D) Errada em parte: a reformatio in pejus é admitida no processo administrativo (não há vedação expressa), MAS é indispensável assegurar ao recorrente CIÊNCIA da nova interpretação e oportunidade de manifestação, em respeito ao contraditório e à ampla defesa (art. 64, parágrafo único, da Lei 9.784/1999). O erro do item está na ausência de ciência prévia.\n(E) Errada: trata-se de DECADÊNCIA (não prescrição), com prazo de 5 ANOS, salvo comprovada má-fé (art. 54 da Lei 9.784/1999).",
+      "mnemonico": "PRAZOS-CHAVE (Lei 9.784): 5 dias (atos em geral, sem previsão legal) | 10 dias (recurso) | 5 dias (recurso contra indeferimento/audiência) | 30 dias (decisão, prorrogáveis por +30) | 5 anos (decadência para anular atos favoráveis).",
+      "leiSeca": ["Lei nº 9.784/1999, arts. 24, 54, 56 §1º, 61, 64 e 66", "Súmula Vinculante nº 21 do STF", "Lei estadual nº 8.972/2020"],
+      "tags": ["processo administrativo", "prazos", "recursos", "decadência", "súmula vinculante 21"],
+      "revisar": "Confirme na Lei estadual nº 8.972/2020 os prazos específicos, que podem diferir da lei federal em pontos pontuais.",
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q010",
+      "topico": "dadm-58",
+      "dificuldade": "medio",
+      "enunciado": "Sobre o controle exercido pelos Tribunais de Contas, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "O Tribunal de Contas integra o Poder Judiciário, razão pela qual suas decisões têm natureza jurisdicional." },
+        { "letra": "B", "texto": "O Tribunal de Contas julga as contas dos administradores e demais responsáveis por dinheiros, bens e valores públicos, e emite parecer prévio sobre as contas do Chefe do Poder Executivo." },
+        { "letra": "C", "texto": "O Tribunal de Contas tem competência para sustar diretamente contratos administrativos irregulares." },
+        { "letra": "D", "texto": "Os pareceres do Tribunal de Contas sobre as contas do Chefe do Executivo vinculam definitivamente o julgamento do Poder Legislativo." },
+        { "letra": "E", "texto": "O controle exercido pelo Tribunal de Contas é classificado como controle interno da Administração Pública." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta e reflete o art. 71, II, da CF (julgar as contas dos administradores e demais responsáveis por dinheiros, bens e valores públicos da administração direta e indireta) combinado com o art. 71, I (apreciar as contas prestadas anualmente pelo Chefe do Poder Executivo, mediante PARECER PRÉVIO que só deixará de prevalecer por decisão de dois terços dos membros da Casa Legislativa).\n\nA distinção é essencial:\n• CONTAS DO CHEFE DO EXECUTIVO (contas de governo) → o TC APRECIA (parecer prévio) e o LEGISLATIVO JULGA.\n• CONTAS DOS DEMAIS ADMINISTRADORES (contas de gestão) → o TC JULGA diretamente.\n\n(A) Errada: o Tribunal de Contas é órgão de controle EXTERNO AUXILIAR DO PODER LEGISLATIVO (art. 71, caput, CF). Não integra o Poder Judiciário e suas decisões têm natureza ADMINISTRATIVA, embora dotadas de eficácia de título executivo (art. 71, §3º, para imputação de débito ou multa).\n(C) Errada: em caso de contrato, o ato de sustação será adotado DIRETAMENTE PELO PODER LEGISLATIVO, que solicitará ao TC, de imediato, a adoção das medidas cabíveis (art. 71, §1º). Se o Legislativo/Tribunal não efetivar a sustação em 90 dias, o Tribunal decidirá a respeito (§2º). O TC susta DIRETAMENTE ATOS (art. 71, X), não contratos.\n(D) Errada: o parecer prévio só é afastado por decisão de DOIS TERÇOS dos membros da Assembleia — logo, não é definitivamente vinculante no sentido de dispensar o julgamento político do Legislativo.\n(E) Errada: é CONTROLE EXTERNO. O controle INTERNO é exercido por cada Poder sobre seus próprios órgãos (art. 74 da CF), que deve APOIAR o controle externo no exercício de sua missão institucional (§1º).",
+      "mnemonico": "TC: JULGA contas de GESTÃO; APRECIA (parecer prévio) contas de GOVERNO. SUSTA ATO diretamente; em CONTRATO, pede ao Legislativo.",
+      "leiSeca": ["CF, art. 71, I, II, X, §§1º, 2º e 3º", "CF, art. 74", "CF, art. 75", "CE/PA, arts. 116 a 119"],
+      "tags": ["controle da administração", "Tribunal de Contas", "parecer prévio", "controle externo"],
+      "pegadinhas": ["Sustação de contrato é do LEGISLATIVO; sustação de ato é do TC"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q011",
+      "topico": "dadm-25",
+      "dificuldade": "medio",
+      "enunciado": "Sobre o Regime Jurídico Único dos Servidores Públicos Civis do Estado do Pará (Lei Estadual nº 5.810, de 24 de janeiro de 1994) e as disposições constitucionais aplicáveis, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "O servidor aprovado em concurso público adquire estabilidade imediatamente após a posse no cargo." },
+        { "letra": "B", "texto": "A estabilidade do servidor efetivo exige três anos de efetivo exercício, aprovação em concurso público e avaliação especial de desempenho por comissão instituída para essa finalidade." },
+        { "letra": "C", "texto": "Como condição para a aquisição da estabilidade, é dispensável a avaliação especial de desempenho, bastando o estágio probatório formal." },
+        { "letra": "D", "texto": "O servidor estável somente pode perder o cargo por sentença judicial transitada em julgado, vedadas as demais hipóteses constitucionais." },
+        { "letra": "E", "texto": "A investidura em cargo público efetivo ocorre com a publicação do ato de nomeação." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 41, caput, da CF: 'São estáveis após três anos de efetivo exercício os servidores nomeados para cargo de provimento efetivo em virtude de concurso público.' O §1º acrescenta: 'O servidor público estável só perderá o cargo: I - em virtude de sentença judicial transitada em julgado; II - mediante processo administrativo em que lhe seja assegurada ampla defesa; III - mediante procedimento de avaliação periódica de desempenho, na forma de lei complementar, assegurada ampla defesa.' O §4º dispõe: 'Como condição para a aquisição da estabilidade, é obrigatória a avaliação especial de desempenho por comissão instituída para essa finalidade.'\n\n(A) Errada: a estabilidade exige 3 anos de EFETIVO EXERCÍCIO (prazo que também corresponde ao estágio probatório, conforme o STF; a Lei 8.112/1993 fala em 24 meses, mas o entendimento consolidado é de 3 anos após a EC 19/1998).\n(C) Errada: a avaliação especial de desempenho é OBRIGATÓRIA (art. 41, §4º).\n(D) Errada: além da sentença judicial transitada em julgado, o servidor estável pode perder o cargo por PAD com ampla defesa, por avaliação periódica de desempenho (na forma de lei complementar) e por excesso de despesa com pessoal (art. 169, §4º, CF), com direito a indenização e preferência na recondução.\n(E) Errada: a NOMEAÇÃO é a forma de PROVIMENTO; a INVESTIDURA se dá com a POSSE (art. 37, II, CF e legislação de regência).",
+      "mnemonico": "ESTABILIDADE = concurso público + 3 anos de efetivo exercício + avaliação especial de desempenho + aprovação no estágio probatório. INVESTIDURA = POSSE (não é a nomeação).",
+      "leiSeca": ["CF, art. 41", "CF, art. 169, §4º", "Lei estadual nº 5.810/1994"],
+      "tags": ["RJU-PA", "Lei 5.810/1994", "estabilidade", "estágio probatório", "agentes públicos"],
+      "revisar": "Confira na Lei estadual nº 5.810/1994 os títulos relativos a provimento, vacância, direitos, deveres e regime disciplinar, com destaque para as penalidades (advertência, suspensão, demissão, cassação de aposentadoria/disponibilidade, destituição) e seus prazos prescricionais.",
+      "origem": "autoral"
+    },
+    {
+      "id": "dadm-q012",
+      "topico": "dadm-04",
+      "dificuldade": "facil",
+      "enunciado": "O princípio que impõe à Administração Pública o dever de atuar com presteza, perfeição e rendimento funcional, tendo sido expressamente incorporado ao texto constitucional pela Emenda Constitucional nº 19/1998, é o princípio da:",
+      "alternativas": [
+        { "letra": "A", "texto": "legalidade" },
+        { "letra": "B", "texto": "impessoalidade" },
+        { "letra": "C", "texto": "moralidade" },
+        { "letra": "D", "texto": "publicidade" },
+        { "letra": "E", "texto": "eficiência" }
+      ],
+      "gabarito": "E",
+      "comentario": "(E) está correta: a EFICIÊNCIA foi incluída no art. 37, caput, da CF pela EC nº 19/1998 (Reforma Administrativa/Gerencial). O art. 37, caput, enumera: LEGALIDADE, IMPESSOALIDADE, MORALIDADE, PUBLICIDADE e EFICIÊNCIA.\n\nConteúdo do princípio da eficiência (Maria Sylvia Zanella Di Pietro): atua em dois planos — (i) quanto ao MODO de atuação do agente público, do qual se espera o melhor desempenho possível; e (ii) quanto ao MODO de organizar, estruturar e disciplinar a administração pública, exigindo racionalidade de gestão e resultados positivos para o serviço público.\n\nDesdobramentos práticos: avaliação periódica de desempenho (art. 39, §2º), perda do cargo do servidor estável por avaliação insuficiente (art. 41, §1º, III), controle de resultados e autonomia gerencial/orçamentária (art. 37, §8º, contratos de gestão), e as agências executivas.\n\nAs demais alternativas também são princípios expressos do art. 37, caput, mas já constavam do texto original de 1988.\n\nPrincípios IMPLÍCITOS (reconhecidos pela doutrina e legislação infraconstitucional): supremacia do interesse público, indisponibilidade do interesse público, razoabilidade/proporcionalidade, autotutela, motivação, segurança jurídica/proteção à confiança, continuidade dos serviços públicos, especialidade, controle/juridicidade.",
+      "mnemonico": "LIMPE = Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência (E é a mais nova, incluída pela EC 19/1998).",
+      "leiSeca": ["CF, art. 37, caput", "EC nº 19/1998", "CF, art. 39, §2º"],
+      "tags": ["princípios da administração", "eficiência", "EC 19/1998", "LIMPE"],
+      "origem": "autoral"
+    }
+  ]
+}

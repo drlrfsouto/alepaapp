@@ -1,0 +1,26 @@
+{
+  "name": "ALEPA 2026 · Assessor Técnico — Estudo Inteligente",
+  "short_name": "ALEPA 2026",
+  "description": "Questões comentadas, resumos, flashcards e simulados para o Concurso Público nº 002/2026 da ALEPA — Cargo 02, Assessor Técnico PL.AL.102 (Fundação CETAP).",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Simulado espelho da prova", "short_name": "Simulado", "url": "./index.html#/simulados", "description": "50 questões, 3 horas, no formato real da prova" },
+    { "name": "Treinar questões", "short_name": "Questões", "url": "./index.html#/questoes" },
+    { "name": "Flashcards", "short_name": "Cards", "url": "./index.html#/flashcards" },
+    { "name": "Caderno de erros", "short_name": "Erros", "url": "./index.html#/erros" }
+  ]
+}

@@ -1,0 +1,1920 @@
+{
+  "descricao": "Flashcards para repetição espaçada (SRS). Cada cartão tem 'frente' (pergunta/estímulo) e 'verso' (resposta). O algoritmo SM-2 modificado em src/srs.js controla os intervalos.",
+  "atualizadoEm": "2026-10-15",
+  "flashcards": [
+    {
+      "id": "fc-001",
+      "materia": "dir-adm",
+      "topico": "dadm-01",
+      "frente": "Quais são os princípios EXPRESSOS no art. 37, caput, da CF?",
+      "verso": "LEGALIDADE, IMPESSOALIDADE, MORALIDADE, PUBLICIDADE e EFICIÊNCIA (mnemônico LIMPE). A eficiência foi incluída pela EC nº 19/1998.",
+      "tags": [
+        "princípios",
+        "LIMPE"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-002",
+      "materia": "dir-adm",
+      "topico": "dadm-01",
+      "frente": "Súmula 473 do STF — o que ela autoriza?",
+      "verso": "A Administração pode ANULAR seus próprios atos, quando eivados de vícios que os tornam ilegais (efeito EX TUNC); ou REVOGÁ-LOS, por motivo de conveniência ou oportunidade (efeito EX NUNC), respeitados os direitos adquiridos e ressalvada a apreciação judicial.",
+      "tags": [
+        "autotutela",
+        "anulação",
+        "revogação"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-003",
+      "materia": "dir-adm",
+      "topico": "dadm-01",
+      "frente": "Prazo decadencial para a Administração anular atos administrativos favoráveis a destinatários de boa-fé?",
+      "verso": "5 ANOS, contados da data em que foram praticados, salvo comprovada má-fé (art. 54 da Lei nº 9.784/1999).",
+      "tags": [
+        "autotutela",
+        "prazo",
+        "decadência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-004",
+      "materia": "dir-adm",
+      "topico": "dadm-05",
+      "frente": "Elementos (requisitos de validade) do ato administrativo.",
+      "verso": "COM FI FOR MO OB — COMPETÊNCIA (sujeito), FINALIDADE, FORMA, MOTIVO e OBJETO (conteúdo).",
+      "tags": [
+        "ato administrativo",
+        "elementos"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-005",
+      "materia": "dir-adm",
+      "topico": "dadm-05",
+      "frente": "Atributos do ato administrativo.",
+      "verso": "PATI — PRESUNÇÃO de legitimidade/veracidade (juris tantum), AUTOEXECUTORIEDADE, TIPICIDADE e IMPERATIVIDADE.",
+      "tags": [
+        "ato administrativo",
+        "atributos"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-006",
+      "materia": "dir-adm",
+      "topico": "dadm-05",
+      "frente": "Diferença entre CASSAÇÃO e CADUCIDADE.",
+      "verso": "CASSAÇÃO: o destinatário DESCUMPRE condição/requisito exigido para manter o ato (ex.: cassação da CNH por embriaguez). CADUCIDADE: SUPERVENIÊNCIA de norma jurídica que torna inadmissível a situação antes permitida.",
+      "tags": [
+        "extinção do ato",
+        "cassação",
+        "caducidade"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-007",
+      "materia": "dir-adm",
+      "topico": "dadm-05",
+      "frente": "Convalidação do ato administrativo: quais vícios são sanáveis e quais os efeitos?",
+      "verso": "Vícios sanáveis: FORMA (desde que não essencial) e COMPETÊNCIA quanto ao sujeito (desde que não exclusiva). Motivo e objeto são INSANÁVEIS. Efeitos EX TUNC. Art. 55 da Lei nº 9.784/1999.",
+      "tags": [
+        "convalidação",
+        "vícios"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-008",
+      "materia": "dir-adm",
+      "topico": "dadm-05",
+      "frente": "Teoria dos motivos determinantes — o que estabelece?",
+      "verso": "A validade do ato vincula-se aos motivos nele DECLARADOS. Se os motivos forem falsos ou inexistentes, o ato é NULO, mesmo que a motivação não fosse obrigatória.",
+      "tags": [
+        "motivo",
+        "motivação",
+        "nulidade"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-009",
+      "materia": "dir-adm",
+      "topico": "dadm-09",
+      "frente": "Quais atos NÃO podem ser delegados (Lei nº 9.784/1999, art. 13)?",
+      "verso": "Atos de competência EXCLUSIVA, atos NORMATIVOS e DECISÕES DE RECURSOS ADMINISTRATIVOS (mnemônico CENORA / CE-RE-EX).",
+      "tags": [
+        "delegação",
+        "competência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-010",
+      "materia": "dir-adm",
+      "topico": "dadm-14",
+      "frente": "Modalidades de licitação na Lei nº 14.133/2021 (art. 28).",
+      "verso": "PREGÃO, CONCORRÊNCIA, CONCURSO, LEILÃO e DIÁLOGO COMPETITIVO. Tomada de preços e convite foram EXTINTOS.",
+      "tags": [
+        "licitação",
+        "Lei 14.133"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-011",
+      "materia": "dir-adm",
+      "topico": "dadm-14",
+      "frente": "Critérios de julgamento na Lei nº 14.133/2021 (art. 33).",
+      "verso": "Menor preço; maior desconto; melhor técnica ou conteúdo artístico; técnica e preço; maior lance (leilão); maior retorno econômico.",
+      "tags": [
+        "licitação",
+        "critérios de julgamento"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-012",
+      "materia": "dir-adm",
+      "topico": "dadm-20",
+      "frente": "Responsabilidade civil do Estado por condutas OMISSIVAS — qual a teoria aplicável?",
+      "verso": "SUBJETIVA (culpa anônima / faute du service), segundo o STF (Tema 940, ARE 841.526). Exige dolo ou culpa, previsibilidade e evitabilidade do resultado. A responsabilidade OBJETIVA (art. 37, §6º) aplica-se às condutas COMISSIVAS.",
+      "tags": [
+        "responsabilidade civil",
+        "Tema 940"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-013",
+      "materia": "dir-adm",
+      "topico": "dadm-30",
+      "frente": "Estabilidade do servidor público: requisitos (art. 41 da CF).",
+      "verso": "3 ANOS de efetivo exercício + aprovação em concurso público + avaliação especial de desempenho por comissão instituída para essa finalidade.",
+      "tags": [
+        "servidor",
+        "estabilidade",
+        "Lei 5.810"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-014",
+      "materia": "dir-adm",
+      "topico": "dadm-40",
+      "frente": "Poder de polícia: conceito legal (art. 78 do CTN).",
+      "verso": "Atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade, regula a prática de ato ou abstenção de fato, em razão de interesse público concernente à segurança, higiene, ordem, costumes, disciplina da produção e do mercado, exercício de atividades econômicas dependentes de concessão ou autorização, tranquilidade pública e respeito à propriedade e aos direitos individuais ou coletivos.",
+      "tags": [
+        "poder de polícia",
+        "CTN"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-015",
+      "materia": "dir-adm",
+      "topico": "dadm-45",
+      "frente": "Atributos do poder de polícia.",
+      "verso": "DISCRICIONARIEDADE (regra; há também atos vinculados, como a licença), AUTOEXECUTORIEDADE e COERCIBILIDADE.",
+      "tags": [
+        "poder de polícia",
+        "atributos"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-016",
+      "materia": "dir-adm",
+      "topico": "dadm-05",
+      "frente": "Formas de provimento de cargo público (Lei nº 8.112/1990, art. 8º).",
+      "verso": "NOMEAÇÃO, PROMOÇÃO, READAPTAÇÃO, REVERSÃO, APROVEITAMENTO, REINTEGRAÇÃO e RECONDUÇÃO. A ASCENSÃO e a TRANSFERÊNCIA foram declaradas INCONSTITUCIONAIS (Súmula Vinculante nº 43).",
+      "tags": [
+        "servidor",
+        "provimento"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-017",
+      "materia": "dir-adm",
+      "topico": "dadm-50",
+      "frente": "Desconcentração × Descentralização.",
+      "verso": "DESCENTRALIZAÇÃO: transferência de competências a OUTRA pessoa jurídica (outorga por lei, ou delegação por contrato). Cria entidades. DESCONCENTRAÇÃO: distribuição INTERNA de competências dentro da MESMA pessoa jurídica, criando órgãos (hierarquia e subordinação).",
+      "tags": [
+        "organização administrativa",
+        "órgãos"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-018",
+      "materia": "dir-adm",
+      "topico": "dadm-07",
+      "frente": "Entidades da administração indireta (mnemônico FASE).",
+      "verso": "Fundações públicas, Autarquias, Sociedades de economia mista e Empresas públicas. Todas são pessoas jurídicas, com personalidade própria e autonomia administrativa/financeira.",
+      "tags": [
+        "administração indireta",
+        "FASE"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-019",
+      "materia": "dir-adm",
+      "topico": "dadm-08",
+      "frente": "Diferença entre EMPRESA PÚBLICA e SOCIEDADE DE ECONOMIA MISTA.",
+      "verso": "EP: capital 100% público; forma societária QUALQUER; foro = JUSTIÇA FEDERAL (se federal, art. 109, I, CF). SEM: capital misto com CONTROLE do poder público; forma obrigatória de SOCIEDADE ANÔNIMA; foro = JUSTIÇA ESTADUAL (Súmula 556 do STF), salvo se a União intervier.",
+      "tags": [
+        "administração indireta"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-020",
+      "materia": "dir-adm",
+      "topico": "dadm-60",
+      "frente": "Prazo prescricional da pretensão punitiva por improbidade administrativa (art. 23 da Lei 8.429/1992, após a Lei 14.230/2021).",
+      "verso": "8 ANOS, contados da ocorrência do fato ou, nas infrações permanentes, do dia em que cessou a permanência. Interrompida 4 vezes (ajuizamento, sentença, acórdão, trânsito em julgado), recomeça pela METADE (4 anos).",
+      "tags": [
+        "improbidade",
+        "prescrição"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-021",
+      "materia": "dir-const",
+      "topico": "dcon-01",
+      "frente": "Classificação da CF/1988 quanto à origem, forma, estabilidade e extensão.",
+      "verso": "PROMULGADA (democrática), ESCRITA e CODIFICADA, RÍGIDA (super-rígida para parte da doutrina, pelas cláusulas pétreas) e ANALÍTICA/PROLIXA. Também: dogmática, eclética/compromissória e dirigente.",
+      "tags": [
+        "classificação das constituições"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-022",
+      "materia": "dir-const",
+      "topico": "dcon-01",
+      "frente": "Norma de eficácia CONTIDA × LIMITADA.",
+      "verso": "CONTIDA: produz efeitos PLENOS imediatamente, mas PODE SER RESTRINGIDA depois (ex.: art. 5º, XIII — livre exercício de profissão, 'atendidas as qualificações que a lei estabelecer'). LIMITADA: NÃO produz seus efeitos essenciais até que sobrevenha lei (ex.: art. 18, §2º — regiões metropolitanas).",
+      "tags": [
+        "eficácia das normas"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-023",
+      "materia": "dir-const",
+      "topico": "dcon-05",
+      "frente": "Cláusulas pétreas (art. 60, §4º, da CF).",
+      "verso": "I - a forma FEDERATIVA de Estado; II - o VOTO direto, secreto, universal e periódico; III - a SEPARAÇÃO dos Poderes; IV - os DIREITOS E GARANTIAS INDIVIDUAIS. (Não são pétreas: os direitos sociais e o regime presidencialista, para a doutrina majoritária.)",
+      "tags": [
+        "cláusulas pétreas",
+        "emenda constitucional"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-024",
+      "materia": "dir-const",
+      "topico": "dcon-05",
+      "frente": "Quórum e procedimento para emenda constitucional.",
+      "verso": "Proposta por 1/3 dos membros da Câmara OU do Senado, pelo Presidente da República, ou por mais da metade das Assembleias Legislativas (cada uma pela maioria relativa). Aprovação em 2 TURNOS, em cada Casa, por 3/5 dos votos. Promulgada pelas MESAS da Câmara e do Senado. Vedada sob intervenção federal, estado de defesa ou estado de sítio.",
+      "tags": [
+        "emenda constitucional"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-025",
+      "materia": "dir-const",
+      "topico": "dcon-09",
+      "frente": "Como se calcula o número de deputados estaduais (art. 27, caput, da CF)?",
+      "verso": "TRIPLO da representação do Estado na Câmara dos Deputados; atingido o número de 36, acresce-se tantos quantos forem os deputados federais ACIMA DE 12. Pará: 17 federais → 36 + (17 − 12) = 41 deputados estaduais.",
+      "tags": [
+        "ALEPA",
+        "Poder Legislativo"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-026",
+      "materia": "dir-const",
+      "topico": "dcon-09",
+      "frente": "Prazos de sanção e veto presidencial (art. 66 da CF).",
+      "verso": "SANÇÃO: 15 DIAS ÚTEIS (expressa ou tácita). VETO: no mesmo prazo de 15 dias úteis, motivado (jurídico ou político), total ou parcial. O Congresso aprecia o veto em SESSÃO CONJUNTA em 30 DIAS, podendo rejeitá-lo por MAIORIA ABSOLUTA de Deputados E Senadores.",
+      "tags": [
+        "processo legislativo",
+        "veto"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-027",
+      "materia": "dir-const",
+      "topico": "dcon-09",
+      "frente": "Medida provisória: prazo, trancamento de pauta e reedição.",
+      "verso": "Vigência de 60 DIAS, prorrogável UMA vez por igual período (total 120). Tranca a pauta da Casa em que estiver a partir do 45º dia. Não convertida em lei no prazo, perde eficácia DESDE A EDIÇÃO (ex tunc). É VEDADA a reedição, na mesma sessão legislativa, de MP rejeitada ou cuja eficácia tenha se esgotado.",
+      "tags": [
+        "medida provisória"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-028",
+      "materia": "dir-const",
+      "topico": "dcon-09",
+      "frente": "Iniciativa popular de lei (art. 61, §2º, da CF).",
+      "verso": "Projeto subscrito por, no mínimo, 1% DO ELEITORADO NACIONAL, distribuído por pelo menos 5 ESTADOS, com não menos de 0,3% dos eleitores de cada um deles.",
+      "tags": [
+        "iniciativa popular",
+        "processo legislativo"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-029",
+      "materia": "dir-const",
+      "topico": "dcon-12",
+      "frente": "Composição do TCU (art. 73 da CF).",
+      "verso": "9 MINISTROS, escolhidos: 1/3 pelo Presidente da República (com aprovação do Senado), sendo 2 alternadamente entre auditores e membros do MP junto ao Tribunal indicados em lista tríplice pelo próprio Tribunal; e 2/3 pelo Congresso Nacional. Requisitos: mais de 35 e menos de 70 anos, idoneidade moral e reputação ilibada, notórios conhecimentos jurídicos, contábeis, econômicos, financeiros ou de administração pública, e mais de 10 anos de exercício de função ou atividade profissional que exija esses conhecimentos.",
+      "tags": [
+        "TCU",
+        "controle externo"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-030",
+      "materia": "dir-const",
+      "topico": "dcon-12",
+      "frente": "Decisão do Tribunal de Contas que imputa débito ou multa — qual sua eficácia?",
+      "verso": "Tem eficácia de TÍTULO EXECUTIVO (art. 71, §3º, da CF; art. 116, §3º, da CE/PA).",
+      "tags": [
+        "TCE-PA",
+        "título executivo"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-031",
+      "materia": "dir-const",
+      "topico": "dcon-15",
+      "frente": "Competências privativas do Senado Federal (art. 52 da CF) — principais.",
+      "verso": "Processar e julgar o Presidente, o Vice e os Ministros de Estado nos crimes de responsabilidade; processar e julgar Ministros do STF, membros do CNJ e do CNMP, o PGR e o AGU; aprovar previamente, por voto secreto, após arguição pública, a escolha de magistrados, ministros do TCU indicados pelo Presidente, presidente e diretores do Banco Central e o PGR; SUSPENDER a execução, no todo ou em parte, de lei declarada inconstitucional por decisão DEFINITIVA do STF (art. 52, X).",
+      "tags": [
+        "Senado",
+        "competências"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-032",
+      "materia": "dir-const",
+      "topico": "dcon-20",
+      "frente": "Remédios constitucionais: qual usar em cada caso?",
+      "verso": "HABEAS CORPUS — direito de LOCOMOÇÃO (gratuito, não exige advogado). MANDADO DE SEGURANÇA — direito LÍQUIDO E CERTO não amparado por HC ou HD (120 dias decadenciais). MANDADO DE SEGURANÇA COLETIVO — partido político com representação no CN e organização sindical/entidade de classe/associação em funcionamento há pelo menos 1 ano. HABEAS DATA — informações PESSOAIS em banco de dados (gratuito). MANDADO DE INJUNÇÃO — falta de norma regulamentadora que inviabilize o exercício de direitos e liberdades constitucionais e prerrogativas inerentes à nacionalidade, soberania e cidadania (gratuito). AÇÃO POPULAR — anular ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente e ao patrimônio histórico e cultural (qualquer CIDADÃO; isento de custas e de ônus de sucumbência, salvo má-fé).",
+      "tags": [
+        "remédios constitucionais",
+        "art. 5º"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-033",
+      "materia": "dir-const",
+      "topico": "dcon-07",
+      "frente": "Competências: art. 21 × art. 22 × art. 23 × art. 24 da CF.",
+      "verso": "Art. 21 — competência MATERIAL/ADMINISTRATIVA EXCLUSIVA DA UNIÃO (indelegável, salvo por lei complementar nos casos expressos). Art. 22 — competência LEGISLATIVA PRIVATIVA DA UNIÃO (delegável aos Estados por LEI COMPLEMENTAR, em pontos específicos). Art. 23 — competência MATERIAL COMUM a todos os entes. Art. 24 — competência LEGISLATIVA CONCORRENTE (União, Estados e DF; os Municípios legislam supletivamente em assuntos de interesse local, art. 30, II).",
+      "tags": [
+        "competências",
+        "federalismo"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-034",
+      "materia": "dir-const",
+      "topico": "dcon-03",
+      "frente": "Fundamentos × Objetivos × Princípios das relações internacionais (arts. 1º, 3º e 4º da CF).",
+      "verso": "FUNDAMENTOS (art. 1º): SO-CI-DI-VA-PLU — Soberania, Cidadania, Dignidade da pessoa humana, Valores sociais do trabalho e da livre iniciativa, Pluralismo político. OBJETIVOS (art. 3º): verbos no infinitivo — construir, garantir, erradicar, promover. RELAÇÕES INTERNACIONAIS (art. 4º): independência nacional, PREVALÊNCIA DOS DIREITOS HUMANOS, autodeterminação dos povos, não intervenção, igualdade entre os Estados, defesa da paz, solução pacífica dos conflitos, repúdio ao terrorismo e ao racismo, cooperação entre os povos, concessão de asilo político.",
+      "tags": [
+        "princípios fundamentais"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-035",
+      "materia": "dir-const",
+      "topico": "dcon-25",
+      "frente": "Status dos tratados internacionais de direitos humanos no Brasil.",
+      "verso": "Aprovados pelo rito do art. 5º, §3º (2 turnos × 3/5 em cada Casa) → EQUIVALENTES A EMENDA CONSTITUCIONAL (ex.: Convenção sobre os Direitos das Pessoas com Deficiência; Convenção Interamericana contra o Racismo). Aprovados pelo rito comum → SUPRALEGAIS (abaixo da Constituição, acima das leis ordinárias — RE 466.343). Demais tratados (não de direitos humanos) → paridade com a lei ordinária.",
+      "tags": [
+        "tratados",
+        "direitos humanos"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-036",
+      "materia": "leg",
+      "topico": "leg-09",
+      "frente": "LGPD — o que é DADO PESSOAL SENSÍVEL?",
+      "verso": "Dado sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural (art. 5º, II).",
+      "tags": [
+        "LGPD",
+        "dado sensível"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-037",
+      "materia": "leg",
+      "topico": "leg-09",
+      "frente": "LGPD — quais bases legais do art. 7º NÃO se aplicam a dados sensíveis?",
+      "verso": "LEGÍTIMO INTERESSE (VII) e PROTEÇÃO DO CRÉDITO (VIII). Para dados sensíveis (art. 11), as bases são: consentimento específico e em destaque, obrigação legal, políticas públicas, estudos por órgão de pesquisa, exercício regular de direitos, proteção da vida, tutela da saúde e prevenção à fraude.",
+      "tags": [
+        "LGPD",
+        "bases legais"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-038",
+      "materia": "leg",
+      "topico": "leg-09",
+      "frente": "LGPD — valor máximo da multa administrativa simples.",
+      "verso": "Até 2% DO FATURAMENTO da empresa, grupo ou conglomerado no Brasil no seu último exercício, EXCLUÍDOS OS TRIBUTOS, limitada a R$ 50.000.000,00 POR INFRAÇÃO (art. 52, I).",
+      "tags": [
+        "LGPD",
+        "sanções"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-039",
+      "materia": "leg",
+      "topico": "leg-09",
+      "frente": "LGPD — papéis do CONTROLADOR, do OPERADOR e do ENCARREGADO (DPO).",
+      "verso": "CONTROLADOR: toma as DECISÕES referentes ao tratamento. OPERADOR: realiza o tratamento EM NOME do controlador. ENCARREGADO (DPO): canal de comunicação entre controlador, titulares e ANPD.",
+      "tags": [
+        "LGPD",
+        "agentes de tratamento"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-040",
+      "materia": "leg",
+      "topico": "leg-10",
+      "frente": "Improbidade administrativa — qual elemento subjetivo é exigido após a Lei nº 14.230/2021?",
+      "verso": "DOLO ESPECÍFICO — vontade livre e consciente de alcançar o resultado ilícito tipificado. A modalidade CULPOSA foi extinta pela Lei nº 14.230/2021. STF, Tema 1.199: a norma benéfica aplica-se de imediato aos processos em curso, mas NÃO atinge as situações acobertadas pela coisa julgada (não retroage para desfazer condenações definitivas).",
+      "tags": [
+        "improbidade",
+        "dolo",
+        "Lei 14.230"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-041",
+      "materia": "leg",
+      "topico": "leg-10",
+      "frente": "Sanções por ato de improbidade — suspensão dos direitos políticos em cada modalidade.",
+      "verso": "ENRIQUECIMENTO ILÍCITO (art. 9º): até 14 ANOS. PREJUÍZO AO ERÁRIO (art. 10): até 12 ANOS. ATENTADO AOS PRINCÍPIOS (art. 11): SEM suspensão de direitos políticos — apenas multa civil de até 24× a remuneração e proibição de contratar por até 4 anos.",
+      "tags": [
+        "improbidade",
+        "sanções"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-042",
+      "materia": "leg",
+      "topico": "leg-03",
+      "frente": "TCE-PA — composição e forma de escolha dos conselheiros.",
+      "verso": "7 CONSELHEIROS (art. 118 da CE/PA): 1 indicado pelo GOVERNADOR com aprovação da ALEPA; 2 indicados pela ALEPA, alternadamente, entre AUDITORES e MEMBROS DO MINISTÉRIO PÚBLICO DE CONTAS, em lista tríplice elaborada pelo próprio Tribunal (antiguidade e merecimento); e 4 escolhidos pela ALEPA.",
+      "tags": [
+        "TCE-PA",
+        "Constituição do Pará"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-043",
+      "materia": "leg",
+      "topico": "leg-02",
+      "frente": "Número de deputados estaduais da ALEPA e base constitucional.",
+      "verso": "41 DEPUTADOS. Base: art. 27, caput, da CF — triplo da representação do Estado na Câmara (PA = 17 federais → 51), e, atingido 36, acresce-se tantos quantos forem os federais acima de 12: 36 + (17 − 12) = 41.",
+      "tags": [
+        "ALEPA",
+        "deputados"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-044",
+      "materia": "leg",
+      "topico": "leg-13",
+      "frente": "Decreto nº 1.171/1994 (Código de Ética do Servidor Público Federal) — quais são as vedações principais?",
+      "verso": "Art. 15: usar o cargo para obter vantagem; prejudicar deliberadamente a reputação de outros servidores; ser conivente com erro ou infração; usar de artifícios para procrastinar o exercício de direito; deixar de utilizar avanços técnicos e científicos; permitir que perseguições ou simpatias interfiram no atendimento; desviar servidor para atendimento de interesse particular; retirar da repartição documento ou bem sem autorização; fazer uso de informações privilegiadas; iludir ou tentar iludir pessoa que busque o atendimento; alterar ou deturpar o teor de documentos; ser indiferente ou desrespeitoso; apresentar-se embriagado ou sob efeito de substâncias proibidas; exercer atividade profissional aética ou ligar o nome a empreendimentos de cunho duvidoso.",
+      "tags": [
+        "ética",
+        "Decreto 1.171"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-045",
+      "materia": "leg",
+      "topico": "leg-14",
+      "frente": "LC nº 95/1998 — é permitida a cláusula de revogação genérica?",
+      "verso": "NÃO. O art. 9º exige que a cláusula de revogação ENUMERE, PRECISAMENTE, as leis ou disposições legais revogadas. É vedada a fórmula 'revogam-se as disposições em contrário'.",
+      "tags": [
+        "técnica legislativa",
+        "LC 95"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-046",
+      "materia": "leg",
+      "topico": "leg-15",
+      "frente": "LAI (Lei nº 12.527/2011) — prazos máximos de sigilo.",
+      "verso": "ULTRASSECRETO: 25 anos; SECRETO: 15 anos; RESERVADO: 5 anos. Todos prorrogáveis UMA única vez, por igual período, no máximo (total de 50, 30 e 10 anos).",
+      "tags": [
+        "LAI",
+        "sigilo"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-047",
+      "materia": "leg",
+      "topico": "leg-11",
+      "frente": "Lei Anticorrupção (Lei nº 12.846/2013) — natureza da responsabilidade da pessoa jurídica.",
+      "verso": "OBJETIVA, administrativa e civil, pelos atos lesivos praticados em seu interesse ou benefício (art. 2º). Independe de dolo ou culpa e da responsabilização individual dos dirigentes. A responsabilização judicial depende de dolo ou culpa nos casos de dissolução da personalidade jurídica.",
+      "tags": [
+        "anticorrupção",
+        "Lei 12.846"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-048",
+      "materia": "leg",
+      "topico": "leg-12",
+      "frente": "Lei nº 14.457/2022 (Emprega + Mulheres) — o que ela institui quanto ao assédio?",
+      "verso": "Obrigatoriedade de inclusão de regras de conduta sobre assédio sexual e outras formas de violência nas normas internas das empresas com CIPA; canal de denúncia; treinamento bienal; e procedimentos de apuração. O assédio sexual é crime previsto no art. 216-A do Código Penal (pena de 1 a 2 anos de detenção, aumentada de 1/3 se a vítima for menor de 18 anos).",
+      "tags": [
+        "assédio",
+        "CIPA",
+        "Lei 14.457"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-049",
+      "materia": "leg",
+      "topico": "leg-05",
+      "frente": "Reserva de vagas no Concurso ALEPA 2026 (Cargo 02).",
+      "verso": "5% para pessoas com deficiência e 30% para grupos étnico-raciais (20% pretos e pardos, 5% indígenas e 5% quilombolas), conforme Lei estadual nº 11.286/2025 e Decreto estadual nº 5.130/2025. Das 11 vagas: 7 ampla concorrência, 1 PcD, 1 pretos/pardos, 1 quilombola e 1 indígena.",
+      "tags": [
+        "edital",
+        "reserva de vagas"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-050",
+      "materia": "lp",
+      "topico": "lp-11",
+      "frente": "Quando a crase é FACULTATIVA?",
+      "verso": "Antes de NOME PRÓPRIO FEMININO, antes de PRONOME POSSESSIVO FEMININO e depois da preposição ATÉ.",
+      "tags": [
+        "crase"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-051",
+      "materia": "lp",
+      "topico": "lp-11",
+      "frente": "Truque rápido para saber se há crase.",
+      "verso": "Substitua a palavra feminina por uma masculina: se aparecer 'AO', há crase ('Vou à praia' → 'Vou ao mar'). Se aparecer apenas 'A' ou 'O', não há crase ('Assisti a peça' → 'Assisti o filme').",
+      "tags": [
+        "crase"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-052",
+      "materia": "lp",
+      "topico": "lp-07",
+      "frente": "Regência de ASSISTIR nos quatro sentidos.",
+      "verso": "VER/PRESENCIAR → TI ('Assisti AO filme'); AJUDAR/SOCORRER → TD ('O médico assistiu o paciente'); CABER/PERTENCER → TI ('Esse direito assiste aos cidadãos'); MORAR → TI ('Assiste em Belém').",
+      "tags": [
+        "regência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-053",
+      "materia": "lp",
+      "topico": "lp-07",
+      "frente": "Regência de VISAR e ASPIRAR.",
+      "verso": "VISAR: MIRAR/ASSINAR → TD ('visou o alvo', 'visou o documento'); OBJETIVAR → TI ('visa ao sucesso'). ASPIRAR: RESPIRAR/SORVER → TD ('aspirou o perfume'); ALMEJAR → TI ('aspira ao cargo').",
+      "tags": [
+        "regência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-054",
+      "materia": "lp",
+      "topico": "lp-07",
+      "frente": "IMPLICAR no sentido de 'acarretar' — qual a regência?",
+      "verso": "TRANSITIVO DIRETO, SEM preposição: 'O atraso implicou MULTA' (e não 'implicou em multa'). No sentido de 'antipatizar', é TI: 'implicou com o colega'.",
+      "tags": [
+        "regência"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-055",
+      "materia": "lp",
+      "topico": "lp-09",
+      "frente": "Concordância de 'HAVER' no sentido de existir ou tempo decorrido.",
+      "verso": "IMPESSOAL — fica na 3ª pessoa do singular e TRANSMITE a impessoalidade ao auxiliar: 'Havia muitos candidatos', 'Deve haver muitos problemas'. Já 'EXISTIR' é pessoal: 'Existem muitos candidatos'. 'FAZER' indicando tempo também é impessoal: 'Faz dez anos'.",
+      "tags": [
+        "concordância verbal",
+        "impessoalidade"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-056",
+      "materia": "lp",
+      "topico": "lp-09",
+      "frente": "'Vendem-se casas' × 'Precisa-se de operários' — por que a diferença?",
+      "verso": "Com verbo TRANSITIVO DIRETO + SE, o 'se' é PARTÍCULA APASSIVADORA e o verbo concorda com o sujeito paciente: 'Vendem-SE CASAS'. Com verbo TRANSITIVO INDIRETO, INTRANSITIVO ou DE LIGAÇÃO + SE, o 'se' é ÍNDICE DE INDETERMINAÇÃO DO SUJEITO e o verbo fica invariável: 'Precisa-SE DE operários'.",
+      "tags": [
+        "concordância",
+        "voz passiva sintética"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-057",
+      "materia": "lp",
+      "topico": "lp-09",
+      "frente": "'É proibido entrada' × 'É proibida a entrada'.",
+      "verso": "SEM artigo, a expressão é INVARIÁVEL: 'É proibido entrada'. COM artigo (ou pronome) determinando o substantivo, o adjetivo CONCORDA: 'É proibida a entrada'. Vale também para 'é necessário', 'é bom', 'é permitido'.",
+      "tags": [
+        "concordância nominal"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-058",
+      "materia": "lp",
+      "topico": "lp-08",
+      "frente": "Colocação pronominal: quando é OBRIGATÓRIA a próclise?",
+      "verso": "Com palavras ATRATIVAS: advérbios de negação (não, nunca, jamais), pronomes relativos, interrogativos e indefinidos, conjunções subordinativas, e o advérbio 'aqui/ali/lá' sem vírgula. Também no futuro do pretérito e no futuro do presente SEM palavra atrativa, usa-se o pronome entre o radical e a terminação (mesóclise): 'Dir-se-ia', 'Dar-te-ei'.",
+      "tags": [
+        "colocação pronominal"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-059",
+      "materia": "lp",
+      "topico": "lp-16",
+      "frente": "Manual de Redação da PR (3ª ed./2018): quais expedientes foram extintos pelo Padrão Ofício?",
+      "verso": "O AVISO e o MEMORANDO. Todos os expedientes oficiais passam a se chamar simplesmente OFÍCIO, com leiaute único.",
+      "tags": [
+        "redação oficial"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-060",
+      "materia": "lp",
+      "topico": "lp-16",
+      "frente": "Fecho de correspondência oficial: 'Respeitosamente' × 'Atenciosamente'.",
+      "verso": "RESPEITOSAMENTE: para autoridades de hierarquia SUPERIOR (incluindo o Presidente da República). ATENCIOSAMENTE: para autoridades de MESMA hierarquia ou de hierarquia INFERIOR.",
+      "tags": [
+        "redação oficial",
+        "fecho"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-061",
+      "materia": "lp",
+      "topico": "lp-10",
+      "frente": "Emprego dos PORQUÊS.",
+      "verso": "POR QUE: em perguntas (início ou meio) e quando equivale a 'pelo qual'. POR QUÊ: em FIM de frase, antes de pontuação. PORQUE: em respostas, conjunção causal/explicativa. PORQUÊ: substantivado, precedido de artigo ou determinante ('o porquê').",
+      "tags": [
+        "porquês",
+        "ortografia"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-062",
+      "materia": "lp",
+      "topico": "lp-03",
+      "frente": "Uso do sinal indicativo de crase antes de palavra no plural.",
+      "verso": "Se o 'a' estiver no SINGULAR e a palavra no PLURAL, NÃO há crase: 'Não vou a festas'. Só há crase se o 'a' também estiver no plural: 'Não vou às festas'.",
+      "tags": [
+        "crase"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-063",
+      "materia": "inf",
+      "topico": "inf-04",
+      "frente": "Tríade da segurança da informação (CID).",
+      "verso": "CONFIDENCIALIDADE (só acessa quem é autorizado), INTEGRIDADE (não é alterada indevidamente) e DISPONIBILIDADE (está acessível quando necessário). A doutrina acrescenta AUTENTICIDADE, NÃO REPÚDIO e CONFIABILIDADE.",
+      "tags": [
+        "segurança",
+        "CID"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-064",
+      "materia": "inf",
+      "topico": "inf-04",
+      "frente": "Regra 3-2-1 de backup.",
+      "verso": "TRÊS cópias dos dados, em DOIS meios de armazenamento DIFERENTES, com UMA cópia OFF-SITE (fora do local físico).",
+      "tags": [
+        "backup"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-065",
+      "materia": "inf",
+      "topico": "inf-04",
+      "frente": "Diferença entre VÍRUS e WORM.",
+      "verso": "VÍRUS: precisa de um ARQUIVO HOSPEDEIRO e da AÇÃO DO USUÁRIO para se propagar. WORM: propaga-se AUTONOMAMENTE pela rede, sem arquivo hospedeiro e sem ação do usuário.",
+      "tags": [
+        "malware"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-066",
+      "materia": "inf",
+      "topico": "inf-04",
+      "frente": "RANSOMWARE × TROJAN.",
+      "verso": "RANSOMWARE: criptografa os dados da vítima e exige RESGATE para liberá-los. TROJAN: disfarça-se de programa legítimo para abrir portas de acesso (backdoor); NÃO se replica.",
+      "tags": [
+        "malware"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-067",
+      "materia": "inf",
+      "topico": "inf-05",
+      "frente": "Assinatura digital: o que GARANTE e o que NÃO garante?",
+      "verso": "GARANTE AUTENTICIDADE, INTEGRIDADE e NÃO REPÚDIO. NÃO garante CONFIDENCIALIDADE (para isso é preciso criptografar o conteúdo).",
+      "tags": [
+        "assinatura digital",
+        "criptografia"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-068",
+      "materia": "inf",
+      "topico": "inf-05",
+      "frente": "Criptografia SIMÉTRICA × ASSIMÉTRICA.",
+      "verso": "SIMÉTRICA: UMA chave para cifrar e decifrar (AES, DES, 3DES) — rápida, adequada a grandes volumes. ASSIMÉTRICA: PAR de chaves pública e privada (RSA, ECC, Diffie-Hellman) — a pública cifra e a privada decifra; a privada assina e a pública verifica.",
+      "tags": [
+        "criptografia"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-069",
+      "materia": "inf",
+      "topico": "inf-01",
+      "frente": "Fórmulas essenciais do Excel (versão PT-BR).",
+      "verso": "=SOMA(A1:A10); =MÉDIA(A1:A10); =SE(teste; valor_se_verdadeiro; valor_se_falso); =PROCV(valor; matriz; nº_coluna; [FALSO/0 = exato; VERDADEIRO/1 = aproximado]); =SOMASE(intervalo; critério; [intervalo_soma]); =CONT.SE(intervalo; critério); =CONCAT(A1;B1) ou A1&\" \"&B1; =HOJE(); =AGORA(); =SEERRO(fórmula; valor_se_erro).",
+      "tags": [
+        "Excel",
+        "fórmulas"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-070",
+      "materia": "inf",
+      "topico": "inf-01",
+      "frente": "PROCV × PROCH × ÍNDICE+CORRESP.",
+      "verso": "PROCV busca VERTICALMENTE (na primeira coluna da matriz) e retorna valor de coluna à DIREITA. PROCH busca HORIZONTALMENTE. ÍNDICE(matriz; linha; coluna) + CORRESP(valor; intervalo; tipo) é mais flexível: busca em qualquer direção e não quebra ao inserir colunas.",
+      "tags": [
+        "Excel"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-071",
+      "materia": "inf",
+      "topico": "inf-06",
+      "frente": "Atalhos essenciais do Windows (PT-BR).",
+      "verso": "Ctrl+C copiar; Ctrl+X recortar; Ctrl+V colar; Ctrl+Z desfazer; Ctrl+Y refazer; Ctrl+A selecionar tudo; Ctrl+S salvar; Ctrl+P imprimir; Alt+Tab alternar janelas; Alt+F4 fechar; Windows+D mostrar área de trabalho; Windows+E Explorador de Arquivos; Windows+L bloquear; Windows+R executar; Windows+Shift+S captura de tela (Snipping); Ctrl+Shift+Esc Gerenciador de Tarefas; F2 renomear.",
+      "tags": [
+        "Windows",
+        "atalhos"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-072",
+      "materia": "inf",
+      "topico": "inf-06",
+      "frente": "Atalhos essenciais do Word (PT-BR).",
+      "verso": "Ctrl+N NOVO documento (atenção: em inglês é Ctrl+N = new, em PT-BR Ctrl+O é abrir); Ctrl+O ABRIR; Ctrl+B NEGRITO (bold); Ctrl+I ITÁLICO; Ctrl+S SUBLINHADO; Ctrl+J JUSTIFICAR; Ctrl+E CENTRALIZAR; Ctrl+L ALINHAR À ESQUERDA; Ctrl+G ALINHAR À DIREITA; Ctrl+Enter QUEBRA DE PÁGINA; Ctrl+Alt+1/2/3 estilos Título 1/2/3; Shift+F3 alternar maiúsculas/minúsculas.",
+      "tags": [
+        "Word",
+        "atalhos"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-073",
+      "materia": "inf",
+      "topico": "inf-08",
+      "frente": "Portas padrão dos principais protocolos.",
+      "verso": "HTTP 80 | HTTPS 443 | FTP 21 (dados 20) | SSH 22 | TELNET 23 | SMTP 25 | DNS 53 | DHCP 67/68 | POP3 110 | IMAP 143 | SNMP 161/162 | RDP 3389 | MySQL 3306 | SQL Server 1433 | PostgreSQL 5432.",
+      "tags": [
+        "redes",
+        "portas"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-074",
+      "materia": "inf",
+      "topico": "inf-08",
+      "frente": "Camadas do modelo OSI e do TCP/IP.",
+      "verso": "OSI (7): Física, Enlace (Data Link), Rede, Transporte, Sessão, Apresentação, Aplicação. TCP/IP (4): Acesso à Rede, Internet, Transporte, Aplicação. Equipamentos: HUB = camada física; SWITCH = enlace; ROTEADOR = rede.",
+      "tags": [
+        "redes",
+        "OSI"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-075",
+      "materia": "inf",
+      "topico": "inf-09",
+      "frente": "Cookies × Cache.",
+      "verso": "COOKIE: pequeno arquivo armazenado no navegador com dados do usuário (sessão, preferências, rastreamento). CACHE: armazenamento temporário de arquivos (imagens, scripts, páginas) para acelerar o carregamento. Ambos podem ser apagados pelo usuário; cookies de terceiros são os mais usados para rastreamento publicitário.",
+      "tags": [
+        "navegadores"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-076",
+      "materia": "inf",
+      "topico": "inf-04",
+      "frente": "FIREWALL × ANTIVÍRUS × VPN.",
+      "verso": "FIREWALL: FILTRA o tráfego entre redes com níveis de confiança diferentes (não detecta malware dentro do tráfego permitido). ANTIVÍRUS/EDR: detecta e remove malware por assinatura, heurística e comportamento. VPN: cria um TÚNEL CRIPTOGRAFADO sobre rede pública.",
+      "tags": [
+        "segurança"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-077",
+      "materia": "rl",
+      "topico": "rl-02",
+      "frente": "Quando a condicional 'p → q' é FALSA?",
+      "verso": "Apenas quando p é VERDADEIRA e q é FALSA (caso V→F). Nos demais casos (V→V, F→V, F→F) é VERDADEIRA.",
+      "tags": [
+        "lógica proposicional"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-078",
+      "materia": "rl",
+      "topico": "rl-02",
+      "frente": "Equivalências de 'p → q'.",
+      "verso": "p → q ≡ ~q → ~p (CONTRAPOSITIVA) ≡ ~p ∨ q. NÃO é equivalente a q → p (recíproca) nem a ~p → ~q (inversa).",
+      "tags": [
+        "equivalências"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-079",
+      "materia": "rl",
+      "topico": "rl-02",
+      "frente": "Negação de 'p → q'.",
+      "verso": "~(p → q) ≡ p ∧ ~q ('p E não q'). Ex.: negação de 'Se estudo, passo' = 'Estudo E NÃO passo'.",
+      "tags": [
+        "negação",
+        "equivalências"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-080",
+      "materia": "rl",
+      "topico": "rl-02",
+      "frente": "Leis de De Morgan.",
+      "verso": "~(p ∧ q) ≡ ~p ∨ ~q | ~(p ∨ q) ≡ ~p ∧ ~q. Regra prática: NEGA TUDO e TROCA o conectivo.",
+      "tags": [
+        "De Morgan"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-081",
+      "materia": "rl",
+      "topico": "rl-02",
+      "frente": "Negação de quantificadores.",
+      "verso": "~(TODO A é B) ≡ 'EXISTE (pelo menos) um A que NÃO é B' — NÃO é 'Nenhum A é B'. ~(NENHUM A é B) ≡ 'EXISTE um A que É B'. ~(ALGUM A é B) ≡ 'NENHUM A é B'. ~(ALGUM A NÃO é B) ≡ 'TODO A é B'.",
+      "tags": [
+        "quantificadores"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-082",
+      "materia": "rl",
+      "topico": "rl-02",
+      "frente": "Modus Ponens × Modus Tollens.",
+      "verso": "MODUS PONENS: (p→q) ∧ p ⊢ q — afirma o antecedente. MODUS TOLLENS: (p→q) ∧ ~q ⊢ ~p — nega o consequente. FALÁCIAS: afirmar o consequente (q ⊢ p) e negar o antecedente (~p ⊢ ~q).",
+      "tags": [
+        "argumentos"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-083",
+      "materia": "rl",
+      "topico": "rl-05",
+      "frente": "Fórmulas de análise combinatória.",
+      "verso": "ARRANJO (ordem importa): A(n,p) = n!/(n−p)!. COMBINAÇÃO (ordem não importa): C(n,p) = n!/[p!(n−p)!]. PERMUTAÇÃO: P(n) = n!; com repetição: n!/(a!·b!·c!).",
+      "tags": [
+        "análise combinatória"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-084",
+      "materia": "rl",
+      "topico": "rl-06",
+      "frente": "Percentuais sucessivos e inclusão-exclusão.",
+      "verso": "AUMENTOS sucessivos: multiplica-se (1+i₁)(1+i₂). DESCONTOS sucessivos: (1−d₁)(1−d₂). INCLUSÃO-EXCLUSÃO: |A∪B| = |A| + |B| − |A∩B|; |A∪B∪C| = |A|+|B|+|C| − |A∩B| − |A∩C| − |B∩C| + |A∩B∩C|.",
+      "tags": [
+        "porcentagem",
+        "conjuntos"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-085",
+      "materia": "rl",
+      "topico": "rl-07",
+      "frente": "Sequência lógica clássica: 2, 6, 12, 20, 30, ...",
+      "verso": "Termo geral n(n+1): 1·2=2, 2·3=6, 3·4=12, 4·5=20, 5·6=30, 6·7=42. As diferenças são 4, 6, 8, 10, 12.",
+      "tags": [
+        "sequências"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-086",
+      "materia": "rl",
+      "topico": "rl-04",
+      "frente": "Regra de três COMPOSTA: como resolver sem erro?",
+      "verso": "Coloque a GRANDEZA QUE CONTÉM A INCÓGNITA à esquerda e compare-a, UMA A UMA, com cada uma das demais. Se as setas apontarem no MESMO sentido → direta; se apontarem em sentidos OPOSTOS → inverta essa razão. Depois multiplique.",
+      "tags": [
+        "regra de três"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-087",
+      "materia": "proc-leg",
+      "topico": "pleg-02",
+      "frente": "Estrutura básica da lei segundo a LC nº 95/1998 (art. 3º).",
+      "verso": "PARTE PRELIMINAR (epígrafe, ementa e preâmbulo) + PARTE NORMATIVA (texto dos artigos) + PARTE FINAL (medidas necessárias à implementação, disposições transitórias, cláusula de vigência e cláusula de revogação).",
+      "tags": [
+        "LC 95",
+        "técnica legislativa"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-088",
+      "materia": "proc-leg",
+      "topico": "pleg-02",
+      "frente": "Como se grafam os artigos de uma lei?",
+      "verso": "'Art.' seguido de NUMERAL CARDINAL até o NONO (Art. 1º, Art. 2º, ..., Art. 9º) e de NUMERAL SIMPLES a partir do DÉCIMO (Art. 10, Art. 11...). Parágrafo: §1º, §2º... e § ÚNICO quando houver apenas um. Desdobramentos: artigo → parágrafo → inciso (romanos) → alínea (letras minúsculas) → item (arábicos).",
+      "tags": [
+        "técnica legislativa"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-089",
+      "materia": "proc-leg",
+      "topico": "pleg-03",
+      "frente": "VACATIO LEGIS padrão no Brasil e no exterior.",
+      "verso": "45 DIAS após a publicação oficial, no país (art. 1º da LINDB). Nos Estados estrangeiros, quando admitida, 3 MESES após a publicação oficial. Se a lei for corrigida antes de entrar em vigor, o prazo recomeça a correr da nova publicação.",
+      "tags": [
+        "vigência",
+        "LINDB"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-090",
+      "materia": "proc-leg",
+      "topico": "pleg-01",
+      "frente": "Fases do processo legislativo.",
+      "verso": "1) INICIATIVA → 2) DISCUSSÃO E DELIBERAÇÃO (comissões e plenário) → 3) SANÇÃO OU VETO → 4) PROMULGAÇÃO → 5) PUBLICAÇÃO. A ausência de fase essencial gera INCONSTITUCIONALIDADE FORMAL.",
+      "tags": [
+        "processo legislativo"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-091",
+      "materia": "proc-leg",
+      "topico": "pleg-05",
+      "frente": "Espécies normativas do art. 59 da CF.",
+      "verso": "Emendas à Constituição, leis complementares, leis ordinárias, leis delegadas, medidas provisórias, decretos legislativos e resoluções.",
+      "tags": [
+        "espécies normativas"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-092",
+      "materia": "proc-leg",
+      "topico": "pleg-06",
+      "frente": "Lei complementar × lei ordinária: diferenças essenciais.",
+      "verso": "LC: matérias EXPRESSAMENTE reservadas pela Constituição; quórum de MAIORIA ABSOLUTA (art. 69); iniciativa idêntica. LO: matérias residuais; quórum de MAIORIA SIMPLES/RELATIVA, presente a maioria absoluta dos membros (art. 47). NÃO há hierarquia entre LC e LO — apenas campos materiais distintos.",
+      "tags": [
+        "lei complementar",
+        "quórum"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-093",
+      "materia": "proc-leg",
+      "topico": "pleg-08",
+      "frente": "Lei delegada: como funciona?",
+      "verso": "O Congresso delega ao Presidente por RESOLUÇÃO, que especifica o conteúdo e os termos do exercício (art. 68, §1º, CF). Não podem ser objeto de delegação: atos de competência exclusiva do Congresso, atos de competência privativa da Câmara ou do Senado, matéria reservada a lei complementar, e legislação sobre organização do Poder Judiciário e do MP, carreira e garantia de seus membros, nacionalidade, cidadania, direitos individuais, políticos e eleitorais, planos plurianuais, diretrizes orçamentárias e orçamentos.",
+      "tags": [
+        "lei delegada"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-094",
+      "materia": "proc-leg",
+      "topico": "pleg-04",
+      "frente": "Poder regulamentar: decreto autônomo (art. 84, VI, da CF).",
+      "verso": "O Presidente pode, mediante DECRETO, (a) organizar e disciplinar a administração federal, quando NÃO implicar aumento de despesa nem criação ou extinção de órgãos públicos; e (b) extinguir funções ou cargos públicos, quando VAGOS. É o decreto AUTÔNOMO/INDEPENDENTE, que dispensa lei prévia.",
+      "tags": [
+        "decreto",
+        "poder regulamentar"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-095",
+      "materia": "proc-leg",
+      "topico": "pleg-09",
+      "frente": "Veto: tipos e fundamentos.",
+      "verso": "VETO JURÍDICO: por INCONSTITUCIONALIDADE. VETO POLÍTICO: por CONTRARIEDADE AO INTERESSE PÚBLICO. Pode ser TOTAL ou PARCIAL (o parcial deve abranger texto INTEGRAL de artigo, parágrafo, inciso ou alínea — art. 66, §2º). Não existe veto 'de conveniência' sem fundamento. Não pode ser retirado após apreciado (art. 66, §4º).",
+      "tags": [
+        "veto"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-096",
+      "materia": "dir-civil",
+      "topico": "dciv-01",
+      "frente": "Quem é ABSOLUTAMENTE incapaz no Código Civil (após a Lei nº 13.146/2015)?",
+      "verso": "APENAS os MENORES DE 16 ANOS (art. 3º). A Lei 13.146/2015 eliminou a incapacidade absoluta por doença mental ou por impossibilidade de exprimir a vontade — hoje essas hipóteses geram, no máximo, incapacidade RELATIVA (art. 4º).",
+      "tags": [
+        "capacidade"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-097",
+      "materia": "dir-civil",
+      "topico": "dciv-01",
+      "frente": "Hipóteses de emancipação.",
+      "verso": "VOLUNTÁRIA: pelos pais (ou um deles na falta do outro) por INSTRUMENTO PÚBLICO, independentemente de homologação judicial, ou por sentença do juiz ouvido o tutor, se o menor tiver 16 ANOS COMPLETOS. LEGAL: casamento, exercício de emprego público efetivo, colação de grau em curso superior, estabelecimento civil ou comercial, ou relação de emprego com economia própria (desde que com 16 anos completos).",
+      "tags": [
+        "emancipação"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-098",
+      "materia": "dir-civil",
+      "topico": "dciv-02",
+      "frente": "COMORIÊNCIA (art. 8º do CC).",
+      "verso": "Se dois ou mais indivíduos falecerem na mesma ocasião, não se podendo averiguar se algum precedeu aos outros, presumir-se-ão SIMULTANEAMENTE mortos — logo, não há transmissão de herança entre eles.",
+      "tags": [
+        "morte presumida",
+        "sucessões"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-099",
+      "materia": "dir-civil",
+      "topico": "dciv-03",
+      "frente": "Direitos da personalidade (arts. 11 a 21 do CC): características.",
+      "verso": "Com poucas exceções, são INTRANSMISSÍVEIS e IRRENUNCIÁVEIS, não podendo o seu exercício sofrer limitação voluntária (art. 11). Abrangem corpo, nome, imagem, honra, intimidade e vida privada. Em caso de lesão a pessoa JÁ MORTA, podem exigir a cessação e perdas e danos o CÔNJUGE, os ASCENDENTES ou os DESCENDENTES (art. 12, parágrafo único).",
+      "tags": [
+        "direitos da personalidade"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-100",
+      "materia": "dir-civil",
+      "topico": "dciv-05",
+      "frente": "Prescrição × Decadência (CC/2002).",
+      "verso": "PRESCRIÇÃO: atinge a PRETENSÃO (art. 189); pode ser RENUNCIADA depois de consumada (art. 191); pode ser reconhecida DE OFÍCIO (art. 487, II, CPC) e alegada em qualquer grau; SUSPENDE-SE e INTERROMPE-SE. DECADÊNCIA: atinge o próprio DIREITO POTESTATIVO; a CONVENCIONAL pode ser alegada pela parte, a LEGAL deve ser reconhecida de ofício (art. 210); NÃO se suspende nem se interrompe (art. 207), e é IRRENUNCIÁVEL antes de consumada.",
+      "tags": [
+        "prescrição",
+        "decadência"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-101",
+      "materia": "dir-civil",
+      "topico": "dciv-06",
+      "frente": "Prazos prescricionais gerais do Código Civil (art. 205 e 206).",
+      "verso": "REGRA GERAL: 10 ANOS (art. 205). Prazos especiais (art. 206): 1 ano (hospedagem, seguros, créditos de profissionais liberais); 2 anos (alimentos/pensão alimentícia); 3 anos (aluguéis, reparação civil, títulos de crédito, enriquecimento sem causa); 4 anos (tutela); 5 anos (dívidas líquidas em instrumento público ou particular, honorários de profissionais liberais, vencimentos de servidores).",
+      "tags": [
+        "prescrição",
+        "prazos"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-102",
+      "materia": "dir-civil",
+      "topico": "dciv-08",
+      "frente": "Desconsideração da personalidade jurídica (art. 50 do CC).",
+      "verso": "Em caso de ABUSO da personalidade jurídica, caracterizado pelo DESVIO DE FINALIDADE (uso da pessoa jurídica para lesar credores ou praticar atos ilícitos) ou pela CONFUSÃO PATRIMONIAL (ausência de separação de fato entre os patrimônios), o juiz pode, a requerimento da parte ou do MP quando couber intervir, estender os efeitos de certas e determinadas obrigações aos bens particulares de administradores ou sócios beneficiados.",
+      "tags": [
+        "pessoa jurídica",
+        "desconsideração"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-103",
+      "materia": "dir-civil",
+      "topico": "dciv-12",
+      "frente": "Elementos essenciais do negócio jurídico (art. 104 do CC).",
+      "verso": "AGENTE CAPAZ; OBJETO LÍCITO, POSSÍVEL, DETERMINADO OU DETERMINÁVEL; FORMA PRESCRITA OU NÃO DEFESA EM LEI. A ausência gera NULIDADE (art. 166).",
+      "tags": [
+        "negócio jurídico"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-104",
+      "materia": "dir-civil",
+      "topico": "dciv-14",
+      "frente": "Nulidade × Anulabilidade no negócio jurídico.",
+      "verso": "NULIDADE (art. 166 a 168): pode ser reconhecida DE OFÍCIO pelo juiz; NÃO se convalida nem se confirma; não está sujeita a prazo decadencial (é IMPRESCRITÍVEL); efeitos EX TUNC; pode ser alegada por qualquer interessado ou pelo MP. ANULABILIDADE (art. 171 a 180): só se pronuncia A INTERESSE das partes (não pode ser reconhecida de ofício); PODE ser confirmada e CONVALESCER; está sujeita a PRAZO DECADENCIAL (4 anos para coação, erro, dolo, estado de perigo e lesão; 2 anos nos demais casos); efeitos, em regra, EX NUNC quanto a terceiros de boa-fé.",
+      "tags": [
+        "nulidade",
+        "anulabilidade"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-105",
+      "materia": "dir-civil",
+      "topico": "dciv-20",
+      "frente": "Vícios do negócio jurídico (art. 138 a 184 do CC).",
+      "verso": "Defeitos sociais: SIMULAÇÃO (causa NULIDADE, art. 167) e FRAUDE CONTRA CREDORES (causa anulabilidade). Defeitos da vontade: ERRO, DOLO, COAÇÃO, ESTADO DE PERIGO, LESÃO e FRAUDE CONTRA CREDORES — todos geram ANULABILIDADE.",
+      "tags": [
+        "vícios do negócio jurídico"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-106",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-04",
+      "frente": "Como se contam os prazos processuais no CPC/2015?",
+      "verso": "Em DIAS ÚTEIS (art. 219), excluindo o dia do começo e incluindo o do vencimento (art. 224). Ficam SUSPENSOS de 20 DE DEZEMBRO a 20 DE JANEIRO (art. 220).",
+      "tags": [
+        "prazos",
+        "CPC"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-107",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-04",
+      "frente": "Quem tem prazo em DOBRO no CPC/2015?",
+      "verso": "FAZENDA PÚBLICA (art. 183), MINISTÉRIO PÚBLICO (art. 180), DEFENSORIA PÚBLICA e núcleos de prática jurídica de faculdades (art. 186). E litisconsortes com procuradores DIFERENTES de escritórios DISTINTOS (art. 229) — este último NÃO se aplica ao processo eletrônico.",
+      "tags": [
+        "prazos"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-108",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-06",
+      "frente": "Principais prazos do CPC/2015.",
+      "verso": "CONTESTAÇÃO: 15 dias úteis. RECONVENÇÃO: 15 dias (na própria contestação). RÉPLICA: 15 dias. APELAÇÃO: 15 dias úteis. CONTRARRAZÕES de apelação: 15 dias. AGRAVO DE INSTRUMENTO: 15 dias. AGRAVO INTERNO: 15 dias. EMBARGOS DE DECLARAÇÃO: 5 dias. RECURSO ESPECIAL/EXTRAORDINÁRIO: 15 dias. AÇÃO RESCISÓRIA: 2 anos (decadencial). CUMPRIMENTO DE SENTENÇA: 15 dias para pagamento voluntário.",
+      "tags": [
+        "prazos"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-109",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-02",
+      "frente": "Vedação à decisão-surpresa (art. 10 do CPC).",
+      "verso": "O juiz não pode decidir, em grau algum de jurisdição, com base em fundamento a respeito do qual não se tenha dado às partes oportunidade de manifestação, AINDA QUE se trate de matéria sobre a qual deva decidir DE OFÍCIO.",
+      "tags": [
+        "princípios",
+        "contraditório"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-110",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-05",
+      "frente": "Incompetência absoluta × relativa no CPC.",
+      "verso": "ABSOLUTA (matéria, pessoa, função): alegável a QUALQUER TEMPO E GRAU, reconhecível DE OFÍCIO (art. 64, §1º). RELATIVA (territorial, valor da causa): alegável apenas em PRELIMINAR DE CONTESTAÇÃO; NÃO pode ser reconhecida de ofício (Súmula 33 do STJ); se não alegada, PRORROGA-SE a competência.",
+      "tags": [
+        "competência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-111",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-10",
+      "frente": "Requisitos da petição inicial (art. 319 do CPC).",
+      "verso": "I - juízo a que é dirigida; II - qualificação completa das partes (nomes, prenomes, estado civil, existência de união estável, profissão, CPF/CNPJ, e-mail, domicílio e residência); III - fato e fundamentos jurídicos do pedido; IV - pedido com suas especificações; V - valor da causa; VI - provas que pretende produzir; VII - opção pela realização ou não de audiência de conciliação/mediação.",
+      "tags": [
+        "petição inicial"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-112",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-12",
+      "frente": "Quando NÃO se aplica a presunção de veracidade na revelia (art. 345 do CPC)?",
+      "verso": "I - havendo pluralidade de réus, algum deles contestar a ação; II - o litígio versar sobre direitos INDISPONÍVEIS; III - a petição inicial não estiver acompanhada de instrumento que a lei considere indispensável à prova do ato; IV - as alegações de fato forem INVEROSSÍMEIS ou estiverem em CONTRADIÇÃO com a prova dos autos.",
+      "tags": [
+        "revelia"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-113",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-13",
+      "frente": "Hipóteses de sentença COM resolução de mérito (art. 487 do CPC).",
+      "verso": "I - acolhimento ou rejeição do pedido; II - DECADÊNCIA ou PRESCRIÇÃO; III - homologação do reconhecimento do pedido, da transação ou da renúncia à pretensão formulada.",
+      "tags": [
+        "sentença"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-114",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-13",
+      "frente": "Desistência da ação após a contestação: o que exige o CPC?",
+      "verso": "CONSENTIMENTO DO RÉU (art. 485, §4º). Oferecida a contestação, a desistência só produz efeitos se o réu concordar.",
+      "tags": [
+        "extinção do processo"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-115",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-15",
+      "frente": "Limites objetivos da coisa julgada (art. 503 do CPC).",
+      "verso": "A coisa julgada limita-se às questões decididas no DISPOSITIVO. O §1º estende a coisa julgada à questão PREJUDICIAL decidida expressa e incidentemente se: (I) dela depender o julgamento do mérito; (II) tiver havido CONTRADITÓRIO PRÉVIO E EFETIVO (vedada decisão-surpresa); e (III) o tribunal for competente em razão da matéria e da pessoa. O §2º exclui a extensão se houver restrições probatórias ou limitações à cognição.",
+      "tags": [
+        "coisa julgada"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-116",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-18",
+      "frente": "Ônus da prova (art. 373 do CPC) e sua distribuição dinâmica.",
+      "verso": "AUTOR: fato CONSTITUTIVO do direito. RÉU: fato IMPEDITIVO, MODIFICATIVO ou EXTINTIVO. O §1º admite a DISTRIBUIÇÃO DINÂMICA quando houver excessiva dificuldade de cumprir o encargo ou maior facilidade de obtenção da prova do fato contrário — por decisão FUNDAMENTADA, proferida ANTES da sentença, com oportunidade para as partes se desincumbirem.",
+      "tags": [
+        "provas"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-117",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-20",
+      "frente": "IRDR × IAC: qual a diferença de pressuposto?",
+      "verso": "IRDR (art. 976): exige EFETIVA REPETIÇÃO de processos com controvérsia sobre a mesma questão unicamente de direito + risco de ofensa à isonomia e à segurança jurídica. IAC (art. 947): exige questão de direito com GRANDE REPERCUSSÃO SOCIAL, SEM repetição em múltiplos processos.",
+      "tags": [
+        "precedentes",
+        "IRDR",
+        "IAC"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-118",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-25",
+      "frente": "Cabimento do agravo de instrumento (art. 1.015 do CPC).",
+      "verso": "Rol TAXATIVO (com mitigação pela tese da taxatividade mitigada — STJ, Tema 988): tutelas provisórias; mérito do processo; rejeição da alegação de convenção de arbitragem; incidente de desconsideração da personalidade jurídica; rejeição do pedido de gratuidade ou acolhimento do pedido de sua revogação; exibição ou posse de documento ou coisa; exclusão de litisconsorte; rejeição do limite do litisconsórcio; admissão ou inadmissão de intervenção de terceiros; concessão, modificação ou revogação do efeito suspensivo aos embargos à execução; redistribuição do ônus da prova (art. 373, §1º); e outros casos expressamente referidos em lei. Também cabe agravo de instrumento contra decisões interlocutórias proferidas na FASE DE LIQUIDAÇÃO, de CUMPRIMENTO DE SENTENÇA, no processo de EXECUÇÃO e no processo de INVENTÁRIO.",
+      "tags": [
+        "recursos",
+        "agravo de instrumento"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-119",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-30",
+      "frente": "Cumprimento de sentença que reconhece obrigação de pagar quantia certa (art. 523 do CPC).",
+      "verso": "O devedor será intimado para pagar em 15 DIAS. Não pago, incidem MULTA DE 10% e HONORÁRIOS ADVOCATÍCIOS DE 10%. Se houver pagamento PARCIAL, a multa e os honorários incidem sobre o restante. Prazo para impugnação: 15 dias, contados após o transcurso do prazo de pagamento, independentemente de nova intimação.",
+      "tags": [
+        "cumprimento de sentença"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-120",
+      "materia": "dir-proc-civ",
+      "topico": "dpc-08",
+      "frente": "Reconvenção no CPC/2015: como e quando é apresentada?",
+      "verso": "NA PRÓPRIA CONTESTAÇÃO (art. 343), nos MESMOS AUTOS, sem necessidade de ação autônoma e sem recolhimento de novas custas (salvo quando ampliar o objeto). Deve haver CONEXÃO com a ação principal ou com o fundamento da defesa. A desistência da ação ou a ocorrência de causa extintiva não impede o julgamento da reconvenção.",
+      "tags": [
+        "reconvenção",
+        "resposta do réu"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-121",
+      "materia": "dir-fin",
+      "topico": "dfin-01",
+      "frente": "PPA × LDO × LOA: função de cada uma.",
+      "verso": "PPA (4 anos): diretrizes, objetivos e metas, de forma REGIONALIZADA, para despesas de capital e programas de duração continuada — PLANEJAMENTO ESTRATÉGICO. LDO (anual): metas e prioridades, orienta a elaboração da LOA, alterações na legislação tributária e política de aplicação das agências de fomento — TÁTICA. LOA (anual): orçamento FISCAL + INVESTIMENTO das estatais + SEGURIDADE SOCIAL — OPERACIONAL.",
+      "tags": [
+        "orçamento"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-122",
+      "materia": "dir-fin",
+      "topico": "dfin-04",
+      "frente": "Regra de ouro (art. 167, III, da CF).",
+      "verso": "Vedada a realização de OPERAÇÕES DE CRÉDITO que excedam o montante das DESPESAS DE CAPITAL, ressalvadas as autorizadas mediante créditos suplementares ou especiais com finalidade precisa, aprovados pelo Poder Legislativo por MAIORIA ABSOLUTA.",
+      "tags": [
+        "vedações orçamentárias"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-123",
+      "materia": "dir-fin",
+      "topico": "dfin-04",
+      "frente": "Princípio da não afetação das receitas: o que ele veda e quais as ressalvas?",
+      "verso": "Veda a VINCULAÇÃO DE RECEITA DE IMPOSTOS a órgão, fundo ou despesa (art. 167, IV). Ressalvas: repartição constitucional dos arts. 158 e 159; saúde (art. 198, §2º); educação (art. 212); administração tributária (art. 37, XXII); garantias às operações de crédito por antecipação de receita; e o §4º do art. 167. NÃO alcança taxas e contribuições.",
+      "tags": [
+        "vedações orçamentárias"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-124",
+      "materia": "dir-fin",
+      "topico": "dfin-05",
+      "frente": "Créditos adicionais: suplementares, especiais e extraordinários.",
+      "verso": "SUPLEMENTARES: REFORÇO de dotação já existente (autorizados por lei, que pode ser a própria LOA; abertos por decreto). ESPECIAIS: despesas para as quais NÃO HAJA dotação específica (dependem de lei). EXTRAORDINÁRIOS: despesas URGENTES e IMPREVISÍVEIS (guerra, comoção interna, calamidade pública) — abertos por MEDIDA PROVISÓRIA na esfera federal e por DECRETO nas demais, com imediata comunicação ao Legislativo.",
+      "tags": [
+        "créditos adicionais"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-125",
+      "materia": "dir-fin",
+      "topico": "dfin-05",
+      "frente": "Regime contábil da receita e da despesa pública (art. 35 da Lei 4.320/1964).",
+      "verso": "REGIME MISTO: RECEITA pelo regime de CAIXA (pertencem ao exercício as receitas nele ARRECADADAS) e DESPESA pelo regime de COMPETÊNCIA (as despesas nele legalmente EMPENHADAS).",
+      "tags": [
+        "Lei 4.320"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-126",
+      "materia": "dir-fin",
+      "topico": "dfin-05",
+      "frente": "Estágios da despesa e da receita pública.",
+      "verso": "DESPESA: EMPENHO → LIQUIDAÇÃO → PAGAMENTO. RECEITA: PREVISÃO → LANÇAMENTO → ARRECADAÇÃO → RECOLHIMENTO.",
+      "tags": [
+        "execução orçamentária"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-127",
+      "materia": "dir-fin",
+      "topico": "dfin-05",
+      "frente": "LRF — limites de despesa total com pessoal sobre a receita corrente líquida.",
+      "verso": "UNIÃO 50% | ESTADOS 60% | MUNICÍPIOS 60%. Repartição ESTADUAL: Executivo 49%, Judiciário 6%, Legislativo (incluído o TCE) 3%, Ministério Público 2%. Limites de ALERTA (90%) e PRUDENCIAL (95%). Recondução em até 2 QUADRIMESTRES.",
+      "tags": [
+        "LRF",
+        "despesa com pessoal"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-128",
+      "materia": "dir-fin",
+      "topico": "dfin-05",
+      "frente": "Relatórios de transparência da LRF: RREO e RGF.",
+      "verso": "RREO (Relatório Resumido da Execução Orçamentária): BIMESTRAL, publicado até 30 dias após o encerramento de cada bimestre (art. 52 da LRF; art. 165, §3º, da CF). RGF (Relatório de Gestão Fiscal): QUADRIMESTRAL, publicado até 30 dias após o encerramento do quadrimestre (arts. 54 e 55 da LRF).",
+      "tags": [
+        "LRF",
+        "transparência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-129",
+      "materia": "dir-fin",
+      "topico": "dfin-03",
+      "frente": "Controle interno × controle externo da execução orçamentária.",
+      "verso": "INTERNO (art. 74 da CF): cada Poder mantém sistema próprio para avaliar metas do PPA, execução dos programas, legalidade e resultados da gestão, e controle das operações de crédito, avais e garantias. EXTERNO (art. 71): exercido pelo PODER LEGISLATIVO com auxílio do TRIBUNAL DE CONTAS. O TCU NÃO é subordinado ao Congresso — é órgão independente de extração constitucional.",
+      "tags": [
+        "controle",
+        "TCU"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-130",
+      "materia": "dir-prev",
+      "topico": "dprev-01",
+      "frente": "Tripé da seguridade social e sua natureza contributiva.",
+      "verso": "PREVIDÊNCIA (contributiva, filiação obrigatória) + SAÚDE (universal, gratuita, NÃO contributiva) + ASSISTÊNCIA SOCIAL (a quem dela necessitar, INDEPENDENTEMENTE de contribuição). Mnemônico PAS.",
+      "tags": [
+        "seguridade social"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-131",
+      "materia": "dir-prev",
+      "topico": "dprev-03",
+      "frente": "Segurados obrigatórios do RGPS.",
+      "verso": "EMPREGADO, EMPREGADO DOMÉSTICO, CONTRIBUINTE INDIVIDUAL, TRABALHADOR AVULSO e SEGURADO ESPECIAL. O FACULTATIVO é o maior de 16 anos que NÃO exerce atividade remunerada.",
+      "tags": [
+        "RGPS",
+        "segurados"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-132",
+      "materia": "dir-prev",
+      "topico": "dprev-03",
+      "frente": "Classes de dependentes do RGPS (art. 16 da Lei 8.213/1991).",
+      "verso": "CLASSE I: cônjuge, companheira/companheiro, filho não emancipado menor de 21 anos, inválido ou com deficiência (dependência PRESUMIDA). CLASSE II: os pais. CLASSE III: o irmão não emancipado menor de 21 anos, inválido ou com deficiência. A existência de dependente de uma classe EXCLUI as demais; classes II e III exigem COMPROVAÇÃO da dependência econômica.",
+      "tags": [
+        "dependentes"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-133",
+      "materia": "dir-prev",
+      "topico": "dprev-10",
+      "frente": "BPC/LOAS — requisitos.",
+      "verso": "Um salário mínimo mensal à PESSOA COM DEFICIÊNCIA e ao IDOSO COM 65 ANOS OU MAIS que comprovem não possuir meios de prover a própria manutenção nem de tê-la provida por sua família (art. 203, V, da CF; Lei nº 8.742/1993). É benefício ASSISTENCIAL: NÃO exige contribuição, NÃO gera pensão por morte e NÃO tem 13º salário.",
+      "tags": [
+        "BPC",
+        "LOAS",
+        "assistência social"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-134",
+      "materia": "dir-prev",
+      "topico": "dprev-16",
+      "frente": "RPPS após a EC nº 103/2019 — pontos centrais.",
+      "verso": "Caráter CONTRIBUTIVO e SOLIDÁRIO; aposentadoria COMPULSÓRIA aos 75 anos; vedação a mais de UM regime próprio e mais de UMA unidade gestora por ente; vedação de contagem de tempo FICTÍCIO; previdência complementar FACULTATIVA por entidade fechada de natureza pública; contribuição de aposentados e pensionistas sobre o excedente do teto do RGPS; vedação de instituir NOVOS RPPS.",
+      "tags": [
+        "RPPS",
+        "EC 103"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-135",
+      "materia": "dir-prev",
+      "topico": "dprev-12",
+      "frente": "Carência dos benefícios do RGPS.",
+      "verso": "180 contribuições mensais: aposentadoria programada. 12 contribuições: auxílio por incapacidade temporária e aposentadoria por incapacidade permanente (dispensada em acidente de qualquer natureza, doença profissional/do trabalho e doenças graves especificadas). 10 contribuições: auxílio-reclusão. SEM carência: salário-família, auxílio-acidente, pensão por morte e salário-maternidade da empregada, doméstica e avulsa (10 para individual, facultativa e especial).",
+      "tags": [
+        "carência"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-136",
+      "materia": "dir-humanos",
+      "topico": "dh-04",
+      "frente": "Dimensões (gerações) dos direitos humanos.",
+      "verso": "1ª = LIBERDADE (direitos civis e políticos; abstenção do Estado). 2ª = IGUALDADE (direitos sociais, econômicos e culturais; prestação positiva). 3ª = SOLIDARIEDADE/FRATERNIDADE (direitos difusos e coletivos: meio ambiente, paz, desenvolvimento, autodeterminação). 4ª = democracia, informação, pluralismo e bioética (Bobbio/Bonavides).",
+      "tags": [
+        "dimensões"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-137",
+      "materia": "dir-humanos",
+      "topico": "dh-03",
+      "frente": "Características dos direitos humanos.",
+      "verso": "Universalidade, historicidade, imprescritibilidade, IRRENUNCIABILIDADE, INALIENABILIDADE, inviolabilidade, INDIVISIBILIDADE, interdependência, complementaridade, LIMITABILIDADE (relatividade — não são absolutos, salvo a vedação à tortura) e efetividade.",
+      "tags": [
+        "características"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-138",
+      "materia": "dir-humanos",
+      "topico": "dh-08",
+      "frente": "Universalismo × relativismo cultural: qual a solução adotada em Viena/1993?",
+      "verso": "UNIVERSALISMO RELATIVO (ou diálogo intercultural): todos os direitos humanos são universais, indivisíveis, interdependentes e inter-relacionados, DEVENDO-SE levar em conta as particularidades nacionais e regionais e os diversos contextos históricos, culturais e religiosos — mas cabe aos Estados, qualquer que seja seu sistema, promover e proteger todos os direitos humanos. Complementam a MARGEM DE APRECIAÇÃO NACIONAL e o NÚCLEO ESSENCIAL dos direitos.",
+      "tags": [
+        "Viena 1993",
+        "universalismo"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-139",
+      "materia": "dir-humanos",
+      "topico": "dh-06",
+      "frente": "Sistema Interamericano: composição da Comissão e da Corte.",
+      "verso": "COMISSÃO INTERAMERICANA (Washington): 7 MEMBROS eleitos a título pessoal pela Assembleia Geral da OEA, mandato de 4 anos (renovável uma vez). Recebe PETIÇÕES INDIVIDUAIS (art. 44) e comunicações entre Estados (art. 45). CORTE INTERAMERICANA (San José): 7 JUÍZES eleitos a título pessoal pelos Estados Partes, mandato de 6 anos (renovável uma vez). Competência contenciosa (casos submetidos pela Comissão ou por Estados — NUNCA por indivíduos diretamente) e consultiva.",
+      "tags": [
+        "OEA",
+        "Corte IDH"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-140",
+      "materia": "dir-humanos",
+      "topico": "dh-05",
+      "frente": "Quais tratados de direitos humanos o Brasil aprovou com status de emenda constitucional?",
+      "verso": "A CONVENÇÃO SOBRE OS DIREITOS DAS PESSOAS COM DEFICIÊNCIA (e seu Protocolo Facultativo), promulgada pelo Decreto nº 6.949/2009, e a CONVENÇÃO INTERAMERICANA CONTRA O RACISMO, A DISCRIMINAÇÃO RACIAL E FORMAS CORRELATAS DE INTOLERÂNCIA, promulgada pelo Decreto nº 10.932/2022. Ambos aprovados pelo rito do art. 5º, §3º (2 turnos × 3/5 em cada Casa).",
+      "tags": [
+        "tratados",
+        "art. 5º §3º"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-141",
+      "materia": "dir-humanos",
+      "topico": "dh-02",
+      "frente": "DUDH/1948: natureza jurídica.",
+      "verso": "NÃO é tratado — é RESOLUÇÃO (Recomendação 217-A) da Assembleia Geral da ONU, sem força vinculante originária. Hoje, grande parte de seu conteúdo é considerada COSTUME INTERNACIONAL e princípio geral de direito. Adotada em 10 DE DEZEMBRO DE 1948, em Paris (Dia Internacional dos Direitos Humanos).",
+      "tags": [
+        "DUDH"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-142",
+      "materia": "dir-humanos",
+      "topico": "dh-07",
+      "frente": "Princípio pro homine (pro persona).",
+      "verso": "Na INTERPRETAÇÃO, aplica-se a norma mais favorável à pessoa humana; na APLICAÇÃO, a norma que confira maior proteção. Complementos: vedação ao retrocesso (efeito cliquet), mínimo existencial, reserva do possível e proibição de proteção insuficiente.",
+      "tags": [
+        "princípios"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-143",
+      "materia": "adm-geral",
+      "topico": "adm-01",
+      "frente": "Funções administrativas (ciclo administrativo).",
+      "verso": "PODC — PLANEJAMENTO, ORGANIZAÇÃO, DIREÇÃO e CONTROLE. Planejamento define objetivos e meios; organização distribui tarefas e recursos; direção lidera e motiva; controle monitora, compara e corrige.",
+      "tags": [
+        "funções administrativas"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-144",
+      "materia": "adm-geral",
+      "topico": "adm-01",
+      "frente": "Taylor × Fayol × Weber: foco de cada escola.",
+      "verso": "TAYLOR (Administração Científica): foco nas TAREFAS — tempos e movimentos, padronização. FAYOL (Teoria Clássica): foco na ESTRUTURA — 14 princípios e 6 funções da empresa. WEBER (Burocracia): foco na RACIONALIDADE-LEGALIDADE — normas formais, impessoalidade, hierarquia, mérito.",
+      "tags": [
+        "escolas da administração"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-145",
+      "materia": "adm-geral",
+      "topico": "adm-02",
+      "frente": "Fatores higiênicos × fatores motivacionais (Herzberg).",
+      "verso": "HIGIÊNICOS/PROFILÁTICOS (extrínsecos): salário, condições de trabalho, política da empresa, relações interpessoais, segurança no emprego. Sua ausência gera INSATISFAÇÃO, mas sua presença NÃO motiva. MOTIVACIONAIS (intrínsecos): o trabalho em si, reconhecimento, responsabilidade, crescimento, realização. Geram SATISFAÇÃO.",
+      "tags": [
+        "motivação",
+        "Herzberg"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-146",
+      "materia": "adm-geral",
+      "topico": "adm-03",
+      "frente": "PDCA × SDCA.",
+      "verso": "PDCA (Plan-Do-Check-Act) serve para MELHORAR o processo — ciclo de Deming. SDCA (Standard-Do-Check-Act) serve para MANTER o padrão alcançado. Ambos são iterativos e contínuos.",
+      "tags": [
+        "PDCA",
+        "qualidade"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-147",
+      "materia": "adm-geral",
+      "topico": "adm-04",
+      "frente": "Análise SWOT/FOFA: o que é interno e o que é externo?",
+      "verso": "INTERNO: FORÇAS (pontos fortes) e FRAQUEZAS (pontos fracos) — controláveis pela organização. EXTERNO: OPORTUNIDADES e AMEAÇAS — não controláveis, decorrem do ambiente (macrotendências, concorrência, legislação).",
+      "tags": [
+        "SWOT",
+        "planejamento estratégico"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-148",
+      "materia": "adm-geral",
+      "topico": "adm-04",
+      "frente": "Matriz GUT — como se pontua?",
+      "verso": "GRAVIDADE (impacto do problema), URGÊNCIA (prazo disponível) e TENDÊNCIA (evolução se nada for feito), cada uma com notas de 1 a 5. A prioridade é o PRODUTO G × U × T (de 1 a 125).",
+      "tags": [
+        "GUT",
+        "priorização"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-149",
+      "materia": "adm-geral",
+      "topico": "adm-03",
+      "frente": "Balanced Scorecard (BSC): as quatro perspectivas.",
+      "verso": "FINANCEIRA, CLIENTES, PROCESSOS INTERNOS e APRENDIZADO E CRESCIMENTO. Kaplan e Norton. Traduz a estratégia em objetivos, indicadores, metas e iniciativas interligados por relações de causa e efeito (mapa estratégico).",
+      "tags": [
+        "BSC",
+        "gestão estratégica"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-150",
+      "materia": "adm-geral",
+      "topico": "adm-01",
+      "frente": "Modelos de administração pública: patrimonialista, burocrático e gerencial.",
+      "verso": "PATRIMONIALISTA: confusão entre patrimônio público e privado; nepotismo; corrupção. BUROCRÁTICO: legalidade, impessoalidade, formalismo, controle A PRIORI de procedimentos. GERENCIAL (EC 19/1998 e PDRAE/1995): eficiência, resultados, controle A POSTERIORI, orientação ao cidadão-cliente, descentralização, accountability.",
+      "tags": [
+        "gestão pública"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-151",
+      "materia": "secretaria",
+      "topico": "sec-03",
+      "frente": "Métodos de arquivamento DIRETOS e INDIRETOS.",
+      "verso": "DIRETOS (busca sem índice): ALFABÉTICO, GEOGRÁFICO, NUMÉRICO SIMPLES e NUMÉRICO CRONOLÓGICO. INDIRETOS (exigem índice): ALFANUMÉRICO, IDEOGRÁFICO (por assunto) e NUMÉRICO DIGIT.",
+      "tags": [
+        "arquivologia"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-152",
+      "materia": "secretaria",
+      "topico": "sec-03",
+      "frente": "Teoria das três idades dos documentos.",
+      "verso": "CORRENTE (1ª idade): em curso, consultados frequentemente, junto ao órgão produtor. INTERMEDIÁRIA (2ª idade): consulta eventual, aguardando destinação final. PERMANENTE (3ª idade): valor HISTÓRICO — preservados DEFINITIVAMENTE, NUNCA eliminados.",
+      "tags": [
+        "arquivologia",
+        "ciclo vital"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-153",
+      "materia": "secretaria",
+      "topico": "sec-04",
+      "frente": "Tabela de temporalidade de documentos: o que é e o que define?",
+      "verso": "Instrumento arquivístico resultante da AVALIAÇÃO documental, aprovado por comissão permanente de avaliação, que define os PRAZOS DE GUARDA nas fases CORRENTE e INTERMEDIÁRIA e a DESTINAÇÃO FINAL (eliminação ou guarda permanente). Lei nº 8.159/1991.",
+      "tags": [
+        "tabela de temporalidade"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-154",
+      "materia": "secretaria",
+      "topico": "sec-05",
+      "frente": "Características formais da ATA.",
+      "verso": "Texto CORRIDO (sem parágrafos nem espaços em branco), sem abreviaturas, sem rasuras e sem uso de corretivo; numeração por EXTENSO; verbos no PRETÉRITO PERFEITO DO INDICATIVO; erros corrigidos com as expressões 'DIGO' ou 'EM TEMPO'; assinatura do secretário e dos presentes.",
+      "tags": [
+        "ata",
+        "reuniões"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-155",
+      "materia": "secretaria",
+      "topico": "sec-06",
+      "frente": "Funções do protocolo (sequência do fluxo documental).",
+      "verso": "RECEBIMENTO → CLASSIFICAÇÃO → REGISTRO E AUTUAÇÃO → DISTRIBUIÇÃO/MOVIMENTAÇÃO (internas) → EXPEDIÇÃO (externa) → ARQUIVAMENTO.",
+      "tags": [
+        "protocolo"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-156",
+      "materia": "secretaria",
+      "topico": "sec-02",
+      "frente": "Precedência em cerimonial público: regra prática.",
+      "verso": "A DIREITA DO ANFITRIÃO é a posição de honra; o CENTRO da mesa é o lugar de maior precedência, alternando-se direita e esquerda a partir dele. A bandeira do Brasil fica ao CENTRO, hasteada POR PRIMEIRO e arriada POR ÚLTIMO. O hino nacional executa-se por último quando há hino de país estrangeiro anfitrião. No veículo, o lugar de honra é o banco traseiro direito.",
+      "tags": [
+        "cerimonial",
+        "precedência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-157",
+      "materia": "secretaria",
+      "topico": "sec-01",
+      "frente": "Decreto nº 9.758/2019: o que ele simplifica no atendimento público?",
+      "verso": "Veda exigências desnecessárias ou desproporcionais; admite a DECLARAÇÃO DE AUTENTICIDADE firmada pelo próprio servidor e a AUTODECLARAÇÃO do cidadão; dispensa a apresentação de documentos que já constem de bases oficiais; e veda a exigência de reconhecimento de firma em documentos produzidos no Brasil.",
+      "tags": [
+        "atendimento",
+        "desburocratização"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-158",
+      "materia": "secretaria",
+      "topico": "sec-02",
+      "frente": "Dimensões da qualidade em serviços (SERVQUAL).",
+      "verso": "CONFIABILIDADE (cumprir o prometido com precisão), RESPONSABILIDADE/PRESTEZA (agilidade e disposição para ajudar), SEGURANÇA (conhecimento, cortesia e capacidade de inspirar confiança), EMPATIA (atenção individualizada) e TANGIBILIDADE (aparência das instalações, equipamentos e pessoal).",
+      "tags": [
+        "qualidade",
+        "atendimento"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-159",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-01",
+      "frente": "Quais são os dois grandes sistemas de controle de constitucionalidade e quais efeitos produzem?",
+      "verso": "DIFUSO (incidental, por via de exceção): exercido por qualquer juiz ou tribunal no caso concreto, com efeitos INTER PARTES — salvo a resolução do Senado que suspende a execução da lei (art. 52, X, CF), conferindo eficácia ERGA OMNES. CONCENTRADO (abstrato): exercido por um único órgão (STF, em face da CF; TJ, em face da Constituição Estadual), por ação direta, com efeitos ERGA OMNES e VINCULANTES.",
+      "tags": [
+        "controle difuso",
+        "controle concentrado",
+        "efeitos"
+      ],
+      "dificuldade": "facil"
+    },
+    {
+      "id": "fc-160",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-02",
+      "frente": "Quais são os legitimados UNIVERSAIS e os ESPECIAIS para propor ADI (art. 103 da CF)?",
+      "verso": "UNIVERSAIS (presume-se o interesse de agir): Presidente da República, Mesa do Senado, Mesa da Câmara dos Deputados, Procurador-Geral da República, Conselho Federal da OAB e partido político com representação no Congresso Nacional. ESPECIAIS (exigem PERTINÊNCIA TEMÁTICA): Mesa de Assembleia Legislativa ou da Câmara Legislativa do DF, Governador de Estado ou do DF e confederação sindical ou entidade de classe de âmbito nacional. Mnemônico: 3 MESAS, 3 AUTORIDADES, 3 ENTIDADES.",
+      "tags": [
+        "ADI",
+        "art. 103 CF",
+        "pertinência temática"
+      ],
+      "dificuldade": "dificil"
+    },
+    {
+      "id": "fc-161",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-03",
+      "frente": "O que é o princípio da SUBSIDIARIEDADE da ADPF e o que ela alcança que a ADI não alcança?",
+      "verso": "A ADPF só é cabível quando NÃO HOUVER outro meio eficaz de sanar a lesividade ao preceito fundamental (Lei nº 9.882/1999). Em contrapartida, ela alcança atos do Poder Público em geral (não apenas leis e atos normativos), inclusive leis MUNICIPAIS em face da CF e o DIREITO PRÉ-CONSTITUCIONAL (normas anteriores à Constituição), que ficam fora da ADI.",
+      "tags": [
+        "ADPF",
+        "subsidiariedade",
+        "lei municipal"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-162",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-04",
+      "frente": "Qual o prazo para impetrar mandado de segurança e qual a sua natureza?",
+      "verso": "CENTO E VINTE (120) DIAS, contados da ciência, pelo interessado, do ato impugnado (art. 23 da Lei nº 12.016/2009). É prazo DECADENCIAL: não se suspende nem se interrompe, e seu escoamento não impede outras vias (como a ação ordinária), apenas o MS.",
+      "tags": [
+        "mandado de segurança",
+        "prazo 120 dias",
+        "decadência"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-163",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-04",
+      "frente": "Qual remédio constitucional assegura acesso a informações pessoais em bancos de dados governamentais e a sua retificação?",
+      "verso": "HABEAS DATA (art. 5º, LXXII, CF; Lei nº 9.507/1997), gratuito e sem exigência de advogado. Pressupõe a RECUSA ADMINISTRATIVA prévia do acesso às informações (Súmula 2 do STJ: \"não cabe habeas data se não houve recusa de acesso às informações\"). Não serve para obter documentos em geral nem para acesso a processos — aí cabe petição (art. 5º, XXXIV) ou MS.",
+      "tags": [
+        "habeas data",
+        "Súmula 2 STJ",
+        "retificação"
+      ],
+      "dificuldade": "medio"
+    },
+    {
+      "id": "fc-164",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-06",
+      "frente": "Quais são os requisitos e os efeitos de uma SÚMULA VINCULANTE?",
+      "verso": "Requisitos (art. 103-A da CF; Lei nº 11.417/2006): existência de REITERADAS DECISÕES sobre matéria constitucional, decisão de DOIS TERÇOS dos membros do STF, de ofício ou por provocação dos legitimados, e aprovação de enunciado que verse sobre validade, interpretação e eficácia de normas determinadas. Efeitos: vinculam os demais órgãos do Poder Judiciário e a administração pública direta e indireta nas esferas FEDERAL, ESTADUAL e MUNICIPAL. Cabível RECLAMAÇÃO ao STF contra decisão ou ato que a contrarie (art. 7º da Lei 11.417/2006).",
+      "tags": [
+        "súmula vinculante",
+        "2/3 dos ministros",
+        "reclamação"
+      ],
+      "dificuldade": "dificil"
+    }
+  ]
+}

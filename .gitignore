@@ -1,0 +1,20 @@
+# dependências (só de desenvolvimento — o app em si não tem runtime deps)
+node_modules/
+package-lock.json
+
+# artefatos gerados
+docs/prompts/
+*.log
+npm-debug.log*
+
+# sistema / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# caches
+.cache/
+.tmp/
+coverage/

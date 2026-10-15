@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "orgao": "Assembleia Legislativa do Estado do Pará – ALEPA",
+    "concurso": "Concurso Público nº 002/2026 (Nível Superior)",
+    "edital": "Edital de Abertura nº 001/2026, de 28 de setembro de 2026",
+    "retificacao": "Edital de Retificação nº 002/2026, de 1º de outubro de 2026",
+    "banca": "Fundação CETAP",
+    "siteBanca": "https://fundacaocetap.selecao.net.br/informacoes/156/",
+    "siteInscricao": "https://www.fundacaocetap.com.br",
+    "comissao": "Comissão do Concurso Público da ALEPA – Ato da Mesa Diretora nº 354/2026 - MD/AL, de 16/04/2026",
+    "regimeJuridico": "Lei Estadual nº 5.810, de 24/01/1994 (RJU dos Servidores Públicos Civis do Estado do Pará)",
+    "validade": "2 (dois) anos, prorrogável uma vez por igual período",
+    "localProva": "Prioritariamente Belém/PA",
+    "fonteConteudo": "Anexo II – Conteúdo Programático (28/09/2026) e Anexo I – Informações dos Cargos"
+  },
+  "cargo": {
+    "codigo": "CARGO 02",
+    "nome": "Assessoramento Legislativo - Assessor Técnico",
+    "planoCargo": "PL.AL.102",
+    "escolaridade": "Superior Completo",
+    "requisito": "Graduação em qualquer área, com registro no órgão de classe quando necessário",
+    "jornada": "30 (trinta) horas semanais",
+    "vencimentoBasico": 3697.73,
+    "gratificacaoNS": { "percentual": 80, "valor": 2958.18 },
+    "gratificacaoDL0412": { "percentual": 100, "valor": 3697.73 },
+    "remuneracaoTotal": 10353.64,
+    "taxaInscricao": 118.0,
+    "vagas": {
+      "total": 11,
+      "amplaConcorrencia": 7,
+      "pessoaComDeficiencia": 1,
+      "pretosEPardos": 1,
+      "quilombolas": 1,
+      "indigenas": 1
+    },
+    "atribuicoes": [
+      "Prestar assessoramento técnico, jurídico e administrativo a Deputados, Comissões e à Mesa Diretora",
+      "Elaborar projetos de lei, decretos legislativos e resoluções",
+      "Emitir pareceres sobre matérias legislativas e administrativas",
+      "Analisar a legalidade de proposições em tramitação",
+      "Estudar, em profundidade, conflitos de leis em matéria apresentada para exame",
+      "Redigir pronunciamentos e correspondências oficiais",
+      "Realizar estudos e pesquisas de interesse da Assembleia Legislativa",
+      "Apreciar e exarar parecer em recursos interpostos contra decisões (competência exclusiva da Assessoria Técnica)",
+      "Prestar assessoramento técnico a projetos de treinamento e desenvolvimento de recursos humanos e à modernização administrativa do Poder Legislativo do Estado do Pará"
+    ]
+  },
+  "fases": [
+    {
+      "id": "objetiva",
+      "nome": "Prova Objetiva",
+      "carater": "Eliminatória e classificatória",
+      "data": "2026-12-13",
+      "turno": "MANHÃ",
+      "duracaoMinutos": 180,
+      "formato": "50 questões de múltipla escolha com 5 alternativas (A a E) e apenas uma correta",
+      "valorQuestao": 0.2,
+      "pontuacaoMaxima": 10.0,
+      "notaMinimaAprovacao": 6.0,
+      "corteClassificatorio": "Serão considerados aprovados os classificados até 4 (quatro) vezes o número de vagas do cargo (proporção 4:1)"
+    },
+    {
+      "id": "titulos",
+      "nome": "Prova de Títulos",
+      "carater": "Classificatória",
+      "observacao": "Aplicável aos candidatos aprovados na Prova Objetiva, observados os limites do edital e a documentação exigida após a retificação de 01/10/2026."
+    },
+    {
+      "id": "heteroidentificacao",
+      "nome": "Confirmação Complementar da Autodeclaração (Heteroidentificação / Verificação Documental)",
+      "carater": "Eliminatória",
+      "observacao": "Somente para candidatos que optarem por concorrer às vagas reservadas a pessoas pretas e pardas, indígenas e quilombolas, nos termos da Lei Estadual nº 11.286/2025 e do Decreto Estadual nº 5.130/2025."
+    }
+  ],
+  "estruturaProva": [
+    { "id": "lp",   "disciplina": "Língua Portuguesa",                          "questoes": 10, "peso": 0.2, "pontos": 2.0, "bloco": "basica" },
+    { "id": "leg",  "disciplina": "Legislação e Ética no Serviço Público",       "questoes": 10, "peso": 0.2, "pontos": 2.0, "bloco": "basica" },
+    { "id": "inf",  "disciplina": "Noções de Informática",                       "questoes": 5,  "peso": 0.2, "pontos": 1.0, "bloco": "basica" },
+    { "id": "rl",   "disciplina": "Raciocínio Lógico",                           "questoes": 5,  "peso": 0.2, "pontos": 1.0, "bloco": "basica" },
+    { "id": "ce",   "disciplina": "Conhecimentos Específicos",                   "questoes": 20, "peso": 0.2, "pontos": 4.0, "bloco": "especifica" }
+  ],
+  "estimativaConhecimentosEspecificos": {
+    "aviso": "Distribuição ESTIMADA das 20 questões de Conhecimentos Específicos entre os 11 blocos específicos do Anexo II. O edital não fixa o número de questões por bloco — use como priorização de estudo e ajuste na tela de Configurações.",
+    "porMateria": {
+      "dir-adm": 3,
+      "dir-const": 3,
+      "proc-leg": 3,
+      "dir-civil": 2,
+      "dir-proc-civ": 2,
+      "dir-proc-const": 1,
+      "dir-fin": 1,
+      "dir-prev": 1,
+      "dir-humanos": 1,
+      "adm-geral": 1,
+      "secretaria": 2
+    }
+  },
+  "criteriosDesempate": [
+    "a) tiver maior idade, dentre os candidatos com idade igual ou superior a 60 anos (art. 27, parágrafo único, da Lei nº 10.741/2003)",
+    "b) obtiver maior nota na Prova de Conhecimentos Específicos da Prova Objetiva",
+    "c) obtiver maior nota na Prova de Legislação e Ética no Serviço Público da Prova Objetiva",
+    "d) obtiver maior nota na Prova de Língua Portuguesa da Prova Objetiva",
+    "e) obtiver maior pontuação na Prova de Raciocínio Lógico da Prova Objetiva",
+    "f) obtiver maior pontuação na Prova de Noções de Informática da Prova Objetiva"
+  ],
+  "cronograma": [
+    { "data": "2026-09-28", "evento": "Publicação do Edital de Abertura e dos Anexos I a VII", "status": "concluido" },
+    { "data": "2026-09-29", "evento": "Início do prazo de recurso contra o Edital de Abertura", "status": "concluido", "fim": "2026-09-30" },
+    { "data": "2026-10-01", "evento": "Publicação do Edital de Retificação nº 002/2026", "status": "concluido" },
+    { "data": "2026-10-01", "evento": "Abertura das INSCRIÇÕES", "status": "em-andamento", "fim": "2026-11-04", "critico": true },
+    { "data": "2026-10-01", "evento": "Pedido de isenção da taxa (PcD e hipossuficientes)", "status": "concluido", "fim": "2026-10-02" },
+    { "data": "2026-10-01", "evento": "Envio de documentos da isenção", "status": "concluido", "fim": "2026-10-05" },
+    { "data": "2026-10-01", "evento": "Solicitação de atendimento pelo nome social", "status": "em-andamento", "fim": "2026-11-04" },
+    { "data": "2026-10-01", "evento": "Envio da solicitação de atendimento especial e documentação", "status": "em-andamento", "fim": "2026-11-05" },
+    { "data": "2026-10-21", "evento": "Relação preliminar das isenções deferidas/indeferidas", "status": "futuro" },
+    { "data": "2026-10-22", "evento": "Recurso contra a relação preliminar de isenções", "status": "futuro", "fim": "2026-10-23" },
+    { "data": "2026-10-30", "evento": "Relação DEFINITIVA das isenções", "status": "futuro" },
+    { "data": "2026-11-04", "evento": "ENCERRAMENTO DAS INSCRIÇÕES (último dia)", "status": "futuro", "critico": true },
+    { "data": "2026-11-13", "evento": "Lista provisória de candidatos inscritos", "status": "futuro" },
+    { "data": "2026-11-16", "evento": "Confirmação das inscrições (recurso contra a lista provisória)", "status": "futuro", "fim": "2026-11-17" },
+    { "data": "2026-11-25", "evento": "Homologação das inscrições + LOCAIS E HORÁRIO da Prova Objetiva", "status": "futuro", "critico": true },
+    { "data": "2026-12-13", "evento": "REALIZAÇÃO DA PROVA OBJETIVA (turno da manhã)", "status": "futuro", "critico": true },
+    { "data": "2026-12-14", "evento": "Gabarito oficial preliminar", "status": "futuro" },
+    { "data": "2026-12-15", "evento": "Recurso contra o gabarito preliminar", "status": "futuro", "fim": "2026-12-16" },
+    { "data": "2027-01-20", "evento": "Gabarito oficial definitivo", "status": "futuro" },
+    { "data": "2027-01-25", "evento": "Resultado preliminar da Prova Objetiva / Convocações", "status": "futuro", "observacao": "Data praticada no Anexo III do Edital 001/2026; confirme no Anexo III do Edital 002/2026." },
+    { "data": "2027-03-10", "evento": "Resultado final definitivo (referência do Edital 001/2026)", "status": "futuro" }
+  ],
+  "observacoes": [
+    "A Retificação nº 002/2026 (01/10/2026) alterou horários das provas, regras de classificação, documentação da Prova de Títulos e o Conteúdo Programático. Sempre confirme no site da banca.",
+    "As datas posteriores à Prova Objetiva seguem o Anexo III divulgado pela banca; pequenas divergências entre os três editais são possíveis.",
+    "O horário das etapas observa o horário oficial de Brasília, ainda que a página da banca destaque o horário de Belém nas inscrições.",
+    "Não haverá segunda chamada: o não comparecimento implica eliminação automática.",
+    "É vedada a inscrição condicional, extemporânea, por correspondência, fax, e-mail ou qualquer outra via não prevista no edital.",
+    "Este app usa o conteúdo do Anexo II publicado em 28/09/2026. Se a banca publicar nova retificação do Conteúdo Programático, atualize o arquivo data/curriculo.json."
+  ]
+}
