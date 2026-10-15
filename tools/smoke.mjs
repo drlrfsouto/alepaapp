@@ -105,11 +105,16 @@ async function main() {
       if (!btn) throw new Error('botão de gerar plano não encontrado');
       btn.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
       await esperar(); await esperar();
-      const dias = document.querySelectorAll('.dia, .cartao-dia, .bloco-dia').length;
-      const txt = app.textContent || '';
-      if (/undefined|NaN/.test(txt)) throw new Error('plano renderizou "undefined"/"NaN" — verifique os campos dos blocos');
-      if (!/Língua Portuguesa|Direito Administrativo|Legislação/.test(txt)) throw new Error('plano não cita nenhuma matéria');
-      console.log(`  plano gerado · ${dias} cartões de dia no DOM · ${txt.length} caracteres`);
+      // a view mostra o dia de hoje duas vezes de propósito (cartão "📌 Hoje" + lista "Dia a dia")
+      const stPlano = JSON.parse(localStorage.getItem('alepa2026.state.v1') || '{}').plano || [];
+      const dias = app.querySelectorAll('.lista-dias details.dia').length;
+      if (!stPlano.length) throw new Error('o plano não foi gravado no estado');
+      if (dias !== stPlano.length) throw new Error(`lista "Dia a dia" tem ${dias} cartões, mas o estado tem ${stPlano.length} dias`);
+      const datas = [...app.querySelectorAll('.lista-dias .dia-data strong')].map((e) => e.textContent);
+      const dup = datas.filter((d, i) => datas.indexOf(d) !== i);
+      if (dup.length) throw new Error(`datas duplicadas na lista: ${dup.join(', ')}`);
+      if (/undefined|NaN/.test(app.textContent || '')) throw new Error('plano renderizou "undefined"/"NaN"');
+      console.log(`  plano gerado · ${stPlano.length} dias (${stPlano[0].data} → ${stPlano[stPlano.length - 1].data}) · ${app.querySelectorAll('.bloco').length} blocos`);
     }],
     ['responder questão no treino', async () => {
       irPara(window, '#/treino/lp'); await esperar();
