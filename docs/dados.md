@@ -245,12 +245,20 @@ O estado de revisão (ease, intervalo, próxima data) fica no `localStorage` do 
 ```bash
 npm run lacunas     # tabela: matérias × tópicos × questões × resumos × cards × pontos em jogo
 npm run fila        # docs/fila-de-conteudo.md (fila priorizada + modelos de prompt)
-npm run gerar       # chama o LLM para preencher lacunas (OPENAI_API_KEY) e revalida
+
+# preenchimento automático com a chave GRATUITA do Google AI Studio (Gemini)
+export GEMINI_API_KEY="AIza..."
+node tools/generate-content.mjs --tipo=questoes --materia=lp --limite=4 --ritmo=10
 ```
+
+O gerador usa por padrão o provedor **Gemini** quando existe `GEMINI_API_KEY` (ou `GOOGLE_API_KEY`),
+com o modelo `gemini-flash-latest` (camada gratuita = modelos Flash/Flash-Lite), pausa entre chamadas
+e nova tentativa em erro `429`. Detalhes e solução de problemas em [`ia-gemini.md`](ia-gemini.md).
 
 Meta de cobertura por tópico: **2 questões, 1 resumo, 3 flashcards**.
 O gerador pontua as lacunas por `prioridade do edital × (1 + pontos da matéria) × (1 + itens faltantes)`,
 valida cada item gerado (5 alternativas A–E, gabarito único, comentário ≥ 400 caracteres, duplicidade)
-e só então grava, recalculando `index.json`.
+e só então grava, recalculando `index.json`. O prefixo dos ids novos é derivado da sigla da matéria
+(`lp-q0NN`, `dadm-q0NN`, `dpcon-q0NN`), garantindo consistência com o banco existente.
 
 Estado atual: **101 questões · 20 resumos · 164 flashcards · 319 tópicos · 15 matérias**.

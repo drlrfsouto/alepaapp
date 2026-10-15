@@ -8,9 +8,9 @@ Sem backend, sem login, sem build: `index.html` + módulos ES + conteúdo em JSO
 Instala no celular e funciona em modo avião depois do primeiro acesso.
 
 ```bash
-npm start          # http://localhost:8080  (0.0.0.0)
+npm start          # http://localhost:8080  (0.0.0.0) — também serve /api/ia se houver chave
 npm run validate   # valida todo o banco de dados
-npm test           # validate + teste de fumaça em DOM virtual (requer jsdom)
+npm test           # validate + fumaça (18 rotas) + 21 testes de integração (requer jsdom)
 ```
 
 > `jsdom` é a única dependência, e apenas de desenvolvimento (`npm i jsdom` para rodar os testes).
@@ -48,8 +48,12 @@ npm test           # validate + teste de fumaça em DOM virtual (requer jsdom)
 - 📅 **Cronograma** — 21 eventos com status e destaque para inscrições, locais, prova e gabaritos
 - 📊 **Estatísticas** — **projeção da nota na prova**, desempenho por matéria (do pior para o melhor),
   atividade de 14 dias e streak
-- 🤖 **Tutor IA (opcional)** — chat com contexto do concurso + ações rápidas; **sem chave configurada
-  o app continua 100% funcional** (explicações, resumos e diagnóstico têm modo offline)
+- 🤖 **Tutor IA (opcional)** — chat com contexto do concurso + ações rápidas, usando a **chave
+  gratuita do Google AI Studio (Gemini)**, com **contingência automática entre várias chaves**
+  (quando uma estoura a cota, o app passa para a próxima); **sem chave o app continua 100%
+  funcional** (explicações, resumos e diagnóstico têm modo offline)
+- ☁️ **Deploy pronto** — Vercel (app estático + proxy `/api/ia` que guarda as chaves no servidor)
+  e Supabase opcional para **backup do progresso entre dispositivos**
 - ⚙ **Configurações** — perfil, meta, tema claro/escuro, densidade, exportar/importar/limpar dados
 
 Atalho **Ctrl+K** abre a busca global (questões, resumos, flashcards e tópicos).
@@ -94,27 +98,33 @@ Detalhes dos algoritmos (SRS, plano, projeção) e o protocolo dia a dia estão 
 ```
 index.html · manifest.webmanifest · sw.js · icons/     # shell PWA
 data/       concurso.json curriculo.json questoes/ resumos.json flashcards.json simulados.json
-src/        app.js router.js util.js store.js data.js srs.js planner.js ai.js components.js styles.css
+src/        app.js router.js util.js store.js data.js srs.js planner.js ai.js supabase.js components.js styles.css
 src/views/  dashboard questoes resolver simulados flashcards resumos curriculo plano stats tutor config
-tools/      serve.mjs validate-data.mjs smoke.mjs generate-content.mjs gerar-icones.py
-docs/       arquitetura.md dados.md metodologia.md fila-de-conteudo.md
+api/        ia.js modelos.js                    # funções serverless do modo "Servidor" (proxy)
+serverless/ lib/gemini.js                       # chaves do ambiente, rotação, rate limit, CORS
+supabase/   migrations/0001_progresso_e_chaves.sql   # tabelas + RLS + RPC
+tools/      serve.mjs validate-data.mjs smoke.mjs test-integracao.mjs generate-content.mjs gerar-icones.py
+docs/       arquitetura.md dados.md metodologia.md ia-gemini.md deploy-vercel-supabase.md fila-de-conteudo.md
+vercel.json · .env.example · config.example.json     # deploy
 PROMPT_MASTER.md   prompt pronto para colar em IAs construtoras de apps
 ```
 
 Documentação: [arquitetura](docs/arquitetura.md) · [esquemas de dados](docs/dados.md) ·
-[metodologia](docs/metodologia.md) · [fila de conteúdo](docs/fila-de-conteudo.md).
+[metodologia](docs/metodologia.md) · [IA com chave gratuita do Gemini](docs/ia-gemini.md) ·
+[deploy Vercel + Supabase](docs/deploy-vercel-supabase.md) · [fila de conteúdo](docs/fila-de-conteudo.md).
 
 ## Scripts
 
 | Comando | O que faz |
 |---|---|
-| `npm start` / `npm run serve` | servidor estático em `0.0.0.0:8080` (`node tools/serve.mjs [porta]`) |
+| `npm start` / `npm run serve` | servidor estático em `0.0.0.0:8080` (`node tools/serve.mjs [porta]`) — com `GEMINI_API_KEYS="AIza1,AIza2" npm start` ele também executa o proxy `/api/ia` |
 | `npm run validate` | valida esquema, ids únicos, 5 alternativas A–E, gabarito, referências de matéria/tópico, totais do manifesto e a aritmética da prova (50 questões / 10,0 pontos / 30+20) |
-| `npm run test:smoke` | sobe o app em DOM virtual, visita as 18 rotas e testa gerar plano, responder questão, sessão SRS e abrir simulado |
-| `npm test` | `validate` + `smoke` |
+| `npm run test:smoke` | sobe o app em DOM virtual, visita as 18 rotas e testa gerar plano, responder questão, sessão SRS, abrir simulado e a tela de Configurações (Gemini, contingência, Supabase) |
+| `npm run test:ia` | 21 casos de integração **sem rede**: rotação de chaves em 429/401, geladeira de 60 s, proxy `/api/ia` (health, validação, CORS, rate limit), descoberta de modelos, Supabase (envio sem chaves, restauro preservando-as) e reload sem perder progresso |
+| `npm test` | `validate` + `smoke` + `test:ia` |
 | `npm run lacunas` | relatório de cobertura do banco por matéria (tópicos × questões × resumos × cards × pontos) |
 | `npm run fila` | escreve `docs/fila-de-conteudo.md` — fila priorizada de produção + modelos de prompt |
-| `npm run gerar` | chama um LLM para preencher lacunas, valida cada item e regrava o banco |
+| `npm run gerar` | chama o Gemini (chave gratuita) para preencher lacunas, valida cada item e regrava o banco |
 | `npm run icones` | regenera os PNGs dos ícones (`python3 tools/gerar-icones.py`, sem dependências) |
 
 ## Expandindo o banco
@@ -122,19 +132,65 @@ Documentação: [arquitetura](docs/arquitetura.md) · [esquemas de dados](docs/d
 ```bash
 npm run lacunas                                  # onde falta conteúdo
 npm run fila -- --completo --tipo=questoes       # prompts prontos para colar (sem API)
-OPENAI_API_KEY=... npm run gerar                 # geração automática + validação
+
+# geração automática com a chave GRATUITA do Google AI Studio
+export GEMINI_API_KEY="AIza..."
+node tools/generate-content.mjs --tipo=questoes --materia=lp --limite=4 --ritmo=10
 ```
 
 O gerador pontua as lacunas por `prioridade do edital × (1 + pontos da matéria) × (1 + itens
 faltantes)`, exige 5 alternativas A–E com gabarito único e comentário ≥ 400 caracteres, descarta
-duplicados e recalcula `index.json`. Aceita qualquer endpoint compatível com OpenAI
-(`OPENAI_BASE_URL`, `OPENAI_MODEL`) ou Anthropic (`--provider=anthropic`).
+duplicados e recalcula `index.json`. Vem calibrado para a cota gratuita do Gemini: pausa de 8 s
+entre chamadas (`--ritmo`) e nova tentativa automática em `429`/`5xx` (`--tentativas`).
+Também aceita OpenAI (`OPENAI_API_KEY`), Anthropic (`--provider=anthropic`) e qualquer endpoint
+compatível (`--provider=custom --base-url=…`).
 
-## IA opcional e privacidade
+## IA opcional (chave gratuita do Gemini) e privacidade
 
-A chave de API é informada em `#/config` e fica **somente no `localStorage` do seu navegador**; as
-chamadas saem direto do cliente, sem servidor intermediário. O `SYSTEM_PROMPT` proíbe inventar
-artigo, súmula, prazo ou jurisprudência. Nada é coletado, enviado ou rastreado — o progresso é seu.
+O provedor padrão é o **Google Gemini**, com a chave **gratuita** do AI Studio
+(<https://aistudio.google.com/apikey>, sem cartão de crédito). Cole a chave em `#/config`, clique em
+**Testar conexão** e pronto — o modelo padrão é `gemini-flash-latest`, e o botão
+**"Listar modelos da minha chave"** mostra o que a sua chave alcança (na camada gratuita, apenas
+modelos **Flash / Flash-Lite**).
+
+A chave fica **somente no `localStorage` do seu navegador** e é enviada **direto ao Google**, no
+cabeçalho `x-goog-api-key` (nunca na URL). Sem servidor intermediário, sem coleta, sem rastreamento.
+Erros de cota (`429`) viram orientação na tela e o app cai no modo offline sem quebrar.
+O `SYSTEM_PROMPT` proíbe inventar artigo, súmula, prazo ou jurisprudência.
+
+**Contingência com várias chaves:** cadastre a chave 1 e quantas quiser em "Chaves de contingência"
+(uma por linha, cada uma de um projeto diferente do AI Studio). Os limites gratuitos são **por
+projeto**, então N chaves ≈ N cotas: em caso de `429` o app tenta a próxima sozinho e deixa a
+esgotada 60 s em espera. Só se **todas** falharem você vê a dica de cota — e o app segue offline.
+
+**Modo Servidor (opcional):** publique na Vercel e escolha o modo *Servidor (proxy `/api/ia`)* —
+as chaves ficam em `GEMINI_API_KEYS` no servidor e **nunca chegam ao navegador**. O proxy ainda
+aplica limite por IP, teto de tokens e CORS restrito.
+
+Passo a passo completo, escolha de modelo, limites e solução de problemas:
+[`docs/ia-gemini.md`](docs/ia-gemini.md). Publicação (Vercel + Supabase):
+[`docs/deploy-vercel-supabase.md`](docs/deploy-vercel-supabase.md).
+
+## Publicar (Vercel + Supabase)
+
+```bash
+# 1. chaves gratuitas do Gemini no servidor (uma por projeto = contingência)
+#    Vercel → Settings → Environment Variables
+GEMINI_API_KEYS="AIza-chave-1,AIza-chave-2"
+
+# 2. deploy: importe o repositório em vercel.com/new (o vercel.json já configura tudo)
+
+# 3. Supabase (opcional, para backup do progresso entre dispositivos)
+#    SQL Editor → rode supabase/migrations/0001_progresso_e_chaves.sql
+#    Configurações do app → Supabase → URL + chave anon → "Sincronizar automaticamente"
+```
+
+Teste o proxy localmente antes de publicar: `GEMINI_API_KEYS="AIza1,AIza2" npm start` e
+`curl -X POST localhost:8080/api/ia -H 'content-type: application/json' -d '{"mensagens":[{"role":"user","content":"oi"}]}'`.
+
+O backup no Supabase **nunca envia suas chaves de IA** (elas são removidas antes do upload —
+há teste automatizado disso). Guia completo com checklist e solução de problemas:
+[`docs/deploy-vercel-supabase.md`](docs/deploy-vercel-supabase.md).
 
 ## PWA / offline
 

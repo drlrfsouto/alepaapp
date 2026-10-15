@@ -6,7 +6,7 @@ Este documento é a **fila de produção** do banco: os tópicos do Anexo II que
 cobertura suficiente, ordenados por retorno esperado na prova
 (prioridade no edital × pontos em jogo × tamanho da lacuna).
 
-- Lacunas com prioridade S/A: **249 tópicos** (1257 itens a produzir).
+- Lacunas com prioridade S/A: **249 tópicos** (1249 itens a produzir).
 - Meta prática por tópico: **2 questões**, **1 resumo**, **3 flashcards**.
 
 ## Próximos 30 da fila
@@ -49,12 +49,16 @@ cobertura suficiente, ordenados por retorno esperado na prova
 - **prio** = prioridade do tópico no edital (S = sempre cai, A = alta, B = básica).
 - **pts** = pontos que a matéria representa na prova (50 questões × 0,2 = 10,0).
 - **q/res/fc** = questões, resumos e flashcards que o tópico já tem no banco.
-- Para gerar tudo automaticamente com uma API:
+- Para gerar automaticamente com a **chave GRATUITA do Google AI Studio**
+  (<https://aistudio.google.com/apikey>, sem cartão de crédito):
   ```bash
-  export OPENAI_API_KEY="..."          # ou OPENAI_BASE_URL / OPENAI_MODEL p/ provedor compatível
-  node tools/generate-content.mjs --tipo=questoes --limite=8
-  node tools/generate-content.mjs --tipo=todos --materia=dir-adm,proc-leg
+  export GEMINI_API_KEY="AIza..."       # camada gratuita: modelos Flash / Flash-Lite
+  node tools/generate-content.mjs --tipo=questoes --materia=lp --limite=4
+  node tools/generate-content.mjs --tipo=todos --materia=dir-adm,proc-leg --ritmo=10
   ```
+  O gerador já vem com pausa de 8 s entre chamadas e nova tentativa em erro 429,
+  para caber nos limites por minuto/dia da cota gratuita. Outros provedores:
+  `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` ou `--provider=custom --base-url=...`.
 - Sem API? Gere os prompts já preenchidos e cole em qualquer assistente:
   ```bash
   node tools/generate-content.mjs --fila --completo          # docs/prompts/*.md

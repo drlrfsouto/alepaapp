@@ -158,6 +158,33 @@ async function main() {
       if (!app.querySelector('.alternativa')) throw new Error('o simulado não abriu o resolvedor');
       console.log(`  simulado aberto · ${app.querySelectorAll('.alternativa').length} alternativas na 1ª questão`);
     }],
+    ['IA: Gemini gratuito é o provedor padrão', async () => {
+      irPara(window, '#/config'); await esperar();
+      const opcao = [...app.querySelectorAll('select.campo option')].find((o) => o.selected && /Gemini/i.test(o.textContent || ''));
+      if (!opcao) throw new Error('o provedor padrão não é o Google Gemini');
+      const datalist = app.querySelector('datalist#lista-modelos-ia');
+      if (!datalist || datalist.children.length < 2) throw new Error('datalist de modelos sugeridos ausente');
+      const listar = [...app.querySelectorAll('button')].find((b) => /Listar modelos/i.test(b.textContent || ''));
+      if (!listar) throw new Error('botão "Listar modelos" ausente');
+      if (!/Limites da camada gratuita/i.test(app.textContent || '')) throw new Error('aviso de limites da camada gratuita ausente');
+      const estado = JSON.parse(localStorage.getItem('alepa2026.state.v1') || '{}');
+      if (estado.ai?.provedor !== 'gemini') throw new Error(`provedor padrão gravado no estado: ${estado.ai?.provedor}`);
+      // contingência de chaves + modo servidor + Supabase
+      const texto = app.textContent || '';
+      if (!/Chaves de contingência/i.test(texto)) throw new Error('campo de chaves de contingência ausente');
+      if (!app.querySelector('textarea.campo')) throw new Error('textarea das chaves extras ausente');
+      if (!/Modo de conexão/i.test(texto)) throw new Error('seletor de modo (navegador/servidor) ausente');
+      if (!/Supabase — backup do progresso/i.test(texto)) throw new Error('cartão do Supabase ausente');
+      if (!/Restaurar da nuvem/i.test(texto)) throw new Error('ação de restaurar do Supabase ausente');
+      const chaves = 'AIza-um\nAIza-dois';
+      const ta = app.querySelector('textarea.campo');
+      ta.value = chaves;
+      ta.dispatchEvent(new window.Event('input', { bubbles: true }));
+      await esperar(400); // a persistência é debounced em 220 ms
+      const depois = JSON.parse(localStorage.getItem('alepa2026.state.v1') || '{}');
+      if ((depois.ai?.apiKeys || []).length !== 2) throw new Error(`chaves de contingência não gravaram: ${JSON.stringify(depois.ai?.apiKeys)}`);
+      console.log(`  ✓ Gemini padrão · ${datalist.children.length} modelos · ${depois.ai.apiKeys.length} chaves (contingência) · modo + Supabase presentes`);
+    }],
   ];
 
   for (const [nome, fn] of interacoes) {
