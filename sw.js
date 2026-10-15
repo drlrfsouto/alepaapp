@@ -5,7 +5,7 @@
  *  - dados (data/**.json): stale-while-revalidate — mostra o cache e busca atualização.
  */
 
-const VERSAO = 'alepa-2026-v1.0.0';
+const VERSAO = 'alepa-2026-v1.2.0';
 const SHELL = [
   './',
   './index.html',
@@ -18,6 +18,7 @@ const SHELL = [
   './src/srs.js',
   './src/planner.js',
   './src/ai.js',
+  './src/supabase.js',
   './src/router.js',
   './src/components.js',
   './src/views/dashboard.js',
@@ -77,6 +78,10 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   // chamadas a provedores de IA nunca passam pelo cache
   if (url.origin !== self.location.origin) return;
+
+  // proxy de IA e configuração pública: sempre rede, nunca cache
+  // (um GET /api/ia ou /config.json cacheado devolveria informação velha)
+  if (url.pathname.startsWith('/api/') || url.pathname.endsWith('/config.json')) return;
 
   // navegação → network-first
   if (req.mode === 'navigate') {

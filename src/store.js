@@ -32,12 +32,28 @@ export const ESTADO_INICIAL = {
   // metas semanais
   metas: { minutosSemana: 600, questoesSemana: 150 },
   ai: {
-    provedor: 'nenhum', // 'openai' | 'anthropic' | 'gemini' | 'custom' | 'nenhum'
-    apiKey: '',
+    // 'gemini' (chave gratuita no Google AI Studio) | 'openai' | 'anthropic' | 'custom' | 'nenhum'
+    provedor: 'gemini',
+    apiKey: '',          // chave 1 (principal)
+    apiKeys: [],         // chaves de CONTINGÊNCIA (uma por linha em Configurações)
+    chaveAtiva: 0,       // índice da última chave que funcionou — a rotação começa por ela
+    chaveGelada: {},     // { [indice]: timestamp } — chave que tomou 429 fica 1 min fora
+    // 'navegador' = chamada direta com a chave no localStorage
+    // 'proxy'     = chamada para /api/ia do próprio deploy (chaves em variáveis de ambiente)
+    modo: 'navegador',
+    proxyUrl: '/api/ia',
     modelo: '',
     baseUrl: '',
     temperatura: 0.3,
     usarOffline: true,
+  },
+  // sincronização opcional do progresso via Supabase (REST, sem dependências)
+  supabase: {
+    url: '',             // https://xxxx.supabase.co
+    anonKey: '',         // chave PÚBLICA (anon) — nunca use a service_role aqui
+    sincronizar: false,  // backup automático após cada mudança relevante
+    ultimaSync: null,    // ISO do último envio bem-sucedido
+    dispositivo: '',     // id aleatório deste navegador (usado como chave da linha)
   },
   config: {
     mostrarGabaritoImediatamente: false,
@@ -68,8 +84,20 @@ export function carregar() {
   return estado;
 }
 
+/**
+ * Mescla o estado salvo sobre o ESTADO_INICIAL (deep merge) sem destruir nada.
+ *
+ * Regra importante: quando a chave NÃO existe no estado inicial (ex.: `questoes['lp-q001']`,
+ * `cards['fc-9']`, `plano[3]`), o valor salvo precisa ser adotado como está. A versão
+ * anterior descia a recursão com `base === undefined` e lançava TypeError — como
+ * `carregar()` e `importar()` envolvem a chamada em try/catch, o resultado prático era
+ * PERDER TODO o progresso a cada reload (ou ao restaurar um backup).
+ */
 function mesclar(base, patch) {
   if (patch === null || typeof patch !== 'object' || Array.isArray(patch)) return patch ?? base;
+  // patch é objeto/array: se a base não é um objeto compatível, adota o patch (clonado)
+  if (base === null || typeof base !== 'object') return structuredClone(patch);
+  if (Array.isArray(patch)) return Array.isArray(base) ? patch.map((v, i) => mesclar(base[i], v)) : structuredClone(patch);
   for (const k of Object.keys(patch)) {
     base[k] = mesclar(base[k], patch[k]);
   }
@@ -117,6 +145,23 @@ export function persistir() {
     console.warn('[store] falha ao persistir (quota?):', e);
     return false;
   }
+}
+
+/**
+ * Persiste o resultado da rotação de chaves de IA (contingência): qual chave respondeu e
+ * quais entraram na "geladeira" por 429. Chamado pelas views após `conversar()`/`listarModelos()`.
+ */
+export function registrarChavesIA(info) {
+  if (!info) return;
+  set((s) => {
+    if (Number.isInteger(info.indice) && info.indice >= 0) s.ai.chaveAtiva = info.indice;
+    s.ai.chaveGelada = Object.assign({}, s.ai.chaveGelada || {}, info.geladas || {});
+    // limpa entradas expiradas para o estado não crescer à toa
+    const agora = Date.now();
+    for (const k of Object.keys(s.ai.chaveGelada)) {
+      if (!s.ai.chaveGelada[k] || s.ai.chaveGelada[k] <= agora) delete s.ai.chaveGelada[k];
+    }
+  });
 }
 
 export function exportar() {

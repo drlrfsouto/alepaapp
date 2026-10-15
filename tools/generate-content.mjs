@@ -24,13 +24,22 @@
  *   --lacunas              imprime a cobertura e sai
  *   --fila[=arquivo.md]    não chama IA: escreve os prompts prontos (padrão docs/fila-de-conteudo.md)
  *   --dry-run              gera e valida, mas não grava
- *   --provider=openai|anthropic   (padrão openai; qualquer endpoint compatível serve)
- *   --base-url=URL         (padrão env OPENAI_BASE_URL ou https://api.openai.com/v1)
- *   --modelo=NOME          (padrão env OPENAI_MODEL ou gpt-4o-mini)
- *   --api-key=CHAVE        (padrão env OPENAI_API_KEY / ANTHROPIC_API_KEY)
- *   --sem-validar          não roda tools/validate-data.mjs ao final
+ *   --provider=gemini|openai|anthropic
+ *                        padrão: gemini se houver GEMINI_API_KEY/GOOGLE_API_KEY,
+ *                                senão openai se houver OPENAI_API_KEY
+ *   --base-url=URL       padrão do provedor (Gemini: https://generativelanguage.googleapis.com/v1beta)
+ *   --modelo=NOME        Gemini: gemini-flash-latest (grátis) · OpenAI: gpt-4o-mini
+ *   --api-key=CHAVE      env GEMINI_API_KEY / GOOGLE_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY
+ *   --ritmo=SEGUNDOS     pausa entre chamadas (padrão 8s — respeita ~10 RPM da cota gratuita)
+ *   --tentativas=N       novas tentativas em caso de 429/5xx (padrão 3, com espera crescente)
+ *   --sem-validar        não roda tools/validate-data.mjs ao final
+ *
+ * Exemplo com a chave GRATUITA do Google AI Studio (https://aistudio.google.com/apikey):
+ *   GEMINI_API_KEY=AIza... node tools/generate-content.mjs --tipo=questoes --materia=lp --limite=4
  *
  * Nenhuma chave é armazenada em arquivo: use variáveis de ambiente.
+ * Na camada gratuita do Gemini só existem modelos Flash / Flash-Lite; os limites são por
+ * projeto (RPM/TPM/RPD) — veja os seus em https://aistudio.google.com/rate-limit.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -58,10 +67,21 @@ const TOPICO = ARG.topico ? String(ARG.topico) : null;
 const PRIORIDADES = String(ARG.prioridade || 'S,A').split(',').map((s) => s.trim().toUpperCase());
 const LIMITE = Number(ARG.limite || 8);
 const DRY = Boolean(ARG['dry-run']);
-const PROVIDER = String(ARG.provider || 'openai').toLowerCase();
-const BASE_URL = String(ARG['base-url'] || process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1').replace(/\/$/, '');
-const MODELO = String(ARG.modelo || process.env.OPENAI_MODEL || process.env.ANTHROPIC_MODEL || 'gpt-4o-mini');
-const API_KEY = String(ARG['api-key'] || process.env.OPENAI_API_KEY || process.env.ANTHROPIC_API_KEY || '');
+const CHAVE_GEMINI = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || '';
+const PROVEDOR_PADRAO = CHAVE_GEMINI ? 'gemini' : process.env.OPENAI_API_KEY ? 'openai' : process.env.ANTHROPIC_API_KEY ? 'anthropic' : 'gemini';
+const PROVIDER = String(ARG.provider || PROVEDOR_PADRAO).toLowerCase();
+const BASES = {
+  gemini: 'https://generativelanguage.googleapis.com/v1beta',
+  openai: 'https://api.openai.com/v1',
+  anthropic: 'https://api.anthropic.com',
+};
+const MODELOS_PADRAO = { gemini: 'gemini-flash-latest', openai: 'gpt-4o-mini', anthropic: 'claude-3-5-haiku-latest' };
+const BASE_URL = String(ARG['base-url'] || (PROVIDER === 'gemini' ? '' : process.env.OPENAI_BASE_URL) || BASES[PROVIDER] || BASES.gemini).replace(/\/$/, '');
+const MODELO = String(ARG.modelo || process.env.GEMINI_MODEL || process.env.OPENAI_MODEL || process.env.ANTHROPIC_MODEL || MODELOS_PADRAO[PROVIDER] || MODELOS_PADRAO.gemini);
+const API_KEY = String(ARG['api-key'] || CHAVE_GEMINI || process.env.OPENAI_API_KEY || process.env.ANTHROPIC_API_KEY || '');
+const RITMO = Number(ARG.ritmo ?? (PROVIDER === 'gemini' ? 8 : 1)); // segundos entre chamadas
+const TENTATIVAS = Number(ARG.tentativas || 3);
+const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function nPorTipo(tipo) {
   if (ARG.n) return Number(ARG.n);
@@ -278,20 +298,38 @@ REGRAS DE QUALIDADE:
 }
 
 /* ------------------------------------------------------------------ IA */
-async function chamarIA(promptUsuario, system) {
-  if (!API_KEY) throw new Error('sem chave de API (defina OPENAI_API_KEY ou use --api-key)');
-  if (PROVIDER === 'anthropic') {
-    const r = await fetch(`${BASE_URL.includes('anthropic') ? BASE_URL : 'https://api.anthropic.com'}/v1/messages`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-api-key': API_KEY, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: MODELO, max_tokens: 4000, system, messages: [{ role: 'user', content: promptUsuario }] }),
-    });
-    if (!r.ok) throw new Error(`HTTP ${r.status}: ${(await r.text()).slice(0, 300)}`);
-    const j = await r.json();
-    return (j.content || []).map((c) => c.text || '').join('\n');
-  }
-  const r = await fetch(`${BASE_URL}/chat/completions`, {
+async function chamarGemini(promptUsuario, system, sinal) {
+  const url = `${BASE_URL}/models/${encodeURIComponent(MODELO)}:generateContent`;
+  const res = await fetch(url, {
     method: 'POST',
+    signal: sinal,
+    // chave no cabeçalho (nunca na URL): não vaza em log nem em histórico
+    headers: { 'content-type': 'application/json', 'x-goog-api-key': API_KEY },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: system }] },
+      contents: [{ role: 'user', parts: [{ text: promptUsuario }] }],
+      generationConfig: { temperature: 0.4, responseMimeType: 'application/json' },
+    }),
+  });
+  if (!res.ok) {
+    const corpo = await res.text().catch(() => '');
+    const erro = new Error(`HTTP ${res.status}: ${corpo.slice(0, 300)}`);
+    erro.status = res.status;
+    throw erro;
+  }
+  const j = await res.json();
+  if (j.promptFeedback?.blockReason) throw new Error(`bloqueado pelo provedor: ${j.promptFeedback.blockReason}`);
+  const texto = (j.candidates?.[0]?.content?.parts || []).map((p) => p.text || '').join('\n');
+  const finish = j.candidates?.[0]?.finishReason;
+  if (!texto.trim()) throw new Error(`resposta vazia (finishReason=${finish || 'n/d'})`);
+  if (finish === 'MAX_TOKENS') console.log(`   ⚠ resposta truncada (MAX_TOKENS) — reduza --n`);
+  return texto;
+}
+
+async function chamarOpenAICompativel(promptUsuario, system, sinal) {
+  const res = await fetch(`${BASE_URL}/chat/completions`, {
+    method: 'POST',
+    signal: sinal,
     headers: { 'content-type': 'application/json', authorization: `Bearer ${API_KEY}` },
     body: JSON.stringify({
       model: MODELO, temperature: 0.4,
@@ -299,9 +337,59 @@ async function chamarIA(promptUsuario, system) {
       messages: [{ role: 'system', content: system }, { role: 'user', content: promptUsuario }],
     }),
   });
-  if (!r.ok) throw new Error(`HTTP ${r.status}: ${(await r.text()).slice(0, 300)}`);
-  const j = await r.json();
+  if (!res.ok) {
+    const corpo = await res.text().catch(() => '');
+    const erro = new Error(`HTTP ${res.status}: ${corpo.slice(0, 300)}`);
+    erro.status = res.status;
+    throw erro;
+  }
+  const j = await res.json();
   return j.choices?.[0]?.message?.content || '';
+}
+
+async function chamarAnthropic(promptUsuario, system, sinal) {
+  const base = BASE_URL.includes('anthropic') ? BASE_URL : 'https://api.anthropic.com';
+  const res = await fetch(`${base}/v1/messages`, {
+    method: 'POST',
+    signal: sinal,
+    headers: { 'content-type': 'application/json', 'x-api-key': API_KEY, 'anthropic-version': '2023-06-01' },
+    body: JSON.stringify({ model: MODELO, max_tokens: 8000, system, messages: [{ role: 'user', content: promptUsuario }] }),
+  });
+  if (!res.ok) {
+    const corpo = await res.text().catch(() => '');
+    const erro = new Error(`HTTP ${res.status}: ${corpo.slice(0, 300)}`);
+    erro.status = res.status;
+    throw erro;
+  }
+  const j = await res.json();
+  return (j.content || []).map((c) => c.text || '').join('\n');
+}
+
+/** Chamada com nova tentativa em 429 (cota gratuita) e 5xx, com espera crescente. */
+async function chamarIA(promptUsuario, system) {
+  const fn = PROVIDER === 'gemini' ? chamarGemini : PROVIDER === 'anthropic' ? chamarAnthropic : chamarOpenAICompativel;
+  let ultima = null;
+  for (let tentativa = 1; tentativa <= TENTATIVAS; tentativa++) {
+    try {
+      const controlador = new AbortController();
+      const tempo = setTimeout(() => controlador.abort(), 180000);
+      try { return await fn(promptUsuario, system, controlador.signal); }
+      finally { clearTimeout(tempo); }
+    } catch (e) {
+      ultima = e;
+      const recuperavel = e?.status === 429 || e?.status >= 500 || /abort|timeout|ECONNRESET|RESOURCE_EXHAUSTED/i.test(e?.message || '');
+      if (!recuperavel || tentativa === TENTATIVAS) break;
+      const espera = e?.status === 429 ? 30000 * tentativa : 5000 * tentativa;
+      console.log(`   ⟳ ${e?.status || 'erro'} — nova tentativa em ${Math.round(espera / 1000)}s (${tentativa}/${TENTATIVAS})`);
+      await esperar(espera);
+    }
+  }
+  if (ultima?.status === 429) {
+    throw new Error(`429 cota esgotada (${PROVIDER === 'gemini' ? 'camada gratuita: limites por projeto, com reset diário à meia-noite (Pacífico)' : 'rate limit'}). ` +
+      'Aguarde, reduza --limite, aumente --ritmo ou troque para um modelo Flash-Lite. ' +
+      'Seus limites: https://aistudio.google.com/rate-limit');
+  }
+  throw ultima;
 }
 
 function extrairJSON(bruto) {
@@ -443,12 +531,16 @@ ${tabelaLacunas(lista, TOP)}
 - **prio** = prioridade do tópico no edital (S = sempre cai, A = alta, B = básica).
 - **pts** = pontos que a matéria representa na prova (50 questões × 0,2 = 10,0).
 - **q/res/fc** = questões, resumos e flashcards que o tópico já tem no banco.
-- Para gerar tudo automaticamente com uma API:
+- Para gerar automaticamente com a **chave GRATUITA do Google AI Studio**
+  (<https://aistudio.google.com/apikey>, sem cartão de crédito):
   \`\`\`bash
-  export OPENAI_API_KEY="..."          # ou OPENAI_BASE_URL / OPENAI_MODEL p/ provedor compatível
-  node tools/generate-content.mjs --tipo=questoes --limite=8
-  node tools/generate-content.mjs --tipo=todos --materia=dir-adm,proc-leg
+  export GEMINI_API_KEY="AIza..."       # camada gratuita: modelos Flash / Flash-Lite
+  node tools/generate-content.mjs --tipo=questoes --materia=lp --limite=4
+  node tools/generate-content.mjs --tipo=todos --materia=dir-adm,proc-leg --ritmo=10
   \`\`\`
+  O gerador já vem com pausa de 8 s entre chamadas e nova tentativa em erro 429,
+  para caber nos limites por minuto/dia da cota gratuita. Outros provedores:
+  \`OPENAI_API_KEY\`, \`ANTHROPIC_API_KEY\` ou \`--provider=custom --base-url=...\`.
 - Sem API? Gere os prompts já preenchidos e cole em qualquer assistente:
   \`\`\`bash
   node tools/generate-content.mjs --fila --completo          # docs/prompts/*.md
@@ -585,10 +677,13 @@ async function main() {
   if (ARG.fila) { escreverFila(lista, ARG.fila); return; }
 
   if (!API_KEY) {
-    console.log('\nNenhuma chave de API encontrada (OPENAI_API_KEY).');
-    console.log('Gere a fila de prompts para colar manualmente com:  node tools/generate-content.mjs --fila');
+    console.log('\nNenhuma chave de API encontrada.');
+    console.log('  Caminho gratuito: crie uma chave em https://aistudio.google.com/apikey e rode');
+    console.log('    GEMINI_API_KEY=AIza... node tools/generate-content.mjs --tipo=questoes --limite=4');
+    console.log('  Ou gere a fila de prompts para colar manualmente:  npm run fila');
     process.exit(0);
   }
+  console.log(`\nProvedor: ${PROVIDER} · modelo: ${MODELO} · base: ${BASE_URL} · ritmo: ${RITMO}s · até ${LIMITE} chamada(s)\n`);
 
   const vistosQ = new Set(todasQuestoes.map((q) => normalizar(q.enunciado).slice(0, 90)));
   const vistosR = new Set(resumosArq.resumos.map((r) => normalizar(r.titulo).slice(0, 60)));
@@ -615,6 +710,7 @@ async function main() {
       : tipo === 'resumos' ? specResumo(t, resumosArq.resumos.filter((r) => r.topico === t.id))
       : specCards(t, cardsArq.flashcards.filter((c) => c.topico === t.id));
     process.stdout.write(`→ ${tipo.padEnd(11)} ${t.id.padEnd(12)} ${String(t.texto || t.nome).slice(0, 42).padEnd(44)}`);
+    if (RITMO > 0 && chamadas > 1) await esperar(RITMO * 1000); // respeita RPM da cota gratuita
     try {
       const bruto = await chamarIA(prompt, 'Você gera conteúdo de estudo para concursos em JSON estrito. Responda somente JSON.');
       const json = extrairJSON(bruto);

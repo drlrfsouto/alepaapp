@@ -6,6 +6,7 @@ import { carregarTudo, dados, dataDaProva } from './data.js';
 import { registrar, iniciar } from './router.js';
 import { carregando, toast } from './components.js';
 import { aplicarTema, aplicarDensidade } from './views/config.js';
+import { aplicarConfigPublica, iniciarSincronizacao, supabaseConfigurado, enviarProgresso } from './supabase.js';
 
 import viewDashboard from './views/dashboard.js';
 import { viewBanco, viewTreino, viewQuestaoUnica, viewErros } from './views/questoes.js';
@@ -58,6 +59,15 @@ async function boot() {
 
   // garante a data da prova no perfil
   if (!get().perfil.dataProva) set((s) => { s.perfil.dataProva = dataDaProva(); });
+
+  // deploy (Vercel/Supabase): aplica config.json se existir e liga o backup automático
+  await aplicarConfigPublica();
+  iniciarSincronizacao();
+  if (supabaseConfigurado() && get().supabase.sincronizar) {
+    // envia já na abertura; o subscribe cuida das mudanças seguintes (com debounce).
+    // Restaurar é sempre uma ação EXPLÍCITA do usuário em Configurações.
+    enviarProgresso().catch((e) => console.warn('[supabase] backup inicial falhou:', e.message));
+  }
 
   montarNav();
   registrarRotas();

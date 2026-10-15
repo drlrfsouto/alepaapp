@@ -43,5 +43,5 @@ for (const rota of process.argv.slice(2)) {
   await espera(120);
   console.log(`\n========== ${rota} ==========`);
   console.log('classes raiz:', [...new Set([...app.querySelectorAll('*')].flatMap((e) => [...e.classList]))].slice(0, 40).join(' '));
-  console.log(app.textContent.replace(/\s+/g, ' ').trim().slice(0, 1200));
+  console.log(app.textContent.replace(/\s+/g, ' ').trim().slice(0, 30000));
 }

@@ -1,10 +1,15 @@
 /* views/config.js — perfil, metas, preferências, chave de IA, dados (backup/restore). */
 
 import { h, baixarJSON, fmtDateBR, todayKey } from '../util.js';
-import { get, set, exportar, importar, limparTudo, persistir } from '../store.js';
+import { get, set, exportar, importar, limparTudo, persistir, registrarChavesIA } from '../store.js';
+import { supabaseConfigurado, enviarProgresso, baixarProgresso, restaurarProgresso, importarChavesIA, idDispositivo } from '../supabase.js';
 import { dados, dataDaProva, materiaNome } from '../data.js';
 import { cabecalho, card, badge, botao, toast, modal, markdown, vazio } from '../components.js';
-import { PROVEDORES, configurado } from '../ai.js';
+import { PROVEDORES, configurado, listarModelos, chavesIA } from '../ai.js';
+
+// modelos descobertos com a chave do usuário (botão "Listar modelos")
+let modelosDescobertos = [];
+let listandoModelos = false;
 
 const NOMES_DIAS = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 // ordem de exibição: segunda → domingo
@@ -63,41 +68,177 @@ export function viewConfig() {
 
     /* ---------- IA ---------- */
     const cfg = e.ai;
-    box.appendChild(card('Inteligência artificial (chave própria)',
-      h('div', { class: 'form' },
-        h('div', { class: 'aviso-ia' }, markdown(`O app **não tem servidor**: sua chave fica no \`localStorage\` do seu navegador e é enviada **direto ao provedor**. Nenhum dado passa por terceiros deste projeto. Para remover, apague o campo e salve — ou use "Limpar todos os dados".
+    const prov = PROVEDORES[cfg.provedor] || {};
+    const chaves = chavesIA(cfg);
+    const modoProxy = cfg.modo === 'proxy';
+    const sugestoes = [...new Set([...modelosDescobertos.map((m) => m.id), ...(prov.modelosSugeridos || [])])];
 
-Sem chave, tudo continua funcionando: ${dados.questoes.length} questões comentadas, ${dados.resumos.length} resumos, ${dados.flashcards.length} flashcards, plano de estudos e diagnóstico são gerados localmente.`)),
-        campo('Provedor', h('select', { class: 'campo', onchange: (ev) => { set((s) => { s.ai.provedor = ev.target.value; if (!s.ai.modelo) s.ai.modelo = ''; }); desenhar(); } },
+    box.appendChild(card('Inteligência artificial',
+      h('div', { class: 'form' },
+        h('div', { class: 'aviso-ia' }, markdown(`**Recomendado: Google Gemini, com chave GRATUITA do AI Studio** — sem cartão de crédito. Crie em [aistudio.google.com/apikey](https://aistudio.google.com/apikey), cole abaixo e clique em **Testar conexão**.
+
+**Contingência:** cadastre **duas ou mais chaves** (de preferência de projetos diferentes do AI Studio). Os limites gratuitos são **por projeto**, então N chaves ≈ N cotas: quando uma devolve \`429\`, o app passa sozinho para a próxima e deixa a esgotada 1 minuto "na geladeira".
+
+O app **não tem servidor próprio**: no modo *Navegador* a chamada sai direto daqui para o Google (chave no cabeçalho \`x-goog-api-key\`, nunca na URL) e as chaves ficam no \`localStorage\`. No modo *Servidor*, a chamada vai para o proxy \`/api/ia\` do seu deploy (Vercel) e **nenhuma chave chega ao navegador**.
+
+Sem chave, nada quebra: ${dados.questoes.length} questões comentadas, ${dados.resumos.length} resumos, ${dados.flashcards.length} flashcards, plano e diagnóstico funcionam offline.`)),
+
+        campo('Provedor', h('select', { class: 'campo', onchange: (ev) => { set((s) => { s.ai.provedor = ev.target.value; s.ai.modelo = ''; }); modelosDescobertos = []; desenhar(); } },
           ...Object.entries(PROVEDORES).map(([k, v]) => h('option', { value: k, selected: cfg.provedor === k, text: v.nome })))),
-        cfg.provedor !== 'nenhum' ? campo('Chave de API', h('input', {
-          class: 'campo', type: 'password', value: cfg.apiKey || '', placeholder: 'sk-… / sua chave',
+
+        campo('Modo de conexão', h('select', { class: 'campo', onchange: (ev) => { set((s) => { s.ai.modo = ev.target.value; }); desenhar(); } },
+          h('option', { value: 'navegador', selected: !modoProxy, text: 'Navegador — chave(s) neste dispositivo, chamada direta ao provedor' }),
+          h('option', { value: 'proxy', selected: modoProxy, text: 'Servidor — proxy /api/ia do deploy (chaves só no servidor)' })),
+        modoProxy
+          ? 'Exige publicar `api/ia.js` (Vercel/Netlify) e definir `GEMINI_API_KEYS` nas variáveis de ambiente. Rode o SQL de `supabase/migrations/` se quiser também o backup do progresso.'
+          : 'As chaves ficam apenas neste navegador. É o modo que funciona em qualquer hospedagem estática.'),
+
+        modoProxy ? campo('URL do proxy', h('input', {
+          class: 'campo', type: 'text', value: cfg.proxyUrl || '/api/ia',
+          oninput: (ev) => set((s) => { s.ai.proxyUrl = ev.target.value.trim(); }),
+        }), 'Deixe `/api/ia` quando o app e a função estão no mesmo domínio (deploy único na Vercel). Use a URL completa (`https://SEU-APP.vercel.app/api/ia`) se o app estiver em outro domínio — e libere essa origem em `ALLOWED_ORIGINS`.') : null,
+
+        !modoProxy ? campo('Chave 1 (principal)', h('input', {
+          class: 'campo', type: 'password', value: cfg.apiKey || '',
+          placeholder: cfg.provedor === 'gemini' ? 'AIza… (chave do Google AI Studio)' : 'sk-… / sua chave',
           autocomplete: 'off', spellcheck: false,
           oninput: (ev) => set((s) => { s.ai.apiKey = ev.target.value.trim(); }),
-        }), PROVEDORES[cfg.provedor]?.docs ? h('a', { href: PROVEDORES[cfg.provedor].docs, target: '_blank', rel: 'noopener', text: 'Onde obter a chave' }) : null) : null,
-        cfg.provedor !== 'nenhum' ? campo('Modelo', h('input', {
-          class: 'campo', type: 'text', value: cfg.modelo || '', placeholder: PROVEDORES[cfg.provedor]?.padraoModelo || 'nome do modelo',
-          oninput: (ev) => set((s) => { s.ai.modelo = ev.target.value.trim(); }),
-        })) : null,
-        cfg.provedor === 'custom' ? campo('Base URL', h('input', {
-          class: 'campo', type: 'text', value: cfg.baseUrl || '', placeholder: 'https://api.groq.com/openai/v1',
+        }), prov.docs ? h('a', { href: prov.docs, target: '_blank', rel: 'noopener', text: cfg.provedor === 'gemini' ? 'Criar chave grátis no Google AI Studio ↗' : 'Onde obter a chave ↗' }) : null) : null,
+
+        !modoProxy && cfg.provedor === 'gemini' ? campo(`Chaves de contingência (${Math.max(0, chaves.length - 1)} adicional(is))`, h('textarea', {
+          class: 'campo', rows: 3, value: (cfg.apiKeys || []).join('\n'), spellcheck: false,
+          placeholder: 'AIza…chave do segundo projeto\nAIza…chave do terceiro projeto',
+          oninput: (ev) => set((s) => {
+            s.ai.apiKeys = ev.target.value.split(/[\n;,]+/).map((k) => k.trim()).filter(Boolean);
+            if (s.ai.chaveAtiva >= s.ai.apiKeys.length + 1) s.ai.chaveAtiva = 0;
+          }),
+        }), 'Uma por linha. Crie uma chave em cada projeto do AI Studio: como os limites gratuitos são por projeto, cada chave traz uma cota nova. A rotação é automática em caso de 429/401/403/404/5xx.') : null,
+
+        campo('Modelo', h('div', { class: 'campo-linha' },
+          h('input', {
+            class: 'campo', type: 'text', value: cfg.modelo || '', list: 'lista-modelos-ia',
+            placeholder: `${prov.padraoModelo || 'nome do modelo'} (deixe vazio para usar o padrão)`,
+            oninput: (ev) => set((s) => { s.ai.modelo = ev.target.value.trim(); }),
+          }),
+          h('datalist', { id: 'lista-modelos-ia' }, ...sugestoes.map((m) => h('option', { value: m }))),
+          prov.listaModelos || modoProxy ? botao(listandoModelos ? 'Listando…' : 'Listar modelos disponíveis', async () => {
+            if (!configurado(get().ai)) { toast('Informe provedor e chave primeiro.', 'erro'); return; }
+            listandoModelos = true; desenhar();
+            try {
+              modelosDescobertos = await listarModelos(get().ai);
+              toast(`${modelosDescobertos.length} modelo(s) disponíveis.`, 'sucesso', 5000);
+            } catch (err) {
+              toast(`Não foi possível listar: ${err.message}`, 'erro', 8000);
+            }
+            listandoModelos = false; desenhar();
+          }, { variante: 'fantasma', desabilitado: listandoModelos }) : null),
+        prov.gratuito ? 'Na camada gratuita só entram modelos **Flash** e **Flash-Lite** (os Pro são pagos). `gemini-flash-latest` é um apelido que aponta sempre para o Flash estável mais recente — por isso é o padrão. Flash-Lite tem cota mais folgada, útil para gerar conteúdo em lote.' : 'Deixe vazio para usar o modelo padrão do provedor.'),
+
+        prov.limite ? h('div', { class: 'aviso-limite' }, markdown(`**Limites da camada gratuita:** ${prov.limite} Se aparecer erro **429 / RESOURCE_EXHAUSTED**, o app tenta a próxima chave de contingência; se todas estiverem no limite, aguarde alguns minutos ou troque para um modelo Flash-Lite.`)) : null,
+
+        cfg.provedor === 'custom' && !modoProxy ? campo('Base URL', h('input', {
+          class: 'campo', type: 'text', value: cfg.baseUrl || '', placeholder: 'https://generativelanguage.googleapis.com/v1beta/openai/',
           oninput: (ev) => set((s) => { s.ai.baseUrl = ev.target.value.trim(); }),
-        }), 'Qualquer endpoint compatível com a API da OpenAI (Groq, OpenRouter, Together, LM Studio, Ollama).') : null,
-        cfg.provedor !== 'nenhum' ? campo('Temperatura', h('input', {
+        }), 'Qualquer endpoint compatível com a API da OpenAI (Groq, OpenRouter, Together, LM Studio, Ollama — ou o próprio Gemini em `/v1beta/openai/`).') : null,
+
+        campo('Temperatura', h('input', {
           class: 'campo', type: 'number', min: 0, max: 1.5, step: 0.1, value: cfg.temperatura ?? 0.3,
           oninput: (ev) => set((s) => { s.ai.temperatura = Number(ev.target.value); }),
-        }), '0 = respostas mais determinísticas (bom para lei seca). 0,7+ = mais criativo (bom para gerar questões).') : null,
+        }), '0 = respostas mais determinísticas (bom para lei seca). 0,7+ = mais criativo (bom para gerar questões).'),
+
         h('div', { class: 'form-acoes' },
-          badge(configurado(cfg) ? '✓ IA configurada' : 'IA não configurada', configurado(cfg) ? 'verde' : 'neutro'),
+          badge(configurado(cfg)
+            ? (modoProxy ? `✓ proxy ${cfg.proxyUrl || '/api/ia'}` : `✓ ${chaves.length} chave(s) · ${cfg.modelo || prov.padraoModelo}`)
+            : 'IA não configurada', configurado(cfg) ? 'verde' : 'neutro'),
+          Object.keys(cfg.chaveGelada || {}).length ? badge(`${Object.keys(cfg.chaveGelada).length} chave(s) em espera (429)`, 'amarelo') : null,
           botao('Testar conexão', async () => {
             if (!configurado(get().ai)) { toast('Preencha provedor e chave.', 'erro'); return; }
             toast('Testando…', 'info', 1500);
             const { conversar } = await import('../ai.js');
             const r = await conversar(get().ai, [{ role: 'user', content: 'Responda apenas: CONEXÃO OK' }], { maxTokens: 40 });
-            if (r.texto) { toast(`Conexão OK — "${r.texto.trim().slice(0, 40)}"`, 'sucesso', 4000); }
-            else { toast(`Falhou: ${r.erro}`, 'erro', 8000); }
+            registrarChavesIA(r.chaves);
+            if (r.texto) {
+              const qual = r.totalChaves > 1 ? ` · chave ${r.chave} de ${r.totalChaves}${r.contingencia ? ' (contingência)' : ''}` : '';
+              toast(`Conexão OK com ${r.modelo || get().ai.modelo || 'o modelo padrão'}${qual}`, 'sucesso', 6000);
+            } else {
+              toast(`Falhou: ${r.erro}${r.dica ? ` · ${r.dica}` : ''}`, 'erro', 12000);
+            }
+            desenhar();
           }, { variante: 'primario' }),
           botao('Abrir o Tutor', () => { location.hash = '#/tutor'; }, { variante: 'secundario' })))));
+
+    /* ---------- Supabase / deploy ---------- */
+    const sb = e.supabase || {};
+    const sbOk = supabaseConfigurado(sb);
+    box.appendChild(card('Supabase — backup do progresso (opcional)',
+      h('div', { class: 'form' },
+        h('div', { class: 'aviso-ia' }, markdown(`Guarde seu progresso na nuvem e continue em outro dispositivo. Rode antes o SQL de [\`supabase/migrations/0001_progresso_e_chaves.sql\`](../supabase/migrations/0001_progresso_e_chaves.sql) no SQL Editor do seu projeto.
+
+Use a chave **anon** (pública) — a \`service_role\` **nunca** deve vir para o app. O upload **não inclui suas chaves de IA** (elas são removidas antes do envio). Sem login, a linha é identificada por um id aleatório deste navegador: quem souber o id consegue ler aquele progresso.`)),
+        campo('URL do projeto', h('input', {
+          class: 'campo', type: 'text', value: sb.url || '', placeholder: 'https://SEU-PROJETO.supabase.co', spellcheck: false,
+          oninput: (ev) => set((s) => { s.supabase.url = ev.target.value.trim(); }),
+        })),
+        campo('Chave anon (pública)', h('input', {
+          class: 'campo', type: 'password', value: sb.anonKey || '', placeholder: 'eyJhbGciOi…', spellcheck: false, autocomplete: 'off',
+          oninput: (ev) => set((s) => { s.supabase.anonKey = ev.target.value.trim(); }),
+        }), 'Project Settings → API → anon public.'),
+        check('Sincronizar automaticamente', Boolean(sb.sincronizar), (v) => { set((s) => { s.supabase.sincronizar = v; }); },
+          'Envia o estado 8 s após cada mudança relevante (respostas, flashcards, simulados, plano).'),
+        h('div', { class: 'form-acoes' },
+          badge(sbOk ? '✓ Supabase configurado' : 'Supabase não configurado', sbOk ? 'verde' : 'neutro'),
+          sb.ultimaSync ? badge(`último backup: ${fmtDateBR(String(sb.ultimaSync).slice(0, 10))} ${String(sb.ultimaSync).slice(11, 16)}`, 'neutro') : null,
+          botao('Testar conexão', async () => {
+            if (!sbOk) { toast('Informe URL e chave anon.', 'erro'); return; }
+            try {
+              await baixarProgresso(idDispositivo());
+              toast('Supabase OK — tabela `progresso` acessível.', 'sucesso', 5000);
+            } catch (err) {
+              toast(`Falhou: ${err.message}`, 'erro', 10000);
+            }
+          }, { variante: 'secundario' }),
+          botao('⬆ Enviar backup agora', async () => {
+            if (!sbOk) { toast('Informe URL e chave anon.', 'erro'); return; }
+            try {
+              const r = await enviarProgresso();
+              toast(`Progresso enviado (id ${String(r.id).slice(0, 8)}…).`, 'sucesso', 5000);
+              desenhar();
+            } catch (err) {
+              toast(`Falhou: ${err.message}`, 'erro', 10000);
+            }
+          }, { variante: 'primario' }),
+          botao('⬇ Restaurar da nuvem', () => {
+            if (!sbOk) { toast('Informe URL e chave anon.', 'erro'); return; }
+            const m = modal({
+              titulo: 'Restaurar progresso do Supabase',
+              corpo: markdown('Isso **substitui** o progresso deste navegador pelo que está gravado na nuvem (respostas, flashcards, simulados, plano e perfil). Suas chaves de IA locais são preservadas.\n\nExporte um backup em JSON antes se estiver em dúvida.'),
+              acoes: [
+                botao('Cancelar', () => m.fechar(), { variante: 'fantasma' }),
+                botao('Restaurar', async () => {
+                  m.fechar();
+                  try {
+                    const r = await restaurarProgresso();
+                    if (!r) { toast('Não há progresso gravado para este dispositivo.', 'info', 6000); return; }
+                    toast('Progresso restaurado. Recarregando…', 'sucesso', 3000);
+                    setTimeout(() => location.reload(), 900);
+                  } catch (err) {
+                    toast(`Falhou: ${err.message}`, 'erro', 10000);
+                  }
+                }, { variante: 'perigo' }),
+              ],
+            });
+          }, { variante: 'secundario' }),
+          botao('🔑 Importar chaves de IA do Supabase', async () => {
+            if (!sbOk) { toast('Informe URL e chave anon.', 'erro'); return; }
+            try {
+              const r = await importarChavesIA();
+              toast(r.total ? `${r.total} chave(s) importada(s) do Supabase.` : 'Nenhuma chave ativa na tabela `chaves_ia`.', r.total ? 'sucesso' : 'info', 6000);
+              desenhar();
+            } catch (err) {
+              toast(`Falhou: ${err.message}`, 'erro', 10000);
+            }
+          }, { variante: 'fantasma' })),
+        h('p', { class: 'nota', text: 'Importar chaves do Supabase exige a tabela `chaves_ia` e a função `obter_chaves_ia()` do migration. Atenção: por esse caminho a chave volta para o navegador — em produção prefira o modo Servidor (proxy /api/ia) com as chaves nas variáveis de ambiente da Vercel.' }))));
 
     /* ---------- dados ---------- */
     box.appendChild(card('Seus dados',
@@ -128,8 +269,12 @@ Sem chave, tudo continua funcionando: ${dados.questoes.length} questões comenta
 
 /* ---------- helpers ---------- */
 
+/** `dica` pode ser texto OU um nó (ex.: o link "onde obter a chave"). */
 function campo(rotulo, input, dica = null) {
-  return h('label', { class: 'campo-bloco' }, h('span', { text: rotulo }), input, dica ? h('small', { class: 'nota', text: dica }) : null);
+  const nota = !dica ? null
+    : typeof dica === 'string' ? h('small', { class: 'nota', text: dica })
+    : h('small', { class: 'nota' }, dica);
+  return h('label', { class: 'campo-bloco' }, h('span', { text: rotulo }), input, nota);
 }
 
 function check(rotulo, valor, onchange, dica = null) {

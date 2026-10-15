@@ -1,10 +1,10 @@
 /* views/tutor.js — chat com o tutor IA (chave própria) + gerador de questões. */
 
 import { h, uid, shuffle, normalizar } from '../util.js';
-import { get, set } from '../store.js';
+import { get, set, registrarChavesIA } from '../store.js';
 import { dados, materiaNome, listarMaterias, topicoPorId } from '../data.js';
 import { cabecalho, card, badge, botao, toast, markdown, carregando, vazio, seloDificuldade, chipMateria } from '../components.js';
-import { conversar, configurado, PROVEDORES, promptExplicarAlternativas, promptGerarQuestoes, promptPlanoDeEstudo, extrairJSON, validarQuestaoGerada, explicacaoOffline } from '../ai.js';
+import { conversar, configurado, PROVEDORES, rotuloChave, promptExplicarAlternativas, promptGerarQuestoes, promptPlanoDeEstudo, extrairJSON, validarQuestaoGerada, explicacaoOffline } from '../ai.js';
 import { statsPorMateria } from '../store.js';
 
 const historico = []; // [{role, content}]
@@ -46,13 +46,30 @@ export function viewTutor({ query }) {
 - respostas a dúvidas livres, com o contexto do edital já injetado no prompt de sistema;
 - plano de estudo adaptativo.
 
-**Como obter uma chave (grátis em quase todos os casos):**
-- Google AI Studio → \`aistudio.google.com/app/apikey\` (tem cota gratuita generosa)
-- OpenAI → \`platform.openai.com/api-keys\`
-- Anthropic → \`console.anthropic.com/settings/keys\`
-- Groq / OpenRouter / Ollama local → use o provedor "Compatível com OpenAI"
+**Caminho recomendado: chave GRATUITA do Google AI Studio (Gemini)**
 
-A chave fica **somente no seu navegador** (localStorage) e é enviada direto ao provedor escolhido. Nenhum dado passa por servidor deste projeto.`)));
+1. Abra [aistudio.google.com/apikey](https://aistudio.google.com/apikey) e entre com sua conta Google;
+2. Clique em **Create API key** (não pede cartão de crédito) e copie a chave — ela começa com \`AIza…\`;
+3. Aqui no app: **Configurações → Inteligência artificial**, provedor **Google Gemini**, cole a chave;
+4. Clique em **Testar conexão**. Se aparecer "CONEXÃO OK", está pronto;
+5. **Contingência (recomendado):** crie uma segunda chave em **outro projeto** do AI Studio e cole em
+   "Chaves de contingência". Os limites gratuitos são por projeto, então quando a primeira estourar a
+   cota (erro 429) o app passa sozinho para a próxima e deixa a esgotada 1 minuto em espera — você nem vê o erro.
+
+Na camada gratuita o Google libera a família **Flash / Flash-Lite** (os Pro são pagos). O padrão é
+\`gemini-flash-latest\`; se ele não estiver disponível para a sua chave, use **Configurações → "Listar
+modelos disponíveis"** e escolha um Flash-Lite.
+
+**Publicou o app na Vercel?** Em Configurações → **Modo de conexão** escolha **Servidor (proxy
+\`/api/ia\`)**: as chaves ficam nas variáveis de ambiente do deploy (\`GEMINI_API_KEYS\`) e **nunca
+chegam ao navegador**. Guia: \`docs/deploy-vercel-supabase.md\`.
+
+**Outros provedores:** OpenAI → \`platform.openai.com/api-keys\` · Anthropic →
+\`console.anthropic.com/settings/keys\` · Groq / OpenRouter / Ollama local → provedor
+"Compatível com OpenAI".
+
+No modo Navegador a chave fica **somente no seu navegador** (localStorage) e vai direto ao Google no
+cabeçalho \`x-goog-api-key\`, nunca na URL. Nenhum dado passa por servidor deste projeto.`)));
   }
 
   /* ---- atalhos ---- */
@@ -132,11 +149,13 @@ A chave fica **somente no seu navegador** (localStorage) e é enviada direto ao 
     const cfgAgora = get().ai;
     if (configurado(cfgAgora)) {
       const resp = await conversar(cfgAgora, [...historico], { maxTokens: 1600 });
+      registrarChavesIA(resp.chaves);
       if (resp.texto) {
-        historico.push({ role: 'assistant', content: resp.texto, fonte: `${PROVEDORES[cfgAgora.provedor]?.nome} · ${resp.modelo || cfgAgora.modelo}` });
+        const qual = resp.totalChaves > 1 ? ` · ${rotuloChave(resp.chave, resp.totalChaves)}${resp.contingencia ? ' (contingência)' : ''}` : '';
+        historico.push({ role: 'assistant', content: resp.texto, fonte: `${cfgAgora.modo === 'proxy' ? 'proxy do servidor' : PROVEDORES[cfgAgora.provedor]?.nome} · ${resp.modelo || cfgAgora.modelo}${qual}` });
       } else {
         const offline = responderOffline(texto);
-        historico.push({ role: 'assistant', content: offline.texto, fonte: `modo offline (${resp.erro || 'IA indisponível'})` });
+        historico.push({ role: 'assistant', content: `${resp.dica ? `> ⚠️ ${resp.dica}\n\n` : ''}${offline.texto}`, fonte: `modo offline (${resp.erro || 'IA indisponível'})` });
       }
     } else {
       const offline = responderOffline(texto);
@@ -307,8 +326,12 @@ A chave fica **somente no seu navegador** (localStorage) e é enviada direto ao 
           const alvo = h('div', { class: 'msg msg-assistant' }, carregando(`Gerando ${qtd} questão(ões)…`));
           conversa.appendChild(alvo);
           const prompt = promptGerarQuestoes({ materia, topico, quantidade: qtd, dificuldade: dif });
-          const resp = await conversar(get().ai, [...historico, { role: 'user', content: prompt }], { maxTokens: 3000, temperatura: 0.7 });
-          if (!resp.texto) { alvo.replaceChildren(markdown(`_Falha ao gerar: ${resp.erro}_`)); return; }
+          const resp = await conversar(get().ai, [...historico, { role: 'user', content: prompt }], { maxTokens: 3000, temperatura: 0.7, json: true });
+          registrarChavesIA(resp.chaves);
+          if (!resp.texto) {
+            alvo.replaceChildren(markdown(`_Falha ao gerar: ${resp.erro}_${resp.dica ? `\n\n> ${resp.dica}` : ''}`));
+            return;
+          }
           const json = extrairJSON(resp.texto);
           const brutas = json?.questoes || (Array.isArray(json) ? json : []);
           if (!brutas.length) { alvo.replaceChildren(markdown(`_A IA não devolveu JSON válido._\n\n${resp.texto}`)); return; }

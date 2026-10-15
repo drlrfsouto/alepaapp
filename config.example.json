@@ -1,0 +1,14 @@
+{
+  "$comentario": "Copie para config.json e publique junto com o app. SÓ valores públicos: a chave anon do Supabase é pública por design e aqui NÃO vai chave do Gemini (essa fica em GEMINI_API_KEYS no servidor). Campos vazios não sobrescrevem o que o usuário já configurou.",
+  "ai": {
+    "modo": "proxy",
+    "proxyUrl": "/api/ia",
+    "provedor": "gemini",
+    "modelo": ""
+  },
+  "supabase": {
+    "url": "https://SEU-PROJETO.supabase.co",
+    "anonKey": "sua-chave-anon-publica",
+    "sincronizar": false
+  }
+}

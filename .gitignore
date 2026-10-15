@@ -18,3 +18,15 @@ Thumbs.db
 .cache/
 .tmp/
 coverage/
+
+# --- segredos e ambiente local (nunca commitar) ---
+.env
+.env.*
+!.env.example
+.vercel
+.netlify
+*.pem
+
+# --- Supabase (CLI local) ---
+supabase/.temp/
+supabase/.branches/

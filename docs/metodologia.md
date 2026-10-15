@@ -181,13 +181,26 @@ Padrões recorrentes da Fundação CETAP, embutidos nos campos `estiloBanca` e `
 
 - A IA é **opcional** (`Config → Tutor IA`): sem chave, o app inteiro continua funcionando
   (explicações, resumos e diagnóstico têm modo offline derivado dos próprios dados).
-- A chave fica **somente no `localStorage` do navegador**; nenhuma chamada passa por servidor nosso.
+- O caminho recomendado é a **chave gratuita do Google AI Studio (Gemini)** — sem cartão de crédito.
+  Modelo padrão `gemini-flash-latest`; na camada gratuita só existem modelos **Flash/Flash-Lite** e os
+  limites são por projeto (RPM/TPM/RPD), com cota diária zerando à meia-noite do Pacífico.
+  Guia completo: [`docs/ia-gemini.md`](ia-gemini.md).
+- É possível cadastrar **várias chaves** (uma por projeto do AI Studio): em `429` o app alterna
+  sozinho para a próxima e deixa a esgotada 60 s em espera — como os limites são por projeto,
+  duas chaves gratuitas ≈ o dobro da cota.
+- A chave fica **somente no `localStorage` do navegador** e vai direto ao Google no cabeçalho
+  `x-goog-api-key`; nenhuma chamada passa por servidor nosso. Erro `429` vira orientação na tela.
+  Publicou o app? No modo **Servidor** as chaves ficam no deploy (Vercel) e o navegador chama
+  `/api/ia` — ver [`docs/deploy-vercel-supabase.md`](deploy-vercel-supabase.md).
+- O **backup do progresso** no Supabase é opcional e nunca inclui chaves de IA.
 - O `SYSTEM_PROMPT` proíbe inventar artigo, súmula, prazo ou jurisprudência e exige que o modelo
   declare a incerteza. Ainda assim: **tudo que a IA produzir deve ser conferido na fonte oficial**.
 - Conteúdo gerado que cita norma estadual/regimental entra no banco com `"revisar": "…"`;
   o validador lista esses itens como avisos até a conferência.
 - Questões geradas só são aceitas se passarem por `validarQuestaoGerada`
   (5 alternativas A–E, gabarito único, comentário mínimo, sem duplicidade).
+- Geração em lote respeita a cota gratuita: `--ritmo` (pausa entre chamadas, padrão 8 s) e
+  `--tentativas` (nova tentativa em 429/5xx com espera crescente).
 
 ---
 

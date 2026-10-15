@@ -119,9 +119,46 @@ Cada tópico tem `id`, `nome` (texto literal do edital), `prioridade` (**S/A/B/C
   e **limpar tudo**.
 - **Todo o conteúdo em arquivos JSON** separados do código (fonte da verdade), servidos por `fetch`.
   Nenhum dado do edital hard-coded em componente.
-- **IA opcional**: o usuário informa a própria chave (OpenAI, Anthropic, Gemini ou endpoint
-  compatível). A chave fica **somente no navegador**; chamadas diretas do cliente. Sem chave, o app
-  precisa continuar 100% funcional (fallbacks offline).
+- **IA opcional, com provedor padrão Google Gemini (chave GRATUITA do AI Studio)**:
+  `https://aistudio.google.com/apikey`, sem cartão de crédito. Também aceite OpenAI, Anthropic e
+  qualquer endpoint compatível com OpenAI, além do modo "nenhum" (offline).
+  - Modelo padrão: **`gemini-flash-latest`** (apelido oficial que aponta para o Flash estável mais
+    recente). Na camada gratuita só existem modelos **Flash / Flash-Lite** — os Pro são pagos desde
+    abril/2026.
+    Endpoint: `https://generativelanguage.googleapis.com/v1beta/models/<modelo>:generateContent`,
+    autenticação pelo cabeçalho **`x-goog-api-key`** (nunca coloque a chave na query string),
+    prompt de sistema em `systemInstruction` e JSON estrito com
+    `generationConfig.responseMimeType = "application/json"`.
+  - Implemente **descoberta de modelos**: `GET /v1beta/models` com a chave do usuário, exibindo em um
+    `datalist`/select os modelos liberados (Flash-Lite primeiro). Assim o app nunca depende de um
+    nome de modelo que saia de linha.
+  - Trate os erros com orientação em português: `429 RESOURCE_EXHAUSTED` (limites por projeto:
+    RPM/TPM/RPD, cota diária zerando à meia-noite do Pacífico; sugerir aguardar, trocar para
+    Flash-Lite ou gerar menos itens), `400/401/403` (chave inválida → link para gerar outra),
+    `404 NOT_FOUND` (modelo indisponível para a chave → usar "Listar modelos"),
+    `MAX_TOKENS` (resposta truncada → gerar menos itens por vez) e falha de rede/CORS.
+  - **Contingência com várias chaves gratuitas:** aceite uma chave principal e uma lista de chaves
+    extras (cada uma de um projeto diferente do AI Studio, pois os limites são POR PROJETO).
+    Em `429/401/403/404/5xx`, tente automaticamente a próxima chave, sem mostrar erro ao usuário;
+    coloque a chave esgotada "na geladeira" por 60 s (fim da fila); comece sempre pela última que
+    funcionou (persista esse índice); só mostre a dica de cota quando TODAS falharem. Erros que não
+    são de chave (resposta bloqueada por segurança, `MAX_TOKENS`) não devem queimar as outras chaves.
+    Mostre no chat qual chave respondeu (ex.: "chave 2 de 2 · contingência").
+  - **Modo Servidor (proxy) opcional:** além do modo navegador, ofereça um modo em que as chamadas
+    vão para uma função serverless do próprio deploy (`POST /api/ia`, `GET /api/modelos`) que guarda
+    as chaves em variáveis de ambiente (`GEMINI_API_KEYS="AIza1,AIza2"`) e faz a mesma rotação no
+    servidor. O `GET /api/ia` deve devolver um health check com o NÚMERO de chaves, nunca o valor.
+    Proteja com: limite de requisições por IP, teto de `maxOutputTokens`, histórico limitado,
+    CORS restrito a `ALLOWED_ORIGINS` e erros com dica em português.
+  - No modo navegador a chave fica **somente no `localStorage`**; no modo Servidor, **somente no
+    servidor**. Sem chave, o app precisa continuar 100% funcional (fallbacks offline).
+- **Supabase opcional (sem SDK, via REST/PostgREST):** backup/restauro do progresso numa tabela
+  `progresso (id text pk, estado jsonb, atualizado_em timestamptz, origem text)` com RLS ligado,
+  usando `url` + chave **anon** informados pelo usuário (ou por um `config.json` público lido no
+  boot, que preenche apenas campos vazios). O upload **nunca** pode conter chaves de IA — remova
+  `ai.apiKey`/`ai.apiKeys` antes de enviar e preserve as chaves locais ao restaurar. Sincronização
+  automática opt-in, com debounce (~8 s) e sem loop (o `set` que registra o último sync não pode
+  disparar novo envio).
 - Não use `innerHTML` com dados externos (segurança). Prefira criação de elementos ou sanitização.
 - Responsivo (mobile-first: sidebar vira drawer), tema **claro/escuro**, densidade confortável,
   acessível (foco visível, `aria-label`, navegação por teclado, atalho **Ctrl+K** para busca global).
@@ -261,13 +298,25 @@ Regras de qualidade do conteúdo (inegociáveis):
 10. Sem chave de IA configurada, o Tutor responde com conteúdo offline e **nenhuma** função do app fica indisponível.
 11. Exportar gera um JSON importável em outra sessão (round-trip sem perda).
 12. Um script de validação dos dados (`validate`) passa com 0 erros.
+13. **Recarregar a página não perde progresso**: com respostas, flashcards e plano gravados, o
+    deep merge do estado sobre o estado inicial precisa preservar chaves que só existem no estado
+    salvo (ex.: `questoes['lp-q001']`, `cards['fc-9']`) — teste isso explicitamente.
+14. Com duas chaves do Gemini cadastradas, simular `429` na primeira faz a segunda responder sem
+    erro visível, e a chave esgotada só volta à fila depois de ~60 s.
+15. No modo Servidor, `GET /api/ia` responde o número de chaves sem revelar nenhuma, e uma chave
+    digitada no navegador não é necessária para o Tutor funcionar.
 
 ## 9. O que NÃO fazer
 
 - Não invente datas, valores, vagas, notas de corte ou tópicos do edital diferentes dos listados acima.
 - Não use "peso por questão" variável (2,0 / 1,0 / 4,0 são **pontos do bloco**, não multiplicadores).
-- Não crie login, conta, servidor ou banco de dados obrigatório.
-- Não envie a chave de IA do usuário para nenhum servidor intermediário.
+- Não crie login, conta, servidor ou banco de dados **obrigatórios** (Supabase e proxy são opcionais
+  e o app tem de funcionar integralmente sem eles).
+- Não envie a chave de IA do usuário para servidor de terceiros. Um proxy do PRÓPRIO deploy é
+  aceitável (e preferível em produção), desde que a chave nunca apareça no cliente nem em logs.
+- Não coloque chaves secretas (Gemini, `service_role` do Supabase) em `config.json`, no repositório
+  ou em código versionado — só em variáveis de ambiente do deploy.
+- Não use `mesclar`/merge raso que descarte campos desconhecidos do estado salvo.
 - Não use `innerHTML` com conteúdo vindo de JSON/IA.
 - Não escreva comentário de questão que admita duas respostas possíveis.
 - Não deixe botão sem ação, rota sem view ou estado sem persistência.
@@ -297,6 +346,19 @@ Regras de qualidade do conteúdo (inegociáveis):
 > Legislação e Ética 10 (2,0), Informática 5 (1,0), Raciocínio Lógico 5 (1,0) e Conhecimentos
 > Específicos 20 (4,0). Corte: **6,0 pontos** e classificação até 4× as **11 vagas**. Desempate:
 > idade → Específicos → Legislação → Português → RL → Informática.
+>
+> IA opcional com **provedor padrão Google Gemini** e **contingência entre várias chaves
+> gratuitas** (em `429/401/403/404/5xx` tente a próxima chave; gele a esgotada por 60 s; comece pela
+> última que funcionou), **modo Servidor opcional** (`POST /api/ia` com as chaves em
+> `GEMINI_API_KEYS` no deploy — Vercel) e **backup opcional do progresso no Supabase** (REST puro,
+> tabela `progresso` com RLS, nunca enviando as chaves de IA). Provedor padrão: chave gratuita em `aistudio.google.com/apikey`,
+> sem cartão): modelo padrão `gemini-flash-latest`, endpoint
+> `generativelanguage.googleapis.com/v1beta/models/<modelo>:generateContent` com a chave no cabeçalho
+> `x-goog-api-key` (nunca na URL), `systemInstruction` para o prompt de sistema,
+> `responseMimeType: "application/json"` para saída estrita, botão que lista os modelos da chave
+> (`GET /models`) e mensagens amigáveis para `429 RESOURCE_EXHAUSTED` (cota gratuita por projeto,
+> reset diário à meia-noite do Pacífico), `404` de modelo e `MAX_TOKENS`. Aceite também OpenAI,
+> Anthropic e endpoints compatíveis; sem chave, tudo continua funcionando offline.
 >
 > Conteúdo em JSON separado do código: `concurso.json` (edital, cargo, fases, cronograma),
 > `curriculo.json` (**15 matérias / 319 tópicos** do Anexo II com prioridade S/A/B/C),
@@ -355,12 +417,27 @@ Regras de qualidade do conteúdo (inegociáveis):
 > destaque do corte 6,0, desempenho por matéria ordenado do pior para o melhor com atalho "Treinar",
 > atividade dos últimos 14 dias em gráfico de barras e streak de dias seguidos.
 
-**Tutor IA**
+**Tutor IA (Gemini gratuito por padrão)**
 > Implemente chat com `SYSTEM_PROMPT` contendo os dados do concurso e a proibição de inventar
-> dispositivo legal; suporte a OpenAI, Anthropic, Gemini e endpoint compatível; chave salva só no
-> `localStorage`; ações rápidas (explicar questão, resumir tópico, gerar N questões, diagnosticar);
-> parser de JSON com validação (5 alternativas A–E, gabarito único, comentário mínimo) antes de
-> aceitar questões geradas; fallbacks offline que usam os próprios dados quando não há chave.
+> dispositivo legal. Provedor padrão **Google Gemini** com chave gratuita do AI Studio:
+> `POST https://generativelanguage.googleapis.com/v1beta/models/<modelo>:generateContent`, chave no
+> cabeçalho `x-goog-api-key`, `systemInstruction` para o system prompt, `contents` com papéis
+> `user`/`model`, `generationConfig` com `temperature`, `maxOutputTokens` e
+> `responseMimeType: "application/json"` quando a resposta precisar ser JSON; leia o texto em
+> `candidates[0].content.parts[].text` e trate `promptFeedback.blockReason` e
+> `finishReason === "MAX_TOKENS"`. Modelo padrão `gemini-flash-latest`, com botão **"Listar modelos
+> da minha chave"** chamando `GET /v1beta/models` e preenchendo um `datalist` (Flash-Lite primeiro).
+> Aceite **várias chaves** (principal + contingência, uma por linha) e alterne automaticamente em
+> `429/401/403/404/5xx`, gelando por 60 s a chave esgotada e retomando pela última que funcionou
+> (persista o índice); mostre no chat qual chave respondeu. Ofereça também o **modo Servidor**:
+> `POST /api/ia` (função serverless com `GEMINI_API_KEYS` no ambiente, rotação igual, limite por IP,
+> CORS restrito e `GET /api/ia` de health check que não revela segredo) e `GET /api/modelos`.
+> Suporte também OpenAI, Anthropic e endpoint compatível com OpenAI; chave salva só no
+> `localStorage`; botão **Testar conexão**; ações rápidas (explicar questão, resumir tópico, gerar N
+> questões, diagnosticar); parser de JSON com validação (5 alternativas A–E, gabarito único,
+> comentário mínimo) antes de aceitar questões geradas; fallbacks offline que usam os próprios dados
+> quando não há chave; e mensagens de erro acionáveis para `429` (cota gratuita por projeto, reset à
+> meia-noite do Pacífico, sugerir Flash-Lite ou aguardar), `404` de modelo, chave inválida e CORS.
 
 **PWA/offline**
 > Implemente `manifest.webmanifest`, ícones 192/512/512-maskable e `sw.js` com: network-first para
@@ -391,13 +468,85 @@ O mesmo padrão vale para resumos (`{"resumos":[…]}`, texto ≥ 1.800 caracter
 `caiNaProva` 3–5) e flashcards (`{"flashcards":[…]}`, um fato por cartão, frente ≤ 180 e verso ≤ 400
 caracteres). Depois de inserir qualquer conteúdo, rode o validador.
 
+**Usando a cota gratuita do Gemini:** cole o prompt no AI Studio
+(<https://aistudio.google.com/app>) com um modelo Flash-Lite para lotes grandes, ou automatize com
+`GEMINI_API_KEY=AIza… node tools/generate-content.mjs --tipo=questoes --materia=lp --limite=4 --ritmo=10`
+— o script já pausa entre chamadas e tenta de novo em erro `429`. Os limites são por projeto
+(requisições/minuto, tokens/minuto e requisições/dia), com a cota diária zerando à meia-noite do
+horário do Pacífico; consulte os seus em <https://aistudio.google.com/rate-limit>.
+
 ---
+
+---
+
+# BLOCO 5 — PROMPT DE DEPLOY (Vercel + Supabase, tudo gratuito)
+
+> Cole este bloco quando o app já estiver funcionando e você quiser publicar.
+
+```
+Publique este app estático (PWA, sem build) na VERCEL e conecte o SUPABASE para backup do
+progresso, usando só cotas gratuitas. Siga exatamente:
+
+1. VERCEL
+   - `vercel.json` com: `installCommand: ""` (não há dependências de runtime),
+     `outputDirectory: "."`, `functions: { "api/*.js": { maxDuration: 60 } }`, `rewrites`
+     fallback para `/index.html` (exceto `/api/`) e `headers` de cache:
+     `sw.js` e `index.html` com `no-cache` (senão o PWA não atualiza), `data/*.json` com
+     `max-age=3600`, `/api/*` com `no-store`.
+   - Funções serverless em `api/` (Node, ESM, ZERO dependências):
+     • `api/ia.js` — `POST` recebe `{ mensagens, system?, maxTokens?, temperatura?, json?, modelo? }`,
+       chama `POST {GEMINI_BASE_URL}/models/{modelo}:generateContent` com a chave no cabeçalho
+       `x-goog-api-key`, devolve `{ texto, modelo, chave, chaveIndice, totalChaves, contingencia, uso }`;
+       `GET` devolve health check `{ ok, chaves: <quantidade>, modelo }` SEM revelar nenhuma chave;
+       valida corpo (400), tamanho (413), método (405) e ausência de chaves (500 com instrução).
+     • `api/modelos.js` — `GET` lista os modelos liberados (`GET /models?pageSize=200`), filtrando
+       os que não têm `generateContent` e ordenando Flash-Lite → Flash → demais.
+     • `serverless/lib/gemini.js` — núcleo compartilhado: leitura das chaves do ambiente
+       (`GEMINI_API_KEYS` separado por vírgula/espaço/quebra, ou `GEMINI_API_KEY` +
+       `GEMINI_API_KEY_2..12`), rotação com geladeira de 60 s em `429`, limite de requisições por IP
+       (`IA_RATE_LIMIT`), teto de tokens (`IA_MAX_TOKENS`), timeout (`IA_TIMEOUT_MS`), CORS por
+       `ALLOWED_ORIGINS` (com curinga `https://*.vercel.app`) e dicas de erro em português.
+   - Variáveis de ambiente (Production + Preview): `GEMINI_API_KEYS` com DUAS chaves gratuitas de
+     projetos diferentes, `GEMINI_MODEL=gemini-flash-latest`, `IA_RATE_LIMIT=30`.
+   - `.env.example` documentando tudo e `.gitignore` bloqueando `.env`.
+2. SUPABASE
+   - Migration idempotente (`supabase/migrations/0001_*.sql`) criando
+     `progresso (id text pk, estado jsonb not null, atualizado_em timestamptz default now(), origem text)`
+     com **RLS ligado** e políticas: usuário autenticado só acessa `id = auth.uid()::text`;
+     modo anônimo permitido (o id é um UUID aleatório do navegador — documente o trade-off).
+   - Opcional: `chaves_ia (ordem, chave, rotulo, ativa)` SEM política de leitura direta + função
+     `obter_chaves_ia()` `SECURITY DEFINER` (documente que, com grant para `anon`, a chave volta ao
+     navegador; recomende `GEMINI_API_KEYS` na Vercel como caminho seguro).
+   - No app: cliente REST puro (sem SDK) com `apikey` + `Authorization: Bearer <anon>`,
+     upsert via `POST /rest/v1/progresso?on_conflict=id` e `Prefer: resolution=merge-duplicates`,
+     leitura via `GET /rest/v1/progresso?id=eq.<id>&select=...`, sincronização automática opt-in com
+     debounce de 8 s (sem loop) e botões "Enviar backup agora" / "Restaurar da nuvem" com confirmação.
+   - **Nunca** envie chaves de IA no backup (remova `ai.apiKey`/`ai.apiKeys` antes) e **nunca**
+     sobrescreva as chaves locais ao restaurar.
+3. CONFIGURAÇÃO PÚBLICA
+   - `config.json` opcional na raiz (valores PÚBLICOS apenas: `ai.modo="proxy"`, `ai.proxyUrl`,
+     `supabase.url`, `supabase.anonKey`), lido no boot e aplicado SOMENTE sobre campos vazios.
+   - `config.example.json` como modelo, com aviso de que chaves secretas não vão ali.
+4. TESTES (sem rede, com `fetch` e `localStorage` falsos)
+   - rotação de chaves em `429`/`401`, geladeira, todas esgotadas → dica + fallback offline;
+   - erro não trocável (resposta bloqueada) não queima as outras chaves;
+   - `/api/ia`: health sem vazar segredo, corpo inválido, sem chaves, rate limit, CORS, rotação;
+   - `/api/modelos`: ordem Flash-Lite primeiro;
+   - Supabase: upsert com cabeçalhos corretos e estado SEM chaves; restauro preservando as chaves;
+   - reload não perde progresso (deep merge do estado).
+5. ENTREGUE: `docs/deploy-*.md` com passo a passo, tabela de variáveis, checklist de verificação
+   (`GET /api/ia` → `{"ok":true,"chaves":2}`) e solução de problemas (404 na função = root directory
+   errado; `fetch failed` = egress bloqueado; 404 do Supabase = migration não rodou; etc.).
+```
 
 ## Notas por ferramenta
 
 | Ferramenta | Ajustes recomendados |
 |---|---|
-| **Lovable** | Cole o Bloco 1. Se sugerir Supabase, aceite apenas para hospedar os JSON como *storage* público — mantenha o progresso do usuário em `localStorage` para não exigir login. Peça "PWA + service worker" explicitamente na Fase 4. |
+| **Lovable** | Cole o Bloco 1. Se sugerir Supabase, use-o como **backup opcional do progresso** (Bloco 5) — o `localStorage` continua sendo a fonte primária, para não exigir login. Peça "PWA + service worker" explicitamente na Fase 4. Se a plataforma tiver IA embutida, deixe-a como opcional e mantenha o campo para a chave Gemini do usuário. |
+| **Vercel** | Cole o Bloco 5. Confira o *Root Directory* do projeto (deve ser a raiz do repo, para `api/` ser detectado) e defina `GEMINI_API_KEYS` em Production **e** Preview. Se o plano Hobby reclamar de `maxDuration: 60`, reduza para 10. Domínio publicado exige HTTPS — sem isso o service worker não registra. |
+| **Supabase** | Rode a migration no SQL Editor (plano Free basta). Use a chave **anon public** no app; a `service_role` nunca sai do servidor. Sem login, o RLS do modo anônimo protege pouco: se for compartilhar o app com outras pessoas, ative Auth e mantenha só as políticas de usuário autenticado. |
+| **Gemini / AI Studio (chat)** | Além de usar o app, você pode montar o app *com* o Gemini: cole o Bloco 1 no AI Studio e peça os arquivos. Use modelo Flash para código e Flash-Lite para gerar conteúdo em lote — os dois estão na camada gratuita. |
 | **Bolt.new** | Cole o Bloco 1 e peça para criar os arquivos `data/*.json` primeiro (Fase 1). Bolt lida bem com projetos estáticos; use `npm start` no preview. |
 | **v0** | Use o Bloco 2 e depois os prompts do Bloco 3 um a um — v0 é forte em UI, fraco em persistência: peça componentes controlados e exporte o estado para `localStorage`. |
 | **Cursor / Claude Code / Windsurf** | Cole o Bloco 1 no chat com o repositório aberto. Este projeto já é a implementação de referência: peça diffs por módulo em vez de reescrever do zero. |
@@ -410,5 +559,10 @@ caracteres). Depois de inserir qualquer conteúdo, rode o validador.
 - [ ] Painel com contagem regressiva correta para 13/12/2026
 - [ ] Simulado espelho com 50 questões e nota 0–10 coerente
 - [ ] Inscrição feita no site da banca até **04/11/2026** (o app não inscreve ninguém)
+- [ ] Chave gratuita do Gemini configurada e **Testar conexão** respondendo OK (ou modo offline validado)
+- [ ] Segunda chave de contingência cadastrada (outro projeto do AI Studio) e rotação testada
+- [ ] Recarregar a página mantém respostas, flashcards e plano (deep merge do estado)
+- [ ] Se publicou: `GET /api/ia` → `{"ok":true,"chaves":2,…}` e modo **Servidor** respondendo OK
+- [ ] Se usa Supabase: migration executada, **Enviar backup agora** OK e **Restaurar da nuvem** testado
 - [ ] Itens marcados `revisar` conferidos na fonte oficial
 - [ ] Local de prova conferido a partir de **25/11/2026**
