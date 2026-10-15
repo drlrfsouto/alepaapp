@@ -1,0 +1,905 @@
+{
+  "descricao": "Questões das demais matérias dos Conhecimentos Específicos: Direito Processual Constitucional, Direito Financeiro, Direito Previdenciário, Direitos Humanos, Administração Geral e Secretaria.",
+  "questoes": [
+    {
+      "id": "dpcon-q001",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-04",
+      "dificuldade": "medio",
+      "enunciado": "O mandado de segurança individual, disciplinado pela Lei nº 12.016/2009, caracteriza-se por:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do poder público."
+        },
+        {
+          "letra": "B",
+          "texto": "exigir, como pressuposto, a dilação probatória ampla, admitida a oitiva de testemunhas e a produção de prova pericial."
+        },
+        {
+          "letra": "C",
+          "texto": "admitir impetração no prazo prescricional de cinco anos, contados do ato coator."
+        },
+        {
+          "letra": "D",
+          "texto": "não admitir, em nenhuma hipótese, a concessão de medida liminar."
+        },
+        {
+          "letra": "E",
+          "texto": "ser cabível contra ato de gestão comercial praticado por administradores de empresas públicas e sociedades de economia mista."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 5º, LXIX, da CF e o art. 1º da Lei nº 12.016/2009: 'conceder-se-á mandado de segurança para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, sempre que, ilegalmente ou com abuso de poder, qualquer pessoa física ou jurídica sofrer violação ou houver justo receio de sofrê-la por parte de autoridade, seja de que categoria for e sejam quais forem as funções que exerça'.\n\nConceitos essenciais:\n• DIREITO LÍQUIDO E CERTO: é aquele demonstrável de plano, por prova PRÉ-CONSTITUÍDA (documental), sem necessidade de dilação probatória. Por isso, não se admite prova testemunhal nem pericial no MS.\n• SUBSIDIARIEDADE: não cabe MS quando cabível HC (locomoção) ou HD (informações pessoais em banco de dados).\n• PRAZO: DECADENCIAL de 120 DIAS, contados da ciência, pelo interessado, do ato impugnado (art. 23 da Lei 12.016). Prazo decadencial não se suspende nem se interrompe.\n• LITISCONSORTE/INTERVENÇÃO: a pessoa jurídica de direito público interessada poderá requerer seu ingresso (art. 7º, II), e o Ministério Público oficia obrigatoriamente (art. 12).\n• LIMINAR: cabível, salvo nas hipóteses do art. 7º, §2º (vedação de liminar para compensação de créditos tributários, entrega de mercadorias e bens provenientes do exterior, reclassificação ou equiparação de servidores públicos e concessão de aumento ou extensão de vantagens).\n\n(B) Errada: o MS NÃO admite dilação probatória.\n(C) Errada: o prazo é DECADENCIAL de 120 dias, não prescricional de cinco anos.\n(D) Errada: a liminar é admitida, com as vedações do art. 7º, §2º.\n(E) Errada: art. 1º, §2º — 'Não cabe mandado de segurança contra os atos de gestão comercial praticados pelos administradores de empresas públicas, de sociedade de economia mista e de concessionárias de serviço público.' Nesses casos, cabem as vias ordinárias.",
+      "mnemonico": "MANDADO DE SEGURANÇA: direito LÍQUIDO E CERTO + prova pré-constituída (sem dilação) + SUBSIDIÁRIO ao HC e HD + prazo DECADENCIAL de 120 DIAS + liminar admitida (salvo art. 7º, §2º) + não cabe contra atos de gestão comercial.",
+      "leiSeca": [
+        "CF, art. 5º, LXIX e LXX",
+        "Lei nº 12.016/2009, arts. 1º, 7º, §2º, e 23"
+      ],
+      "tags": [
+        "mandado de segurança",
+        "remédios constitucionais",
+        "direito líquido e certo",
+        "prazo decadencial"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dpcon-q002",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-06",
+      "dificuldade": "medio",
+      "enunciado": "Sobre as súmulas vinculantes (Lei nº 11.417/2006) e a reclamação constitucional, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O enunciado de súmula vinculante é aprovado por maioria simples dos membros do Supremo Tribunal Federal."
+        },
+        {
+          "letra": "B",
+          "texto": "A súmula vinculante tem por objetivo a validade, a interpretação e a eficácia de normas determinadas, acerca das quais haja controvérsia atual entre órgãos judiciários ou entre estes e a administração pública que acarrete grave insegurança jurídica e relevante multiplicação de processos."
+        },
+        {
+          "letra": "C",
+          "texto": "A reclamação constitucional é cabível apenas quando já houver transitado em julgado a decisão impugnada."
+        },
+        {
+          "letra": "D",
+          "texto": "Os municípios não têm legitimidade para propor a revisão ou o cancelamento de enunciado de súmula vinculante."
+        },
+        {
+          "letra": "E",
+          "texto": "A súmula vinculante não alcança os demais órgãos do Poder Judiciário, restringindo-se à administração pública direta."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 103-A, caput, da CF: 'O Supremo Tribunal Federal poderá, de ofício ou por provocação, mediante decisão de DOIS TERÇOS dos seus membros, após reiteradas decisões sobre matéria constitucional, aprovar súmula que, a partir de sua publicação na imprensa oficial, terá efeito vinculante em relação aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal, bem como proceder à sua revisão ou cancelamento, na forma estabelecida em lei.' O §1º: 'A súmula terá por objetivo a validade, a interpretação e a eficácia de normas determinadas, acerca das quais haja controvérsia atual entre órgãos judiciários ou entre esses e a administração pública que acarrete grave insegurança jurídica e relevante multiplicação de processos sobre questão idêntica.'\n\n(A) Errada: o quórum é de DOIS TERÇOS dos membros do STF (8 de 11 ministros).\n(C) Errada: a reclamação (art. 102, I, 'l', e art. 103-A, §3º, da CF; arts. 988 a 993 do CPC) é cabível contra ato administrativo ou decisão judicial que contrarie súmula vinculante ou que indevidamente a aplique, e pode ser proposta ANTES do trânsito em julgado. O STJ/STF, contudo, exigem o ESGOTAMENTO DAS INSTÂNCIAS ORDINÁRIAS para a reclamação fundada em precedente firmado em julgamento de casos repetitivos ou de IRDR (art. 988, §5º, II, do CPC — a reclamação será inadmissível se proposta após o trânsito em julgado da decisão reclamada; e para precedentes obrigatórios, exige esgotamento das instâncias ordinárias).\n(D) Errada: o art. 3º, VI, da Lei nº 11.417/2006 confere legitimidade aos MUNICÍPIOS para propor a edição, revisão ou cancelamento de enunciado de súmula vinculante, desde que a controvérsia tenha repercussão específica em seu âmbito. Os demais legitimados são os mesmos do art. 103 da CF (ação direta), acrescidos dos Tribunais Superiores, Tribunais de Justiça, TRFs, TRTs, TJDF e dos Municípios.\n(E) Errada: a súmula vinculante alcança OS DEMAIS ÓRGÃOS DO PODER JUDICIÁRIO e a administração pública direta e indireta, nas esferas federal, estadual e municipal. O art. 103-A, caput, ressalva que NÃO vincula o próprio STF na sua função LEGISLATIVA.",
+      "mnemonico": "SÚMULA VINCULANTE: 2/3 do STF + reiteradas decisões + controvérsia atual + grave insegurança jurídica + relevante multiplicação de processos. Vincula o Judiciário e a Administração (federal, estadual, municipal), SALVO o STF na função legislativa. Descumprimento → RECLAMAÇÃO.",
+      "leiSeca": [
+        "CF, art. 103-A e §§",
+        "CF, art. 102, I, 'l'",
+        "Lei nº 11.417/2006, arts. 2º e 3º",
+        "CPC, arts. 988 a 993"
+      ],
+      "tags": [
+        "súmula vinculante",
+        "reclamação constitucional",
+        "precedentes",
+        "controle de constitucionalidade"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dpcon-q003",
+      "materia": "dir-proc-const",
+      "topico": "dpcon-08",
+      "dificuldade": "medio",
+      "enunciado": "Sobre o Incidente de Resolução de Demandas Repetitivas (IRDR) e o Incidente de Assunção de Competência (IAC), previstos no CPC/2015, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O IRDR é cabível quando houver efetiva repetição de processos que contenham controvérsia sobre questão unicamente de direito e risco de ofensa à isonomia e à segurança jurídica."
+        },
+        {
+          "letra": "B",
+          "texto": "O IRDR só pode ser suscitado de ofício pelo relator, vedada a provocação pelas partes ou pelo Ministério Público."
+        },
+        {
+          "letra": "C",
+          "texto": "A tese jurídica firmada no IRDR não se aplica aos processos em curso no primeiro grau, apenas aos futuros."
+        },
+        {
+          "letra": "D",
+          "texto": "O IAC exige, como pressuposto, a existência de múltiplos processos repetitivos sobre a mesma questão de direito."
+        },
+        {
+          "letra": "E",
+          "texto": "O IRDR não pode ser suscitado no primeiro grau de jurisdição."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 976, I e II, do CPC: 'É cabível a instauração do incidente de resolução de demandas repetitivas quando, simultaneamente: I - houver efetiva repetição de processos que contenham controvérsia sobre a mesma questão unicamente de direito; II - a repetição de processos gerar risco de ofensa à isonomia e à segurança jurídica.'\n\nLegitimidade para suscitar (art. 977): o requerimento de instauração será dirigido ao PRESIDENTE DE TRIBUNAL: I - pelo juiz ou relator, por intermédio de ofício; II - pelas PARTES, por petição; III - pelo MINISTÉRIO PÚBLICO ou pela DEFENSORIA PÚBLICA, por petição. O §1º admite que o pedido seja formulado em qualquer grau de jurisdição — inclusive no PRIMEIRO GRAU.\n\nEfeitos: art. 982 — admitido o incidente, haverá SUSPENSÃO dos processos pendentes, individuais ou coletivos, que tramitam no Estado ou na Região (conforme o tribunal). O §1º permite ao relator excepcionar a suspensão. Prazo máximo de 1 ano, prorrogável por decisão fundamentada (art. 980, parágrafo único). A tese jurídica firmada será aplicada (art. 985): I - a todos os processos individuais ou coletivos que versem sobre idêntica questão de direito e que tramitem na área de jurisdição do respectivo tribunal, INCLUSIVE ÀQUELES QUE TRAMITAM NO PRIMEIRO GRAU; II - aos casos futuros que versem idêntica questão de direito.\n\n(B) Errada: partes, MP e Defensoria também podem suscitar.\n(C) Errada: a tese aplica-se também aos processos em curso no primeiro grau (art. 985, I).\n(D) Errada: o IAC (art. 947) exige questão de direito com GRANDE REPERCUSSÃO SOCIAL, SEM REPETIÇÃO EM MÚLTIPLOS PROCESSOS. 'É admissível a assunção de competência quando, nos recursos de apelação, de remessa necessária ou de agravo de instrumento, ou no processo de competência originária de tribunal, o julgamento de questão de direito com grande repercussão social não envolver repetição em múltiplos processos.'\n(E) Errada: o pedido pode ser formulado em qualquer grau de jurisdição.",
+      "mnemonico": "IRDR = REPETIÇÃO em múltiplos processos + questão unicamente de direito + risco à isonomia/segurança jurídica → suspende os processos da área de jurisdição. IAC = GRANDE REPERCUSSÃO SOCIAL + SEM repetição múltipla → a decisão vincula no âmbito do tribunal.",
+      "leiSeca": [
+        "CPC, arts. 947, 976, 977, 978, 980, 982, 985 e 987"
+      ],
+      "tags": [
+        "IRDR",
+        "IAC",
+        "precedentes",
+        "demandas repetitivas",
+        "suspensão de processos"
+      ],
+      "pegadinhas": [
+        "IAC não exige repetição múltipla — exige grande repercussão social",
+        "IRDR pode ser suscitado no primeiro grau"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dfin-q001",
+      "materia": "dir-fin",
+      "topico": "dfin-01",
+      "dificuldade": "medio",
+      "enunciado": "Sobre o orçamento público na Constituição Federal (arts. 165 a 169), assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A lei que instituir o Plano Plurianual estabelecerá, de forma regionalizada, as diretrizes, objetivos e metas da administração pública federal para as despesas de capital e outras delas decorrentes e para as relativas aos programas de duração continuada."
+        },
+        {
+          "letra": "B",
+          "texto": "A Lei de Diretrizes Orçamentárias compreenderá as metas e prioridades da administração pública federal, incluindo apenas as despesas de capital para o exercício financeiro subsequente."
+        },
+        {
+          "letra": "C",
+          "texto": "A Lei Orçamentária Anual conterá dispositivo estranho à previsão da receita e à fixação da despesa, desde que haja autorização expressa do Chefe do Executivo."
+        },
+        {
+          "letra": "D",
+          "texto": "Os projetos de lei relativos ao Plano Plurianual, às diretrizes orçamentárias, ao orçamento anual e aos créditos adicionais serão apreciados pelo Plenário do Congresso Nacional, vedada a atuação de comissão mista."
+        },
+        {
+          "letra": "E",
+          "texto": "O ciclo orçamentário corresponde exatamente ao exercício financeiro, que coincide com o ano civil."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 165, §1º, da CF: 'A lei que instituir o plano plurianual estabelecerá, de forma regionalizada, as diretrizes, objetivos e metas da administração pública federal para as despesas de capital e outras delas decorrentes e para as relativas aos programas de duração continuada.' O PPA tem vigência de QUATRO ANOS e é elaborado no primeiro ano do mandato do Chefe do Executivo (entra em vigor no segundo ano do mandato e vigora até o final do primeiro ano do mandato seguinte).\n\n(B) Incompleta/incorreta: art. 165, §2º — 'A lei de diretrizes orçamentárias compreenderá as metas e prioridades da administração pública federal, INCLUINDO as despesas de capital para o exercício financeiro subsequente, orientará a elaboração da lei orçamentária anual, disporá sobre as alterações na legislação tributária e estabelecerá a política de aplicação das agências financeiras oficiais de fomento'. A LDO ainda anexa as metas fiscais e os riscos fiscais (art. 4º da LRF).\n(C) Errada: art. 165, §8º — 'A lei orçamentária anual NÃO conterá dispositivo estranho à previsão da receita e à fixação da despesa, NÃO se incluindo na proibição a autorização para abertura de CRÉDITOS SUPLEMENTARES e contratação de OPERAÇÕES DE CRÉDITO, ainda que por antecipação de receita, nos termos da lei.' É a vedação às chamadas 'caudas orçamentárias' ou 'orçamento rabilongo'.\n(D) Errada: art. 166, caput — 'Os projetos de lei relativos ao plano plurianual, às diretrizes orçamentárias, ao orçamento anual e aos créditos adicionais serão apreciados pelas DUAS CASAS DO CONGRESSO NACIONAL, NA FORMA DO REGIMENTO COMUM', e o §1º prevê que 'as emendas serão apresentadas na COMISSÃO MISTA, que sobre elas emitirá parecer, e apreciadas, na forma regimental, pelo Plenário das duas Casas'.\n(E) Errada: o EXERCÍCIO FINANCEIRO coincide com o ano civil (art. 34 da Lei 4.320/1964), mas o CICLO ORÇAMENTÁRIO é mais amplo e compreende: elaboração/planejamento → aprovação/discussão → execução → controle/avaliação. É um processo CONTÍNUO, dinâmico e integrado, que se estende por mais de um exercício.",
+      "mnemonico": "PPA = 4 anos, planejamento estratégico (diretrizes, objetivos e metas) | LDO = anual, tática: metas e prioridades + orienta a LOA + alterações tributárias + política das agências de fomento | LOA = anual, operacional: orçamento FISCAL + INVESTIMENTO das estatais + SEGURIDADE SOCIAL. Iniziativa: PRIVATIVA do Chefe do Executivo. Apreciação: Comissão Mista e Plenário das duas Casas.",
+      "leiSeca": [
+        "CF, art. 165 e §§",
+        "CF, art. 166 e §1º",
+        "CF, art. 167",
+        "Lei nº 4.320/1964, art. 34"
+      ],
+      "tags": [
+        "orçamento público",
+        "PPA",
+        "LDO",
+        "LOA",
+        "ciclo orçamentário"
+      ],
+      "pegadinhas": [
+        "LOA pode conter apenas autorização para créditos suplementares e operações de crédito como 'cauda'",
+        "Exercício financeiro = ano civil; ciclo orçamentário é mais amplo"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dfin-q002",
+      "materia": "dir-fin",
+      "topico": "dfin-05",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre a Lei de Responsabilidade Fiscal (Lei Complementar nº 101/2000), assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os limites de despesa total com pessoal da União, dos Estados e dos Municípios são, respectivamente, 50%, 60% e 54% da receita corrente líquida."
+        },
+        {
+          "letra": "B",
+          "texto": "A despesa total com pessoal será apurada somando-se a realizada no mês de referência com as dos onze imediatamente anteriores, e os limites são repartidos entre os Poderes de forma uniforme."
+        },
+        {
+          "letra": "C",
+          "texto": "No âmbito estadual, o limite global de 60% da receita corrente líquida é repartido entre os Poderes e órgãos: 3% para o Poder Legislativo, incluído o Tribunal de Contas do Estado, 6% para o Poder Judiciário, 49% para o Poder Executivo e 2% para o Ministério Público do Estado."
+        },
+        {
+          "letra": "D",
+          "texto": "É vedada, em qualquer circunstância, a concessão de vantagem, aumento ou reajuste de remuneração de servidores públicos no último ano de mandato."
+        },
+        {
+          "letra": "E",
+          "texto": "A meta de resultado primário é estabelecida na Lei Orçamentária Anual."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) reproduz o art. 20, II, da LRF (Lei Complementar nº 101/2000). O art. 19 fixa os LIMITES GLOBAIS da despesa total com pessoal — apurada na forma do art. 18, somando-se a despesa do mês de referência com a dos onze imediatamente anteriores — sobre a RECEITA CORRENTE LÍQUIDA (RCL):\n• UNIÃO: 50%\n• ESTADOS: 60%\n• MUNICÍPIOS: 60%\n\nO art. 20 reparte esses limites entre Poderes e órgãos:\nNA ESFERA ESTADUAL (art. 20, II): 3% para o Poder LEGISLATIVO, incluído o Tribunal de Contas do Estado; 6% para o Poder JUDICIÁRIO; 49% para o Poder EXECUTIVO; 2% para o MINISTÉRIO PÚBLICO dos Estados (3 + 6 + 49 + 2 = 60).\nNA ESFERA FEDERAL (art. 20, I): 2,5% para o Legislativo, incluído o TCU; 6% para o Judiciário; 40,9% para o Executivo; 0,6% para o Ministério Público da União.\nNA ESFERA MUNICIPAL (art. 20, III): 6% para o Legislativo, incluído o Tribunal de Contas dos Municípios, onde houver; 54% para o Executivo.\n\n(A) Errada: os limites globais são 50% (União), 60% (Estados) e 60% (Municípios). O percentual de 54% é o limite do Poder EXECUTIVO MUNICIPAL (art. 20, III, 'b'), e não o limite global do Município — é a pegadinha clássica deste tópico, porque a soma 6% + 54% é que fecha os 60% municipais.\n(B) Errada: a primeira parte está correta (art. 18: mês de referência mais os onze imediatamente anteriores), mas a repartição entre os Poderes NÃO é uniforme: ela é nominal e diferenciada por esfera (art. 20).\n(D) Errada: art. 21, parágrafo único, e art. 22 — é NULO de pleno direito o ato de que resulte aumento da despesa com pessoal expedido nos 180 DIAS ANTERIORES ao final do mandato do titular do respectivo Poder ou órgão. Não existe vedação absoluta durante todo o último ano de mandato; e o art. 22, IV, ressalva a reposição decorrente de aposentadoria ou falecimento de servidores nas áreas de educação, saúde e segurança.\n(E) Errada: a META DE RESULTADO PRIMÁRIO integra o ANEXO DE METAS FISCAIS da LEI DE DIRETRIZES ORÇAMENTÁRIAS (art. 4º, §1º, I), e não a Lei Orçamentária Anual. A LOA é que deve ser compatível com a LDO (art. 5º).",
+      "mnemonico": "LRF — LIMITES DE PESSOAL SOBRE A RCL: União 50% | Estados 60% | Municípios 60%. REPARTIÇÃO ESTADUAL: Executivo 49% + Judiciário 6% + Legislativo (com TCE) 3% + MP 2% = 60%. FEDERAL: Executivo 40,9% + Judiciário 6% + Legislativo (com TCU) 2,5% + MPU 0,6% = 50%. MUNICIPAL: Executivo 54% + Legislativo (com TCM) 6% = 60%. EXCESSO: recondução em até 2 QUADRIMESTRES; já no 1º quadrimestre do excesso ficam vedados concessão de vantagem/aumento/reajuste (salvo a revisão geral anual), criação de cargo, alteração de estrutura de carreira e admissão ou contratação de pessoal (ressalvada a reposição por aposentadoria ou falecimento em educação, saúde e segurança).",
+      "leiSeca": [
+        "LC 101/2000, arts. 4º, 16 a 24",
+        "LC 101/2000, art. 19",
+        "LC 101/2000, art. 20"
+      ],
+      "tags": [
+        "LRF",
+        "despesa com pessoal",
+        "receita corrente líquida",
+        "limites prudenciais"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dfin-q003",
+      "materia": "dir-fin",
+      "topico": "dfin-05",
+      "dificuldade": "medio",
+      "enunciado": "Sobre a Lei nº 4.320/1964, que estatui normas gerais de direito financeiro para elaboração e controle dos orçamentos e balanços, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O regime contábil da despesa pública é o de competência, e o da receita é o de caixa."
+        },
+        {
+          "letra": "B",
+          "texto": "Pertencem ao exercício financeiro as receitas nele arrecadadas e as despesas nele legalmente empenhadas, adotando-se o regime de caixa para a receita e o de competência para a despesa."
+        },
+        {
+          "letra": "C",
+          "texto": "O exercício financeiro coincidirá com o mandato do Chefe do Poder Executivo."
+        },
+        {
+          "letra": "D",
+          "texto": "São créditos adicionais extraordinários os destinados a reforço de dotação orçamentária já existente."
+        },
+        {
+          "letra": "E",
+          "texto": "A classificação funcional-programática da despesa foi introduzida pela Lei Complementar nº 101/2000."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 35 da Lei nº 4.320/1964: 'Pertencem ao exercício financeiro: I - as receitas nele ARRECADADAS; II - as despesas nele legalmente EMPENHADAS.' Adota-se, portanto, regime MISTO/HÍBRIDO: regime de CAIXA para a receita (pelo efetivo ingresso) e regime de COMPETÊNCIA para a despesa (pelo empenho). O art. 34 complementa: 'O exercício financeiro coincidirá com o ano civil.'\n\n(A) Inverteu os regimes.\n(C) Errada: o exercício financeiro coincide com o ANO CIVIL (1º de janeiro a 31 de dezembro), não com o mandato.\n(D) Errada: CLASSIFICAÇÃO DOS CRÉDITOS ADICIONAIS (art. 41):\n• SUPLEMENTARES: destinados a REFORÇO de dotação orçamentária já existente. Autorizados por lei (que pode ser a própria LOA), abertos por decreto. Requerem indicação da fonte de recursos.\n• ESPECIAIS: destinados a despesas para as quais NÃO HAJA dotação orçamentária específica. Dependem de lei autorizativa.\n• EXTRAORDINÁRIOS: destinados a despesas URGENTES e IMPREVISÍVEIS, como as decorrentes de guerra, comoção interna ou calamidade pública. São abertos por MEDIDA PROVISÓRIA (na esfera federal) ou por DECRETO do Executivo (nas demais esferas), com comunicação imediata ao Legislativo (art. 44, com a CF art. 167, §3º).\n(E) Errada: a classificação funcional-programática decorre da Portaria SOF nº 42/1999 (e da Portaria Interministerial STN/SOF nº 163/2001), com base na Lei 4.320/1964 (art. 8º e 9º) e na CF/88 (art. 167, §1º e art. 165).",
+      "mnemonico": "REGIME MISTO: RECEITA = CAIXA (arrecadada) | DESPESA = COMPETÊNCIA (empenhada). CRÉDITOS ADICIONAIS: SUPLEMENTAR reforça | ESPECIAL cria | EXTRAORDINÁRIO socorre (urgente e imprevisível).",
+      "leiSeca": [
+        "Lei nº 4.320/1964, arts. 34, 35, 41, 42, 43 e 44",
+        "CF, art. 167, §§1º a 3º"
+      ],
+      "tags": [
+        "direito financeiro",
+        "Lei 4.320/1964",
+        "exercício financeiro",
+        "créditos adicionais",
+        "empenho"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dfin-q004",
+      "materia": "dir-fin",
+      "topico": "dfin-04",
+      "dificuldade": "medio",
+      "enunciado": "Sobre as vedações constitucionais em matéria orçamentária (art. 167 da CF), assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "É permitida a realização de despesas que excedam os créditos orçamentários ou adicionais, desde que previamente autorizadas pelo Tribunal de Contas da respectiva esfera."
+        },
+        {
+          "letra": "B",
+          "texto": "É vedada a realização de operações de créditos que excedam o montante das despesas de capital, ressalvadas as autorizadas mediante créditos suplementares ou especiais com finalidade precisa, aprovados pelo Poder Legislativo por maioria absoluta."
+        },
+        {
+          "letra": "C",
+          "texto": "É permitida a vinculação da receita de impostos a órgão, fundo ou despesa, sem necessidade de autorização constitucional."
+        },
+        {
+          "letra": "D",
+          "texto": "A transposição, o remanejamento ou a transferência de recursos de uma categoria de programação para outra independem de prévia autorização legislativa."
+        },
+        {
+          "letra": "E",
+          "texto": "É vedada a instituição de fundos de qualquer natureza, ainda que autorizados por lei."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz a REGRA DE OURO do art. 167, III, da CF: 'São vedados: ... III - a realização de operações de créditos que excedam o montante das despesas de capital, RESSALVADAS as autorizadas mediante créditos suplementares ou especiais com finalidade precisa, aprovados pelo Poder Legislativo por maioria absoluta.' A regra impede que o ente se endivide para financiar DESPESAS CORRENTES (custeio e transferências), admitindo o endividamento para INVESTIMENTOS e INVERSÕES financeiras (despesas de capital).\n\n(A) Errada: o art. 167, II, da CF VEDA 'a realização de despesas ou a assunção de obrigações diretas que excedam os créditos orçamentários ou adicionais'. O único caminho legítimo para ampliar a despesa é o legislativo — abertura de créditos adicionais (art. 167, V e §1º). Tribunal de Contas exerce CONTROLE EXTERNO de fiscalização e julgamento de contas (art. 71 da CF) e não tem competência para autorizar despesa; logo a ressalva inventada pela alternativa é falsa.\n(C) Errada: art. 167, IV — 'São vedados a vinculação de receita de impostos a órgão, fundo ou despesa, RESSALVADAS a repartição do produto da arrecadação dos impostos a que se referem os arts. 158 e 159, a destinação de recursos para as ações e serviços públicos de saúde, para manutenção e desenvolvimento do ensino e para realização de atividades da administração tributária, como determinado, respectivamente, pelos arts. 198, §2º, 212 e 37, XXII, e a prestação de garantias às operações de crédito por antecipação de receita, previstas no art. 165, §8º, bem como o disposto no §4º deste artigo.' O princípio da NÃO AFETAÇÃO (ou não vinculação) alcança apenas IMPOSTOS — taxas, contribuições e outras receitas podem ser vinculadas.\n(D) Errada: art. 167, VI — 'São vedados a transposição, o remanejamento ou a transferência de recursos de uma categoria de programação para outra ou de um órgão para outro, SEM PRÉVIA AUTORIZAÇÃO LEGISLATIVA'.\n(E) Errada: art. 167, IX — 'São vedados a instituição de fundos de qualquer natureza, SEM PRÉVIA AUTORIZAÇÃO LEGISLATIVA'. A vedação é à instituição SEM autorização legal, não à existência de fundos.",
+      "mnemonico": "ART. 167 (VEDAÇÕES ORÇAMENTÁRIAS) — principais incisos: I início de programa não incluído na LOA | II despesa acima dos créditos | III REGRA DE OURO | IV vinculação de IMPOSTOS (com ressalvas) | V abertura de crédito suplementar/especial sem prévia autorização legislativa e sem indicação de recursos | VI transposição/remanejamento/transferência sem autorização legislativa | VII concessão ou utilização de créditos ILIMITADOS | VIII utilização, sem autorização legislativa específica, de recursos dos orçamentos fiscal e da seguridade social para suprir necessidade ou cobrir déficit de empresas, fundações e fundos | IX instituição de fundos de qualquer natureza sem prévia autorização legislativa | X transferência voluntária de recursos e concessão de empréstimos para pagamento de despesas com pessoal ativo, inativo e pensionista.",
+      "leiSeca": [
+        "CF, art. 167, incisos I a X",
+        "CF, art. 167, §3º",
+        "CF, art. 198, §2º",
+        "CF, art. 212"
+      ],
+      "tags": [
+        "vedações orçamentárias",
+        "regra de ouro",
+        "não afetação",
+        "créditos adicionais"
+      ],
+      "pegadinhas": [
+        "A vedação de vinculação alcança apenas IMPOSTOS",
+        "Regra de ouro: operações de crédito ≤ despesas de capital"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dprev-q001",
+      "materia": "dir-prev",
+      "topico": "dprev-01",
+      "dificuldade": "medio",
+      "enunciado": "Sobre a seguridade social na Constituição Federal, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A seguridade social compreende um conjunto integrado de ações destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social."
+        },
+        {
+          "letra": "B",
+          "texto": "A saúde é direito de todos e dever do Estado, sendo, porém, condicionada à contribuição prévia do segurado."
+        },
+        {
+          "letra": "C",
+          "texto": "A assistência social é prestada mediante contribuição do beneficiário, sendo seu caráter contributivo expressamente previsto no art. 203 da Constituição."
+        },
+        {
+          "letra": "D",
+          "texto": "A previdência social tem caráter facultativo e não exige contribuição para a concessão de benefícios."
+        },
+        {
+          "letra": "E",
+          "texto": "O princípio da seletividade e distributividade na prestação dos benefícios e serviços aplica-se à saúde e à assistência social, mas não à previdência."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 194 da CF: 'A seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.' É o TRIPÉ DA SEGURIDADE SOCIAL — mnemônico 'PAS'.\n\nParágrafo único do art. 194 — PRINCÍPIOS/OBJETIVOS da seguridade social (mnemônico 'UNIFORMIDADE, IRREDUTIBILIDADE, SELETIVIDADE, DIVERSIDADE, EQUIDADE, UNIVERSALIDADE, CARÁTER DEMOCRÁTICO E DESCENTRALIZADO, DIVERSIDADE DA BASE DE CUSTEIO'):\nI - UNIVERSALIDADE da cobertura e do atendimento;\nII - UNIFORMIDADE e equivalência dos benefícios e serviços às populações urbanas e rurais;\nIII - SELETIVIDADE e DISTRIBUTIVIDADE na prestação dos benefícios e serviços;\nIV - IRREDUTIBILIDADE do valor dos benefícios;\nV - EQUIDADE na forma de participação no custeio;\nVI - DIVERSIDADE DA BASE DE CUSTEIO, identificando-se, em rubricas contábeis específicas, as áreas de saúde, de assistência social e de previdência social;\nVII - CARÁTER DEMOCRÁTICO E DESCENTRALIZADO da administração, mediante gestão quadripartite, com participação dos trabalhadores, dos empregadores, dos aposentados e do Governo nos órgãos colegiados.\n\n(B) Errada: a SAÚDE é direito de todos e dever do Estado (art. 196) e é de ACESSO UNIVERSAL E GRATUITO, NÃO contributiva. O art. 199 permite a participação complementar da iniciativa privada, com preferência às entidades filantrópicas e às sem fins lucrativos.\n(C) Errada: a ASSISTÊNCIA SOCIAL será prestada A QUEM DELA NECESSITAR, INDEPENDENTEMENTE DE CONTRIBUIÇÃO à seguridade social (art. 203). É a única das três que prescinde totalmente de contribuição e de filiação.\n(D) Errada: a PREVIDÊNCIA SOCIAL é de FILIAÇÃO OBRIGATÓRIA para quem exerce atividade remunerada e tem CARÁTER CONTRIBUTIVO (art. 201). O art. 201, caput, foi alterado pela EC 103/2019: 'A previdência social será organizada sob a forma do Regime Geral de Previdência Social, de caráter contributivo e de filiação obrigatória, observados critérios que preservem o equilíbrio financeiro e atuarial'.\n(E) Errada: a seletividade e a distributividade são princípios da SEGURIDADE SOCIAL como um todo (art. 194, parágrafo único, III), ainda que sua aplicação concreta se concentre na previdência.",
+      "mnemonico": "SEGURIDADE = PAS: PREVIDÊNCIA (contributiva, filiação obrigatória) + ASSISTÊNCIA SOCIAL (não contributiva, a quem dela necessitar) + SAÚDE (não contributiva, universal e gratuita). Princípios do art. 194, p.u.: 'U-U-S-I-E-D-C'.",
+      "leiSeca": [
+        "CF, arts. 194, 195, 196, 199, 201 e 203",
+        "EC nº 103/2019",
+        "Lei nº 8.212/1991",
+        "Lei nº 8.213/1991"
+      ],
+      "tags": [
+        "seguridade social",
+        "princípios",
+        "previdência",
+        "saúde",
+        "assistência social"
+      ],
+      "pegadinhas": [
+        "Só a PREVIDÊNCIA é contributiva",
+        "Saúde e assistência social independem de contribuição"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dprev-q002",
+      "materia": "dir-prev",
+      "topico": "dprev-03",
+      "dificuldade": "medio",
+      "enunciado": "Sobre os segurados obrigatórios do Regime Geral de Previdência Social (Lei nº 8.213/1991), assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O segurado ESPECIAL é aquele que exerce atividade remunerada eventual, sem vínculo empregatício, prestando serviço a uma ou mais empresas."
+        },
+        {
+          "letra": "B",
+          "texto": "O servidor público ocupante exclusivamente de cargo em comissão declarado em lei de livre nomeação e exoneração é segurado obrigatório do RGPS na qualidade de empregado."
+        },
+        {
+          "letra": "C",
+          "texto": "O contribuinte individual abrange o trabalhador avulso que presta serviços a diversas empresas sem vínculo empregatício."
+        },
+        {
+          "letra": "D",
+          "texto": "O segurado facultativo é obrigatoriamente maior de dezesseis anos que exerça atividade remunerada."
+        },
+        {
+          "letra": "E",
+          "texto": "O empregado doméstico é o segurado que presta serviço de natureza contínua a pessoa física, no âmbito residencial desta, em atividade com fins lucrativos."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 11, I, da Lei nº 8.213/1991, com a redação dada pela Lei nº 8.647/1993: é segurado obrigatório na categoria de EMPREGADO 'o exercente de mandato eletivo federal, estadual ou municipal, desde que não vinculado a regime próprio de previdência social' e, conforme o art. 11, V... Na verdade, o fundamento correto está no art. 11, I, combinado com a Súmula 43 da TNU? A base é o art. 40, §13, da CF ('Ao servidor ocupante, exclusivamente, de cargo em comissão declarado em lei de livre nomeação e exoneração bem como de outro cargo temporário, inclusive mandato eletivo, ou de emprego público, aplica-se o regime geral de previdência social') e o art. 11, I, da Lei 8.213/1991.\n\nCATEGORIAS DE SEGURADOS OBRIGATÓRIOS DO RGPS (art. 11 da Lei 8.213/1991) — mnemônico 'ECAS':\n1. EMPREGADO (art. 11, I): presta serviço de natureza NÃO EVENTUAL a empregador URBANO ou RURAL, mediante subordinação e remuneração. Inclui: o empregado em domicílio; o aprendiz; o servidor público ocupante exclusivamente de cargo em comissão de livre nomeação e exoneração, cargo temporário ou emprego público; o exercente de mandato eletivo não vinculado a RPPS; o brasileiro civil que trabalha no exterior para organismo oficial internacional do qual o Brasil é membro; e o auxiliar local estrangeiro a serviço de missão diplomática brasileira.\n2. EMPREGADO DOMÉSTICO (art. 11, II): presta serviço de natureza CONTÍNUA a pessoa física ou FAMÍLIA, no âmbito residencial desta, em atividades SEM FINS LUCRATIVOS (Lei Complementar nº 150/2015).\n3. TRABALHADOR AVULSO (art. 11, VI): presta, a DIVERSAS EMPRESAS, SEM VÍNCULO EMPREGATÍCIO, serviços de natureza urbana ou rural definidos em lei, com intermediação OBRIGATÓRIA do ÓRGÃO GESTOR DE MÃO DE OBRA (OGMO) ou do SINDICATO da categoria. Exemplos típicos: estivadores, conferentes de carga e descarga, vigias portuários.\n4. CONTRIBUINTE INDIVIDUAL (art. 11, V): quem exerce atividade remunerada por conta própria ou presta serviço EVENTUAL a uma ou mais empresas sem vínculo de emprego — autônomos, empresários, síndicos remunerados, diretores não empregados, MEI, cooperados.\n5. SEGURADO ESPECIAL (art. 11, VII): produtor rural pessoa física (proprietário, usufrutuário, possuidor, assentado, parceiro, meeiro outorgado, comodatário ou arrendatário rurais), pescador artesanal e membros de seus grupos familiares que trabalhem em REGIME DE ECONOMIA FAMILIAR, sem utilização de mão de obra assalariada permanente.\n\n(A) Errada: descreve o CONTRIBUINTE INDIVIDUAL.\n(C) Errada: descreve o TRABALHADOR AVULSO.\n(D) Errada: o SEGURADO FACULTATIVO (art. 13 da Lei 8.213/1991) é a pessoa MAIOR DE 16 ANOS que NÃO exerça atividade remunerada que a enquadre como segurado obrigatório (estudante, dona de casa, síndico não remunerado, bolsista). Quem exerce atividade remunerada é segurado OBRIGATÓRIO.\n(E) Errada: o doméstico presta serviços em atividade SEM FINS LUCRATIVOS.",
+      "mnemonico": "SEGURADOS OBRIGATÓRIOS = 'ECATS': Empregado, Empregado Doméstico, Avulso, Trabalhador (contribuinte individual), Especial. FACULTATIVO = maior de 16 anos que NÃO exerce atividade remunerada.",
+      "leiSeca": [
+        "CF, art. 40, §13",
+        "Lei nº 8.213/1991, arts. 11, 12, 13 e 14",
+        "LC nº 150/2015",
+        "Lei nº 8.647/1993"
+      ],
+      "tags": [
+        "RGPS",
+        "segurados",
+        "empregado",
+        "doméstico",
+        "avulso",
+        "contribuinte individual",
+        "segurado especial"
+      ],
+      "pegadinhas": [
+        "Doméstico = atividade SEM fins lucrativos",
+        "Avulso = intermediação obrigatória do OGMO ou do sindicato",
+        "Cargo em comissão exclusivo = RGPS, não RPPS"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dprev-q003",
+      "materia": "dir-prev",
+      "topico": "dprev-16",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre o Regime Próprio de Previdência Social dos servidores públicos após a Emenda Constitucional nº 103/2019, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O regime próprio de previdência social dos servidores titulares de cargos efetivos terá caráter contributivo e solidário, mediante contribuição do respectivo ente federativo, de servidores ativos, de aposentados e de pensionistas, observados critérios que preservem o equilíbrio financeiro e atuarial."
+        },
+        {
+          "letra": "B",
+          "texto": "Aplica-se ao servidor ocupante exclusivamente de cargo em comissão o regime próprio de previdência social do ente federado."
+        },
+        {
+          "letra": "C",
+          "texto": "É facultado ao ente federado manter mais de um regime próprio de previdência social para os servidores públicos titulares de cargos efetivos, admitindo-se mais de uma unidade gestora."
+        },
+        {
+          "letra": "D",
+          "texto": "Os aposentados e pensionistas estão isentos de contribuição previdenciária em qualquer hipótese."
+        },
+        {
+          "letra": "E",
+          "texto": "A Emenda Constitucional nº 103/2019 extinguiu a aposentadoria compulsória dos servidores públicos."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 40, caput, da CF, com a redação da EC nº 103/2019: 'O regime próprio de previdência social dos servidores titulares de cargos efetivos terá caráter CONTRIBUTIVO e SOLIDÁRIO, mediante contribuição do respectivo ente federativo, de servidores ativos, de aposentados e de pensionistas, observados critérios que preservem o equilíbrio financeiro e atuarial.' O §20 veda a existência de mais de um regime próprio para os servidores públicos titulares de cargos efetivos, e de mais de uma unidade gestora do respectivo regime em cada ente federativo.\n\nPrincipais inovações da EC 103/2019 no serviço público:\n• Art. 40, §1º: aposentadoria compulsória aos 75 ANOS (idade já fixada pela Lei Complementar nº 152/2015), aposentadoria voluntária com idade mínima de 62 (mulher) e 65 (homem) no âmbito da União — Estados, DF e Municípios dependem de lei própria, aplicando-se, até lá, as regras transitórias;\n• Art. 40, §14: vedação de contagem de tempo de contribuição fictício;\n• Art. 40, §15: institui o regime de PREVIDÊNCIA COMPLEMENTAR dos servidores públicos, de caráter FACULTATIVO, por intermédio de entidade fechada de previdência complementar de natureza pública (art. 40, §§14 a 16);\n• Art. 40, §22: vedação de instituição de novos regimes próprios; os entes que não tenham RPPS devem vincular seus servidores ao RGPS;\n• Art. 149, §1º-B: em caso de déficit atuarial, a contribuição ordinária de aposentados e pensionistas poderá incidir sobre o valor dos proventos que SUPERE O SALÁRIO DE CONTRIBUIÇÃO (e não apenas o teto do RGPS, como era antes), quando demonstrado que as demais medidas previstas no §1º-A não são suficientes.\n\n(B) Errada: art. 40, §13 — aplica-se o RGPS ao servidor ocupante EXCLUSIVAMENTE de cargo em comissão declarado em lei de livre nomeação e exoneração, bem como de outro cargo temporário, inclusive mandato eletivo, ou de emprego público.\n(C) Errada: art. 40, §20 — 'É VEDADA a existência de mais de um regime próprio de previdência social para os servidores titulares de cargos efetivos, e de mais de uma unidade gestora do respectivo regime em cada ente federativo'.\n(D) Errada: aposentados e pensionistas CONTRIBUEM sobre os proventos que superem o teto do RGPS (art. 40, §18); portadores de doença incapacitante contribuem sobre o que superar o DOBRO do teto (art. 40, §21, revogado pela EC 103/2019 — a matéria hoje é tratada no art. 149, §1º-B).\n(E) Errada: a aposentadoria compulsória foi mantida; o que a EC 103/2019 fez foi consolidar a idade de 75 anos.",
+      "mnemonico": "RPPS pós-EC 103/2019: CONTRIBUTIVO + SOLIDÁRIO | 1 REGIME e 1 UNIDADE GESTORA por ente | aposentados e pensionistas contribuem sobre o excedente do teto do RGPS | vedação de tempo fictício | previdência complementar FACULTATIVA | compulsória aos 75 anos | vedado criar novos RPPS.",
+      "leiSeca": [
+        "CF, art. 40, caput e §§1º, 13 a 22",
+        "CF, art. 149, §1º-B",
+        "EC nº 103/2019",
+        "LC nº 152/2015"
+      ],
+      "tags": [
+        "RPPS",
+        "EC 103/2019",
+        "previdência complementar",
+        "contribuição de inativos"
+      ],
+      "pegadinhas": [
+        "Cargo em comissão exclusivo → RGPS, não RPPS",
+        "Vedação a mais de um RPPS por ente federado"
+      ],
+      "revisar": "O Estado do Pará tem regime próprio (IGEPREV-PA). Confira a legislação estadual vigente aplicável ao cargo de Assessor Técnico da ALEPA.",
+      "origem": "autoral"
+    },
+    {
+      "id": "dh-q001",
+      "materia": "dir-humanos",
+      "topico": "dh-04",
+      "dificuldade": "medio",
+      "enunciado": "A clássica divisão dos direitos humanos em dimensões (ou gerações) associa cada dimensão a um valor-guia. Nessa perspectiva, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A primeira dimensão corresponde aos direitos sociais, econômicos e culturais, tendo por valor-guia a igualdade."
+        },
+        {
+          "letra": "B",
+          "texto": "A segunda dimensão corresponde aos direitos de liberdade, de caráter negativo, impondo ao Estado uma abstenção."
+        },
+        {
+          "letra": "C",
+          "texto": "A primeira dimensão reúne os direitos civis e políticos, marcados pela LIBERDADE e pela exigência de não intervenção do Estado; a segunda reúne os direitos sociais, econômicos e culturais, marcados pela IGUALDADE e pela exigência de prestações positivas."
+        },
+        {
+          "letra": "D",
+          "texto": "A terceira dimensão reúne os direitos individuais clássicos, tendo por valor-guia a solidariedade."
+        },
+        {
+          "letra": "E",
+          "texto": "A doutrina rejeita a classificação em dimensões, por ausência de fundamento histórico."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) sistematiza a teoria das DIMENSÕES (gerações) dos direitos humanos, proposta por Karel Vasak em 1979, inspirada no lema da Revolução Francesa — LIBERDADE, IGUALDADE e FRATERNIDADE/SOLIDARIEDADE:\n\n1ª DIMENSÃO — LIBERDADE. Direitos CIVIS e POLÍTICOS. Caráter NEGATIVO: exigem a ABSTENÇÃO do Estado (não interferir na esfera individual). Exemplos: direito à vida, à liberdade, à propriedade, à intimidade, à liberdade de expressão, ao voto, ao devido processo legal. Marcos: Magna Carta (1215), Petition of Right (1628), Habeas Corpus Act (1679), Bill of Rights (1689), Declaração de Virgínia e Declaração Francesa (1789).\n\n2ª DIMENSÃO — IGUALDADE. Direitos SOCIAIS, ECONÔMICOS e CULTURAIS. Caráter POSITIVO: exigem PRESTAÇÕES do Estado (fazer). Exemplos: saúde, educação, trabalho, previdência, moradia, alimentação, lazer, cultura. Marcos: Constituição Mexicana de 1917, Constituição de Weimar de 1919, Constituição brasileira de 1934, Pacto Internacional dos Direitos Econômicos, Sociais e Culturais (1966).\n\n3ª DIMENSÃO — SOLIDARIEDADE/FRATERNIDADE. Direitos TRANSINDIVIDUAIS, difusos e coletivos, de titularidade metaindividual. Exemplos: meio ambiente ecologicamente equilibrado, paz, desenvolvimento, autodeterminação dos povos, patrimônio histórico e cultural, comunicação. Marcos: Declaração de Estocolmo (1972), Declaração sobre o Direito ao Desenvolvimento (1986), Declaração do Rio (1992).\n\n4ª DIMENSÃO (Norberto Bobbio e Paulo Bonavides) — direitos à DEMOCRACIA, à INFORMAÇÃO e ao PLURALISMO, além dos direitos decorrentes da engenharia genética e da bioética. Bonavides acrescenta a 5ª dimensão — a PAZ.\n\n(A) e (B) Invertem as dimensões.\n(D) Errada: a terceira dimensão é a da solidariedade, e não dos direitos individuais clássicos (1ª dimensão).\n(E) Errada: a classificação é amplamente aceita, embora se prefira hoje o termo 'dimensões' a 'gerações', para afastar a ideia de superação cronológica — as dimensões são CUMULATIVAS e COMPLEMENTARES, não excludentes.",
+      "mnemonico": "1ª = LIBERDADE (civis e políticos, abstenção) | 2ª = IGUALDADE (sociais, econômicos e culturais, prestação) | 3ª = SOLIDARIEDADE (difusos e coletivos) | 4ª = democracia, informação, pluralismo (Bobbio/Bonavides).",
+      "leiSeca": [
+        "CF, art. 5º",
+        "CF, art. 6º",
+        "CF, art. 225",
+        "Declaração Universal dos Direitos Humanos (1948)",
+        "PIDESC e PIDCP (1966)"
+      ],
+      "tags": [
+        "direitos humanos",
+        "dimensões",
+        "gerações",
+        "liberdade",
+        "igualdade",
+        "solidariedade"
+      ],
+      "pegadinhas": [
+        "As dimensões são CUMULATIVAS, não substitutivas",
+        "'Dimensões' substitui 'gerações' para evitar ideia de sucessão excludente"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dh-q002",
+      "materia": "dir-humanos",
+      "topico": "dh-03",
+      "dificuldade": "medio",
+      "enunciado": "Sobre as características dos direitos humanos, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A imprescritibilidade significa que os direitos humanos podem ser transferidos a terceiros por ato de vontade do titular."
+        },
+        {
+          "letra": "B",
+          "texto": "A irrenunciabilidade impede que o titular renuncie, ainda que temporariamente, ao exercício de seus direitos humanos; a inalienabilidade veda sua transferência a outrem, por ser desprovidos de conteúdo econômico-patrimonial."
+        },
+        {
+          "letra": "C",
+          "texto": "A universalidade admite que os direitos humanos sejam aplicados apenas aos nacionais de cada Estado."
+        },
+        {
+          "letra": "D",
+          "texto": "A indivisibilidade autoriza o titular a escolher quais direitos humanos pretende exercer."
+        },
+        {
+          "letra": "E",
+          "texto": "A complementaridade significa que os direitos humanos se anulam reciprocamente em caso de conflito."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta. Características (atributos) dos direitos humanos, conforme doutrina majoritária:\n\n• UNIVERSALIDADE: destinam-se a TODOS os seres humanos, independentemente de nacionalidade, raça, sexo, religião, orientação sexual ou condição social. (Não se confunde com aplicação apenas a nacionais — a alternativa (C) inverte.)\n• IMPRESCRITIBILIDADE: não se perdem pelo decurso do tempo; não há prazo para seu exercício.\n• IRRENUNCIABILIDADE: o titular NÃO PODE renunciar aos direitos humanos, nem mesmo temporariamente. Exceção discutida: a renúncia ao EXERCÍCIO em situações pontuais (como o 'big brother' e a exposição voluntária da intimidade) é admitida por parte da doutrina, mas a renúncia à TITULARIDADE é sempre vedada.\n• INALIENABILIDADE: não podem ser transferidos a terceiros, a título gratuito ou oneroso, por serem desprovidos de conteúdo econômico-patrimonial. São 'fora do comércio'.\n• INVIOLABILIDADE: nenhuma norma infraconstitucional nem ato administrativo pode violá-los.\n• INDIVISIBILIDADE: os direitos humanos formam um conjunto UNO e INSEPARÁVEL; a violação de um implica a violação do todo. Direitos civis e políticos são interdependentes dos direitos sociais, econômicos e culturais.\n• INTERDEPENDÊNCIA/INTER-RELACIONALIDADE: os direitos se relacionam e se condicionam mutuamente.\n• COMPLEMENTARIDADE: devem ser interpretados de forma complementar, e não excludente.\n• LIMITABILIDADE/RELATIVIDADE: NÃO são absolutos; podem sofrer restrições em caso de colisão com outros direitos, observados a razoabilidade e a proporcionalidade. Exceção clássica: a vedação à tortura, que é direito ABSOLUTO.\n• EFICÁCIA HORIZONTAL: aplicam-se também às relações entre PARTICULARES (STF, RE 201.819 — caso União Brasileira de Compositores).\n\n(A) Errada: descreve a alienabilidade, que é vedada.\n(C) Errada: a universalidade alcança todas as pessoas, inclusive estrangeiros não residentes (art. 5º, caput, CF: 'brasileiros e estrangeiros residentes no País' — o STF estende a proteção a estrangeiros de passagem).\n(D) Errada: a indivisibilidade significa que não se pode fracionar o conjunto, não que o titular escolhe.\n(E) Errada: a complementaridade impõe interpretação harmônica.",
+      "mnemonico": "CARACTERÍSTICAS DOS DIREITOS HUMANOS (mnemônico 'HIIIII-C-L-E'): Historicidade, Imprescritibilidade, Irrenunciabilidade, Inalienabilidade, Inviolabilidade, Indivisibilidade, Interdependência, Complementaridade, Limitabilidade (relatividade), Universalidade, Efetividade e Efetividade horizontal.",
+      "leiSeca": [
+        "CF, art. 5º, §§1º e 2º",
+        "Declaração e Programa de Ação de Viena (1993)",
+        "STF, RE 201.819"
+      ],
+      "tags": [
+        "direitos humanos",
+        "características",
+        "irrenunciabilidade",
+        "inalienabilidade",
+        "indivisibilidade"
+      ],
+      "pegadinhas": [
+        "Direitos humanos NÃO são absolutos (salvo a vedação à tortura)",
+        "A renúncia à TITULARIDADE é vedada; discute-se a renúncia ao EXERCÍCIO"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "dh-q003",
+      "materia": "dir-humanos",
+      "topico": "dh-08",
+      "dificuldade": "medio",
+      "enunciado": "No debate entre universalismo e relativismo cultural (culturalismos) sobre os direitos humanos, assinale a alternativa que melhor representa a posição hoje predominante na doutrina e nos documentos internacionais.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Universalismo absoluto: os direitos humanos valem de forma idêntica em todas as culturas, sendo inadmissível qualquer consideração de contexto local."
+        },
+        {
+          "letra": "B",
+          "texto": "Relativismo cultural absoluto: cada cultura define integralmente o conteúdo dos direitos humanos, inexistindo padrão internacional."
+        },
+        {
+          "letra": "C",
+          "texto": "Universalismo relativo (ou universalidade dos direitos humanos em um marco de respeito à diversidade cultural), que reconhece a universalidade dos direitos como parâmetro mínimo comum, admitindo margem de apreciação nacional e diálogo intercultural na sua concretização."
+        },
+        {
+          "letra": "D",
+          "texto": "Hierarquização cultural: as culturas ocidentais definem o padrão de direitos humanos, ao qual as demais devem se submeter integralmente."
+        },
+        {
+          "letra": "E",
+          "texto": "Rejeição dos direitos humanos como conceito válido, por sua origem exclusivamente europeia."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) expressa a tese do UNIVERSALISMO RELATIVO ou DIÁLOGO INTERCULTURAL, formulada por Abdullahi Ahmed An-Na'im ('cross-cultural construction of human rights') e acolhida pela Declaração e Programa de Ação de VIENA (1993): 'Os direitos humanos e liberdades fundamentais são um direito inato de todos os seres humanos; sua proteção e promoção é a primeira responsabilidade dos governos. ... TODOS os direitos humanos são universais, indivisíveis, interdependentes e inter-relacionados. A comunidade internacional deve tratar dos direitos humanos de forma global, justa e equitativa, em pé de igualdade e atribuindo-lhes o mesmo peso. DEVEM-SE LEVAR EM CONTA A IMPORTÂNCIA DAS PARTICULARIDADES NACIONAIS E REGIONAIS, ASSIM COMO OS DIVERSOS CONTEXTO HISTÓRICOS, CULTURAIS E RELIGIOSOS, MAS CABE AOS ESTADOS, SEJA QUAL FOR SEU SISTEMA POLÍTICO, ECONÔMICO E CULTURAL, PROMOVER E PROTEGER TODOS OS DIREITOS HUMANOS E LIBERDADES FUNDAMENTAIS.'\n\nA Conferência de Viena superou tanto o universalismo ABSOLUTO (que desconsidera contextos) quanto o relativismo ABSOLUTO (que permitiria violações em nome da cultura), adotando a tese da UNIVERSALIDADE COM MARGEM DE APRECIAÇÃO NACIONAL.\n\nInstrumentos correlatos:\n• MARGEM DE APRECIAÇÃO NACIONAL: doutrina da Corte Europeia de Direitos Humanos, segundo a qual os Estados dispõem de certa discricionariedade na concretização dos direitos, respeitado o núcleo essencial.\n• NÚCLEO ESSENCIAL (essência/Wesensgehalt): parcela irredutível de cada direito, imune a qualquer restrição.\n• DIÁLOGO DAS CORTES: interação entre tribunais internacionais e nacionais na aplicação dos tratados.\n• CONTROLE DE CONVENCIONALIDADE: dever de todos os operadores do direito de interpretar o direito interno conforme os tratados internacionais de direitos humanos.\n\n(A), (B), (D) e (E) são posições extremadas ou equivocadas, rejeitadas pelo direito internacional contemporâneo dos direitos humanos.",
+      "mnemonico": "VIENA/1993 = universalidade + indivisibilidade + interdependência + inter-relação, COM respeito às particularidades nacionais, regionais, históricas, culturais e religiosas. Solução: UNIVERSALISMO RELATIVO + MARGEM DE APRECIAÇÃO NACIONAL + NÚCLEO ESSENCIAL.",
+      "leiSeca": [
+        "Declaração e Programa de Ação de Viena (1993)",
+        "Declaração Universal dos Direitos Humanos (1948)",
+        "CF, art. 5º, §§2º e 3º"
+      ],
+      "tags": [
+        "universalismo",
+        "relativismo cultural",
+        "Conferência de Viena",
+        "margem de apreciação",
+        "diálogo intercultural"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "adm-q001",
+      "materia": "adm-geral",
+      "topico": "adm-03",
+      "dificuldade": "facil",
+      "enunciado": "O ciclo PDCA é uma ferramenta de gestão da qualidade usada para melhoria contínua de processos. Suas quatro etapas são, na ordem correta:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Planejar, Desenvolver, Controlar e Agir."
+        },
+        {
+          "letra": "B",
+          "texto": "Plan (planejar), Do (executar), Check (verificar/controlar) e Act (agir/corrigir e padronizar)."
+        },
+        {
+          "letra": "C",
+          "texto": "Prever, Delegar, Conferir e Avaliar."
+        },
+        {
+          "letra": "D",
+          "texto": "Programar, Distribuir, Cobrar e Auditar."
+        },
+        {
+          "letra": "E",
+          "texto": "Planejar, Diagnosticar, Corrigir e Aprovar."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta. O CICLO PDCA (Plan-Do-Check-Act), também chamado de CICLO DE DEMING ou ciclo de Shewhart, é a base da gestão da qualidade e da melhoria contínua:\n\n• PLAN (Planejar): identificar o problema, analisar as causas, estabelecer objetivos, metas e o plano de ação. Ferramentas típicas: 5W2H, diagrama de Ishikawa (espinha de peixe / 6M), brainstorming, análise de Pareto (80/20), folha de verificação.\n• DO (Executar): implementar o plano, executar as atividades, TREINAR e EDUCAR os envolvidos, e COLETAR DADOS para posterior verificação.\n• CHECK (Verificar/Controlar): comparar os resultados obtidos com as metas estabelecidas, identificar desvios e avaliar a eficácia das ações.\n• ACT (Agir): se o resultado foi atingido, PADRONIZAR (consolidar o novo procedimento, atualizar manuais, treinar); se não foi, CORRIGIR e reiniciar o ciclo com ações corretivas, retomando o planejamento.\n\nCaracterísticas: é um ciclo ITERATIVO e CONTÍNUO (nunca termina); aplica-se a qualquer nível organizacional; é a espinha dorsal das normas ISO 9001 (gestão da qualidade), ISO 14001 (gestão ambiental) e ISO 37001 (gestão antissuborno).\n\nVariações relevantes para prova: PDCL (Learn/Aprender, no lugar de Act), PDSA (Study, de Deming), MASP (Metodologia de Análise e Solução de Problemas, que detalha o PDCA em 8 passos), SDCA (Standard-Do-Check-Act — usado para MANTER o padrão alcançado, enquanto o PDCA serve para MELHORAR).\n\n(A), (C), (D) e (E) são adaptações em português que não correspondem às quatro letras da sigla.",
+      "mnemonico": "PDCA = Plan-Do-Check-Act. SDCA = Standard-Do-Check-Act (MANTEM o padrão). PDCA = MELHORA. A ordem nunca muda: sempre planejar antes de executar, verificar antes de agir.",
+      "leiSeca": [],
+      "tags": [
+        "PDCA",
+        "gestão da qualidade",
+        "melhoria contínua",
+        "Deming",
+        "SDCA"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "adm-q002",
+      "materia": "adm-geral",
+      "topico": "adm-02",
+      "dificuldade": "facil",
+      "enunciado": "O plano de ação 5W2H é uma ferramenta de gestão que estrutura cada ação por meio de sete perguntas. Os cinco 'W' e os dois 'H' correspondem, respectivamente, a:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "What (o que será feito), Why (por que será feito), Where (onde será feito), When (quando será feito), Who (quem fará); How (como será feito) e How much (quanto custará)."
+        },
+        {
+          "letra": "B",
+          "texto": "Where, When, Who, Which, Why; How e How many."
+        },
+        {
+          "letra": "C",
+          "texto": "What, Why, Where, When, Which; How e How long."
+        },
+        {
+          "letra": "D",
+          "texto": "What, Why, Where, When, Who; How e How often."
+        },
+        {
+          "letra": "E",
+          "texto": "Which, Why, Where, When, Who; How e How much."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta. O 5W2H estrutura qualquer plano de ação em sete dimensões:\n\n1. WHAT (o quê) — qual ação será desenvolvida;\n2. WHY (por quê) — qual a justificativa e o objetivo da ação;\n3. WHERE (onde) — em qual local/setor/unidade a ação será executada;\n4. WHEN (quando) — qual o prazo, a data de início e de término;\n5. WHO (quem) — qual o responsável pela execução;\n6. HOW (como) — qual o método, o passo a passo e os recursos necessários;\n7. HOW MUCH (quanto) — qual o custo estimado (financeiro, de horas ou de recursos).\n\nVantagens: simplicidade, objetividade, rastreabilidade das responsabilidades e facilidade de acompanhamento. Limitações: não prioriza ações (exige combinação com matriz GUT ou matriz de Eisenhower) e não substitui o planejamento estratégico.\n\nFerramentas correlatas cobradas em prova:\n• MATRIZ GUT: prioriza pela GRAVIDADE, URGÊNCIA e TENDÊNCIA, atribuindo notas de 1 a 5 a cada critério e multiplicando-as (G × U × T).\n• MATRIZ DE EISENHOWER: classifica as tarefas em importante/urgente, definindo FAZER AGORA, AGENDAR, DELEGAR ou ELIMINAR.\n• 5 PORQUÊS (Toyota): análise de causa raiz pela repetição da pergunta 'por quê?' até chegar à origem do problema.\n• DIAGRAMA DE ISHIKAWA (6M): analisa causas por Método, Máquina, Material, Mão de obra, Meio ambiente e Medição.\n• CANVAS DE MODELO DE NEGÓCIOS: 9 blocos (proposta de valor, segmentos de clientes, canais, relacionamento com clientes, fontes de receita, recursos-chave, atividades-chave, parcerias-chave e estrutura de custos).",
+      "mnemonico": "5W2H = WHAT, WHY, WHERE, WHEN, WHO + HOW, HOW MUCH. ('quanto custa' = HOW MUCH, não 'how many' nem 'how long'.)",
+      "leiSeca": [],
+      "tags": [
+        "5W2H",
+        "plano de ação",
+        "GUT",
+        "Ishikawa",
+        "ferramentas de gestão"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "adm-q003",
+      "materia": "adm-geral",
+      "topico": "adm-04",
+      "dificuldade": "medio",
+      "enunciado": "Sobre os conceitos fundamentais do gerenciamento de projetos, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Projeto é um esforço temporário empreendido para criar um produto, serviço ou resultado exclusivo, distinguindo-se das operações continuadas (processos) justamente pela temporalidade e pela unicidade do resultado."
+        },
+        {
+          "letra": "B",
+          "texto": "Stakeholders são apenas os patrocinadores financeiros do projeto, excluindo-se a equipe e os usuários finais."
+        },
+        {
+          "letra": "C",
+          "texto": "A tripla restrição do projeto compreende exclusivamente escopo e prazo, sendo o custo variável irrelevante."
+        },
+        {
+          "letra": "D",
+          "texto": "O ciclo de vida do projeto é sempre preditivo (cascata), sendo vedadas abordagens ágeis na administração pública."
+        },
+        {
+          "letra": "E",
+          "texto": "O papel do gerente de projetos limita-se à execução técnica das entregas, sem responsabilidade pela integração das demais áreas de conhecimento."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz a definição do PMBOK Guide (Project Management Body of Knowledge, do Project Management Institute): 'Projeto é um esforço TEMPORÁRIO empreendido para criar um produto, serviço ou resultado EXCLUSIVO (único).'\n\nDIFERENÇA ENTRE PROJETO E PROCESSO (operação contínua):\n• PROJETO: temporário (início e fim definidos), resultado ÚNICO/exclusivo, progressivamente elaborado, equipe temporária, alto grau de incerteza, foco em ENTREGAR o resultado.\n• PROCESSO/OPERAÇÃO: contínuo e repetitivo, resultado PADRONIZADO, equipe permanente, baixa incerteza, foco em MANTER o resultado (rotina). Exemplo: implantar um novo sistema legislativo é PROJETO; operar o sistema no dia a dia é PROCESSO.\n\nTRIPLE CONSTRAINT (tripla restrição): ESCOPO × TEMPO (prazo) × CUSTO, com a QUALIDADE ao centro. O PMBOK 6ª ed. amplia para seis variáveis interdependentes: escopo, qualidade, cronograma, orçamento, recursos e riscos.\n\nSTAKEHOLDERS (partes interessadas): TODOS os indivíduos, grupos ou organizações que podem AFETAR, SER AFETADOS ou SE PERCEBER COMO AFETADOS por uma decisão, atividade ou resultado do projeto. Incluem: patrocinador (sponsor), clientes/usuários, equipe do projeto, gerente do projeto, PMO, fornecedores, parceiros, governo, sociedade e, no setor público, os órgãos de controle (TCU, TCE, MP) e a própria administração. O registro das partes interessadas é feito no processo 'Identificar as partes interessadas'.\n\nCICLO DE VIDA DO PROJETO: iniciação → planejamento → execução → monitoramento e controle → encerramento. Pode ser PREDITIVO (cascata/waterfall), ITERATIVO, INCREMENTAL, ADAPTATIVO (ágil — Scrum, Kanban, XP) ou HÍBRIDO. Na administração pública, abordagens ágeis são plenamente admitidas (ex.: Resolução CNJ nº 335/2020, que institui a Política de Atenção Prioritária ao Primeiro Grau e recomenda metodologias ágeis; IN SLTI/MP nº 4/2014 e a Lei 14.133/2021, que admite contratação integrada e semi-integrada).\n\nÁREAS DE CONHECIMENTO DO PMBOK (10): Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos (RH), Comunicações, Riscos, Aquisições e Partes Interessadas.\n\nPAPEL DO GERENTE DE PROJETOS: é o responsável pela INTEGRAÇÃO de todas as áreas, pela comunicação com os stakeholders, pela gestão de riscos e pela entrega do valor do projeto. Não é mero executor técnico.\n\n(B) Errada: stakeholders abrangem muito mais que patrocinadores.\n(C) Errada: a tripla restrição inclui custo.\n(D) Errada: abordagens ágeis são admitidas na administração pública.\n(E) Errada: a integração é justamente a competência nuclear do gerente de projetos.",
+      "mnemonico": "PROJETO = TEMPORÁRIO + ÚNICO + PROGRESSIVO. PROCESSO = CONTÍNUO + PADRONIZADO + REPETITIVO. TRIPLA RESTRIÇÃO = ESCOPO-TEMPO-CUSTO (com QUALIDADE no centro). 10 ÁREAS PMBOK = 'IESC-CQ-RC-RA-P'.",
+      "leiSeca": [
+        "PMBOK Guide (PMI), 6ª e 7ª edições",
+        "ISO 21.500",
+        "Lei nº 14.133/2021, arts. 46 e 47 (contratação integrada e semi-integrada)"
+      ],
+      "tags": [
+        "gerenciamento de projetos",
+        "PMBOK",
+        "stakeholders",
+        "tripla restrição",
+        "ciclo de vida",
+        "metodologias ágeis"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "sec-q001",
+      "materia": "secretaria",
+      "topico": "sec-03",
+      "dificuldade": "medio",
+      "enunciado": "Sobre as técnicas de arquivo e a gestão de documentos, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O método de arquivamento ALFABÉTICO é classificado como método direto, pois a busca do documento dispensa qualquer instrumento auxiliar."
+        },
+        {
+          "letra": "B",
+          "texto": "O método NUMÉRICO SIMPLES é um método direto, enquanto o método ALFANUMÉRICO é indireto."
+        },
+        {
+          "letra": "C",
+          "texto": "O método GEOGRÁFICO é indireto, pois exige consulta a um índice para localizar o documento."
+        },
+        {
+          "letra": "D",
+          "texto": "O método IDEOGRÁFICO (por assunto) é um método direto, dispensando índices auxiliares."
+        },
+        {
+          "letra": "E",
+          "texto": "A tabela de temporalidade de documentos tem por finalidade exclusiva definir o suporte físico em que os documentos serão armazenados."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta. Os métodos de arquivamento dividem-se em DIRETOS (a busca é feita diretamente no local onde o documento está guardado, sem consulta prévia a índice) e INDIRETOS (exigem consulta a um índice, catálogo ou tabela para localizar o documento).\n\nCLASSIFICAÇÃO COMPLETA:\nMÉTODOS BÁSICOS:\n• DIRETOS: ALFABÉTICO (por nome — o mais comum), GEOGRÁFICO (por local/procedência — cidade, estado, país), NUMÉRICO SIMPLES (por número atribuído, em ordem crescente — muito usado em protocolos e processos) e NUMÉRICO CRONOLÓGICO (por data, do mais antigo ao mais recente).\n• INDIRETOS: ALFANUMÉRICO (combinação de letras e números — ex.: código de classificação do CONARQ), IDEOGRÁFICO (por ASSUNTO, subdividido em alfabético — dicionário e enciclopédico — e numérico — Duplex, Decimal e Unitermo) e NUMÉRICO DIGIT (por grupos de dígitos, como o sistema de numeração de documentos).\n\nMÉTODOS PADRONIZADOS: Soundex (por som do nome — usado em imigração nos EUA), Mnemônico (por associação mental), Rôle (rol, por ordem de chegada), Ônico, Automático, Variadex, Sabiá (variações do alfabético com guias coloridas).\n\nATENÇÃO ÀS PEGADINHAS FREQUENTES:\n• O método GEOGRÁFICO é DIRETO (não indireto) — a alternativa (C) está errada.\n• O método ALFANUMÉRICO é INDIRETO (a letra inicial agrupa, o número ordena; a busca exige o índice) — a alternativa (B) está errada ao inverter.\n• O método IDEOGRÁFICO é INDIRETO — a alternativa (D) está errada.\n• O método NUMÉRICO SIMPLES é DIRETO.\n\n(E) Errada: a TABELA DE TEMPORALIDADE DE DOCUMENTOS (TTD) é o instrumento arquivístico resultante da AVALIAÇÃO documental, que define os PRAZOS DE GUARDA dos documentos nas fases CORRENTE e INTERMEDIÁRIA e a sua DESTINAÇÃO FINAL (eliminação ou guarda permanente), aprovada por comissão permanente de avaliação de documentos. A legislação de referência é a Lei nº 8.159/1991 (Política Nacional de Arquivos Públicos e Privados) e as resoluções do CONARQ.\n\nCICLO VITAL DOS DOCUMENTOS (Teoria das Três Idades):\n1. CORRENTE (1ª idade): documentos em curso, frequentemente consultados, mantidos junto aos órgãos produtores. Eliminação vedada sem tabela de temporalidade.\n2. INTERMEDIÁRIA (2ª idade): documentos que deixaram de ser frequentemente consultados, mas podem ser requisitados para fins administrativos ou legais. Aguardam a destinação final.\n3. PERMANENTE (3ª idade): documentos de valor HISTÓRICO, probatório e informativo, que devem ser preservados DEFINITIVAMENTE e nunca eliminados.",
+      "mnemonico": "DIRETOS: 'AL-GE-NÚ' (Alfabético, Geográfico, Numérico simples/cronológico). INDIRETOS: 'ALF-IDE' (Alfanumérico, Ideográfico/por assunto) e Digit. TRÊS IDADES: corrente (consulta frequente) → intermediária (consulta eventual) → permanente (valor histórico, nunca elimina).",
+      "leiSeca": [
+        "Lei nº 8.159/1991 (Política Nacional de Arquivos Públicos e Privados)",
+        "Decreto nº 4.073/2002",
+        "Resoluções do CONARQ",
+        "Decreto nº 10.148/2019"
+      ],
+      "tags": [
+        "arquivologia",
+        "métodos de arquivamento",
+        "tabela de temporalidade",
+        "ciclo vital dos documentos",
+        "Lei 8.159/1991"
+      ],
+      "pegadinhas": [
+        "Geográfico é DIRETO (a maioria erra)",
+        "Ideográfico é INDIRETO",
+        "Documento permanente nunca é eliminado"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "sec-q002",
+      "materia": "secretaria",
+      "topico": "sec-06",
+      "dificuldade": "medio",
+      "enunciado": "Com base no Manual de Redação da Presidência da República (3ª edição, 2018), assinale a alternativa correta quanto aos atributos da redação oficial e à estrutura do Padrão Ofício.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "São atributos da redação oficial: clareza e concisão, objetividade, impessoalidade, formalidade e padronização, uso da norma-padrão da língua portuguesa e formalidade de estrutura e de linguagem."
+        },
+        {
+          "letra": "B",
+          "texto": "O Padrão Ofício admite o uso de impressos próprios para cada tipo de expediente, com leiautes diferenciados para ofício, aviso e memorando."
+        },
+        {
+          "letra": "C",
+          "texto": "A identificação do signatário deve conter apenas o nome da autoridade, dispensando-se o cargo."
+        },
+        {
+          "letra": "D",
+          "texto": "O vocativo 'Excelentíssimo Senhor' deve ser utilizado para toda e qualquer autoridade tratada por 'Vossa Excelência'."
+        },
+        {
+          "letra": "E",
+          "texto": "A data do documento deve ser escrita por extenso apenas em atos normativos, admitindo-se algarismos em ofícios."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o Capítulo I do Manual de Redação da Presidência da República (3ª edição, 2018), que enumera os ATRIBUTOS DA REDAÇÃO OFICIAL:\n1. CLAREZA E CONCISÃO — texto compreensível de imediato e sem palavras supérfluas;\n2. OBJETIVIDADE — tratar do assunto sem divagações;\n3. IMPESSOALIDADE — ausência de impressões individuais, impessoalidade do emissor e do receptor;\n4. FORMALIDADE E PADRONIZAÇÃO — obediência a normas e a modelo único de estrutura;\n5. USO DA NORMA-PADRÃO DA LÍNGUA PORTUGUESA — correção gramatical, ortografia e acentuação;\n6. FORMALIDADE DE ESTRUTURA E DE LINGUAGEM (ou 'padronização') — organização uniforme dos expedientes.\n\n(B) Errada: a 3ª edição do Manual EXTINGUIU os tipos autônomos 'aviso' e 'memorando', unificando-os no PADRÃO OFÍCIO — um único modelo, com leiaute idêntico. Todos os expedientes oficiais passam a se chamar simplesmente 'Ofício'.\n(C) Errada: a identificação do signatário deve conter NOME E CARGO da autoridade que expede o documento (e, quando cabível, o órgão/unidade).\n(D) Errada: o superlativo 'Excelentíssimo Senhor' é reservado às autoridades MÁXIMAS dos Poderes da República. Na 3ª edição, o Manual restringiu seu uso ao PRESIDENTE DA REPÚBLICA. Para as demais autoridades tratadas por Vossa Excelência, o vocativo é 'Senhor' + cargo (ex.: 'Senhor Ministro de Estado', 'Senhor Presidente', 'Senhor Deputado').\n(E) Errada: a data deve ser escrita por extenso no padrão 'Brasília, 28 de setembro de 2026' (com o nome da cidade e o ano por extenso), independentemente do tipo de expediente.",
+      "mnemonico": "ATRIBUTOS DA REDAÇÃO OFICIAL: 'COI-FIP' — Clareza e Concisão, Objetividade, Impessoalidade, Formalidade/Padronização, Uso da norma-padrão. PADRÃO OFÍCIO (3ª ed. 2018) = um único modelo; aviso e memorando FORAM EXTINTOS.",
+      "leiSeca": [
+        "Manual de Redação da Presidência da República, 3ª edição (2018), Capítulos I e II",
+        "Decreto nº 9.758/2019"
+      ],
+      "tags": [
+        "redação oficial",
+        "Padrão Ofício",
+        "atributos",
+        "vocativo",
+        "Manual de Redação da PR"
+      ],
+      "pegadinhas": [
+        "Memorando e aviso NÃO existem mais no Padrão Ofício (3ª edição)",
+        "'Excelentíssimo Senhor' só para o Presidente da República"
+      ],
+      "origem": "autoral"
+    },
+    {
+      "id": "sec-q003",
+      "materia": "secretaria",
+      "topico": "sec-02",
+      "dificuldade": "facil",
+      "enunciado": "Sobre o protocolo e o controle de documentos em órgão público, assinale a alternativa correta quanto às suas funções básicas.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Recebimento e classificação, registro e autuação, distribuição e movimentação, expedição e arquivamento são atividades típicas do protocolo."
+        },
+        {
+          "letra": "B",
+          "texto": "A autuação consiste na expedição do documento para destinatário externo ao órgão."
+        },
+        {
+          "letra": "C",
+          "texto": "O registro é dispensável nos documentos recebidos por meio eletrônico, dada a rastreabilidade automática dos sistemas."
+        },
+        {
+          "letra": "D",
+          "texto": "A distribuição e a movimentação são sinônimos, ambos designando o envio do documento a destinatário externo."
+        },
+        {
+          "letra": "E",
+          "texto": "A classificação de documentos quanto à natureza do assunto restringe-se às categorias 'urgente' e 'ordinária'."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta. As FUNÇÕES DO PROTOCOLO, segundo a arquivologia clássica e a Resolução CONARQ nº 14/2001, são:\n\n1. RECEBIMENTO: acolhimento do documento (interno ou externo), com verificação de procedência, integridade e destinatário.\n2. CLASSIFICAÇÃO: análise do conteúdo para atribuir código de classificação (plano de classificação) e grau de SIGILO (reservado, secreto, ultrassecreto, nos termos da Lei nº 12.527/2011 — LAI) ou de ACESSO RESTRITO (LGPD).\n3. REGISTRO E AUTUAÇÃO: lançamento dos dados do documento no sistema de controle (número de protocolo, data, remetente, destinatário, assunto) e abertura de PROCESSO administrativo quando necessário — a AUTUAÇÃO é justamente o ato de formar o processo, reunindo documentos em uma capa/autuação.\n4. DISTRIBUIÇÃO (interna) e MOVIMENTAÇÃO/TRAMITAÇÃO: encaminhamento do documento às unidades internas e controle de seu trânsito.\n5. EXPEDIÇÃO: envio do documento a destinatário EXTERNO ao órgão, com registro de data, meio e destinatário.\n6. ARQUIVAMENTO: guarda do documento na fase corrente (arquivo setorial ou central), com posterior transferência ao arquivo intermediário e recolhimento ao arquivo permanente.\n\n(B) Errada: autuação é a abertura/formação do processo administrativo, não a expedição.\n(C) Errada: o registro é obrigatório também no meio eletrônico (art. 33-A da Lei estadual nº 8.972/2020 e Lei nº 9.784/1999 tratam dos atos eletrônicos, mantendo o dever de registro, data e assinatura).\n(D) Errada: DISTRIBUIÇÃO e MOVIMENTAÇÃO referem-se ao trâmite INTERNO; a EXPEDIÇÃO é que se refere ao envio EXTERNO.\n(E) Errada: a classificação quanto à NATUREZA DO ASSUNTO divide os documentos em OSTENSIVOS (públicos) e SIGILOSOS (reservado, secreto, ultrassecreto). 'Urgente' e 'ordinária' são classificações quanto ao GRAU DE URGÊNCIA/PRIORIDADE.",
+      "mnemonico": "FUNÇÕES DO PROTOCOLO (sequência do fluxo): RECEBER → CLASSIFICAR → REGISTRAR/AUTUAR → DISTRIBUIR/MOVIMENTAR → EXPEDIR → ARQUIVAR. LAI: sigilo = reservado (5 anos), secreto (15 anos), ultrassecreto (25 anos), prorrogáveis uma única vez.",
+      "leiSeca": [
+        "Lei nº 8.159/1991",
+        "Lei nº 12.527/2011 (LAI), arts. 23 e 24",
+        "Lei nº 13.709/2018 (LGPD)",
+        "Resolução CONARQ nº 14/2001",
+        "Lei estadual nº 8.972/2020"
+      ],
+      "tags": [
+        "protocolo",
+        "autuação",
+        "expedição",
+        "arquivamento",
+        "LAI",
+        "grau de sigilo"
+      ],
+      "pegadinhas": [
+        "Distribuição/movimentação = interno; expedição = externo",
+        "Prazos de sigilo: 5, 15 e 25 anos, prorrogáveis UMA vez"
+      ],
+      "origem": "autoral"
+    }
+  ]
+}

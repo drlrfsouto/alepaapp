@@ -1,0 +1,43 @@
+{
+  "descricao": "Manifesto do banco de questões. O app carrega este arquivo e busca, em paralelo, cada arquivo listado em 'arquivos'. Questões em 'complementares.json' trazem o campo próprio 'materia' e têm precedência sobre a matéria do arquivo.",
+  "versao": "1.0.0",
+  "atualizadoEm": "2026-10-15",
+  "arquivos": [
+    { "arquivo": "lp.json", "materia": "lp", "descricao": "Língua Portuguesa" },
+    { "arquivo": "leg.json", "materia": "leg", "descricao": "Legislação Institucional e Ética no Serviço Público" },
+    { "arquivo": "inf.json", "materia": "inf", "descricao": "Informática Básica" },
+    { "arquivo": "rl.json", "materia": "rl", "descricao": "Raciocínio Lógico" },
+    { "arquivo": "dir-adm.json", "materia": "dir-adm", "descricao": "Direito Administrativo" },
+    { "arquivo": "dir-const.json", "materia": "dir-const", "descricao": "Direito Constitucional" },
+    { "arquivo": "proc-leg.json", "materia": "proc-leg", "descricao": "Processo Legislativo e Técnica Legislativa" },
+    { "arquivo": "dir-civil.json", "materia": "dir-civil", "descricao": "Direito Civil" },
+    { "arquivo": "dir-proc-civ.json", "materia": "dir-proc-civ", "descricao": "Direito Processual Civil" },
+    { "arquivo": "complementares.json", "materia": null, "descricao": "Dir. Processual Constitucional, Dir. Financeiro, Dir. Previdenciário, Direitos Humanos, Adm. Geral e Secretaria — a matéria é definida por questão" }
+  ],
+  "totais": {
+    "questoes": 101,
+    "porMateria": {
+      "leg": 14,
+      "dir-adm": 12,
+      "lp": 10,
+      "dir-const": 9,
+      "proc-leg": 9,
+      "inf": 8,
+      "rl": 8,
+      "dir-civil": 6,
+      "dir-proc-civ": 6,
+      "dir-fin": 4,
+      "dir-proc-const": 3,
+      "dir-prev": 3,
+      "dir-humanos": 3,
+      "adm-geral": 3,
+      "secretaria": 3
+    }
+  },
+  "esquema": {
+    "obrigatorios": ["id", "topico", "dificuldade", "enunciado", "alternativas", "gabarito", "comentario"],
+    "opcionais": ["materia", "contexto", "mnemonico", "leiSeca", "tags", "pegadinhas", "estrategia", "estiloBanca", "origem", "revisar"],
+    "dificuldades": ["facil", "medio", "dificil"],
+    "alternativas": "sempre A-E, nesta ordem"
+  }
+}

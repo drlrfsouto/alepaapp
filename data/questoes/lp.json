@@ -1,0 +1,204 @@
+{
+  "materia": "lp",
+  "descricao": "Língua Portuguesa — 10 questões na prova objetiva (2,0 pontos)",
+  "questoes": [
+    {
+      "id": "lp-q001",
+      "topico": "lp-06",
+      "dificuldade": "medio",
+      "enunciado": "Assinale a alternativa em que o emprego do sinal indicativo de crase está de acordo com a norma-padrão da Língua Portuguesa.",
+      "alternativas": [
+        { "letra": "A", "texto": "O parecer foi encaminhado à Vossa Excelência na tarde de ontem." },
+        { "letra": "B", "texto": "A comissão dedicou-se à análise dos vetos opostos ao projeto." },
+        { "letra": "C", "texto": "Refiro-me à esta proposição apresentada pelo parlamentar." },
+        { "letra": "D", "texto": "O autógrafo de lei chegou à Brasília na semana passada." },
+        { "letra": "E", "texto": "Estamos dispostos à colaborar com a Mesa Diretora." }
+      ],
+      "gabarito": "B",
+      "comentario": "A crase é a fusão da preposição 'a' com o artigo definido feminino 'a' (ou com os pronomes demonstrativos 'a/as', 'aquele(s)/aquela(s)/aquilo'). Em (B), o verbo 'dedicar-se' é transitivo indireto e exige a preposição 'a', e o substantivo 'análise' admite o artigo 'a': dedicou-se a + a análise = dedicou-se À análise. Correto.\n\nPor que as demais estão erradas:\n(A) Não ocorre crase antes de pronome de tratamento (Vossa Excelência, Vossa Senhoria, Sua Excelência), porque esses pronomes não admitem artigo feminino. Exceções: 'à moda de', 'à maneira de' e as formas 'senhora/senhorita/dona'.\n(C) Não ocorre crase antes de pronome demonstrativo 'esta/esse/isto' quando não há fusão possível — aqui o 'a' é apenas preposição.\n(D) Topônimos: aplica-se o teste 'volto da / volto de'. Como se diz 'volto de Brasília' (sem artigo), não há crase: 'chegou a Brasília'.\n(E) Não ocorre crase antes de verbo (forma infinitiva), pois verbo não admite artigo.",
+      "mnemonico": "VOLTO DA → crase HÁ. VOLTO DE → crase pra QUÊ?",
+      "leiSeca": [],
+      "tags": ["crase", "norma-padrão", "ortografia"],
+      "pegadinhas": ["'à Vossa Excelência' parece formal e induz ao erro", "'à esta' é erro clássico de redação oficial"],
+      "origem": "autoral",
+      "estiloBanca": "A CETAP costuma apresentar uma alternativa correta clássica e quatro desvios recorrentes de redação oficial."
+    },
+    {
+      "id": "lp-q002",
+      "topico": "lp-13",
+      "dificuldade": "medio",
+      "enunciado": "Assinale a alternativa em que a concordância verbal está correta, conforme a norma-padrão.",
+      "alternativas": [
+        { "letra": "A", "texto": "Fazem dez anos que a Assembleia não consolida essa legislação." },
+        { "letra": "B", "texto": "Houveram muitos recursos contra o gabarito oficial preliminar." },
+        { "letra": "C", "texto": "Existe, no ordenamento estadual, hipóteses de iniciativa reservada." },
+        { "letra": "D", "texto": "A maioria dos deputados aprovou a redação final do projeto." },
+        { "letra": "E", "texto": "Tratam-se de matérias sujeitas a disposições especiais." }
+      ],
+      "gabarito": "D",
+      "comentario": "(D) está correta: com expressões partitivas ou coletivas ('a maioria de', 'grande parte de', 'a maior parte de') seguidas de substantivo no plural, a concordância pode ser ATRATIVA (verbo no singular, concordando com o partitivo — 'aprovou') ou LÓGICA/SILEPSE (verbo no plural, concordando com o especificador — 'aprovaram'). Ambas são aceitas; a alternativa usa a atrativa, perfeitamente correta.\n\nErros das demais:\n(A) O verbo FAZER, indicando tempo decorrido, é IMPESSAL: fica sempre na 3ª pessoa do singular. Correto: 'Faz dez anos'. A impessoalidade se transmite à locução: 'Deve fazer dez anos' (e não 'devem fazer').\n(B) O verbo HAVER no sentido de 'existir' ou 'ocorrer' é IMPESSAL. Correto: 'Houve muitos recursos'.\n(C) O verbo EXISTIR é PESSOAL e concorda com o sujeito. Correto: 'Existem ... hipóteses'.\n(E) Em 'tratar-se de', o 'se' é ÍNDICE DE INDETERMINAÇÃO DO SUJEITO, e o verbo permanece obrigatoriamente no singular. Correto: 'Trata-se de matérias'.",
+      "mnemonico": "HAVER e FAZER (tempo/existência) = IMPESSOAIS → sempre no singular. EXISTIR = PESSOAL → concorda.",
+      "leiSeca": [],
+      "tags": ["concordância verbal", "verbos impessoais", "partitivos"],
+      "pegadinhas": ["Confundir 'haver' (impessoal) com 'existir' (pessoal)", "'trata-se de' x 'tratam-se os' (partícula apassivadora)"],
+      "origem": "autoral",
+      "estiloBanca": "Item recorrente em todas as provas da CETAP para cargos legislativos."
+    },
+    {
+      "id": "lp-q003",
+      "topico": "lp-14",
+      "dificuldade": "medio",
+      "enunciado": "Assinale a alternativa que apresenta regência verbal adequada à norma-padrão.",
+      "alternativas": [
+        { "letra": "A", "texto": "O assessor assistiu a sessão plenária sem se manifestar." },
+        { "letra": "B", "texto": "Prefiro mais emitir parecer do que redigir a ementa." },
+        { "letra": "C", "texto": "O relator visou ao documento antes de encaminhá-lo à Comissão." },
+        { "letra": "D", "texto": "Aspiramos um cargo na Assessoria Técnica da Casa." },
+        { "letra": "E", "texto": "O parecer implica alteração do texto normativo." }
+      ],
+      "gabarito": "E",
+      "comentario": "(E) está correta: o verbo IMPLICAR, no sentido de 'acarretar, ter como consequência', é TRANSITIVO DIRETO — não admite preposição. 'Implica alteração' (e nunca 'implica em alteração').\n\nErros das demais:\n(A) ASSISTIR, no sentido de 'presenciar, ver', é TRANSITIVO INDIRETO (exige 'a'): 'assistiu À sessão'. No sentido de 'dar assistência/socorrer', é transitivo direto: 'o médico assistiu o paciente'.\n(B) PREFERIR exige a estrutura 'preferir X A Y' (preposição 'a'), e NÃO admite reforços comparativos como 'mais', 'muito mais', 'antes', nem a conjunção 'do que'. Correto: 'Prefiro emitir parecer a redigir a ementa'.\n(C) VISAR, no sentido de 'dar visto, rubricar', é TRANSITIVO DIRETO: 'visou o documento'. Só exige 'a' no sentido de 'almejar, ter por objetivo': 'visa ao cargo'.\n(D) ASPIRAR, no sentido de 'almejar, pretender', é TRANSITIVO INDIRETO: 'aspiramos A um cargo'. Só é direto no sentido de 'sorver, inspirar': 'aspirar o ar'.",
+      "mnemonico": "IMPLICAR (acarretar) = DIRETO. ASSISTIR (ver) e ASPIRAR (almejar) = INDIRETOS. PREFERIR = X A Y, sem 'mais' e sem 'do que'.",
+      "leiSeca": [],
+      "tags": ["regência verbal", "verbos polissêmicos"],
+      "pegadinhas": ["'implicar em' é vício consagrado na fala, mas reprovado na norma-padrão"],
+      "origem": "autoral"
+    },
+    {
+      "id": "lp-q004",
+      "topico": "lp-12",
+      "dificuldade": "facil",
+      "enunciado": "Assinale a alternativa em que a vírgula foi empregada corretamente.",
+      "alternativas": [
+        { "letra": "A", "texto": "O projeto de lei, que tramita em regime de urgência foi aprovado em primeiro turno." },
+        { "letra": "B", "texto": "Aprovado em primeiro turno, o projeto seguirá para a Comissão de Constituição e Justiça." },
+        { "letra": "C", "texto": "A Mesa Diretora, decidiu pela devolução da proposição ao autor." },
+        { "letra": "D", "texto": "Encerrada a sessão o Presidente declarou prejudicada a matéria." },
+        { "letra": "E", "texto": "O relator, emitiu parecer favorável à constitucionalidade da proposta." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta: oração reduzida de particípio ('Aprovado em primeiro turno') anteposta à oração principal deve ser separada por vírgula. O mesmo valeria para gerúndio e infinitivo antepostos.\n\nErros das demais:\n(A) A oração subordinada adjetiva EXPLICATIVA deve vir entre vírgulas (abertura E fechamento). Falta a vírgula após 'urgência'.\n(C) e (E) Não se separa, por vírgula, o SUJEITO do seu VERBO — erro grave e muito cobrado.\n(D) Falta vírgula após o adjunto adverbial deslocado e extenso ('Encerrada a sessão,'). A vírgula só é facultativa quando o adjunto anteposto é curto (um advérbio, por exemplo).",
+      "mnemonico": "Regra de ouro: vírgula NUNCA separa sujeito do verbo, nem verbo do complemento.",
+      "leiSeca": [],
+      "tags": ["pontuação", "vírgula", "orações reduzidas"],
+      "origem": "autoral"
+    },
+    {
+      "id": "lp-q005",
+      "topico": "lp-01",
+      "dificuldade": "medio",
+      "contexto": "Leia o texto a seguir.\n\n\"A técnica legislativa não é um luxo formal. Quando um projeto de lei é redigido com ambiguidade, o custo não recai sobre o legislador: recai sobre o servidor que terá de aplicar a norma, sobre o cidadão que terá de compreendê-la e sobre o juiz que, anos depois, precisará decidir entre duas leituras igualmente plausíveis. A clareza, portanto, não é um atributo estético do texto normativo — é uma garantia de segurança jurídica. Por isso a Lei Complementar nº 95/1998 impõe regras de redação, ordenação e articulação que não podem ser tratadas como meras recomendações de estilo.\"",
+      "enunciado": "De acordo com o texto, é correto afirmar que a clareza na redação das leis:",
+      "alternativas": [
+        { "letra": "A", "texto": "constitui um refinamento estético dispensável em situações de urgência legislativa." },
+        { "letra": "B", "texto": "beneficia prioritariamente o legislador, que é o principal interessado na qualidade do texto." },
+        { "letra": "C", "texto": "funciona como garantia de segurança jurídica, com efeitos sobre quem aplica, quem cumpre e quem julga a norma." },
+        { "letra": "D", "texto": "decorre exclusivamente da observância da Lei Complementar nº 95/1998, que a impõe como recomendação de estilo." },
+        { "letra": "E", "texto": "é incompatível com a existência de ambiguidades, razão pela qual o texto normativo deve evitá-las apenas por prudência política." }
+      ],
+      "gabarito": "C",
+      "comentario": "O texto afirma expressamente que 'a clareza ... não é um atributo estético do texto normativo — é uma garantia de segurança jurídica', e enumera três destinatários do custo da ambiguidade: o servidor que aplica, o cidadão que cumpre e o juiz que decide. A alternativa (C) sintetiza exatamente essa ideia.\n\nErros das demais:\n(A) Contradiz a primeira frase ('não é um luxo formal') e a tese central.\n(B) O texto diz o oposto: 'o custo não recai sobre o legislador'.\n(D) O texto diz que a LC 95/1998 'impõe regras' que 'não podem ser tratadas como meras recomendações de estilo'.\n(E) Extrapolação: o texto não fala em 'prudência política' nem apresenta a ambiguidade como incompatível por esse motivo.",
+      "leiSeca": [],
+      "tags": ["interpretação", "inferência", "paráfrase"],
+      "estrategia": "Em questões de interpretação, elimine primeiro as alternativas que CONTRADIZEM o texto e depois as que EXTRAPOLAM (acrescentam informação não dita). A correta é quase sempre uma paráfrase.",
+      "origem": "autoral"
+    },
+    {
+      "id": "lp-q006",
+      "topico": "lp-08",
+      "dificuldade": "medio",
+      "enunciado": "\"A proposição foi distribuída à Comissão de Constituição e Justiça. ______ o relator designado não apresentou parecer no prazo regimental, a matéria ______ incluída em pauta com requerimento de urgência.\" As conjunções que preenchem as lacunas mantendo a coesão e o sentido são, respectivamente:",
+      "alternativas": [
+        { "letra": "A", "texto": "Porém — foi" },
+        { "letra": "B", "texto": "Como — foi" },
+        { "letra": "C", "texto": "Embora — foi" },
+        { "letra": "D", "texto": "Conforme — seria" },
+        { "letra": "E", "texto": "Portanto — foi" }
+      ],
+      "gabarito": "B",
+      "comentario": "A relação entre as orações é de CAUSA (o atraso do relator provocou a inclusão em pauta com urgência) e CONSEQUÊNCIA. 'Como' é conjunção subordinativa causal quando inicia a oração, e exige que a segunda venha no indicativo ('foi').\n\n(A) 'Porém' é adversativa — inverteria o sentido (haveria oposição, não causa).\n(C) 'Embora' é concessiva — indicaria que a inclusão ocorreu apesar do atraso, o que é ilógico.\n(D) 'Conforme' é conformativa; além disso, 'seria' (futuro do pretérito) quebraria a sequência temporal em relação a 'foi distribuída'.\n(E) 'Portanto' é conclusiva e, sintaticamente, não pode iniciar oração subordinada adverbial nesse arranjo.",
+      "mnemonico": "COMO inicial + verbo no indicativo = CAUSA. 'Como chovia, o jogo foi cancelado.'",
+      "leiSeca": [],
+      "tags": ["coesão", "conjunções", "causa e consequência"],
+      "origem": "autoral"
+    },
+    {
+      "id": "lp-q007",
+      "topico": "lp-15",
+      "dificuldade": "medio",
+      "enunciado": "Assinale a alternativa em que a colocação do pronome oblíquo átono está de acordo com a norma-padrão.",
+      "alternativas": [
+        { "letra": "A", "texto": "Não manifestaram-se os deputados contrários ao substitutivo." },
+        { "letra": "B", "texto": "Me disseram que o veto seria apreciado na próxima sessão." },
+        { "letra": "C", "texto": "Dir-lhe-ei o teor do parecer assim que ele for publicado." },
+        { "letra": "D", "texto": "Os parlamentares que se ausentaram-se da sessão perderam o prazo." },
+        { "letra": "E", "texto": "Haviam convidado-lhe para integrar a comissão temporária." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) está correta: MESÓCLISE é obrigatória quando o verbo está no futuro do presente ou no futuro do pretérito e não há palavra atrativa. 'Dir-lhe-ei' = direi + lhe.\n\nErros das demais:\n(A) A palavra negativa 'Não' é FATOR DE PRÓCLISE — atrai o pronome: 'Não se manifestaram'.\n(B) A norma-padrão proíbe iniciar oração com pronome oblíquo átono. Correto: 'Disseram-me que...' (ou 'Foi-me dito que...').\n(D) O pronome relativo 'que' é fator de próclise: 'que se ausentaram'.\n(E) Locuções verbais com particípio NÃO admitem ênclise ao particípio. Correto: 'Haviam-no convidado' (próclise ao auxiliar) ou 'Tinham-no convidado'.",
+      "mnemonico": "ATRAEM o pronome (próclise obrigatória): palavras NEGATIVAS, ADVÉRBIOS, PRONOMES (relativos, indefinidos, demonstrativos, interrogativos), CONJUNÇÕES SUBORDINATIVAS e o verbo no GERÚNDIO precedido de 'em'.",
+      "leiSeca": [],
+      "tags": ["colocação pronominal", "próclise", "mesóclise", "ênclise"],
+      "origem": "autoral"
+    },
+    {
+      "id": "lp-q008",
+      "topico": "lp-17",
+      "dificuldade": "medio",
+      "enunciado": "Com base no Manual de Redação da Presidência da República (3ª edição), assinale a alternativa correta quanto ao emprego dos pronomes de tratamento e à redação de expedientes oficiais.",
+      "alternativas": [
+        { "letra": "A", "texto": "O vocativo correspondente a autoridades tratadas por 'Vossa Excelência' é 'Excelentíssimo Senhor', seguido do cargo, para qualquer autoridade, sem distinção." },
+        { "letra": "B", "texto": "A concordância com 'Vossa Excelência' deve ser feita no gênero da pessoa a quem se fala: 'Vossa Excelência está equivocado', se o destinatário for homem." },
+        { "letra": "C", "texto": "O padrão ofício abrange três tipos de expediente: aviso, ofício e memorando, cada um com estrutura e finalidade próprias." },
+        { "letra": "D", "texto": "O fecho 'Respeitosamente' é utilizado para autoridades de mesma hierarquia ou de hierarquia inferior à do remetente." },
+        { "letra": "E", "texto": "O pronome 'Vossa Senhoria' é dispensado em correspondências a particulares, devendo-se empregar sempre 'Vossa Excelência'." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta: embora o pronome de tratamento seja gramaticalmente de 2ª pessoa ('Vossa'), a concordância se faz na 3ª pessoa, e o gênero concorda com a pessoa a quem se refere — 'Vossa Excelência está enganado' (homem) / 'Vossa Excelência está enganada' (mulher).\n\nErros das demais:\n(A) O Manual restringe o superlativo 'Excelentíssimo Senhor' às autoridades máximas dos Poderes (Presidente da República, do Congresso Nacional, da Câmara, do Senado e do STF) — hoje, na prática, apenas ao Presidente da República. Para os demais, usa-se 'Senhor' + cargo.\n(C) A 3ª edição do Manual EXTINGUIU a distinção entre aviso, ofício e memorando, unificando tudo no 'Padrão Ofício'.\n(D) Inverteu: 'Respeitosamente' é para autoridades SUPERIORES (inclusive de outros Poderes); 'Atenciosamente' é para mesma hierarquia ou hierarquia inferior.\n(E) 'Vossa Excelência' é reservado às autoridades dos altos escalões; para as demais, usa-se 'Vossa Senhoria'.",
+      "mnemonico": "Superior → RESPEITOSAMENTE. Igual ou inferior → ATENCIOSAMENTE.",
+      "leiSeca": ["Manual de Redação da Presidência da República, 3ª edição (2018)"],
+      "tags": ["redação oficial", "pronome de tratamento", "padrão ofício"],
+      "pegadinhas": ["'memorando' continua sendo cobrado como pegadinha — foi extinto pelo Padrão Ofício"],
+      "origem": "autoral"
+    },
+    {
+      "id": "lp-q009",
+      "topico": "lp-04",
+      "dificuldade": "facil",
+      "enunciado": "Assinale a alternativa em que as três palavras recebem acento gráfico pela mesma regra.",
+      "alternativas": [
+        { "letra": "A", "texto": "saúde — país — saída" },
+        { "letra": "B", "texto": "também — porém — público" },
+        { "letra": "C", "texto": "história — café — fácil" },
+        { "letra": "D", "texto": "saída — país — fácil" },
+        { "letra": "E", "texto": "ideia — assembleia — jiboia" }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta: as três palavras são acentuadas pela REGRA DO HIATO — acentuam-se o 'i' e o 'u' tônicos quando formam hiato com a vogal anterior, ficam sozinhos na sílaba (ou seguidos de 's') e não são seguidos de 'nh': sa-Ú-de, pa-ÍS, sa-Í-da.\n\nErros das demais:\n(B) 'também' e 'porém' são OXÍTONAS terminadas em -em; 'público' é PROPAROXÍTONA. Regras diferentes.\n(C) 'história' é PAROXÍTONA terminada em ditongo; 'café' é OXÍTONA terminada em -e; 'fácil' é PAROXÍTONA terminada em -l. Três regras diferentes.\n(D) 'saída' e 'país' são hiato; 'fácil' é paroxítona. Mistura.\n(E) NENHUMA das três é acentuada: o Acordo Ortográfico eliminou o acento dos ditongos abertos 'ei' e 'oi' em palavras PAROXÍTONAS (ideia, assembleia, jiboia, plateia, heroico). O acento permanece apenas nas OXÍTONAS e monossílabos tônicos com ditongo aberto: herói, anéis, céu, dói.",
+      "mnemonico": "HIATO: 'i' e 'u' tônicos, sozinhos na sílaba (ou + s), não seguidos de 'nh' → ACENTO. DITONGO ABERTO (ei/oi) só em OXÍTONA.",
+      "leiSeca": ["Acordo Ortográfico da Língua Portuguesa (Decreto nº 6.583/2008)"],
+      "tags": ["acentuação", "hiato", "ditongo aberto", "acordo ortográfico"],
+      "pegadinhas": ["'ideia', 'assembleia' e 'jiboia' perderam o acento — continuam acentuadas 'herói', 'céu' e 'anéis'"],
+      "origem": "autoral"
+    },
+    {
+      "id": "lp-q010",
+      "topico": "lp-07",
+      "dificuldade": "facil",
+      "enunciado": "Assinale a alternativa em que o emprego dos 'porquês' está de acordo com a norma-padrão.",
+      "alternativas": [
+        { "letra": "A", "texto": "Não sei por que a matéria foi devolvida ao autor." },
+        { "letra": "B", "texto": "O veto foi rejeitado porquê a base não se articulou." },
+        { "letra": "C", "texto": "Porque houve quórum insuficiente, a sessão foi encerrada?" },
+        { "letra": "D", "texto": "Eis o por que da devolução da proposição." },
+        { "letra": "E", "texto": "Você não compareceu à comissão por quê?" }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta: 'por que' (separado e sem acento) é usado em frases interrogativas DIRETAS e INDIRETAS. 'Não sei por que...' é interrogativa indireta. Equivale a 'por qual motivo/razão'.\n\nErros das demais:\n(B) Conjunção causal em frase afirmativa → 'porque' (junto, sem acento): 'O veto foi rejeitado porque a base não se articulou'.\n(C) Início de pergunta direta → 'Por que': 'Por que houve quórum insuficiente?'.\n(D) Substantivo (equivalente a 'motivo'), precedido de artigo → 'porquê' (junto e com acento): 'Eis o porquê da devolução'.\n(E) No FIM de frase interrogativa, antes do ponto de interrogação → 'por quê' (separado e com acento): 'Você não compareceu por quê?'",
+      "mnemonico": "POR QUE = início/pergunta (direta ou indireta) | POR QUE = 'pelo qual' | PORQUÊ = substantivo (o porquê) | POR QUÊ = fim de frase interrogativa.",
+      "leiSeca": [],
+      "tags": ["porquês", "ortografia"],
+      "origem": "autoral"
+    }
+  ]
+}

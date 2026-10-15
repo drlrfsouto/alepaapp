@@ -1,0 +1,126 @@
+{
+  "materia": "dir-civil",
+  "descricao": "Direito Civil — 36 tópicos do Anexo II (estimativa: 2 das 20 questões de Conhecimentos Específicos).",
+  "questoes": [
+    {
+      "id": "dciv-q001",
+      "topico": "dciv-01",
+      "dificuldade": "medio",
+      "enunciado": "Sobre a vigência e a eficácia das leis, de acordo com a Lei de Introdução às Normas do Direito Brasileiro (Decreto-Lei nº 4.657/1942), assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "Salvo disposição contrária, a lei começa a vigorar em todo o País imediatamente após sua publicação." },
+        { "letra": "B", "texto": "A lei posterior revoga a anterior quando expressamente o declare, quando seja com ela incompatível ou quando regule inteiramente a matéria de que tratava a lei anterior." },
+        { "letra": "C", "texto": "A lei revogada se restaura por ter a lei revogadora perdido a vigência, salvo disposição em contrário." },
+        { "letra": "D", "texto": "As correções a texto de lei já em vigor NÃO se consideram lei nova, mas simples republicação com efeito retroativo." },
+        { "letra": "E", "texto": "No estrangeiro, a obrigatoriedade da lei brasileira, quando admitida, se inicia um mês depois de oficialmente publicada." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 2º, caput e §1º, da LINDB: 'Não se destinando à vigência temporária, a lei terá vigor até que outra a modifique ou revogue. §1º A lei posterior revoga a anterior quando expressamente o declare, quando seja com ela incompatível ou quando regule inteiramente a matéria de que tratava a lei anterior.'\n\nAs três modalidades de revogação:\n• EXPRESSA (ou direta): a lei nova declara revogada a anterior.\n• TÁCITA POR INCOMPATIBILIDADE (ou indireta): as normas não podem coexistir.\n• TÁCITA POR REGULAÇÃO INTEIRA DA MATÉRIA: a lei nova disciplina toda a matéria antes tratada pela anterior.\nAB-ROGAÇÃO = revogação total da lei anterior. DERROGAÇÃO = revogação parcial.\n\n(A) Errada: art. 1º, caput — 'salvo disposição contrária, a lei começa a vigorar em todo o País QUARENTA E CINCO DIAS depois de oficialmente publicada'. Esse período é a VACATIO LEGIS.\n(C) Errada: art. 2º, §3º — 'salvo disposição em contrário, a lei revogada NÃO se restaura por ter a lei revogadora perdido a vigência'. É a VEDAÇÃO À REPRISTINAÇÃO, que só ocorre se houver previsão expressa.\n(D) Errada: art. 1º, §3º — 'as correções a texto de lei já em vigor CONSIDERAM-SE LEI NOVA'.\n(E) Errada: art. 1º, §1º — 'nos Estados estrangeiros, a obrigatoriedade da lei brasileira, quando admitida, se inicia TRÊS MESES depois de oficialmente publicada'.",
+      "mnemonico": "LINDB: VACATIO LEGIS = 45 dias (Brasil) / 3 meses (estrangeiro). REPRISTINAÇÃO = vedada (salvo disposição expressa). CORREÇÃO a texto em vigor = LEI NOVA.",
+      "leiSeca": ["LINDB, art. 1º, caput, §§1º e 3º", "LINDB, art. 2º, caput e §§1º e 3º"],
+      "tags": ["LINDB", "vigência", "vacatio legis", "revogação", "repristinação"],
+      "pegadinhas": ["Correção a texto de lei em vigor É lei nova", "Repristinação é vedada, mas a retroatividade da lei revogadora pode restaurá-la se expresso"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dciv-q002",
+      "topico": "dciv-07",
+      "dificuldade": "medio",
+      "enunciado": "Após as alterações promovidas pela Lei nº 13.146/2015 (Estatuto da Pessoa com Deficiência) no Código Civil, assinale a alternativa correta quanto à capacidade civil.",
+      "alternativas": [
+        { "letra": "A", "texto": "Os menores de dezesseis anos e os pródigos são absolutamente incapazes." },
+        { "letra": "B", "texto": "A pessoa com deficiência é, em regra, absolutamente incapaz para os atos da vida civil." },
+        { "letra": "C", "texto": "São absolutamente incapazes apenas os menores de dezesseis anos; os ébrios habituais, os viciados em tóxico, os pródigos e os que, por causa transitória ou permanente, não puderem exprimir sua vontade são relativamente incapazes." },
+        { "letra": "D", "texto": "A deficiência mental ou intelectual, por si só, torna a pessoa relativamente incapaz." },
+        { "letra": "E", "texto": "Os maiores de dezesseis e menores de dezoito anos são absolutamente incapazes e devem ser representados." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) está correta. O art. 3º do Código Civil, com a redação da Lei nº 13.146/2015, passou a ter INCISO ÚNICO: 'São absolutamente incapazes de exercer pessoalmente os atos da vida civil os menores de 16 (dezesseis) anos.' Antes, o rol incluía também os enfermos e portadores de deficiência mental sem discernimento e os que não pudessem exprimir sua vontade — todos suprimidos.\n\nO art. 4º enumera os RELATIVAMENTE incapazes (assistidos, e não representados):\nI - os maiores de dezesseis e menores de dezoito anos;\nII - os ébrios habituais e os viciados em tóxico;\nIII - aqueles que, por causa transitória ou permanente, não puderem exprimir sua vontade;\nIV - os pródigos.\n\nParágrafo único do art. 4º: 'A capacidade dos indígenas será regulada por legislação especial.'\n\nO art. 6º do Estatuto da Pessoa com Deficiência é categórico: 'A deficiência NÃO AFETA a plena capacidade civil da pessoa', inclusive para casar, exercer direitos sexuais e reprodutivos, exercer o direito de decidir sobre o número de filhos, conservar a fertilidade, exercer o direito à família e à convivência familiar e comunitária, exercer o direito à guarda, à tutela, à curatela e à adoção e exercer o direito ao trabalho.\n\n(A) Errada: pródigos são RELATIVAMENTE incapazes.\n(B) e (D) Erradas: a deficiência não gera incapacidade por si só.\n(E) Errada: maiores de 16 e menores de 18 são RELATIVAMENTE incapazes e são ASSISTIDOS (não representados). Representação cabe aos absolutamente incapazes.",
+      "mnemonico": "ABSOLUTAMENTE incapaz = apenas menores de 16 (REPRESENTADOS). RELATIVAMENTE incapazes = 16 a 18, ébrios habituais, viciados em tóxico, quem não pode exprimir a vontade (transitória ou permanentemente) e pródigos (ASSISTIDOS). PCD = plenamente capaz (Lei 13.146/2015).",
+      "leiSeca": ["Código Civil, arts. 3º, 4º e 5º", "Lei nº 13.146/2015, art. 6º", "Lei nº 13.146/2015, art. 85"],
+      "tags": ["capacidade civil", "pessoa com deficiência", "representação", "assistência", "Lei 13.146/2015"],
+      "pegadinhas": ["Pródigo é RELATIVAMENTE incapaz (só para atos de disposição patrimonial gratuitos)", "PCD é plenamente capaz desde 2015"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dciv-q003",
+      "topico": "dciv-20",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre os defeitos do negócio jurídico, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "O erro, o dolo, a coação, o estado de perigo, a lesão e a fraude contra credores tornam o negócio jurídico NULO de pleno direito." },
+        { "letra": "B", "texto": "A lesão configura-se quando alguém, sob premente necessidade, ou por inexperiência, se obriga a prestação manifestamente desproporcional ao valor da prestação oposta." },
+        { "letra": "C", "texto": "O estado de perigo exige que a contraparte conheça o premente perigo de dano e dele se aproveite com dolo de prejudicar." },
+        { "letra": "D", "texto": "A fraude contra credores exige a prova de que o credor foi diretamente coagido a contratar." },
+        { "letra": "E", "texto": "O dolo acidental (ou dolo de terceiro não essencial) provoca a anulação do negócio jurídico." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 157 do Código Civil: 'Ocorre a lesão quando uma pessoa, sob premente necessidade, ou por inexperiência, se obriga a prestação manifestamente desproporcional ao valor da prestação oposta.' A lesão dispensa a prova do dolo da outra parte (dolo de aproveitamento é presumido), bastando a desproporção manifesta e o estado de premente necessidade ou inexperiência.\n\n(A) Errada: os DEFEITOS DO NEGÓCIO JURÍDICO (erro ou ignorância, dolo, coação, estado de perigo, lesão e fraude contra credores — arts. 138 a 165 do CC) tornam o negócio ANULÁVEL (art. 171, II), não nulo. A NULIDADE decorre das hipóteses do art. 166 (negócio celebrado por pessoa absolutamente incapaz; objeto ilícito, impossível ou indeterminável; motivo determinante ilícito comum às partes; não revestir forma prescrita em lei; for preterida solenidade essencial; tiver por fim fraudar lei imperativa; for declarado expressamente nulo pela lei). Prazos: NULIDADE é IMPRESCRITÍVEL e pode ser declarada de ofício; ANULABILIDADE sujeita-se a PRAZO DECADENCIAL (4 anos para coação, erro, dolo, fraude contra credores, estado de perigo e lesão, contados da celebração — art. 178, II; 2 anos para o caso de incapacidade relativa, contados da cessação da incapacidade — art. 178, §1º... correto: art. 178, I, para coação; e art. 179 para os demais casos: 2 anos quando a lei não houver fixado prazo).\n(C) Inverteu os conceitos: o ESTADO DE PERIGO (art. 156) exige que alguém, 'premiido da necessidade de salvar-se, ou a pessoa de sua família, de grave dano conhecido pela outra parte', assume obrigação excessivamente onerosa. O conhecimento e o aproveitamento pela outra parte é justamente o elemento do estado de perigo. A alternativa descreve o DOLO.\n(D) Errada: a FRAUDE CONTRA CREDORES (arts. 158 a 165) ocorre quando o devedor pratica atos que reduzem seu patrimônio e o tornam insolvente, em prejuízo de credores já existentes. A ação cabível é a PAULIANA (ou revocatória), e o prazo é DECADENCIAL de 4 anos contados da realização do negócio (art. 178, II). Não há coação.\n(E) Errada: o DOLO ACIDENTAL (art. 146) — aquele que não foi a causa determinante da declaração de vontade — NÃO anula o negócio; apenas OBRIGA À SATISFAÇÃO DAS PERDAS E DANOS. O que anula é o DOLO SUBSTANCIAL/PRINCIPAL (art. 145).",
+      "mnemonico": "DEFEITOS DO NEGÓCIO = ANULÁVEIS (art. 171, II): ERRO, DOLO, COAÇÃO, ESTADO DE PERIGO, LESÃO, FRAUDE CONTRA CREDORES (mnemônico 'E-D-C-E-L-F'). NULIDADE (art. 166) = 'PICOBIFE' — objeto Possível/Ilícito/Indeterminável, Forma prescrita/preterida solenidade, Motivo ilícito comum, Fraude à lei imperativa.",
+      "leiSeca": ["Código Civil, arts. 138 a 165", "Código Civil, art. 166", "Código Civil, art. 171, II", "Código Civil, arts. 178 e 179"],
+      "tags": ["negócio jurídico", "defeitos", "lesão", "estado de perigo", "dolo acidental", "anulabilidade"],
+      "pegadinhas": ["Lesão dispensa dolo da contraparte; estado de perigo exige conhecimento do perigo", "Dolo acidental não anula, só gera perdas e danos"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dciv-q004",
+      "topico": "dciv-22",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre prescrição e decadência no direito civil brasileiro, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A prescrição atinge o direito potestativo, enquanto a decadência atinge a pretensão." },
+        { "letra": "B", "texto": "A prescrição pode ser alegada em qualquer grau de jurisdição pela parte a quem aproveita e, tratando-se de matéria de ordem pública, o juiz pode reconhecê-la de ofício." },
+        { "letra": "C", "texto": "Prescreve em dez anos a ação de reparação civil, quando a lei não lhe houver fixado prazo menor." },
+        { "letra": "D", "texto": "A prescrição não pode ser renunciada, nem mesmo depois de consumada." },
+        { "letra": "E", "texto": "O prazo geral de prescrição é de cinco anos, aplicável a todas as pretensões sem prazo especial." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 193 do Código Civil ('a prescrição pode ser alegada em qualquer grau de jurisdição, pela parte a quem aproveita') combinado com o art. 487, parágrafo único, do CPC ('ressalvada a hipótese do §1º do art. 332, a prescrição e a decadência não serão reconhecidas sem que antes seja dada às partes oportunidade de manifestar-se'), e com a possibilidade de reconhecimento DE OFÍCIO da prescrição (art. 487, II, do CPC), inclusive em matéria de direito patrimonial disponível ou indisponível.\n\n(A) INVERTEU: a PRESCRIÇÃO atinge a PRETENSÃO (o direito subjetivo violado e a ação para exigir a prestação). A DECADÊNCIA atinge o DIREITO POTESTATIVO (poder de produzir efeitos jurídicos sobre a esfera alheia sem contrapartida de dever — ex.: direito de anular negócio jurídico, direito de reclamar vícios redibitórios). Agnelo Amorim Filho: prescrição = direitos a uma prestação; decadência = direitos potestativos; imprescritíveis = direitos potestativos sem prazo legal.\n(C) Errada: o prazo para REPARAÇÃO CIVIL é de TRÊS ANOS (art. 206, §3º, V, do CC). O prazo de DEZ ANOS é o prazo GERAL e SUBSIDIÁRIO do art. 205 ('a prescrição ocorre em dez anos, quando a lei não lhe haja fixado prazo menor').\n(D) Errada: art. 191 — 'a renúncia da prescrição pode ser expressa ou tácita, e só valerá, sendo feita, SEM PREJUÍZO DE TERCEIRO, DEPOIS que a prescrição se consumar'. Ou seja, só é admitida a renúncia APÓS a consumação.\n(E) Errada: o prazo GERAL é de DEZ ANOS (art. 205). O de CINCO ANOS é prazo especial (art. 206, §5º: cobrança de dívidas líquidas constantes de instrumento público ou particular; prestação de contas; ressarcimento de despesas de condomínio; pretensão contra a Fazenda Pública? — não: contra a Fazenda Pública o prazo é QUINQUENAL pelo Decreto nº 20.910/1932).",
+      "mnemonico": "PRESCRIÇÃO = PRETENSÃO + pode ser renunciada DEPOIS de consumada + pode ser reconhecida DE OFÍCIO + pode ser SUSPENSA e INTERROMPIDA. DECADÊNCIA = DIREITO POTESTATIVO + NÃO se suspende nem se interrompe (salvo contra absolutamente incapaz, art. 208 c/c 198, I) + pode ser reconhecida de ofício (art. 210, para decadência legal). PRAZOS: geral 10 anos | reparação civil 3 anos | contra a Fazenda 5 anos (Decreto 20.910/32).",
+      "leiSeca": ["Código Civil, arts. 189 a 211", "Código Civil, art. 205", "Código Civil, art. 206, §3º, V", "CPC, art. 487, II e parágrafo único", "Decreto nº 20.910/1932"],
+      "tags": ["prescrição", "decadência", "prazos", "direito potestativo", "pretensão"],
+      "pegadinhas": ["Reparação civil prescreve em 3 anos, não em 10", "Decadência não se suspende nem se interrompe"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dciv-q005",
+      "topico": "dciv-17",
+      "dificuldade": "medio",
+      "enunciado": "Sobre os bens públicos, nos termos do Código Civil e da doutrina, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "São públicos os bens do domínio nacional pertencentes às pessoas jurídicas de direito público interno, e todos os outros são particulares, seja qual for a pessoa a que pertencerem." },
+        { "letra": "B", "texto": "Os bens públicos de uso comum do povo e os de uso especial são inalienáveis em qualquer circunstância, ainda que desafetados." },
+        { "letra": "C", "texto": "Os bens públicos dominicais podem ser usucapidos por terceiros, desde que preenchidos os requisitos legais." },
+        { "letra": "D", "texto": "Não é permitida a aquisição de bens públicos por usucapião extraordinária, mas é admitida a usucapião especial urbana sobre bem dominical." },
+        { "letra": "E", "texto": "Os bens públicos estão sujeitos a penhora em execução contra a Fazenda Pública." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 98 do Código Civil: 'São públicos os bens do domínio nacional pertencentes às pessoas jurídicas de direito público interno; todos os outros são particulares, seja qual for a pessoa a que pertencerem.'\n\nCLASSIFICAÇÃO (art. 99):\n• BENS DE USO COMUM DO POVO: rios, mares, estradas, ruas e praças — uso franqueado a todos, indistintamente.\n• BENS DE USO ESPECIAL: edifícios ou terrenos destinados a serviço ou estabelecimento da administração federal, estadual, territorial ou municipal, inclusive os de suas autarquias — afetados a uma finalidade pública específica.\n• BENS DOMINICAIS (ou dominicais): os que constituem o PATRIMÔNIO das pessoas jurídicas de direito público, como objeto de direito pessoal ou real de cada uma dessas entidades — não estão afetados a uma destinação pública.\n\nREGIME JURÍDICO:\n• INALIENABILIDADE RELATIVA (art. 101): os bens públicos de uso comum do povo e os de uso especial são inalienáveis ENQUANTO CONSERVAREM A SUA QUALIFICAÇÃO (afetação). Podem ser alienados se DESAFETADOS (transferidos à categoria de dominicais), observado o art. 100 e a legislação específica (Lei 14.133/2021 exige, em regra, autorização legislativa, avaliação prévia e licitação).\n• IMPENHORABILIDADE: os bens públicos não podem ser penhorados; a execução contra a Fazenda Pública se dá por PRECATÓRIO ou REQUISIÇÃO DE PEQUENO VALOR (art. 100 da CF).\n• IMPRESCRITIBILIDADE: os bens públicos não podem ser usucapidos.\n• NÃO ONERABILIDADE: não podem ser objeto de direitos reais de garantia (hipoteca, penhor).\n\n(B) Errada: a inalienabilidade cessa com a DESAFETAÇÃO.\n(C) e (D) Erradas: art. 102 do CC — 'os bens públicos NÃO estão sujeitos a usucapião'; e a Súmula 340 do STF — 'desde a vigência do Código Civil, os bens dominicais, como os demais bens públicos, não podem ser adquiridos por usucapião'. A CF/88 reforçou no art. 183, §3º (usucapião especial urbana) e no art. 191, parágrafo único (usucapião especial rural): 'os imóveis públicos NÃO serão adquiridos por usucapião'. O STJ tem entendimento consolidado nesse sentido (Súmula 619: 'a discussão sobre a ausência de registro do imóvel não afasta a imprescritibilidade da ação de usucapião de bem público').\n(E) Errada: impenhorabilidade é regra absoluta dos bens públicos.",
+      "mnemonico": "BENS PÚBLICOS: USO COMUM DO POVO (livre a todos) | USO ESPECIAL (afetados a serviço público) | DOMINICAIS (patrimônio disponível). Todos: IMPENHORÁVEIS, IMPRESCRITÍVEIS (sem usucapião) e INALIENÁVEIS — os dois primeiros enquanto afetados.",
+      "leiSeca": ["Código Civil, arts. 98 a 103", "Súmula 340 do STF", "CF, art. 183, §3º", "CF, art. 191, parágrafo único", "CF, art. 100"],
+      "tags": ["bens públicos", "afetação", "desafetação", "usucapião", "impenhorabilidade"],
+      "pegadinhas": ["Bens dominicais TAMBÉM não podem ser usucapidos (Súmula 340 STF)", "Inalienabilidade é relativa: cessa com a desafetação"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dciv-q006",
+      "topico": "dciv-27",
+      "dificuldade": "medio",
+      "enunciado": "Quanto aos princípios contratuais no Código Civil de 2002, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A liberdade contratual é absoluta, não sofrendo limitações em razão da função social do contrato." },
+        { "letra": "B", "texto": "A boa-fé objetiva impõe aos contratantes deveres anexos (laterais ou instrumentais) de lealdade, informação, cooperação e confidencialidade, exigíveis antes, durante e depois da execução do contrato." },
+        { "letra": "C", "texto": "O princípio da relatividade dos efeitos contratuais impede absolutamente que o contrato produza efeitos em relação a terceiros." },
+        { "letra": "D", "texto": "A onerosidade excessiva autoriza a resolução do contrato em qualquer modalidade, inclusive nos contratos de execução imediata e nos aleatórios." },
+        { "letra": "E", "texto": "A autonomia privada e o pacta sunt servanda foram inteiramente eliminados pelo Código Civil de 2002." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta. O art. 422 do Código Civil dispõe: 'Os contratantes são obrigados a guardar, assim na CONCLUSÃO do contrato, como em sua EXECUÇÃO, os princípios de probidade e boa-fé.' A jurisprudência e a IV Jornada de Direito Civil (Enunciado 363) estendem o dever de boa-fé também à fase PÓS-CONTRATUAL (pactum finitum), reconhecendo a chamada eficácia POST PACtum FINITUM.\n\nA BOA-FÉ OBJETIVA é um padrão de conduta (agir com lealdade, honestidade e cooperação), distinto da boa-fé SUBJETIVA (estado de consciência ou crença do agente, relevante na usucapião e na proteção do terceiro de boa-fé). A boa-fé objetiva gera:\n• FUNÇÃO INTEGRATIVA: deveres anexos/laterais/instrumentais (lealdade, informação, cooperação, sigilo/confidencialidade);\n• FUNÇÃO DE CONTROLE/LIMITADORA: veda o abuso de direito (art. 187), o venire contra factum proprium (comportamento contraditório), a tu quoque, a suppressio (perda de direito pelo não exercício prolongado) e a surrectio;\n• FUNÇÃO INTERPRETATIVA: art. 113 do CC — 'os negócios jurídicos devem ser interpretados conforme a boa-fé e os usos do lugar de sua celebração' (com a redação da Lei da LIBERDADE Econômica — Lei nº 13.874/2019 — que acrescentou os §§1º a 3º ao art. 113).\n\n(A) Errada: art. 421 do CC — 'a liberdade contratual será exercida NOS LIMITES DA FUNÇÃO SOCIAL DO contrato', e, com a Lei 13.874/2019, o art. 421 passou a dispor que 'a liberdade de contratar será exercida em razão e nos limites da função social do contrato'. O parágrafo único do art. 421 acrescenta que 'nas relações contratuais privadas, prevalecerão o princípio da intervenção mínima e a excepcionalidade da revisão contratual'.\n(C) Errada: a relatividade tem exceções importantes — estipulação em favor de terceiro (art. 436), promessa de fato de terceiro (art. 439), contrato com eficácia de proteção a terceiro, tutela externa do crédito.\n(D) Errada: a onerosidade excessiva (art. 478) aplica-se aos contratos de EXECUÇÃO CONTINUADA ou DIFERIDA, e exige fato superveniente, extraordinário e imprevisível. Não se aplica aos contratos aleatórios (art. 458) nem aos de execução instantânea.\n(E) Errada: a autonomia privada e a força obrigatória permanecem como fundamentos, apenas RELATIVIZADOS pela função social, pela boa-fé objetiva e pela ordem pública.",
+      "mnemonico": "PRINCÍPIOS CONTRATUAIS (Código Civil 2002): AUTONOMIA PRIVADA + FORÇA OBRIGATÓRIA (pacta sunt servanda) + RELATIVIDADE DOS EFEITOS, todos RELATIVIZADOS por FUNÇÃO SOCIAL (art. 421) + BOA-FÉ OBJETIVA (art. 422) + ORDEM PÚBLICA.",
+      "leiSeca": ["Código Civil, arts. 113, 187, 421, 422, 478 e 480", "Lei nº 13.874/2019 (Lei da Liberdade Econômica)", "Enunciado 363 da IV Jornada de Direito Civil do CJF"],
+      "tags": ["contratos", "boa-fé objetiva", "função social", "deveres anexos", "onerosidade excessiva"],
+      "pegadinhas": ["Boa-fé objetiva (padrão de conduta) x subjetiva (estado de consciência)", "Onerosidade excessiva só em contratos de execução continuada/diferida"],
+      "origem": "autoral"
+    }
+  ]
+}

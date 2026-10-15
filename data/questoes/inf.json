@@ -1,0 +1,161 @@
+{
+  "materia": "inf",
+  "descricao": "Noções de Informática — 5 questões na prova objetiva (1,0 ponto). Matéria de acerto rápido: alto retorno por hora estudada.",
+  "questoes": [
+    {
+      "id": "inf-q001",
+      "topico": "inf-03",
+      "dificuldade": "medio",
+      "enunciado": "Em uma planilha do Microsoft Excel (versão O365), a célula A1 contém o valor 10, A2 o valor 20, A3 o valor 30 e A4 está vazia. Considerando também B1 = 5, qual será o resultado da fórmula =SOMA(A1:A3)*SE(B1>3;2;1) digitada em C1?",
+      "alternativas": [
+        { "letra": "A", "texto": "60" },
+        { "letra": "B", "texto": "120" },
+        { "letra": "C", "texto": "30" },
+        { "letra": "D", "texto": "#VALOR!" },
+        { "letra": "E", "texto": "240" }
+      ],
+      "gabarito": "B",
+      "comentario": "Passo a passo:\n1) SOMA(A1:A3) = 10 + 20 + 30 = 60. A célula vazia A4 não interfere, pois não está no intervalo.\n2) SE(B1>3;2;1): como B1 = 5 e 5 > 3 é VERDADEIRO, retorna 2.\n3) 60 × 2 = 120.\n\nObservações importantes para prova:\n• O separador de argumentos em português do Brasil é o PONTO E VÍRGULA (;). Em inglês, é a vírgula.\n• SOMA ignora células vazias e de texto dentro do intervalo.\n• Estrutura do SE: =SE(teste_lógico; valor_se_verdadeiro; valor_se_falso).\n• #VALOR! ocorreria se houvesse operação aritmética com texto não numérico.",
+      "mnemonico": "SE(teste ; verdadeiro ; falso) — a primeira alternativa é sempre o resultado do teste VERDADEIRO.",
+      "leiSeca": [],
+      "tags": ["Excel", "fórmulas", "SOMA", "SE"],
+      "origem": "autoral"
+    },
+    {
+      "id": "inf-q002",
+      "topico": "inf-03",
+      "dificuldade": "medio",
+      "enunciado": "No Microsoft Excel, a função PROCV (VLOOKUP) possui a sintaxe =PROCV(valor_procurado; matriz_tabela; núm_índice_coluna; [procurar_intervalo]). Sobre o argumento opcional 'procurar_intervalo', é correto afirmar que:",
+      "alternativas": [
+        { "letra": "A", "texto": "quando preenchido com VERDADEIRO ou 1, exige que a primeira coluna da matriz esteja ordenada e realiza correspondência aproximada." },
+        { "letra": "B", "texto": "quando preenchido com FALSO ou 0, realiza correspondência aproximada, dispensando a ordenação da matriz." },
+        { "letra": "C", "texto": "o número de índice da coluna pode ser maior que o total de colunas da matriz, retornando zero." },
+        { "letra": "D", "texto": "a função procura o valor na primeira LINHA da matriz e retorna o dado da coluna indicada." },
+        { "letra": "E", "texto": "PROCV não aceita matrizes com mais de 256 colunas, sob pena de erro #NÚM!." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta: com VERDADEIRO (ou 1, ou omitido), o PROCV faz correspondência APROXIMADA e pressupõe que a primeira coluna da matriz esteja em ordem CRESCENTE; se não estiver, o resultado pode ser incorreto.\n\n(B) Inverteu: FALSO (ou 0) faz correspondência EXATA, e nesse caso a ordenação é desnecessária. Se o valor não for encontrado, retorna #N/D.\n(C) Errada: se o índice de coluna for maior que o número de colunas da matriz, retorna o erro #REF!.\n(D) Errada: PROCV procura na primeira COLUNA da matriz (é o 'V' de vertical) e retorna o valor da linha correspondente, na coluna indicada. A função que procura na primeira linha é o PROCH (HLOOKUP, horizontal).\n(E) Errada: o limite prático da função é o limite da própria planilha; o erro típico por coluna inexistente é #REF!, não #NÚM!.",
+      "mnemonico": "PROCV = procura na COLUNA (Vertical). PROCH = procura na LINHA (Horizontal). 0/FALSO = exato; 1/VERDADEIRO = aproximado (exige ordenação).",
+      "leiSeca": [],
+      "tags": ["Excel", "PROCV", "funções de pesquisa"],
+      "origem": "autoral"
+    },
+    {
+      "id": "inf-q003",
+      "topico": "inf-04",
+      "dificuldade": "medio",
+      "enunciado": "Um servidor recebe e-mail aparentemente enviado pela Diretoria de Gestão de Pessoas da ALEPA, com logotipo oficial, solicitando que clique em um link e informe login e senha do sistema de folha de pagamento. Esse tipo de ataque é conhecido como:",
+      "alternativas": [
+        { "letra": "A", "texto": "ransomware" },
+        { "letra": "B", "texto": "phishing" },
+        { "letra": "C", "texto": "spyware" },
+        { "letra": "D", "texto": "adware" },
+        { "letra": "E", "texto": "worm" }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) PHISHING é a técnica de engenharia social em que o criminoso se passa por instituição ou pessoa confiável (banco, órgão público, chefia) para induzir a vítima a fornecer credenciais, dados pessoais ou financeiros, ou a instalar malware. Variantes relevantes para prova:\n• SPEAR PHISHING: direcionado a uma pessoa ou organização específica, com informações personalizadas.\n• WHALING: dirigido a altos executivos.\n• SMISHING: via SMS. VISHING: via telefonema.\n• PHARMING: redirecionamento por envenenamento de DNS/hosts.\n\n(A) RANSOMWARE sequestra dados por criptografia e exige resgate — normalmente após a infecção já ter ocorrido.\n(C) SPYWARE monitora a atividade do usuário e coleta informações de forma oculta; keylogger e screenlogger são subtipos.\n(D) ADWARE exibe publicidade indesejada.\n(E) WORM é um programa autorreplicante que se propaga pela rede sem necessidade de arquivo hospedeiro nem de ação do usuário.",
+      "mnemonico": "PHISHING = 'pescaria' de credenciais com isca de confiança. WORM se propaga sozinho; VÍRUS precisa de hospedeiro e de ação do usuário.",
+      "leiSeca": [],
+      "tags": ["segurança da informação", "engenharia social", "malware"],
+      "origem": "autoral"
+    },
+    {
+      "id": "inf-q004",
+      "topico": "inf-04",
+      "dificuldade": "medio",
+      "enunciado": "Sobre cópias de segurança (backup) e controles de segurança em ambiente corporativo público, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "O backup incremental copia todos os arquivos selecionados a cada execução e limpa o atributo de arquivamento, sendo o mais lento porém o de restauração mais rápida." },
+        { "letra": "B", "texto": "O backup diferencial copia apenas os arquivos alterados desde o último backup INCREMENTAL e limpa o atributo de arquivamento." },
+        { "letra": "C", "texto": "A estratégia 3-2-1 recomenda três cópias dos dados, em dois tipos diferentes de mídia, sendo uma delas mantida fora do local (offsite)." },
+        { "letra": "D", "texto": "O firewall pessoal tem por função principal detectar e remover vírus já instalados no sistema operacional." },
+        { "letra": "E", "texto": "O controle de dispositivos USB é prática recomendada apenas em ambientes industriais, sendo desnecessário na administração pública." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) está correta: a estratégia 3-2-1 (popularizada por especialistas em continuidade) estabelece: 3 cópias dos dados, em 2 mídias/tecnologias distintas, com 1 cópia offsite (fora do local físico), para proteção contra incêndio, inundação, furto e ransomware.\n\n(A) Errada: quem copia TUDO a cada execução e limpa o atributo de arquivamento é o backup NORMAL (completo/full). O INCREMENTAL copia apenas o que mudou desde o último backup (de qualquer tipo) e limpa o atributo; é o mais RÁPIDO para gravar e o mais LENTO para restaurar (exige o full + todos os incrementais).\n(B) Errada: o DIFERENCIAL copia o que mudou desde o último backup NORMAL e NÃO limpa o atributo de arquivamento.\n(D) Errada: FIREWALL filtra tráfego de rede com base em regras (portas, protocolos, endereços). Quem detecta e remove malware é o ANTIMALWARE/antivírus.\n(E) Errada: o bloqueio de dispositivos USB é controle expressamente previsto no edital ('controle de dispositivos USB') e é medida essencial de prevenção contra exfiltração de dados e introdução de malware — inclusive para cumprimento do art. 46 da LGPD.",
+      "mnemonico": "BACKUP: NORMAL limpa e copia tudo | DIFERENCIAL não limpa, acumula desde o NORMAL | INCREMENTAL limpa, copia só o que é novo.",
+      "leiSeca": ["LGPD, art. 46"],
+      "tags": ["backup", "firewall", "antimalware", "USB", "continuidade"],
+      "pegadinhas": ["Diferencial NÃO limpa o atributo de arquivamento; incremental LIMPA"],
+      "origem": "autoral"
+    },
+    {
+      "id": "inf-q005",
+      "topico": "inf-06",
+      "dificuldade": "medio",
+      "enunciado": "Sobre protocolos e conceitos de redes de computadores, Internet e intranet, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "HTTPS utiliza SSL/TLS para criptografar a comunicação e emprega, por padrão, a porta 443; HTTP usa a porta 80." },
+        { "letra": "B", "texto": "FTP seguro (FTPS) e SSH utilizam, por padrão, as portas 80 e 443, respectivamente." },
+        { "letra": "C", "texto": "Uma intranet é uma rede pública de alcance mundial que interliga redes privadas por meio do protocolo TCP/IP." },
+        { "letra": "D", "texto": "VPN substitui a criptografia, pois sua função é apenas mascarar o endereço IP do usuário." },
+        { "letra": "E", "texto": "O protocolo SMTP é utilizado para recebimento de mensagens eletrônicas pelo cliente de e-mail." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) está correta: HTTP → porta 80; HTTPS → porta 443 (HTTP sobre TLS/SSL).\n\n(B) Errada: SSH usa a porta 22; FTP usa 21 (controle) e 20 (dados); FTPS é FTP sobre TLS.\n(C) Errada: a definição apresentada é a da INTERNET. INTRANET é uma rede PRIVADA, restrita aos membros de uma organização, que utiliza os mesmos protocolos da Internet (TCP/IP) e, normalmente, é protegida por firewall.\n(D) Errada: VPN (Virtual Private Network) cria um TÚNEL CRIPTOGRAFADO sobre uma rede pública, garantindo confidencialidade, integridade e autenticação. Protocolos comuns: IPSec, OpenVPN, WireGuard, PPTP, L2TP.\n(E) Errada: SMTP (porta 25, ou 587 com STARTTLS) é o protocolo de ENVIO. Para RECEBIMENTO usam-se POP3 (porta 110; 995 com SSL — baixa e normalmente apaga do servidor) ou IMAP (porta 143; 993 com SSL — sincroniza e mantém as mensagens no servidor).",
+      "mnemonico": "PORTAS: 20/21 FTP | 22 SSH | 23 Telnet | 25 SMTP | 53 DNS | 80 HTTP | 110 POP3 | 143 IMAP | 443 HTTPS | 445 SMB.",
+      "leiSeca": [],
+      "tags": ["redes", "protocolos", "portas", "VPN", "intranet", "e-mail"],
+      "pegadinhas": ["SMTP envia; POP3/IMAP recebem", "IMAP mantém no servidor; POP3 tradicionalmente remove"],
+      "origem": "autoral"
+    },
+    {
+      "id": "inf-q006",
+      "topico": "inf-01",
+      "dificuldade": "facil",
+      "enunciado": "Sobre atalhos de teclado no Windows 10/11 e no Microsoft Word, assinale a alternativa INCORRETA.",
+      "alternativas": [
+        { "letra": "A", "texto": "Windows + E abre o Explorador de Arquivos." },
+        { "letra": "B", "texto": "Windows + L bloqueia o computador." },
+        { "letra": "C", "texto": "Windows + D mostra e oculta a área de trabalho." },
+        { "letra": "D", "texto": "Ctrl + T, no Word em português, abre o diálogo de formatação de fonte." },
+        { "letra": "E", "texto": "Windows + Shift + S abre a Ferramenta de Captura para recorte de tela." }
+      ],
+      "gabarito": "D",
+      "comentario": "(D) é a INCORRETA, portanto o gabarito: no Word em português, Ctrl + T é 'Selecionar Tudo' (equivalente ao Ctrl + A em inglês). O atalho que abre o diálogo de FORMATAÇÃO DE FONTE é Ctrl + D (Ctrl + Shift + F abre o painel de fonte).\n\nAs demais estão corretas:\n(A) Windows + E → Explorador de Arquivos.\n(B) Windows + L → bloqueia a sessão (Lock). Fundamental em ambiente público: nunca deixe a estação desbloqueada ao se afastar.\n(C) Windows + D → exibe/oculta a área de trabalho (Desktop).\n(E) Windows + Shift + S → recorte de tela da Ferramenta de Captura.\n\nOutros atalhos que costumam cair: Windows + R (Executar), Windows + I (Configurações), Windows + V (histórico da área de transferência), Windows + P (projetar), Windows + Tab (visão de tarefas), Alt + Tab (alternar janelas), Ctrl + Shift + Esc (Gerenciador de Tarefas).",
+      "mnemonico": "No Word em PT-BR: Ctrl+T = Selecionar Tudo (não é 'Tudo de fonte'!). Ctrl+D = Fonte. Ctrl+N = Negrito. Ctrl+I = Itálico. Ctrl+S = Sublinhado. Ctrl+G = Ir para.",
+      "leiSeca": [],
+      "tags": ["Windows", "atalhos", "Word", "atalhos em português"],
+      "pegadinhas": ["Atalhos do Word em PT-BR diferem dos em inglês: Ctrl+N é Negrito (não 'Novo'), Ctrl+B é Salvar (não Negrito)"],
+      "origem": "autoral"
+    },
+    {
+      "id": "inf-q007",
+      "topico": "inf-05",
+      "dificuldade": "facil",
+      "enunciado": "Sobre organização e gerenciamento de arquivos, pastas e programas no Windows 10/11, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "Arquivos com extensão .exe são documentos de texto simples abertos pelo Bloco de Notas." },
+        { "letra": "B", "texto": "A Lixeira armazena permanentemente os arquivos excluídos de qualquer mídia, inclusive pen drives e unidades de rede." },
+        { "letra": "C", "texto": "As extensões indicam o tipo de arquivo e o programa associado: .docx (Word), .xlsx (Excel), .pptx (PowerPoint), .pdf (leitor de PDF), .zip/.rar (compactados)." },
+        { "letra": "D", "texto": "O formato .odt é exclusivo do Microsoft Word e não pode ser aberto pelo LibreOffice Writer." },
+        { "letra": "E", "texto": "A compactação de arquivos aumenta o tamanho original para garantir a integridade dos dados." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) está correta: a extensão (sufixo após o último ponto) indica o formato e permite ao sistema associar o arquivo ao programa adequado.\n\nExtensões relevantes para a prova:\n• Documentos: .docx (Word), .odt (Writer), .txt (texto simples), .rtf, .pdf\n• Planilhas: .xlsx (Excel), .ods (Calc), .csv (valores separados por vírgula — texto puro)\n• Apresentações: .pptx (PowerPoint), .odp (Impress)\n• Imagens: .jpg/.jpeg, .png, .gif, .bmp, .svg, .webp\n• Áudio/vídeo: .mp3, .wav, .aac, .mp4, .avi, .mkv, .mov\n• Compactados: .zip, .rar, .7z, .tar, .gz\n• Executáveis: .exe, .msi, .bat, .cmd, .com, .scr, .ps1\n\n(A) Errada: .exe é arquivo executável (programa).\n(B) Errada: a exclusão de arquivos em mídias removíveis (pen drives, cartões) e em unidades de rede é PERMANENTE — não passa pela Lixeira. Exclusão com Shift + Delete também é permanente.\n(D) Errada: .odt é o formato ABERTO do LibreOffice Writer (OpenDocument). O Word também o abre.\n(E) Errada: a compactação REDUZ o tamanho, agrupando e codificando dados redundantes.",
+      "leiSeca": [],
+      "tags": ["arquivos", "extensões", "LibreOffice", "Lixeira"],
+      "pegadinhas": ["Pen drive e rede: exclusão é definitiva, não vai para a Lixeira"],
+      "origem": "autoral"
+    },
+    {
+      "id": "inf-q008",
+      "topico": "inf-07",
+      "dificuldade": "facil",
+      "enunciado": "Sobre navegadores web (Chrome, Edge e Firefox), assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A navegação em janela anônima/privada impede que o provedor de acesso, o administrador da rede ou os sites visitados identifiquem a navegação." },
+        { "letra": "B", "texto": "A janela anônima evita o registro local de histórico, cookies e dados de formulário após o fechamento, mas não oculta a navegação do empregador ou do provedor." },
+        { "letra": "C", "texto": "Cookies são programas maliciosos instalados automaticamente pelos sites para capturar senhas." },
+        { "letra": "D", "texto": "O certificado digital de um site garante apenas a autoria da página, sem qualquer relação com a criptografia dos dados transmitidos." },
+        { "letra": "E", "texto": "O cache do navegador armazena as senhas digitadas para preenchimento automático." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta: o modo anônimo/privado é um controle LOCAL de privacidade — não grava histórico, cookies, dados de sites e informações digitadas em formulários depois que todas as janelas anônimas são fechadas. Ele NÃO oculta sua atividade do empregador/administrador da rede, do provedor de acesso (ISP) nem dos próprios sites (que veem seu IP). Arquivos baixados e favoritos criados permanecem.\n\n(A) Errada, pelos motivos acima.\n(C) Errada: cookies são pequenos arquivos de texto que os sites armazenam no navegador para lembrar preferências, sessões e, no caso de cookies de terceiros, rastrear comportamento para publicidade. Não são executáveis nem malware. A LGPD trata cookies que identifiquem pessoas como dados pessoais.\n(D) Errada: o certificado digital garante AUTENTICIDADE (identidade do site), INTEGRIDADE e, ao ser usado em TLS, possibilita a CONFIDENCIALIDADE (criptografia) dos dados transmitidos.\n(E) Errada: o CACHE armazena cópias locais de recursos (imagens, scripts, folhas de estilo) para acelerar carregamentos. As senhas ficam no GERENCIADOR DE SENHAS do navegador.",
+      "mnemonico": "ANÔNIMO = privado para quem usa o computador; visível para a rede. CACHE = arquivos para acelerar. COOKIES = texto para lembrar. CERTIFICADO = identidade + criptografia.",
+      "leiSeca": ["LGPD, art. 5º, I (dado pessoal)"],
+      "tags": ["navegadores", "modo anônimo", "cookies", "cache", "certificado digital"],
+      "origem": "autoral"
+    }
+  ]
+}

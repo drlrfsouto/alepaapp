@@ -1,0 +1,36 @@
+{
+  "name": "alepaapp",
+  "version": "1.0.0",
+  "description": "App de estudo offline-first para o Concurso Público nº 002/2026 da ALEPA — Cargo 02, Assessoramento Legislativo / Assessor Técnico PL.AL.102 (banca Fundação CETAP).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "serve": "node tools/serve.mjs",
+    "validate": "node tools/validate-data.mjs",
+    "test": "node tools/validate-data.mjs && node tools/smoke.mjs",
+    "test:data": "node tools/validate-data.mjs",
+    "test:smoke": "node tools/smoke.mjs",
+    "lacunas": "node tools/generate-content.mjs --lacunas",
+    "fila": "node tools/generate-content.mjs --fila",
+    "gerar": "node tools/generate-content.mjs --tipo=todos --limite=8",
+    "icones": "python3 tools/gerar-icones.py"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "concurso",
+    "alepa",
+    "cetap",
+    "estudo",
+    "pwa",
+    "srs",
+    "flashcards",
+    "simulados"
+  ],
+  "license": "MIT"
+}

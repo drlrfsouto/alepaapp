@@ -1,0 +1,185 @@
+{
+  "materia": "dir-const",
+  "descricao": "Direito Constitucional — 38 tópicos do Anexo II (estimativa: 3 das 20 questões de Conhecimentos Específicos).",
+  "questoes": [
+    {
+      "id": "dcon-q001",
+      "topico": "dcon-01",
+      "dificuldade": "medio",
+      "enunciado": "Quanto à classificação das constituições, a Constituição da República Federativa do Brasil de 1988 é corretamente classificada como:",
+      "alternativas": [
+        { "letra": "A", "texto": "outorgada, escrita, histórica, flexível e sintética." },
+        { "letra": "B", "texto": "promulgada, escrita, dogmática, rígida e analítica (prolixa)." },
+        { "letra": "C", "texto": "promulgada, não escrita, dogmática, semirrígida e analítica." },
+        { "letra": "D", "texto": "outorgada, escrita, dogmática, imutável e sintética." },
+        { "letra": "E", "texto": "promulgada, escrita, histórica, rígida e sintética." }
+      ],
+      "gabarito": "B",
+      "comentario": "Classificação da CF/1988 segundo os critérios clássicos:\n• Quanto à ORIGEM: PROMULGADA (democrática, popular ou votada) — elaborada por Assembleia Nacional Constituinte eleita, não imposta unilateralmente pelo governante (outorgada) nem fruto de pacto entre monarca e parlamento (pactuada/cessão).\n• Quanto à FORMA: ESCRITA (instrumentalizada em documento único e sistematizado).\n• Quanto ao MODO DE ELABORAÇÃO: DOGMÁTICA (reflete dogmas e valores de um momento determinado, elaborada de uma só vez) — em oposição à HISTÓRICA/costumeira, que se forma ao longo do tempo.\n• Quanto à ALTERABILIDADE: RÍGIDA (exige processo de emenda mais solene e difícil que o das leis ordinárias: 3/5 dos membros de cada Casa, em dois turnos — art. 60, §2º). Há autores que a qualificam de SUPER-RÍGIDA por conter cláusulas pétreas (art. 60, §4º), mas a classificação majoritária em prova é RÍGIDA.\n• Quanto à EXTENSÃO: ANALÍTICA, prolixa ou dilatada (extensa e detalhista), em oposição à SINTÉTICA, concisa ou sucinta (como a dos EUA).\n\nOutras classificações relevantes: quanto ao CONTEÚDO → formal (tudo que está no texto, independentemente da matéria); quanto à FINALIDADE → dirigente (estabelece programas e tarefas ao Estado); quanto à IDEOLOGIA → eclética ou compromissória; quanto à CORRESPONDÊNCIA COM A REALIDADE (Karl Loewenstein) → normativa (efetivamente aplicada); quanto à ESTABILIDADE → semirrígida/semiflexível (a Constituição de 1824 e a de 1934) ou imutável/granítica (Constituição do Império de 1824 nos primeiros 4 anos).",
+      "mnemonico": "CF/88 = P-E-D-R-A: Promulgada, Escrita, Dogmática, Rígida, Analítica.",
+      "leiSeca": ["CF, art. 60, §2º", "CF, art. 60, §4º"],
+      "tags": ["teoria da Constituição", "classificação", "rigidez", "cláusulas pétreas"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q002",
+      "topico": "dcon-03",
+      "dificuldade": "dificil",
+      "enunciado": "Norma constitucional que reconhece um direito e pode ser aplicada de imediato, mas cuja amplitude pode ser restringida por legislação infraconstitucional superveniente, é classificada como norma de eficácia:",
+      "alternativas": [
+        { "letra": "A", "texto": "plena." },
+        { "letra": "B", "texto": "contida (ou restringível)." },
+        { "letra": "C", "texto": "limitada de princípio institutivo." },
+        { "letra": "D", "texto": "limitada de princípio programático." },
+        { "letra": "E", "texto": "exaurida." }
+      ],
+      "gabarito": "B",
+      "comentario": "Classificação de José Afonso da Silva quanto à APLICABILIDADE/EFEITOS:\n\n1. EFICÁCIA PLENA — aplicabilidade direta, imediata e INTEGRAL. Produzem todos os efeitos desde a promulgação, dispensam regulamentação e não podem ser restringidas. Ex.: art. 5º, III ('ninguém será submetido a tortura'); art. 2º (separação dos Poderes).\n\n2. EFICÁCIA CONTIDA (restringível, redutível ou restringível) — aplicabilidade direta e imediata, mas NÃO integral: produzem efeitos plenos desde logo, ATÉ que a lei infraconstitucional, outro dispositivo constitucional ou conceitos ético-jurídicos indeterminados lhes restrinjam o alcance. Ex.: art. 5º, XIII ('é livre o exercício de qualquer trabalho, ofício ou profissão, ATENDIDAS AS QUALIFICAÇÕES PROFISSIONAIS QUE A LEI ESTABELECER'); art. 5º, XV (livre locomoção em tempo de paz); art. 5º, VIII (liberdade de crença, ressalvada a prestação alternativa).\n\n3. EFICÁCIA LIMITADA — aplicabilidade INDIRETA, MEDIATA e REDUZIDA: não produzem efeitos essenciais desde logo; dependem de norma infraconstitucional integradora. Subdividem-se em:\n   a) DE PRINCÍPIO INSTITUTIVO (ou organizativo): organizam/estruturam órgãos e instituições. Ex.: art. 18, §2º (territórios federais); art. 33 (lei disporá sobre a organização administrativa e judiciária dos Territórios); art. 22, parágrafo único (lei complementar pode autorizar os Estados a legislar sobre questões específicas de competência privativa da União).\n   b) DE PRINCÍCIO PROGRAMÁTICO: estabelecem PROGRAMAS, diretrizes e fins a serem implementados pelo Estado. Ex.: art. 3º (objetivos fundamentais); art. 196 ('a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença...'); art. 218 (pesquisa científica e tecnológica).\n\n(A) Plena não admite restrição.\n(C) e (D) Limitadas dependem de norma integradora para produzir efeitos essenciais — o inverso da contida.\n(E) 'Norma de eficácia exaurida' é expressão usada para normas de aplicação esgotada (ex.: dispositivos do ADCT já cumpridos).",
+      "mnemonico": "PLENA = já vale tudo, ninguém restringe. CONTIDA = já vale tudo, mas PODEM restringir. LIMITADA = ainda não vale plenamente, PRECISA de lei.",
+      "leiSeca": ["CF, art. 5º, XIII", "CF, art. 3º", "CF, art. 196"],
+      "tags": ["eficácia das normas constitucionais", "aplicabilidade", "norma contida", "norma limitada"],
+      "pegadinhas": ["Contida e limitada são espelhadas: uma pode ser restringida, a outra precisa de lei para agir"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q003",
+      "topico": "dcon-08",
+      "dificuldade": "medio",
+      "enunciado": "Assinale a alternativa que apresenta apenas FUNDAMENTOS da República Federativa do Brasil, nos termos do art. 1º da Constituição Federal.",
+      "alternativas": [
+        { "letra": "A", "texto": "soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa e pluralismo político." },
+        { "letra": "B", "texto": "construir uma sociedade livre, justa e solidária; garantir o desenvolvimento nacional; erradicar a pobreza e a marginalização." },
+        { "letra": "C", "texto": "independência nacional, prevalência dos direitos humanos, autodeterminação dos povos e não-intervenção." },
+        { "letra": "D", "texto": "defesa da paz, solução pacífica dos conflitos, repúdio ao terrorismo e ao racismo e cooperação entre os povos." },
+        { "letra": "E", "texto": "forma federativa de Estado, voto direto, secreto, universal e periódico, separação dos Poderes e direitos e garantias individuais." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz os cinco INCISOS do art. 1º da CF — os FUNDAMENTOS da República: I - a soberania; II - a cidadania; III - a dignidade da pessoa humana; IV - os valores sociais do trabalho e da livre iniciativa; V - o pluralismo político.\n\nParágrafo único do art. 1º: 'Todo o poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente, nos termos desta Constituição' (democracia semidireta/participativa).\n\n(B) São os OBJETIVOS FUNDAMENTAIS (art. 3º) — verbos no infinitivo: construir, garantir, erradicar/reduzir, promover.\n(C) e (D) São PRINCÍPIOS QUE REGEM AS RELAÇÕES INTERNACIONAIS (art. 4º): independência nacional; prevalência dos direitos humanos; autodeterminação dos povos; não-intervenção; igualdade entre os Estados; defesa da paz; solução pacífica dos conflitos; repúdio ao terrorismo e ao racismo; cooperação entre os povos para o progresso da humanidade; concessão de asilo político.\n(E) São CLÁUSULAS PÉTREAS (art. 60, §4º): a forma federativa de Estado; o voto direto, secreto, universal e periódico; a separação dos Poderes; os direitos e garantias individuais.",
+      "mnemonico": "Art. 1º (FUNDAMENTOS) = 'SO-CI-DI-VA-PLU'. Art. 3º (OBJETIVOS) = verbos no infinitivo ('CON-GA-ER-PRO'). Art. 4º (RELAÇÕES INTERNACIONAIS) = lista longa. Art. 60, §4º (PÉTREAS) = 'FO-VO-SE-DI'.",
+      "leiSeca": ["CF, art. 1º", "CF, art. 3º", "CF, art. 4º", "CF, art. 60, §4º"],
+      "tags": ["princípios fundamentais", "art. 1º", "cláusulas pétreas", "objetivos"],
+      "pegadinhas": ["A banca mistura incisos do art. 1º com objetivos do art. 3º e princípios do art. 4º"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q004",
+      "topico": "dcon-12",
+      "dificuldade": "dificil",
+      "enunciado": "Um servidor da ALEPA tem informações sobre sua vida funcional constantes de banco de dados de órgão público e não consegue acessá-las por meio de requerimento administrativo, nem há outro meio eficaz disponível. Nessa hipótese, o remédio constitucional cabível é:",
+      "alternativas": [
+        { "letra": "A", "texto": "habeas corpus, por se tratar de direito fundamental." },
+        { "letra": "B", "texto": "mandado de segurança individual, único instrumento cabível contra omissão administrativa." },
+        { "letra": "C", "texto": "habeas data, que assegura o conhecimento de informações relativas à pessoa do impetrante constantes de registros ou bancos de dados de entidades governamentais ou de caráter público." },
+        { "letra": "D", "texto": "mandado de injunção, pois há omissão normativa a inviabilizar o exercício do direito." },
+        { "letra": "E", "texto": "ação popular, por envolver interesse do patrimônio público." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) reproduz o art. 5º, LXXII, 'a', da CF: conceder-se-á habeas data 'para assegurar o conhecimento de informações relativas à pessoa do IMPETRANTE, constantes de registros ou bancos de dados de entidades governamentais ou de caráter público'. A alínea 'b' admite o HD 'para a retificação de dados, quando não se prefira fazê-lo por processo sigiloso, judicial ou administrativo'.\n\nCaracterísticas do habeas data (Lei nº 9.507/1997):\n• GRATUITO (art. 5º, LXXVII, CF: 'são gratuitas as ações de habeas corpus e habeas data');\n• exige INTERESSE DE AGIR: é indispensável a prévia recusa administrativa de acesso às informações (Súmula 2 do STJ: 'Não cabe o habeas data (CF, art. 5º, LXXII, letra a) se não houve recusa de informações por parte da autoridade administrativa');\n• o direito deve ser LÍQUIDO E CERTO (Súmula 3 do STJ);\n• pode ser individual ou COLETIVO (art. 12 da Lei 9.507/1997: por pessoa jurídica em nome próprio em favor de seus associados ou membros).\n\n(A) Habeas corpus protege a LIBERDADE DE LOCOMOÇÃO (ir, vir e permanecer), ameaçada por ilegalidade ou abuso de poder.\n(B) O MS é subsidiário: só cabe quando não houver HC nem HD aplicáveis (art. 5º, LXIX: 'direito líquido e certo, não amparado por habeas corpus ou habeas data').\n(D) Mandado de injunção cabe quando a FALTA DE NORMA REGULAMENTADORA tornar inviável o exercício dos direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania (art. 5º, LXXI). Aqui não há omissão normativa — há recusa/omissão administrativa concreta.\n(E) Ação popular (art. 5º, LXXIII) é cabível para anular ato lesivo ao patrimônio público ou de entidade de que o Estado participe, à moralidade administrativa, ao meio ambiente e ao patrimônio histórico e cultural; legitimado é o CIDADÃO.",
+      "mnemonico": "HC = LOCOMOÇÃO | HD = INFORMAÇÃO PESSOAL EM BANCO DE DADOS | MS = DIREITO LÍQUIDO E CERTO (subsidiário) | MI = FALTA DE NORMA | AP = CIDADÃO contra lesão ao patrimônio público.",
+      "leiSeca": ["CF, art. 5º, LXIX, LXXI, LXXII, LXXIII e LXXVII", "Lei nº 9.507/1997", "Súmulas 2 e 3 do STJ"],
+      "tags": ["remédios constitucionais", "habeas data", "mandado de segurança", "mandado de injunção", "ação popular"],
+      "pegadinhas": ["HC e HD são gratuitos; MS e MI NÃO são", "Súmula 2 do STJ: HD exige recusa administrativa prévia"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q005",
+      "topico": "dcon-38",
+      "dificuldade": "dificil",
+      "enunciado": "Durante a tramitação de um projeto de lei na Assembleia Legislativa, a Comissão de Constituição e Justiça emite parecer pela inconstitucionalidade da matéria, por vício de iniciativa. Esse exame configura:",
+      "alternativas": [
+        { "letra": "A", "texto": "controle repressivo concentrado de constitucionalidade, de natureza jurisdicional." },
+        { "letra": "B", "texto": "controle preventivo de constitucionalidade, de natureza política, exercido pelo próprio Poder Legislativo." },
+        { "letra": "C", "texto": "controle difuso incidental, com eficácia erga omnes e efeito vinculante." },
+        { "letra": "D", "texto": "controle repressivo por meio de ação direta de inconstitucionalidade preventiva." },
+        { "letra": "E", "texto": "fiscalização abstrata de normas, privativa do Supremo Tribunal Federal." }
+      ],
+      "gabarito": "B",
+      "comentario": "O CONTROLE PREVENTIVO de constitucionalidade incide sobre PROPOSIÇÕES AINDA NÃO CONVERTIDAS EM LEI (projetos, propostas de emenda) e tem por finalidade IMPEDIR que norma inconstitucional ingresse no ordenamento. Suas formas são:\n\n1. CONTROLE POLÍTICO, exercido dentro do Legislativo:\n   • Parecer das COMISSÕES DE CONSTITUIÇÃO E JUSTIÇA (na ALEPA, a Comissão de Constituição e Justiça e de Redação Final — CCJ), que pode concluir pela inconstitucionalidade e levar ao ARQUIVAMENTO da proposição;\n   • Discussão e votação em Plenário.\n2. CONTROLE JURÍDICO PREVENTIVO, exercido pelo Judiciário em caráter excepcional:\n   • MANDADO DE SEGURANÇA impetrado por PARLAMENTAR (federal, estadual ou distrital) para resguardar o DEVIDO PROCESSO LEGISLATIVO — direito público subjetivo do parlamentar à observância das regras constitucionais do processo legislativo. O STF reconhece essa legitimidade (ex.: MS 32.033, MS 24.645); a legitimação é EXCLUSIVA do parlamentar, não se estendendo a terceiros;\n   • VETO JURÍDICO do Chefe do Executivo (art. 66, §1º, CF: razões de inconstitucionalidade → veto jurídico; razões de contrariedade ao interesse público → veto político).\n3. CONTROLE ADMINISTRATIVO preventivo: pareceres das consultorias/assessorias jurídicas (no caso da ALEPA, a Procuradoria e a Assessoria Técnica) e a análise de legalidade das proposições.\n\n(A) e (D) Erradas: o controle CONCENTRADO é sempre REPRESSIVO (sobre lei ou ato normativo já em vigor). Não existe 'ADI preventiva' no direito brasileiro.\n(C) Errada: o controle difuso tem eficácia INTER PARTES, em regra; a ampliação exige resolução do Senado (art. 52, X) ou, no âmbito do controle concentrado, decisão do STF. Em recurso extraordinário repetitivo e súmula vinculante há efeitos amplos, mas não é o caso.\n(E) Errada: a fiscalização abstrata é exercida pelo STF (em relação à CF) e pelos TRIBUNAIS DE JUSTIÇA (em relação às Constituições estaduais, por meio da representação de inconstitucionalidade — art. 125, §2º, CF).",
+      "mnemonico": "PREVENTIVO = antes da lei nascer (CCJ, veto jurídico, MS de parlamentar). REPRESSIVO = depois (difuso/concreto ou concentrado/abstrato).",
+      "leiSeca": ["CF, art. 58", "CF, art. 66, §1º", "CF, art. 125, §2º", "Resolução ALEPA nº 02/2022"],
+      "tags": ["controle de constitucionalidade", "controle preventivo", "CCJ", "veto jurídico", "exame in abstracto de proposições"],
+      "pegadinhas": ["Não existe ADI preventiva no Brasil", "MS contra projeto de lei só pode ser impetrado por parlamentar"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q006",
+      "topico": "dcon-30",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre o controle concentrado (abstrato) de constitucionalidade no ordenamento brasileiro, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A ação direta de inconstitucionalidade pode ter por objeto lei ou ato normativo federal, estadual ou municipal, em face da Constituição Federal." },
+        { "letra": "B", "texto": "A arguição de descumprimento de preceito fundamental é cabível apenas contra atos normativos federais posteriores à Constituição de 1988." },
+        { "letra": "C", "texto": "A representação de inconstitucionalidade de lei ou ato normativo estadual ou municipal em face da Constituição Estadual é de competência do Tribunal de Justiça do Estado." },
+        { "letra": "D", "texto": "A decisão de mérito em ADI produz efeitos apenas entre as partes do processo." },
+        { "letra": "E", "texto": "O Governador de Estado não tem legitimidade para propor ação direta de inconstitucionalidade." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) reproduz o art. 125, §2º, da CF: 'Cabe aos Estados a instituição de representação de inconstitucionalidade de leis ou atos normativos estaduais ou municipais em face da Constituição Estadual, vedada a atribuição da legitimação para agir a um único órgão.' No Pará, essa representação é julgada pelo TRIBUNAL DE JUSTIÇA DO ESTADO DO PARÁ, e o parâmetro de controle é a CONSTITUIÇÃO ESTADUAL — desde que se trate de norma de REPRODUÇÃO OBRIGATÓRIA ou de princípio simétrico (preponderante entendimento do STF). Este é o tema 'Controle de constitucionalidade no âmbito estadual' previsto no Anexo II.\n\n(A) Errada: o STF, em ADI, NÃO conhece de lei ou ato normativo MUNICIPAL em face da Constituição Federal (o município é ente da Federação, mas a CF não prevê ADI de lei municipal contra ela; o cabimento é via ADPF, ou representação de inconstitucionalidade perante o TJ em face da CE). A ADI no STF tem por objeto lei ou ato normativo FEDERAL ou ESTADUAL (e distrital, quando o DF legisla como Estado).\n(B) Errada: a ADPF (Lei nº 9.882/1999) tem objeto AMPLO — cabe contra atos do Poder Público em geral, inclusive leis e atos normativos MUNICIPAIS, leis PRÉ-CONSTITUCIONAIS, direito já revogado (com controvérsia) e atos não normativos. É cabível quando não houver outro meio eficaz de sanar a lesividade (caráter SUBSIDIÁRIO — art. 4º, §1º).\n(D) Errada: a decisão de mérito em ADI/ADC/ADO produz eficácia CONTRA TODOS (erga omnes) e efeito VINCULANTE em relação aos demais órgãos do Judiciário e à administração pública federal, estadual e municipal (art. 102, §2º, CF; art. 28 da Lei 9.868/1999). Em regra, os efeitos são EX TUNC (retroativos), mas o STF pode, por maioria de 2/3 de seus membros e por razões de segurança jurídica ou excepcional interesse social, modulá-los (art. 27 da Lei 9.868/1999).\n(E) Errada: o Governador de Estado é legitimado UNIVERSAL para propor ADI? Não — é legitimado ESPECIAL: precisa demonstrar PERTINÊNCIA TEMÁTICA (nexo entre o objeto da ação e os interesses do Estado que governa). Legitimados universais (não precisam de pertinência temática): Presidente da República, Mesa do Senado, Mesa da Câmara, PGR, Conselho Federal da OAB, partido político com representação no Congresso Nacional.",
+      "mnemonico": "LEGITIMADOS ADI (art. 102, I, 'a', CF — 'os três mesas, os três presidentes...'): UNIVERSAIS = PR, Mesa SF, Mesa CD, PGR, CFOAB, partido político com representação no CN. ESPECIAIS (exigem pertinência temática) = Governador de Estado/DF, Mesa de Assembleia Legislativa/Câmara Legislativa, confederação sindical ou entidade de classe de âmbito nacional.",
+      "leiSeca": ["CF, art. 102, I, 'a' e §2º", "CF, art. 125, §2º", "Lei nº 9.868/1999, arts. 27 e 28", "Lei nº 9.882/1999"],
+      "tags": ["controle concentrado", "ADI", "ADPF", "representação de inconstitucionalidade estadual", "pertinência temática"],
+      "pegadinhas": ["ADI no STF não alcança lei municipal", "Governador e Mesa de Assembleia são legitimados ESPECIAIS"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q007",
+      "topico": "dcon-16",
+      "dificuldade": "medio",
+      "enunciado": "Sobre a repartição de competências na Federação brasileira, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A competência legislativa concorrente entre União, Estados e Distrito Federal exclui os Municípios, que jamais podem legislar sobre as matérias do art. 24 da Constituição Federal." },
+        { "letra": "B", "texto": "No âmbito da legislação concorrente, a competência da União limitar-se-á a estabelecer normas gerais, e a superveniência de lei federal sobre normas gerais SUSPENDE a eficácia da lei estadual, no que lhe for contrário." },
+        { "letra": "C", "texto": "A competência privativa da União para legislar é absolutamente indelegável aos Estados." },
+        { "letra": "D", "texto": "Compete aos Municípios legislar sobre direito civil, comercial, penal e processual, por força do interesse local." },
+        { "letra": "E", "texto": "A competência remanescente ou residual pertence à União." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz os §§1º e 4º do art. 24 da CF: '§1º No âmbito da legislação concorrente, a competência da União limitar-se-á a estabelecer NORMAS GERAIS. ... §4º A superveniência de lei federal sobre normas gerais SUSPENDE a eficácia da lei estadual, no que lhe for contrário.' Note que a suspensão (e não revogação) é a solução constitucional — se a lei federal for revogada, a lei estadual recupera a eficácia.\n\n(A) Parcialmente errada: o art. 24, caput, enumera União, Estados e DF — os MUNICÍPIOS não estão no rol. Porém, o STF admite que os Municípios legislem sobre essas matérias quando houver INTERESSE PREDOMINANTEMENTE LOCAL, com fundamento no art. 30, I e II (suplementar a legislação federal e estadual no que couber).\n(C) Errada: o parágrafo único do art. 22 permite que LEI COMPLEMENTAR autorize os Estados a legislar sobre QUESTÕES ESPECÍFICAS das matérias de competência legislativa privativa da União.\n(D) Errada: direito civil, comercial, penal e processual é competência PRIVATIVA da União (art. 22, I). Aos Municípios cabe legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber (art. 30, I e II).\n(E) Errada: a competência REMANESCENTE/RESIDUAL é dos ESTADOS (art. 25, §1º: 'São reservadas aos Estados as competências que não lhes sejam vedadas por esta Constituição'). A competência residual em matéria TRIBUTÁRIA é da União (art. 154, I). E aos MUNICÍPIOS cabe o que não for vedado, em assuntos de interesse local.",
+      "mnemonico": "PRIVATIVA da União (art. 22) = delegável por LC (questões específicas) | CONCORRENTE (art. 24) = União edita normas GERAIS; Estados têm competência SUPLEMENTAR; lei federal geral superveniente SUSPENDE a estadual | EXCLUSIVA (art. 21) = administrativa e INDELEGÁVEL | REMANESCENTE = Estados.",
+      "leiSeca": ["CF, arts. 21 a 25", "CF, art. 30, I e II", "CF, art. 154, I"],
+      "tags": ["federalismo", "repartição de competências", "competência concorrente", "normas gerais"],
+      "pegadinhas": ["Privativa DELEGA (por LC); exclusiva NÃO delega", "Superveniência SUSPENDE, não revoga"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q008",
+      "topico": "dcon-23",
+      "dificuldade": "medio",
+      "enunciado": "Sobre o processo legislativo na Constituição Federal, aplicável por simetria aos Estados-membros, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "As leis complementares são aprovadas por maioria simples, presente a maioria absoluta dos membros da Casa." },
+        { "letra": "B", "texto": "A emenda à Constituição será promulgada pelo Presidente da República, com o referendo do Presidente do Congresso Nacional." },
+        { "letra": "C", "texto": "A iniciativa popular de lei federal exige a subscrição de, no mínimo, um por cento do eleitorado nacional, distribuído pelo menos por cinco Estados, com não menos de três décimos por cento dos eleitores de cada um deles." },
+        { "letra": "D", "texto": "É permitida a edição de medida provisória sobre matéria de direito processual civil, desde que em caso de relevância e urgência." },
+        { "letra": "E", "texto": "A matéria constante de projeto de lei rejeitado poderá ser objeto de novo projeto, na mesma sessão legislativa, mediante proposta de qualquer parlamentar." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) reproduz o art. 61, §2º, da CF: 'A iniciativa popular pode ser exercida pela apresentação à Câmara dos Deputados de projeto de lei subscrito por, no mínimo, um por cento do eleitorado nacional, distribuído pelo menos por cinco Estados, com não menos de três décimos por cento dos eleitores de cada um deles.'\n\n(A) Errada: LEI COMPLEMENTAR exige MAIORIA ABSOLUTA (art. 69: 'As leis complementares serão aprovadas por maioria absoluta'). Lei ORDINÁRIA exige MAIORIA SIMPLES ou RELATIVA (art. 47: maioria dos votos, presente a maioria absoluta de seus membros).\n(B) Errada: a emenda à Constituição é PROMULGADA pelas Mesas da Câmara dos Deputados e do Senado Federal, com o respectivo número de ordem (art. 60, §3º). Não há sanção nem veto em PEC.\n(D) Errada: o art. 62, §1º, I, 'b', VEDA medida provisória sobre matéria de direito PENAL, PROCESSUAL PENAL e PROCESSUAL CIVIL. Também são vedadas: nacionalidade, cidadania, direitos políticos, partidos políticos e direito eleitoral (alínea 'a'); organização do Poder Judiciário e do Ministério Público, carreira e garantia de seus membros (alínea 'c'); planos plurianuais, diretrizes orçamentárias, orçamento e créditos adicionais e suplementares, ressalvado o previsto no art. 167, §3º (alínea 'd').\n(E) Errada: o art. 67 dispõe que 'a matéria constante de projeto de lei rejeitado somente poderá constituir objeto de novo projeto, na mesma sessão legislativa, mediante proposta da MAIORIA ABSOLUTA dos membros de qualquer das Casas do Congresso Nacional'.",
+      "mnemonico": "QUÓRUNS: ordinária = maioria SIMPLES | complementar = maioria ABSOLUTA | emenda = 3/5 em 2 turnos | rejeição de veto = maioria ABSOLUTA | rejeição de parecer prévio do TC = 2/3 | novo projeto após rejeição = proposta da MAIORIA ABSOLUTA.",
+      "leiSeca": ["CF, art. 47", "CF, art. 60, §3º", "CF, art. 61, §2º", "CF, art. 62, §1º", "CF, art. 67", "CF, art. 69"],
+      "tags": ["processo legislativo", "iniciativa popular", "lei complementar", "medida provisória", "quórum"],
+      "pegadinhas": ["MP é vedada em direito processual civil e penal", "PEC não sofre sanção nem veto"],
+      "origem": "autoral"
+    },
+    {
+      "id": "dcon-q009",
+      "topico": "dcon-20",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre a intervenção federal nos Estados, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A decretação da intervenção depende, em todas as hipóteses, de aprovação prévia do Congresso Nacional." },
+        { "letra": "B", "texto": "No caso de provimento, pelo Supremo Tribunal Federal, de representação do Procurador-Geral da República fundada no art. 34, VII (princípios sensíveis), é dispensada a apreciação pelo Congresso Nacional." },
+        { "letra": "C", "texto": "O decreto de intervenção não precisa especificar a amplitude, o prazo e as condições de execução." },
+        { "letra": "D", "texto": "A intervenção pode ser decretada pelo Presidente da República independentemente de solicitação ou requisição nas hipóteses de desobediência a ordem ou decisão judiciária." },
+        { "letra": "E", "texto": "Cessados os motivos da intervenção, as autoridades afastadas de seus cargos não retornam, em nenhuma hipótese." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 36, III, combinado com o §3º, da CF: 'A decretação da intervenção dependerá: ... III - de provimento, pelo Supremo Tribunal Federal, de representação do Procurador-Geral da República, na hipótese do art. 34, VII, e no caso de recusa à execução de lei federal.' E o §3º: 'Nos casos do art. 34, VI e VII, ou do art. 35, IV, DISPENSADA a apreciação pelo Congresso Nacional, o decreto limitar-se-á a suspender a execução do ato impugnado, se essa medida bastar ao restabelecimento da normalidade.'\n\nOs PRINCÍPIOS SENSÍVEIS (art. 34, VII) são: forma republicana, sistema representativo e regime democrático; direitos da pessoa humana; autonomia municipal; prestação de contas da administração pública, direta e indireta; aplicação do mínimo exigido da receita resultante de impostos estaduais, compreendida a proveniente de transferências, na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde. Sua violação autoriza a chamada ADI INTERVENTIVA (art. 36, III, c/c art. 34, VII), de competência do STF, com legitimidade exclusiva do PROCURADOR-GERAL DA REPÚBLICA.\n\n(A) Errada: o controle político (apreciação pelo Congresso em 24 horas — art. 36, §1º) é exigido apenas nas hipóteses do art. 34, I a V, VIII a XII. É DISPENSADO nos casos do art. 34, VI e VII.\n(C) Errada: o art. 36, §1º, exige que o decreto ESPECIFIQUE a amplitude, o prazo e as condições de execução e, se couber, nomeie o interventor.\n(D) Errada: no caso de desobediência a ordem ou decisão judiciária, a decretação depende de REQUISIÇÃO do STF, do STJ ou do TSE (art. 36, II). Nas hipóteses de coação a Poderes (art. 34, IV), depende de SOLICITAÇÃO do Poder Legislativo ou Executivo coacto ou impedido, ou de REQUISIÇÃO do STF se a coação for contra o Judiciário (art. 36, I).\n(E) Errada: o art. 36, §4º, dispõe que 'cessados os motivos da intervenção, as autoridades afastadas de seus cargos a estes VOLTARÃO, salvo impedimento legal'.",
+      "mnemonico": "SOLICITAÇÃO = o Poder pede (coação/impedimento de Poderes). REQUISIÇÃO = o Tribunal manda (desobediência a decisão judicial). REPRESENTAÇÃO DO PGR = princípios sensíveis (ADI interventiva). Dispensado o Congresso: art. 34, VI e VII.",
+      "leiSeca": ["CF, art. 34", "CF, art. 35", "CF, art. 36 e §§"],
+      "tags": ["intervenção federal", "princípios sensíveis", "ADI interventiva", "federalismo"],
+      "pegadinhas": ["Solicitação x requisição x representação", "Congresso é dispensado apenas nos casos dos incisos VI e VII do art. 34"],
+      "origem": "autoral"
+    }
+  ]
+}

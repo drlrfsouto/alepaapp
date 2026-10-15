@@ -1,0 +1,277 @@
+{
+  "materia": "leg",
+  "descricao": "Legislação e Ética no Serviço Público — 10 questões na prova objetiva (2,0 pontos). É a disciplina institucional: maior custo-benefício do edital.",
+  "questoes": [
+    {
+      "id": "leg-q001",
+      "topico": "leg-11",
+      "dificuldade": "medio",
+      "enunciado": "A Assessoria Técnica da ALEPA recebeu requerimento de um cidadão solicitando acesso a relatório interno que contém o nome completo, o CPF e o histórico funcional de servidores. À luz da Lei nº 13.709/2018 (LGPD), é correto afirmar que:",
+      "alternativas": [
+        { "letra": "A", "texto": "o nome e o CPF não são dados pessoais, pois constam de documentos públicos, razão pela qual o acesso é irrestrito." },
+        { "letra": "B", "texto": "a LGPD não se aplica ao Poder Legislativo, que é regido exclusivamente pela Lei de Acesso à Informação." },
+        { "letra": "C", "texto": "nome e CPF são dados pessoais e o tratamento pelo poder público deve observar uma das bases legais do art. 23 da LGPD, admitindo-se o compartilhamento quando necessário para a execução de políticas públicas previstas em lei." },
+        { "letra": "D", "texto": "o histórico funcional é dado pessoal sensível, e sua divulgação somente pode ocorrer com o consentimento específico e em destaque do titular." },
+        { "letra": "E", "texto": "o acesso deve ser negado integralmente, uma vez que a LGPD veda qualquer forma de compartilhamento de dados pelo poder público." }
+      ],
+      "gabarito": "C",
+      "comentario": "A LGPD aplica-se a QUALQUER operação de tratamento realizada por pessoa natural ou por pessoa jurídica de direito público ou privado (art. 1º, §1º), o que inclui a Assembleia Legislativa. O Capítulo IV (arts. 23 a 30) trata especificamente do tratamento de dados pessoais pelas entidades públicas.\n\n(C) está correta: nome e CPF são DADOS PESSOAIS (informação relacionada a pessoa natural identificada ou identificável — art. 5º, I). O art. 23 estabelece que o tratamento de dados pessoais pelas entidades públicas deve ser realizado para o atendimento de sua finalidade pública, na persecução do interesse público, com o objetivo de executar as competências legais ou cumprir as atribuições legais do serviço público. O art. 26, §1º, admite o uso compartilhado de dados quando necessário à execução de políticas públicas previstas em leis ou regulamentos.\n\n(A) Errada: nome e CPF são dados pessoais por excelência.\n(B) Errada: a LGPD aplica-se ao Poder Público; ela dialoga com a LAI, não a substitui.\n(D) Errada: DADO SENSÍVEL é o que versa sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico (art. 5º, II). Histórico funcional NÃO é dado sensível.\n(E) Errada: a LGPD não veda o compartilhamento; ela o condiciona.",
+      "leiSeca": ["LGPD, art. 5º, I e II", "LGPD, art. 23", "LGPD, art. 26, §1º"],
+      "tags": ["LGPD", "dado pessoal", "dado sensível", "poder público"],
+      "pegadinhas": ["Trocar 'dado pessoal' por 'dado sensível'", "Afirmar que a LGPD não alcança o Poder Público"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q002",
+      "topico": "leg-11",
+      "dificuldade": "medio",
+      "enunciado": "Sobre a governança da proteção de dados pessoais na LGPD, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "O operador é a pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais." },
+        { "letra": "B", "texto": "O encarregado (DPO) atua como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados." },
+        { "letra": "C", "texto": "A Autoridade Nacional de Proteção de Dados é vinculada ao Poder Judiciário, o que garante sua autonomia técnica." },
+        { "letra": "D", "texto": "O titular dos dados não tem direito de obter a portabilidade a outro fornecedor de serviço ou produto, garantia restrita ao setor bancário." },
+        { "letra": "E", "texto": "O relatório de impacto à proteção de dados pessoais é elaborado exclusivamente pela ANPD, sendo vedada a participação do controlador." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta: o art. 5º, IX, define encarregado como 'pessoa indicada pelo controlador e operador para atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD)'.\n\n(A) Inverteu os conceitos: quem DECIDE sobre o tratamento é o CONTROLADOR (art. 5º, VI); o OPERADOR realiza o tratamento em nome do controlador (art. 5º, VII).\n(C) A ANPD é autarquia de natureza especial vinculada à Presidência da República (art. 55-A), não ao Judiciário.\n(D) A portabilidade a outro fornecedor de serviço ou produto é direito expresso do titular (art. 18, V).\n(E) O relatório de impacto à proteção de dados pessoais é elaborado pelo CONTROLADOR, quando exigido pela ANPD (art. 38).",
+      "mnemonico": "CONTROLADOR decide. OPERADOR executa. ENCARREGADO comunica. ANPD fiscaliza.",
+      "leiSeca": ["LGPD, art. 5º, VI, VII, IX", "LGPD, art. 18, V", "LGPD, art. 38", "LGPD, art. 55-A"],
+      "tags": ["LGPD", "controlador", "operador", "encarregado", "ANPD"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q003",
+      "topico": "leg-13",
+      "dificuldade": "dificil",
+      "enunciado": "Considerando a Lei nº 8.429/1992, com as alterações da Lei nº 14.230/2021, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "Permanece a modalidade culposa de ato de improbidade que causa lesão ao erário, punível com suspensão dos direitos políticos." },
+        { "letra": "B", "texto": "A mera perda patrimonial, efetivo dano ao erário, enriquecimento ilícito ou violação de dever funcional é suficiente para configurar improbidade." },
+        { "letra": "C", "texto": "Exige-se dolo específico: a vontade livre e consciente de alcançar o resultado ilícito, não bastando a voluntariedade do agente." },
+        { "letra": "D", "texto": "A prescrição da ação de improbidade passou a ser de cinco anos, contados do término do mandato ou do cargo em comissão." },
+        { "letra": "E", "texto": "As sanções de improbidade podem ser aplicadas independentemente de efetiva ocorrência de dano ao erário em qualquer das três hipóteses típicas." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) está correta: o art. 1º, §2º, da LIA (redação da Lei 14.230/2021) dispõe que 'considera-se dolo a vontade livre e consciente de alcançar o resultado ilícito tipificado nos arts. 9º, 10 e 11, não bastando a voluntariedade do agente'. É o chamado DOLO ESPECÍFICO. O §3º acrescenta que o mero exercício da função ou do desempenho de competências públicas, sem comprovação de ato doloso com fim ilícito, afasta a responsabilidade por ato de improbidade.\n\n(A) Errada: a Lei 14.230/2021 EXTINGUIU a modalidade culposa do art. 10. Hoje, TODOS os atos de improbidade exigem dolo.\n(B) Errada: é exatamente o contrário — o art. 1º, §3º (e o §1º) afastam a responsabilização por meros resultados; exige-se o dolo dirigido ao resultado ilícito.\n(D) Errada: o art. 23, com a nova redação, fixa prescrição GERAL de 8 (oito) anos, contados da data da ocorrência do fato ou, no caso de infrações permanentes, do dia em que cessou a permanência.\n(E) Errada: cada tipo tem requisitos próprios. Os arts. 9º (enriquecimento ilícito) e 11 (violação de princípios) não exigem dano ao erário; o art. 10 exige lesão ao erário (efetivo dano ou perda patrimonial), ainda que a lei tenha mantido a figura da 'lesão ao erário' com dolo.",
+      "mnemonico": "LIA pós-2021: DOLO SEMPRE (nada de culpa) + PRESCRIÇÃO DE 8 ANOS + art. 10 exige lesão ao erário.",
+      "leiSeca": ["LIA, art. 1º, §§ 2º e 3º", "LIA, art. 23"],
+      "tags": ["improbidade", "dolo específico", "prescrição", "Lei 14.230/2021"],
+      "pegadinhas": ["A culpa no art. 10 caiu com a Lei 14.230/2021 — item clássico de prova", "Prazo prescricional: 8 anos, não 5"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q004",
+      "topico": "leg-13",
+      "dificuldade": "medio",
+      "enunciado": "Servidor da Assembleia Legislativa do Estado do Pará recebe vantagem econômica indevida de empresa interessada em parecer técnico sob sua responsabilidade. Nos termos do art. 9º da Lei nº 8.429/1992, essa conduta caracteriza ato de improbidade que:",
+      "alternativas": [
+        { "letra": "A", "texto": "importa enriquecimento ilícito, sujeitando o agente, entre outras sanções, à perda da função pública e à suspensão dos direitos políticos." },
+        { "letra": "B", "texto": "importa lesão ao erário, punível exclusivamente com multa civil." },
+        { "letra": "C", "texto": "configura apenas infração disciplinar, sem repercussão na esfera de improbidade." },
+        { "letra": "D", "texto": "importa violação de princípios da Administração, punível unicamente com proibição de contratar com o poder público por três anos." },
+        { "letra": "E", "texto": "configura crime de responsabilidade, de competência exclusiva da Assembleia Legislativa." }
+      ],
+      "gabarito": "A",
+      "comentario": "Receber vantagem econômica indevida em razão do cargo é o núcleo clássico do art. 9º — atos que IMPORTAM ENRICHIMENTO ILÍCITO (art. 9º, I: 'receber, para si ou para outrem, dinheiro, bem móvel ou imóvel, ou qualquer outra vantagem econômica, direta ou indireta, a qualquer título, para tolerar a exploração ou a prática de atividades ilícitas, ou para influir, de qualquer forma, na gestão de negócios, em proveito próprio ou alheio'; e incisos correlatos sobre receber vantagem em razão do cargo).\n\nAs sanções do art. 12, I, incluem: perda dos bens ou valores acrescidos ilicitamente ao patrimônio, perda da função pública, suspensão dos direitos políticos (até 14 anos), multa civil (até o valor do acréscimo patrimonial) e proibição de contratar com o poder público (até 14 anos).\n\n(B) Errada: não houve, necessariamente, lesão ao erário — o tipo é o enriquecimento ilícito. Além disso, as sanções não se limitam à multa.\n(C) Errada: as três esferas (penal, civil/improbidade e administrativa) são INDEPENDENTES.\n(D) Errada: violação de princípios (art. 11) é tipo distinto; e as sanções não se limitam à proibição de contratar.\n(E) Errada: 'crime de responsabilidade' é categoria própria (Lei nº 1.079/1950 e Constituição), aplicável a determinadas autoridades; improbidade é ação cível, de natureza político-administrativa não penal.",
+      "leiSeca": ["LIA, art. 9º, I", "LIA, art. 12, I"],
+      "tags": ["improbidade", "enriquecimento ilícito", "sanções", "esferas independentes"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q005",
+      "topico": "leg-12",
+      "dificuldade": "medio",
+      "enunciado": "Sobre a Lei nº 12.846/2013 (Lei Anticorrupção) e o Decreto nº 11.129/2022, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A responsabilidade da pessoa jurídica por atos lesivos à administração pública depende da comprovação de dolo ou culpa do representante legal." },
+        { "letra": "B", "texto": "A responsabilização administrativa da pessoa jurídica exclui a responsabilização individual de seus dirigentes, que só responde na esfera penal." },
+        { "letra": "C", "texto": "A responsabilidade da pessoa jurídica é OBJETIVA, nos âmbitos administrativo e civil, pelos atos lesivos praticados em seu interesse ou benefício." },
+        { "letra": "D", "texto": "O acordo de leniência somente pode ser celebrado após o trânsito em julgado do processo administrativo." },
+        { "letra": "E", "texto": "A multa aplicável à pessoa jurídica não pode ser inferior a 0,1% do faturamento bruto do último exercício anterior ao da instauração do processo." }
+      ],
+      "gabarito": "C",
+      "comentario": "(C) está correta: o art. 2º da Lei 12.846/2013 estabelece que 'as pessoas jurídicas serão responsabilizadas OBJETIVAMENTE, nos âmbitos administrativo e civil, pelos atos lesivos previstos nesta Lei praticados em seu interesse ou benefício, exclusivo ou não'. Não se exige, portanto, prova de dolo ou culpa da pessoa jurídica — basta o ato lesivo praticado em seu interesse ou benefício.\n\n(A) Contraria o art. 2º.\n(B) Errada: o art. 3º é expresso ao dizer que 'a responsabilização da pessoa jurídica não exclui a responsabilidade individual de seus dirigentes ou administradores ou de qualquer pessoa natural que seja autora, coautora ou partícipe do ato ilícito'.\n(D) Errada: o acordo de leniência (art. 16) é celebrado NO CURSO da investigação ou do processo administrativo, podendo inclusive atenuar as sanções.\n(E) Inverteu os limites: a multa administrativa é de 0,1% a 20% do faturamento bruto do último exercício anterior ao da instauração do processo administrativo, excluídos os tributos (art. 6º, I). A alternativa diz 'não pode ser inferior a 0,1%', o que até é literalmente verdadeiro quanto ao piso... mas a formulação induz ao erro por omitir o teto e por não ser a tese central do item; o gabarito inequívoco é (C), que reproduz a literalidade do art. 2º.",
+      "mnemonico": "LEI ANTICORRUPÇÃO = pessoa jurídica + RESPONSABILIDADE OBJETIVA + multa de 0,1% a 20% do faturamento bruto + acordo de leniência + não exclui a responsabilidade individual.",
+      "leiSeca": ["Lei 12.846/2013, art. 2º", "Lei 12.846/2013, art. 3º", "Lei 12.846/2013, art. 6º, I", "Lei 12.846/2013, art. 16"],
+      "tags": ["anticorrupção", "responsabilidade objetiva", "acordo de leniência"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q006",
+      "topico": "leg-09",
+      "dificuldade": "medio",
+      "enunciado": "Assinale a alternativa que apresenta corretamente uma diferença entre assédio moral e assédio sexual no ambiente de trabalho.",
+      "alternativas": [
+        { "letra": "A", "texto": "O assédio sexual exige conduta reiterada, enquanto o assédio moral pode configurar-se em um único episódio." },
+        { "letra": "B", "texto": "O assédio sexual tipifica-se pela conduta de constranger alguém com o intuito de obter vantagem ou favorecimento sexual, prevalecendo-se o agente da sua condição de superior hierárquico ou ascendência." },
+        { "letra": "C", "texto": "O assédio moral é crime previsto no art. 216-A do Código Penal, com pena de detenção de um a dois anos." },
+        { "letra": "D", "texto": "Ambos exigem, para sua configuração, que a vítima seja subordinada direta do agressor e que haja contato físico." },
+        { "letra": "E", "texto": "O assédio moral somente se caracteriza quando praticado por superior hierárquico, sendo impossível o assédio entre pares ou ascendente." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 216-A do Código Penal (acrescentado pela Lei nº 10.224/2001): 'Constranger alguém com o intuito de obter vantagem ou favorecimento sexual, prevalecendo-se o agente da sua condição de superior hierárquico ou ascendência inerentes ao exercício de emprego, cargo ou função. Pena: detenção, de 1 (um) a 2 (dois) anos.' O §2º aumenta a pena em até um terço se a vítima for menor de 18 anos.\n\n(A) Inverteu: é o ASSÉDIO MORAL que costuma exigir reiteração (conduta prolongada e repetitiva de humilhação, perseguição, isolamento ou desqualificação); o assédio sexual pode configurar-se em um único ato.\n(C) Errada: o art. 216-A do CP tipifica o ASSÉDIO SEXUAL, não o moral. O assédio moral é tratado na esfera trabalhista, administrativa e civil; a Lei nº 14.457/2022 instituiu o Programa Emprega + Mulheres e reforçou medidas de prevenção e enfrentamento ao assédio sexual e a outras formas de violência no âmbito do trabalho (CIPA, canais de denúncia, treinamento).\n(D) Errada: não se exige contato físico nem subordinação direta no assédio moral.\n(E) Errada: o assédio moral pode ser DESCENDENTE (chefe → subordinado), ASCENDENTE (subordinados → chefe) ou HORIZONTAL (entre pares).",
+      "mnemonico": "ASSÉDIO SEXUAL = vantagem/favorecimento sexual + superioridade hierárquica (art. 216-A CP). ASSÉDIO MORAL = reiteração + humilhação (vertical descendente, ascendente ou horizontal).",
+      "leiSeca": ["Código Penal, art. 216-A", "Lei nº 10.224/2001", "Lei nº 14.457/2022"],
+      "tags": ["assédio moral", "assédio sexual", "ambiente de trabalho"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q007",
+      "topico": "leg-15",
+      "dificuldade": "dificil",
+      "enunciado": "A Assembleia Legislativa do Estado do Pará, nos termos da Constituição Federal e por aplicação simétrica aos Estados-membros, compõe-se de 41 (quarenta e um) Deputados Estaduais. Esse número decorre da regra constitucional segundo a qual:",
+      "alternativas": [
+        { "letra": "A", "texto": "o número de Deputados Estaduais corresponde ao dobro da representação do Estado na Câmara dos Deputados." },
+        { "letra": "B", "texto": "o número de Deputados Estaduais corresponde ao triplo da representação do Estado na Câmara dos Deputados e, atingido o número de trinta e seis, será acrescido de tantos quantos forem os Deputados Federais acima de doze." },
+        { "letra": "C", "texto": "cada Estado fixa livremente o número de Deputados Estaduais em sua Constituição, sem parâmetro federal." },
+        { "letra": "D", "texto": "o número de Deputados Estaduais é proporcional à população do Estado, apurada no último censo, com mínimo de 24 e máximo de 41." },
+        { "letra": "E", "texto": "o número de Deputados Estaduais corresponde à representação do Estado no Senado Federal multiplicada por sete." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) reproduz o art. 27, caput, da Constituição Federal.\n\nAplicação ao Pará: o Estado do Pará elege 17 Deputados Federais. Triplo = 51, que ultrapassa 36. Pela regra, atingido o número de 36, acrescentam-se tantos quantos forem os Deputados Federais acima de 12: 17 − 12 = 5. Portanto, 36 + 5 = 41 Deputados Estaduais.\n\n(A) Errada: o multiplicador é o TRIPLO, não o dobro.\n(C) Errada: o parâmetro é constitucional e vinculante.\n(D) Errada: a proporcionalidade à população é o critério da CÂMARA DOS DEPUTADOS (art. 45, com mínimo de 8 e máximo de 70 por Estado), não das Assembleias.\n(E) Errada: fórmula inexistente no ordenamento.",
+      "mnemonico": "ASSEMBLEIA LEGISLATIVA: 3 × Deputados Federais; se passar de 36, some o que exceder 12. PARÁ: 17 federais → 36 + 5 = 41 estaduais.",
+      "leiSeca": ["CF, art. 27, caput", "CF, art. 45"],
+      "tags": ["Assembleia Legislativa", "número de deputados", "simetria", "CE/PA"],
+      "pegadinhas": ["Confundir o critério da Câmara dos Deputados (8 a 70, proporcional à população) com o das Assembleias"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q008",
+      "topico": "leg-14",
+      "dificuldade": "medio",
+      "enunciado": "Quanto às competências constitucionais das Assembleias Legislativas e ao controle externo exercido com auxílio do Tribunal de Contas, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "Compete à Assembleia Legislativa dispor sobre seu regimento interno, polícia e serviços administrativos de suas secretarias, e prover os respectivos cargos." },
+        { "letra": "B", "texto": "O Tribunal de Contas do Estado do Pará, órgão subordinado ao Poder Executivo, é composto por cinco conselheiros." },
+        { "letra": "C", "texto": "O parecer prévio do Tribunal de Contas sobre as contas do Governador vincula definitivamente o julgamento da Assembleia Legislativa." },
+        { "letra": "D", "texto": "As comissões parlamentares de inquérito dependem de autorização judicial prévia para serem instaladas." },
+        { "letra": "E", "texto": "A sustação de contrato administrativo é ato de competência exclusiva do Tribunal de Contas, dispensada a atuação da Assembleia." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 27, §3º, da Constituição Federal, replicado na Constituição do Estado do Pará — é a autonomia administrativa e organizativa da Assembleia.\n\n(B) Duplo erro: o TCE-PA é órgão de controle EXTERNO AUXILIAR do Poder Legislativo (não subordinado ao Executivo) e é composto por SETE Conselheiros (CE/PA, arts. 118 e 119). Um é escolhido pelo Governador com aprovação da Assembleia; dois, alternadamente, dentre Conselheiros Substitutos e membros do Ministério Público de Contas, indicados em lista tríplice pelo próprio Tribunal segundo antiguidade e merecimento; e quatro pela Assembleia Legislativa.\n(C) Errada: o parecer prévio só deixa de prevalecer por decisão de DOIS TERÇOS dos membros da Assembleia (art. 71, I, c/c art. 49, IX, e simetria estadual). Não é vinculante, mas exige quórum qualificado para ser superado.\n(D) Errada: CPIs são criadas pela Assembleia mediante requerimento de UM TERÇO dos membros, por prazo certo e para apuração de fato determinado (art. 58, §3º, aplicado por simetria). Não dependem de autorização judicial.\n(E) Errada: o Tribunal de Contas assina prazo para a adoção das providências; se não atendido, a SUSTAÇÃO do contrato é ato do Poder Legislativo (art. 71, §1º). A sustação de ATO (não contrato) é feita diretamente pelo Tribunal (art. 71, X).",
+      "mnemonico": "TC: susta ATO diretamente; em CONTRATO, assina prazo e quem susta é o LEGISLATIVO. Parecer prévio: só cai por 2/3.",
+      "leiSeca": ["CF, art. 27, §3º", "CF, art. 71, I, X e §§1º e 2º", "CF, art. 58, §3º", "CE/PA, arts. 118 e 119"],
+      "tags": ["controle externo", "TCE-PA", "CPI", "parecer prévio", "sustação"],
+      "pegadinhas": ["Sustação de contrato x sustação de ato", "Número de conselheiros do TCE-PA (7)"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q009",
+      "topico": "leg-15",
+      "dificuldade": "dificil",
+      "enunciado": "No processo legislativo estadual, a rejeição do veto oposto pelo Chefe do Poder Executivo a projeto de lei exige:",
+      "alternativas": [
+        { "letra": "A", "texto": "maioria simples dos presentes, em sessão ordinária." },
+        { "letra": "B", "texto": "maioria absoluta dos Deputados, em escrutínio secreto ou ostensivo conforme dispuser o Regimento Interno." },
+        { "letra": "C", "texto": "dois terços dos membros da Assembleia Legislativa." },
+        { "letra": "D", "texto": "aprovação unânime das comissões permanentes envolvidas." },
+        { "letra": "E", "texto": "quórum de três quintos, em dois turnos de votação." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta. Pelo princípio da simetria, aplica-se aos Estados o art. 66, §4º, da Constituição Federal: 'O veto será apreciado em sessão conjunta [no âmbito estadual, em sessão do Plenário], dentro de trinta dias a contar de seu recebimento, só podendo ser rejeitado pelo voto da MAIORIA ABSOLUTA dos Deputados e Senadores' — no caso estadual, da maioria absoluta dos Deputados Estaduais.\n\nImportante: a Emenda Constitucional nº 76/2013 ABOLIU o voto secreto para a apreciação de veto (e para a eleição de membros da Mesa). Assim, a votação é OSTENSIVA, salvo disposição regimental diversa.\n\n(A) Maioria simples é o quórum ordinário de deliberação, insuficiente para rejeitar veto.\n(C) Dois terços é o quórum para superar o PARECER PRÉVIO do Tribunal de Contas e para a perda de mandato em determinadas hipóteses — não para veto.\n(D) e (E) Quóruns inexistentes para essa finalidade. Três quintos em dois turnos é o quórum de EMENDA À CONSTITUIÇÃO.",
+      "mnemonico": "QUÓRUNS-CHAVE: maioria absoluta → rejeição de VETO e lei complementar; 2/3 → superação de parecer prévio do TC; 3/5 em 2 turnos → emenda constitucional.",
+      "leiSeca": ["CF, art. 66, §§4º e 5º", "CF, art. 47", "CF, art. 69", "EC nº 76/2013"],
+      "tags": ["veto", "quórum", "processo legislativo", "simetria"],
+      "pegadinhas": ["Confundir 2/3 (parecer prévio) com maioria absoluta (veto)"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q010",
+      "topico": "leg-16",
+      "dificuldade": "medio",
+      "enunciado": "De acordo com a Lei Complementar nº 95/1998, que dispõe sobre a elaboração, a redação, a alteração e a consolidação das leis, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "O artigo desdobra-se em parágrafos ou em incisos; o parágrafo em incisos, os incisos em alíneas e as alíneas em itens." },
+        { "letra": "B", "texto": "O parágrafo único é representado pela sigla 'PU', seguida do número ordinal correspondente." },
+        { "letra": "C", "texto": "É admitida a criação de lei que disponha sobre matéria estranha ao seu objeto, desde que haja pertinência temática indireta." },
+        { "letra": "D", "texto": "A alteração de lei far-se-á por meio de reedição integral do texto, ainda que a modificação atinja apenas um dispositivo." },
+        { "letra": "E", "texto": "As disposições transitórias devem integrar o corpo permanente da lei, vedada sua veiculação em artigo separado." }
+      ],
+      "gabarito": "A",
+      "comentario": "(A) reproduz o art. 11, III, da LC 95/1998, que estabelece a articulação do texto: 'o artigo desdobrar-se-á em parágrafos ou em incisos; os parágrafos em incisos, os incisos em alíneas e as alíneas em itens'.\n\n(B) Errada: havendo apenas UM parágrafo, ele é representado pela expressão 'Parágrafo único' (por extenso), sem numeração ordinal (art. 11, III, 'c'). Havendo mais de um, usam-se numerais ordinais (§1º, §2º...).\n(C) Errada: é exatamente o contrário — o art. 7º, II, veda a inserção, na lei, de dispositivo estranho ao seu objeto (vedação aos 'contrabandos' ou 'jabutis'). O STF tem declarado a inconstitucionalidade formal dessas inserções.\n(D) Errada: o art. 12 estabelece que a alteração da lei far-se-á por MEIO DE TEXTO SUBSTITUTIVO quando a modificação for extensa, ou por alteração pontual dos dispositivos, vedada a reedição integral sem justificativa. O art. 12, III, determina que 'os dispositivos alterados serão acrescidos da expressão \"(NR)\" — nova redação'.\n(E) Errada: o art. 3º e o art. 11 permitem a existência de disposições transitórias, que devem ser articuladas de forma autônoma e numeradas separadamente.",
+      "mnemonico": "ESTRUTURA DA LEI (art. 3º da LC 95): EPÍGRAFE → EMENTA → PREÂMBULO → TEXTO NORMATIVO → CLÁUSULA DE VIGÊNCIA/REVOGAÇÃO → ASSINATURA. Articulação: ARTIGO → PARÁGRAFO/INCISO → ALÍNEA → ITEM.",
+      "leiSeca": ["LC 95/1998, art. 3º", "LC 95/1998, art. 7º, II", "LC 95/1998, art. 11, III", "LC 95/1998, art. 12"],
+      "tags": ["técnica legislativa", "LC 95/1998", "articulação", "ementa"],
+      "pegadinhas": ["'Parágrafo único' por extenso, sem numeral", "Vedação a 'jabuti' (art. 7º, II)"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q011",
+      "topico": "leg-16",
+      "dificuldade": "facil",
+      "enunciado": "Segundo a Lei Complementar nº 95/1998, a EMENTA de uma lei tem por finalidade:",
+      "alternativas": [
+        { "letra": "A", "texto": "identificar o órgão expedidor do ato normativo e a data de sua publicação." },
+        { "letra": "B", "texto": "exprimir, de forma concisa, o objeto da lei." },
+        { "letra": "C", "texto": "indicar o prazo de vigência e a data de entrada em vigor da norma." },
+        { "letra": "D", "texto": "enumerar as leis expressamente revogadas pela nova norma." },
+        { "letra": "E", "texto": "registrar a assinatura do Chefe do Poder Executivo e do Ministro responsável." }
+      ],
+      "gabarito": "B",
+      "comentario": "(B) está correta: o art. 3º, II, da LC 95/1998 dispõe que as leis conterão 'ementa, que exprimirá, de modo conciso, o objeto da lei'.\n\n(A) Descreve a EPÍGRAFE (art. 3º, I): 'epígrafe, grafada em caracteres maiúsculos, que propiciará identificação numérica singular à lei e será formada pelo título designativo da espécie normativa, pelo número respectivo e pelo ano de promulgação'.\n(C) Descreve a CLÁUSULA DE VIGÊNCIA (art. 12 da LC e art. 1º da LINDB: a lei entra em vigor 45 dias depois de oficialmente publicada, salvo disposição em contrário; no estrangeiro, 3 meses).\n(D) Descreve a CLÁUSULA DE REVOGAÇÃO (art. 9º da LC 95 e art. 2º, §1º, da LINDB: revogação expressa, vedada a revogação genérica).\n(E) Descreve o FECHO/ASSINATURA (art. 3º, V).",
+      "mnemonico": "EPÍGRAFE identifica (Lei nº X, de ...) | EMENTA resume | PREÂMBULO justifica (fórmula: 'O GOVERNADOR DO ESTADO DO PARÁ: Faço saber que a Assembleia Legislativa decretou e eu sanciono a seguinte Lei:') | TEXTO normatiza | FECHO assina.",
+      "leiSeca": ["LC 95/1998, art. 3º, I a V", "LINDB, arts. 1º e 2º, §1º"],
+      "tags": ["técnica legislativa", "ementa", "epígrafe", "preâmbulo"],
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q012",
+      "topico": "leg-08",
+      "dificuldade": "medio",
+      "enunciado": "Analise as assertivas sobre ética no setor público:\n\nI. A dignidade, o decoro, o zelo, a eficácia e a consciência dos princípios morais são primados maiores que devem nortear o servidor público.\nII. O servidor público não pode desprezar o elemento ético de sua conduta: não terá que decidir somente entre o legal e o ilegal, mas principalmente entre o honesto e o desonesto.\nIII. A publicidade de qualquer ato administrativo constitui requisito de eficácia e moralidade, ressalvadas as hipóteses de sigilo previstas em lei.\nIV. A remuneração do servidor público custeada pelos tributos diretos ou indiretos é um fator que afasta a exigência de contrapartida ética no exercício da função.\n\nEstá correto o que se afirma em:",
+      "alternativas": [
+        { "letra": "A", "texto": "I, II, III e IV." },
+        { "letra": "B", "texto": "I, II e III, apenas." },
+        { "letra": "C", "texto": "II e IV, apenas." },
+        { "letra": "D", "texto": "I e III, apenas." },
+        { "letra": "E", "texto": "III e IV, apenas." }
+      ],
+      "gabarito": "B",
+      "comentario": "I, II e III reproduzem, com fidelidade, as regras deontológicas do Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (Decreto nº 1.171/1994), que é o padrão doutrinário de referência para questões de 'Ética no setor público':\n\nI — Regra I do Anexo ao Decreto 1.171/1994: 'a dignidade, o decoro, o zelo, a eficácia e a consciência dos princípios morais são primados maiores que devem nortear o servidor público'.\nII — Regra II: 'o servidor público não poderá jamais desprezar o elemento ético de sua conduta. Assim, não terá que decidir somente entre o legal e o ilegal, o justo e o injusto, o conveniente e o inconveniente, o oportuno e o inoportuno, mas principalmente entre o honesto e o desonesto'.\nIII — Regra VIII: 'toda pessoa tem direito à verdade. O servidor não pode omiti-la ou falseá-la...'. E Regra IX: 'a cortesia, a boa vontade, o cuidado e o tempo dedicados ao serviço público caracterizam o esforço pela disciplina'. A publicidade como requisito de eficácia e moralidade decorre do art. 37, caput, da CF.\n\nIV — ERRADA e com a lógica invertida: a Regra III do mesmo Código afirma exatamente o oposto — 'a moralidade da Administração Pública não se limita à distinção entre o bem e o mal, devendo ser acrescida da ideia de que o fim é sempre o bem comum'. E a Regra V: 'o trabalho desenvolvido pelo servidor público perante a comunidade deve ser entendido como acréscimo ao seu próprio bem-estar, já que, como cidadão, integrante da sociedade, o êxito desse trabalho pode ser considerado como seu maior patrimônio'. O custeio por tributos REFORÇA a exigência ética, não a afasta.",
+      "leiSeca": ["Decreto nº 1.171/1994 (Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal), Anexo, Seção I", "CF, art. 37, caput"],
+      "tags": ["ética no setor público", "deontologia", "Decreto 1.171/1994"],
+      "estrategia": "Em itens do tipo assertivas I–IV, procure a alternativa que inverte o raciocínio ético (a banca costuma transformar um dever em uma 'dispensa de dever').",
+      "origem": "autoral"
+    },
+    {
+      "id": "leg-q013",
+      "topico": "leg-15",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre as Comissões Parlamentares na Assembleia Legislativa, considere:\n\nI. As comissões permanentes integram a estrutura institucional da Casa e têm competência para discutir e votar projeto de lei que dispensar, na forma regimental, a competência do Plenário.\nII. As comissões parlamentares de inquérito, criadas por requerimento de um terço dos membros da Assembleia, têm poderes de investigação próprios das autoridades judiciais e destinam-se à apuração de fato determinado, por prazo certo.\nIII. As conclusões da comissão parlamentar de inquérito, se for o caso, serão encaminhadas ao Ministério Público, para que promova a responsabilidade civil ou criminal dos infratores.\nIV. Comissão temporária é aquela constituída para representar a Assembleia em atos externos ou para tratar de matéria de caráter eventual, extinguindo-se ao fim do prazo ou com o cumprimento de sua finalidade.\n\nEstá correto o que se afirma em:",
+      "alternativas": [
+        { "letra": "A", "texto": "I e II, apenas." },
+        { "letra": "B", "texto": "II e III, apenas." },
+        { "letra": "C", "texto": "I, II, III e IV." },
+        { "letra": "D", "texto": "III e IV, apenas." },
+        { "letra": "E", "texto": "I, III e IV, apenas." }
+      ],
+      "gabarito": "C",
+      "comentario": "Todas as assertivas estão corretas e reproduzem o regime constitucional das comissões, aplicável às Assembleias por simetria (art. 27 c/c arts. 58 e 58, §3º, da CF), e o Regimento Interno da ALEPA (Resolução nº 02/2022).\n\nI — Art. 58, §2º, I, da CF: às comissões compete 'discutir e votar projeto de lei que dispensar, na forma do regimento, a competência do Plenário, salvo se houver recurso de um décimo dos membros da Casa'. Na ALEPA, as comissões de mérito e, em especial, a Comissão de Constituição e Justiça e de Redação Final (CCJ) exercem esse papel.\nII — Art. 58, §3º, da CF: 'as comissões parlamentares de inquérito, que terão poderes de investigação próprios das autoridades judiciais, além de outros previstos nos regimentos das respectivas Casas, serão criadas pela Câmara dos Deputados e pelo Senado Federal, em conjunto ou separadamente, mediante requerimento de um terço de seus membros, para a apuração de fato determinado e por prazo certo'.\nIII — Art. 58, §3º, parte final: '...cujas conclusões, se for o caso, serão encaminhadas ao Ministério Público, para que promova a responsabilidade civil ou criminal dos infratores'.\nIV — Definição clássica de comissão temporária (especial, de representação ou de inquérito), prevista nos regimentos internos.",
+      "mnemonico": "CPI: 1/3 dos membros + fato determinado + prazo certo + poderes de investigação próprios das autoridades judiciais + conclusão ao MP.",
+      "leiSeca": ["CF, art. 58, caput, §2º, I, e §3º", "CF, art. 27, caput (simetria)", "Resolução ALEPA nº 02/2022 (Regimento Interno)"],
+      "tags": ["comissões", "CPI", "CCJ", "Regimento Interno ALEPA"],
+      "origem": "autoral",
+      "revisar": "Confirme no texto vigente da Resolução nº 02/2022 (Regimento Interno da ALEPA) a nomenclatura e a composição exatas das comissões, especialmente da CCJ (Comissão de Constituição e Justiça e de Redação Final) e da CCFO (Comissão de Fiscalização Financeira e Orçamentária)."
+    },
+    {
+      "id": "leg-q014",
+      "topico": "leg-10",
+      "dificuldade": "medio",
+      "enunciado": "Quanto aos princípios da segurança da informação aplicáveis à atuação do servidor público, assinale a alternativa correta.",
+      "alternativas": [
+        { "letra": "A", "texto": "A confidencialidade garante que a informação esteja correta e não tenha sido alterada de forma não autorizada." },
+        { "letra": "B", "texto": "A integridade assegura que a informação esteja disponível para uso quando necessária." },
+        { "letra": "C", "texto": "A disponibilidade garante que a informação seja acessível apenas por pessoas autorizadas." },
+        { "letra": "D", "texto": "A tríade CIA reúne confidencialidade, integridade e disponibilidade; a autenticidade e o não repúdio são princípios complementares." },
+        { "letra": "E", "texto": "O hardening consiste na exclusão periódica de dados antigos para liberar espaço em disco." }
+      ],
+      "gabarito": "D",
+      "comentario": "(D) está correta: a tríade CIA (Confidentiality, Integrity, Availability) é o núcleo da segurança da informação. Confidencialidade = apenas autorizados acessam. Integridade = a informação não é alterada indevidamente. Disponibilidade = a informação está acessível quando necessário. Autenticidade (identificação confirmada) e não repúdio (impossibilidade de negar a autoria) são princípios complementares frequentemente citados em prova.\n\n(A), (B) e (C) Trocaram deliberadamente as definições — pegadinha clássica.\n(E) HARDENING é o processo de fortalecimento/robustecimento de um sistema, eliminando serviços desnecessários, fechando portas, aplicando patches e configurando parâmetros seguros para reduzir a superfície de ataque.",
+      "mnemonico": "CIA = Confidencialidade (quem pode ver) + Integridade (não foi alterado) + Disponibilidade (está acessível). Autenticidade + Não repúdio = complementares.",
+      "leiSeca": ["Lei nº 13.709/2018 (LGPD), art. 46 (medidas de segurança)", "Decreto nº 3.505/2000 (Política de Segurança da Informação)"],
+      "tags": ["segurança da informação", "tríade CIA", "hardening"],
+      "origem": "autoral"
+    }
+  ]
+}

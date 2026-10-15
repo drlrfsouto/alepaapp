@@ -1,0 +1,123 @@
+{
+  "descricao": "Modelos de simulado. O app monta cada simulado dinamicamente, sorteando questões do banco conforme a 'estrutura' declarada — assim novos modelos funcionam sem duplicar questões. Cada questão da prova vale 0,2 ponto (uniforme); 'pontos' é o total da disciplina (quantidade × 0,2).",
+  "atualizadoEm": "2026-10-15",
+  "config": {
+    "valorPorQuestao": 0.2,
+    "pontuacaoMaxima": 10.0,
+    "notaMinima": 6.0,
+    "regraCorte": "nota mínima de 6,0 E classificação até 4× o número de vagas (11 vagas)",
+    "alternativasPorQuestao": 5,
+    "duracaoMinutos": 180,
+    "turno": "MANHÃ"
+  },
+  "simulados": [
+    {
+      "id": "sim-prova-real",
+      "nome": "Simulado Espelho da Prova — Cargo 02",
+      "descricao": "Reproduz EXATAMENTE a prova objetiva de 13/12/2026: 50 questões, 10,0 pontos, 3 horas, turno da manhã, em Belém/PA. Cada questão vale 0,2 ponto.",
+      "tipo": "espelho",
+      "duracaoMin": 180,
+      "totalQuestoes": 50,
+      "estrutura": [
+        { "materia": "lp", "quantidade": 10, "pontos": 2.0, "blocoProva": "Conhecimentos Básicos" },
+        { "materia": "leg", "quantidade": 10, "pontos": 2.0, "blocoProva": "Conhecimentos Básicos" },
+        { "materia": "inf", "quantidade": 5, "pontos": 1.0, "blocoProva": "Conhecimentos Básicos" },
+        { "materia": "rl", "quantidade": 5, "pontos": 1.0, "blocoProva": "Conhecimentos Básicos" },
+        { "materia": "dir-adm", "quantidade": 3, "pontos": 0.6, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-const", "quantidade": 3, "pontos": 0.6, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "proc-leg", "quantidade": 3, "pontos": 0.6, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-civil", "quantidade": 2, "pontos": 0.4, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-proc-civ", "quantidade": 2, "pontos": 0.4, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-proc-const", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-fin", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-prev", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-humanos", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "adm-geral", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "secretaria", "quantidade": 2, "pontos": 0.4, "blocoProva": "Conhecimentos Específicos" }
+      ],
+      "observacao": "O edital NÃO detalha a distribuição interna das 20 questões de Conhecimentos Específicos entre as 11 matérias específicas. A distribuição usada aqui é uma ESTIMATIVA ajustável em data/concurso.json → estimativaConhecimentosEspecificos. Se o banco não tiver questões suficientes para uma matéria, o app completa com as disponíveis e avisa o usuário."
+    },
+    {
+      "id": "sim-basicos",
+      "nome": "Simulado — Conhecimentos Básicos (30 questões)",
+      "descricao": "Treina apenas o bloco básico: Língua Portuguesa, Legislação e Ética, Informática e Raciocínio Lógico. Vale 6,0 dos 10,0 pontos da prova.",
+      "tipo": "bloco",
+      "duracaoMin": 100,
+      "totalQuestoes": 30,
+      "estrutura": [
+        { "materia": "lp", "quantidade": 10, "pontos": 2.0, "blocoProva": "Conhecimentos Básicos" },
+        { "materia": "leg", "quantidade": 10, "pontos": 2.0, "blocoProva": "Conhecimentos Básicos" },
+        { "materia": "inf", "quantidade": 5, "pontos": 1.0, "blocoProva": "Conhecimentos Básicos" },
+        { "materia": "rl", "quantidade": 5, "pontos": 1.0, "blocoProva": "Conhecimentos Básicos" }
+      ]
+    },
+    {
+      "id": "sim-especificos",
+      "nome": "Simulado — Conhecimentos Específicos (20 questões)",
+      "descricao": "Treina apenas o bloco específico, que concentra 4,0 dos 10,0 pontos e é o PRIMEIRO critério de desempate depois da idade. É o bloco de maior retorno sobre o tempo investido.",
+      "tipo": "bloco",
+      "duracaoMin": 80,
+      "totalQuestoes": 20,
+      "estrutura": [
+        { "materia": "dir-adm", "quantidade": 3, "pontos": 0.6, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-const", "quantidade": 3, "pontos": 0.6, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "proc-leg", "quantidade": 3, "pontos": 0.6, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-civil", "quantidade": 2, "pontos": 0.4, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-proc-civ", "quantidade": 2, "pontos": 0.4, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-proc-const", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-fin", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-prev", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "dir-humanos", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "adm-geral", "quantidade": 1, "pontos": 0.2, "blocoProva": "Conhecimentos Específicos" },
+        { "materia": "secretaria", "quantidade": 2, "pontos": 0.4, "blocoProva": "Conhecimentos Específicos" }
+      ]
+    },
+    {
+      "id": "sim-diario",
+      "nome": "Treino Diário Rápido (10 questões)",
+      "descricao": "Sessão curta de manutenção. Prioriza questões VENCIDAS no SRS e matérias com menor taxa de acerto.",
+      "tipo": "srs",
+      "duracaoMin": 20,
+      "totalQuestoes": 10,
+      "estrutura": "dinamica",
+      "regras": [
+        "Priorizar questões com revisão SRS vencida.",
+        "Depois, questões nunca vistas das matérias com menor desempenho.",
+        "Nunca repetir uma questão já respondida nas últimas 24 horas, salvo se o SRS a tiver marcado como vencida."
+      ]
+    },
+    {
+      "id": "sim-materia",
+      "nome": "Simulado por Matéria",
+      "descricao": "Modelo parametrizável: o usuário escolhe a matéria e o número de questões (limitado ao tamanho do banco). Útil para atacar o ponto fraco identificado no diagnóstico.",
+      "tipo": "parametrizado",
+      "duracaoMin": 0,
+      "totalQuestoes": 0,
+      "estrutura": "usuario"
+    },
+    {
+      "id": "sim-erro",
+      "nome": "Caderno de Erros",
+      "descricao": "Reúne apenas questões em que o usuário errou, até acertar duas vezes seguidas. É a ferramenta de maior ganho marginal nas últimas semanas antes da prova.",
+      "tipo": "erros",
+      "duracaoMin": 0,
+      "totalQuestoes": 0,
+      "estrutura": "dinamica",
+      "regras": [
+        "Incluir toda questão com a última resposta INCORRETA.",
+        "Manter até o usuário acertar 2 vezes consecutivas.",
+        "Ordenar priorizando o bloco de Conhecimentos Específicos (4,0 pontos), depois Legislação e Ética e Português (2,0 cada), por fim RL e Informática (1,0 cada)."
+      ]
+    }
+  ],
+  "ordemDeDesempate": [
+    "maior idade (60+ tem prioridade pelo Estatuto do Idoso)",
+    "maior pontuação em Conhecimentos Específicos",
+    "maior pontuação em Legislação e Ética",
+    "maior pontuação em Língua Portuguesa",
+    "maior pontuação em Raciocínio Lógico",
+    "maior pontuação em Informática",
+    "ter sido jurado",
+    "sorteio"
+  ]
+}
